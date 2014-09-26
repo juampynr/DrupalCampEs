@@ -23,10 +23,10 @@ function drupalcamp_preprocess_html(&$vars) {
 }
 
 /**
- * Implements theme_process_page().
+ * Implements theme_preprocess_page().
  */
-function drupalcamp_process_page(&$vars) {
-  $vars['navbar_classes'] = 'navbar navbar-default';
+function drupalcamp_preprocess_page(&$vars) {
+  $vars['navbar_classes'] = 'navbar';
 }
 
 /**

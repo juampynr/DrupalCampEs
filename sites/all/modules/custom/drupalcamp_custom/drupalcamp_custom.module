@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_menu_alter().
+ */
+function drupalcamp_custom_menu_alter(&$items) {
+  $items['node']['access callback'] = FALSE;
+}

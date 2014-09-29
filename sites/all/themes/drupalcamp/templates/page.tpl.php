@@ -57,9 +57,11 @@
  * Regions:
  * - $page['help']: Dynamic help text, mostly for admin pages.
  * - $page['highlighted']: Items for the highlighted content region.
+ * - $page['pre_content_fw']: The main content of the current page.
  * - $page['content']: The main content of the current page.
  * - $page['sidebar_first']: Items for the first sidebar.
  * - $page['sidebar_second']: Items for the second sidebar.
+ * - $page['post_content_fw']: The main content of the current page.
  * - $page['header']: Items for the header region.
  * - $page['footer']: Items for the footer region.
  *
@@ -129,6 +131,14 @@
     </div>
   </header> <!-- /#page-header -->
 
+  <?php if (!empty($page['pre_content_fw'])): ?>
+  <div class="pre-content">
+    <div class="wrapper">
+      <?php print render($page['pre_content_fw']); ?>
+    </div>
+  </div>
+  <?php endif; ?>
+ 
   <div class="container">
     <div class="row">
 
@@ -169,7 +179,16 @@
       <?php endif; ?>
     </div>
   </div>
+
+  <?php if (!empty($page['post_content_fw'])): ?>
+  <div class="post-content">
+    <div class="wrapper">
+      <?php print render($page['post_content_fw']); ?>
+    </div>
+  </div>
+  <?php endif; ?>
 </div>
+
 <footer class="footer">
   <div class="wrapper">
     <div class="container">

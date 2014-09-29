@@ -1,5 +1,6 @@
 .navbar.container { background: url(../images/bg-rainbow.png) no-repeat scroll center bottom @drupalSand;
   border: 0; display: block; width: 100%; max-width: 100%; height: 180px; overflow: hidden; margin: 0; padding: 0;
+  border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;
   .wrapper { background: url(../images/bg-stripes.png) repeat scroll 0 0 transparent;
     height: 100%;
     .container { position: relative;
@@ -16,15 +17,25 @@
       }
       .navbar-collapse { position: absolute; top: 0; right: 0;
         .region-navigation {
-          .block-locale { margin: 0; padding: 0;
+          .block-locale { margin: 0; padding: 0; width: auto; float: none;
             .language-switcher-locale-url { list-style-type: none; list-style-image: none;
-              margin: 0; padding: 0; min-width: 130px;
+              margin: 0; padding: 0; min-width: 130px; overflow: hidden;
               li { display: block; float: left; margin: 0; padding: 0; width: 50%;
-                text-align: center;
+                text-align: right;;
                 a { color: @drupalBrown; }
                 &.active { font-weight: bold;
                   a { font-weight: bold; }
                 }
+              }
+            }
+          }
+          #block-bean-date-and-location { clear: both; width: auto; margin: 10px 0 0; padding: 0;
+            text-align: right; text-transform: uppercase;
+            p { font-family: @font-family-dotcirful; font-weight: normal;
+              font-size: 25px; line-height: 0.9em; color: @drupalBrown;
+              strong { font-family: @font-family-roboto; font-weight: bold; display: block;
+                font-size: 24px; line-height: 0.9em; margin: 0; padding: 0 0 13px;
+                background: url(../images/date-location-separator.png) no-repeat scroll 120% 100% transparent;
               }
             }
           }

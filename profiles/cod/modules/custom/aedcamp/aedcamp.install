@@ -9,7 +9,7 @@
  * Implements hook_install().
  */
 function aedcamp_install() {
-  $updates = array(7001);
+  $updates = array(7001, 7002, 7003);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -34,3 +34,42 @@ function aedcamp_update_7001() {
   module_enable($modules);
 }
 
+/**
+ * Implements hook_update_7002().
+ *  Adds commerce paypal as payment method and enables CODs paid events.
+ */
+function aedcamp_update_7002() {
+  $modules = array(
+    'commerce_paypal',
+    'cod_paid_events',
+  );
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_7003().
+ *  Deletes default conference and creates a new one.
+ */
+function aedcamp_update_7003() {
+  node_delete(1);
+  $node = new StdClass();
+  $node->type = 'event';
+  $node->title = 'DrupalCamp Spain 2015';
+  $node->language = 'en';
+  $node->body['en'][] = array(
+    'value' => 'The DrupalCamp Spain is an event held every year in a different city of Spain. This year will be in Jerez.',
+    'summary' => '',
+    'format' => '',
+  );
+  $node->field_dates[LANGUAGE_NONE][] = array(
+    'value' => 1432285200,
+    'value2' => 1432486800,
+    'timezone' => 'Europe/Madrid',
+    'offset' => 3600,
+    'offset2' => 3600,
+    'timezone_db' => 'Europe/Madrid',
+    'date_type' => 'datestamp',
+  );
+  $node->uid = 1;
+  node_save($node);
+}

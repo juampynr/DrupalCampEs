@@ -103,6 +103,9 @@ dependencies[] = cod_profile_base
 dependencies[] = cod_wysiwyg
 files[] = cod.profile
 
+; AED Customizations
+dependencies[] = aedcamp
+
 ; System Requirements.
 php_memory_limit = 128M
 

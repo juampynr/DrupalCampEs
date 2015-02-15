@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ *  Adds dependencies and other install tasks for the AED customizations.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function aedcamp_install() {
+  $updates = array(7001);
+  foreach ($updates as $update) {
+    call_user_func('aedcamp_update_' . $update);
+  }
+}
+
+/**
+ * Implements hook_update_7001().
+ *  Enables the Commerce modules.
+ */
+function aedcamp_update_7001() {
+  $modules = array(
+    'commerce',
+    'commerce_cart',
+    'commerce_checkout',
+    'commerce_customer',
+    'commerce_line_item',
+    'commerce_order',
+    'commerce_payment',
+    'commerce_price',
+    'commerce_product',
+  );
+  module_enable($modules);
+}
+

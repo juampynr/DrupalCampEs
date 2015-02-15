@@ -1,7 +1,8 @@
 name = DrupalCampES
 description = Profile for DrupalCamp Websites
+distribution_name = "DrupalCamp Spain"
 core = 7.x
-
+exclusive = TRUE
 ; Core modules
 
 dependencies[] = block

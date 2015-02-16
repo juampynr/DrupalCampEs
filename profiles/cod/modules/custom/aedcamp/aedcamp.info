@@ -3,3 +3,15 @@ description = AED Customizations to COD for spanish drupalcamps.
 core = 7.x
 version = 7.x-1.0
 package = AED
+
+dependencies[] = cod_paid_events
+dependencies[] = commerce
+dependencies[] = commerce_cart
+dependencies[] = commerce_checkout
+dependencies[] = commerce_customer
+dependencies[] = commerce_line_item
+dependencies[] = commerce_order
+dependencies[] = commerce_payment
+dependencies[] = commerce_paypal
+dependencies[] = commerce_price
+dependencies[] = commerce_product

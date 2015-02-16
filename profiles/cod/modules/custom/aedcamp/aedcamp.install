@@ -9,7 +9,7 @@
  * Implements hook_install().
  */
 function aedcamp_install() {
-  $updates = array(7001, 7002, 7003);
+  $updates = array(7003);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -73,3 +73,4 @@ function aedcamp_update_7003() {
   $node->uid = 1;
   node_save($node);
 }
+

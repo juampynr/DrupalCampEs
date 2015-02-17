@@ -74,6 +74,10 @@ function aedcamp_update_7003() {
   node_save($node);
 }
 
+/**
+ * Implements hook_update_7004().
+ * Creates new node page for speaker guideline and enable cod_session.
+ */
 function aedcamp_update_7004() {
   // Activate module cod_sessions
   $modules = array(

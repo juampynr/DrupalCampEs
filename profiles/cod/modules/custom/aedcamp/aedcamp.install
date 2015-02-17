@@ -9,7 +9,7 @@
  * Implements hook_install().
  */
 function aedcamp_install() {
-  $updates = array(7003);
+  $updates = array(7003, 7004);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -74,3 +74,19 @@ function aedcamp_update_7003() {
   node_save($node);
 }
 
+function aedcamp_update_7004() {
+  // Activate module cod_sessions
+  $modules = array(
+    'cod_session',
+  );
+  module_enable($modules);
+
+  // Create node for speaker guideline
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Speakers guideline';
+  $node->language = 'en';
+  $node->alias = 'sessions/speakers-guideline';
+  $node->uid = 1;
+  node_save($node);
+}

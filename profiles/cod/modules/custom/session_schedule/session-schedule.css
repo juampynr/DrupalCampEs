@@ -1,0 +1,243 @@
+
+.session-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 50px;
+    display: table;
+}
+
+.session-table .tr{
+    display: table-row;
+}
+
+.session-table .td{
+    display: table-cell;
+}
+
+.leyendas {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-bottom: 10px;
+    padding: 14px 10px 0;
+}
+
+.leyendas .row .sesion-kind {
+    line-height: 24px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding-left: 31px;
+    white-space: nowrap;
+    width: auto;
+    width: 72px;
+}
+
+.sesion-kind {
+    background: url('img/session-labels-26x346.png') no-repeat;
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    position: relative;
+    top: -4px;
+}
+
+.sesion-kind.business {
+    background-position: 0 0;
+}
+
+.sesion-kind.back-end {
+    background-position: 0 -40px;
+}
+
+.sesion-kind.community {
+    background-position: 0 -200px;
+}
+
+.sesion-kind.devops {
+    background-position: 0 -80px;
+}
+
+.sesion-kind.site-build {
+    background-position: 0 -160px;
+}
+
+.sesion-kind.front-end {
+    background-position: 0 -320px;
+}
+
+.sesion-kind.training {
+    background-position: 0 -160px;
+}
+
+.session-table .dia, .session-table .almuerzo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    background: #ff6600;
+    color: white;
+}
+
+.session-table .inhabil {
+    background: grey;
+}
+
+.session-table .horario {
+    background: #006666;
+}
+
+.session-table .dificultad-wrapper {
+    vertical-align: middle;
+    padding-left: 18px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.session-table .dificultad-wrapper .label {
+    float: left;
+}
+
+.session-table .dificultad-wrapper .dificultad {
+    float: left;
+    margin-left: 6px;
+}
+
+.session-table .druplicolin {
+    background: url('img/druplicon-12x14.png') no-repeat;
+    width: 12px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 2px;
+    position: relative;
+    bottom: -2px;
+}
+
+.session-table .td, .session-table .td {
+    padding: 0;
+}
+
+.session-table .td {
+    background: none repeat scroll 0 0 #006666;
+    text-align: center;
+    padding: 5px;
+}
+
+.session-table .td.dia {
+    background: none repeat scroll 0 0 #006666;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.session-table .td {
+    vertical-align: top;
+    width: 16.666666%;
+    border: 1px solid #FFFFFF;
+}
+
+.session-table .td.horario {
+    border-left: medium none;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+    width: 11%;
+}
+
+.sesion-kind-wrapper {
+    margin-top: 10px;
+    padding: 4px 10px 0;
+}
+
+.sesion-kind-wrapper .label {
+    float: left;
+}
+
+.sesion-kind-wrapper > div {
+    float: left;
+    margin-left: 6px;
+}
+
+.session-table .session,
+.session-table .sprint {
+    background: none;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+    color: #666;
+    font-size: 16px;
+    border-bottom-color: #ff6600 !important;
+}
+
+.session-table .sprint-coexistent {
+    border-right: 30px solid #ff6600;
+    display: table-row;
+}
+
+.session-table .session a {
+    color: #666;
+}
+
+.session-table .label {
+    font-weight: bold;
+}
+
+.session-table .ponente {
+    background: none;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.session-table .ponente a {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #666;
+    font-weight: bold;
+}
+
+.session-table .sprint {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.session-table .lang {
+    bottom: -1px;
+    margin-left: 5px;
+    position: relative;
+}
+
+.session-table .lang.es {
+    background: url('img/es-16x11.png') no-repeat;
+    width: 16px;
+    height: 11px;
+    display: inline-block;
+}
+
+.session-table .lang.en {
+    background: url('img/en-16x11.png') no-repeat;
+    width: 16px;
+    height: 11px;
+    display: inline-block;
+}
+
+.spanish-cell {
+    background: rgba(255, 209, 111, 0.6);
+}
+
+.english-cell {
+    background: rgba(172, 202, 202, 0.59);
+}
+
+.salas {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sprint {
+    background: #ff6600;
+}
+
+.sprint div {
+    text-transform: uppercase;
+    color: white;
+}

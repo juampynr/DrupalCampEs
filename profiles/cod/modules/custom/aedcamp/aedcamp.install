@@ -9,10 +9,18 @@
  * Implements hook_install().
  */
 function aedcamp_install() {
+
+  // Rebuild menus before create new ones.
+  menu_rebuild();
+
+  // Apply updates.
   $updates = array(7003, 7004, 7005);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
+
+  // Clear menu caches.
+  menu_cache_clear_all();
 }
 
 /**
@@ -112,13 +120,12 @@ function aedcamp_update_7005() {
 
   // Add node home to main-menu
   $item = array(
-    'link_path' => 'node/1',
+    'link_path' => 'node/' . $node->nid,
     'link_title' => 'Home',
     'menu_name' => 'main-menu',
     'weight' => 0,
-    'expanded' => FALSE,
-    'module' => 'menu',
     'language' => 'en',
+    'customized' => 1,
   );
   menu_link_save($item);
 
@@ -133,13 +140,12 @@ function aedcamp_update_7005() {
 
   // Add node Information to main-menu
   $item = array(
-    'link_path' => 'info',
+    'link_path' => 'node/' . $node->nid,
     'link_title' => 'Information',
     'menu_name' => 'main-menu',
     'weight' => 1,
-    'expanded' => FALSE,
-    'module' => 'menu',
     'language' => 'en',
+    'customized' => 1,
   );
   $plid_info = menu_link_save($item);
 
@@ -154,13 +160,11 @@ function aedcamp_update_7005() {
 
   // Add node Accommodations to main-menu
   $item = array(
-    'link_path' => 'info/accommodations',
+    'link_path' => 'node/' . $node->nid,
     'link_title' => 'Accommodations',
     'menu_name' => 'main-menu',
     'plid' => $plid_info,
     'weight' => 1,
-    'expanded' => FALSE,
-    'module' => 'menu',
     'language' => 'en',
   );
   menu_link_save($item);
@@ -176,13 +180,11 @@ function aedcamp_update_7005() {
 
   // Add node About the city to main-menu
   $item = array(
-    'link_path' => 'info/about-the-city',
+    'link_path' => 'node/' . $node->nid,
     'link_title' => 'About the city',
     'menu_name' => 'main-menu',
     'plid' => $plid_info,
     'weight' => 1,
-    'expanded' => FALSE,
-    'module' => 'menu',
     'language' => 'en',
   );
   menu_link_save($item);
@@ -198,15 +200,15 @@ function aedcamp_update_7005() {
 
   // Add node About the city to main-menu
   $item = array(
-    'link_path' => 'info/how-to-get-there',
+    'link_path' => 'node/' . $node->nid,
     'link_title' => 'How to get there',
     'menu_name' => 'main-menu',
-//    'plid' => $plid_info,
-//    'weight' => 1,
-//    'expanded' => FALSE,
-//    'module' => 'menu',
-//    'language' => 'en',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'en',
   );
   menu_link_save($item);
 }
+
+
 

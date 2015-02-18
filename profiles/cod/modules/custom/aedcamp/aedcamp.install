@@ -9,10 +9,18 @@
  * Implements hook_install().
  */
 function aedcamp_install() {
-  $updates = array(7003, 7004);
+
+  // Rebuild menus before create new ones.
+  menu_rebuild();
+
+  // Apply updates.
+  $updates = array(7003, 7004, 7005);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
+
+  // Clear menu caches.
+  menu_cache_clear_all();
 }
 
 /**
@@ -74,6 +82,10 @@ function aedcamp_update_7003() {
   node_save($node);
 }
 
+/**
+ * Implements hook_update_7004().
+ * Creates new node page for speaker guideline and enable cod_session.
+ */
 function aedcamp_update_7004() {
   // Activate module cod_sessions
   $modules = array(
@@ -90,3 +102,113 @@ function aedcamp_update_7004() {
   $node->uid = 1;
   node_save($node);
 }
+
+/**
+ * Implements hook_update_7005().
+ * Creates new nodes page for the Information section.
+ */
+function aedcamp_update_7005() {
+
+  // Create node for home page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'home';
+  $node->language = 'en';
+  $node->alias = 'home';
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node home to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Home',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create node for information page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Information';
+  $node->language = 'en';
+  $node->alias = 'info';
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node Information to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Information',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  $plid_info = menu_link_save($item);
+
+  // Create node for Accommodations page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Accommodations';
+  $node->language = 'en';
+  $node->alias = 'info/accommodations';
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node Accommodations to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Accommodations',
+    'menu_name' => 'main-menu',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'en',
+  );
+  menu_link_save($item);
+
+  // Create node for About the city page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'About the city';
+  $node->language = 'en';
+  $node->alias = 'info/about-the-city';
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node About the city to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'About the city',
+    'menu_name' => 'main-menu',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'en',
+  );
+  menu_link_save($item);
+
+  // Create node for How to get there page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'How to get there';
+  $node->language = 'en';
+  $node->alias = 'info/how-to-get-there';
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node About the city to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'How to get there',
+    'menu_name' => 'main-menu',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'en',
+  );
+  menu_link_save($item);
+}
+
+
+

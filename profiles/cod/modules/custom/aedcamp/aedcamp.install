@@ -14,7 +14,7 @@ function aedcamp_install() {
   menu_rebuild();
 
   // Apply updates.
-  $updates = array(7003, 7004, 7005);
+  $updates = array(7003, 7004, 7005, 7006);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -78,6 +78,7 @@ function aedcamp_update_7003() {
     'timezone_db' => 'Europe/Madrid',
     'date_type' => 'datestamp',
   );
+  $node->path = array('alias' => 'drupalcamp-spain-2015', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
 }
@@ -98,7 +99,7 @@ function aedcamp_update_7004() {
   $node->type = 'page';
   $node->title = 'Speakers guideline';
   $node->language = 'en';
-  $node->alias = 'sessions/speakers-guideline';
+  $node->path = array('alias' => 'sessions/speakers-guideline', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
 }
@@ -114,7 +115,7 @@ function aedcamp_update_7005() {
   $node->type = 'page';
   $node->title = 'home';
   $node->language = 'en';
-  $node->alias = 'home';
+  $node->path = array('alias' => 'home', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
 
@@ -134,7 +135,7 @@ function aedcamp_update_7005() {
   $node->type = 'page';
   $node->title = 'Information';
   $node->language = 'en';
-  $node->alias = 'info';
+  $node->path = array('alias' => 'info', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
 
@@ -154,7 +155,7 @@ function aedcamp_update_7005() {
   $node->type = 'page';
   $node->title = 'Accommodations';
   $node->language = 'en';
-  $node->alias = 'info/accommodations';
+  $node->path = array('alias' => 'info/accommodations', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
 
@@ -174,7 +175,7 @@ function aedcamp_update_7005() {
   $node->type = 'page';
   $node->title = 'About the city';
   $node->language = 'en';
-  $node->alias = 'info/about-the-city';
+  $node->path = array('alias' => 'info/about-the-city', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
 
@@ -194,7 +195,7 @@ function aedcamp_update_7005() {
   $node->type = 'page';
   $node->title = 'How to get there';
   $node->language = 'en';
-  $node->alias = 'info/how-to-get-there';
+  $node->path = array('alias' => 'info/how-to-get-there', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
 
@@ -209,6 +210,16 @@ function aedcamp_update_7005() {
   );
   menu_link_save($item);
 }
+
+/**
+ * Implements hook_update_7006().
+ * Set the default theme.
+ */
+function aedcamp_update_7006() {
+  variable_set('theme_default','drupalcamp');
+}
+
+
 
 
 

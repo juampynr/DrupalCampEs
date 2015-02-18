@@ -94,6 +94,18 @@ function aedcamp_update_7004() {
   );
   module_enable($modules);
 
+  // Add Sessions to main-menu.
+  // TODO: Add the correct path to the list
+  $item = array(
+    'link_path' => 'node/2',
+    'link_title' => 'Sessions',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  $plid_info = menu_link_save($item);
+
   // Create node for speaker guideline
   $node = new StdClass();
   $node->type = 'page';
@@ -102,6 +114,56 @@ function aedcamp_update_7004() {
   $node->path = array('alias' => 'sessions/speakers-guideline', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
+
+  // Add Speaker guideline node to main-menu.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Speakers guideline',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $plid_info,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Add Featured Speaker to main-menu
+  // TODO: Add the correct path to the list
+  $item = array(
+    'link_path' => 'node/2/speakers',
+    'link_title' => 'Featured speakers',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $plid_info,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Add Speaker to main-menu
+  // TODO: Add the correct path to the list
+  $item = array(
+    'link_path' => 'node/2/speakers',
+    'link_title' => 'Speakers',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $plid_info,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Add Proposal (aka session form) to main-menu
+  $item = array(
+    'link_path' => 'node/add/session',
+    'link_title' => 'Proposal',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $plid_info,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
 }
 
 /**

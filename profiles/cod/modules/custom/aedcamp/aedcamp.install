@@ -81,6 +81,11 @@ function aedcamp_update_7003() {
   $node->path = array('alias' => 'drupalcamp-spain-2015', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
+
+  // Set as default event, to allow user registration without select the event.
+  $flag = flag_get_flag('default_event');
+  $flag->flag('flag', $node->nid, user_load(1), TRUE);
+
 }
 
 /**

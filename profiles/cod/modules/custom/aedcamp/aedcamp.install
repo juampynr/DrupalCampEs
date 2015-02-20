@@ -286,7 +286,7 @@ function aedcamp_update_7005() {
  * Set the default theme.
  */
 function aedcamp_update_7006() {
-  variable_set('theme_default','drupalcamp');
+  variable_set('theme_default', 'drupalcamp');
 }
 
 /**
@@ -313,5 +313,16 @@ function aedcamp_update_7007() {
   menu_link_save($item);
 }
 
-
-
+/**
+ * Implements hook_update_7008().
+ *  Enables the less module.
+ */
+function aedcamp_update_7008() {
+  $modules = array(
+    'less',
+  );
+  module_enable($modules);
+  variable_set('less_engine', 'less.php');
+  variable_set('less_devel', 1);
+  variable_set('less_source_maps', 1);
+}

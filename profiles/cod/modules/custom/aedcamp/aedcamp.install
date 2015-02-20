@@ -14,7 +14,7 @@ function aedcamp_install() {
   menu_rebuild();
 
   // Apply updates.
-  $updates = array(7003, 7004, 7005, 7006);
+  $updates = array(7003, 7004, 7005, 7006, 7007);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -81,6 +81,11 @@ function aedcamp_update_7003() {
   $node->path = array('alias' => 'drupalcamp-spain-2015', 'pathauto' => FALSE);
   $node->uid = 1;
   node_save($node);
+
+  // Set as default event, to allow user registration without select the event.
+  $flag = flag_get_flag('default_event');
+  $flag->flag('flag', $node->nid, user_load(1), TRUE);
+
 }
 
 /**
@@ -229,6 +234,7 @@ function aedcamp_update_7005() {
     'plid' => $plid_info,
     'weight' => 1,
     'language' => 'en',
+    'customized' => 1,
   );
   menu_link_save($item);
 
@@ -249,6 +255,7 @@ function aedcamp_update_7005() {
     'plid' => $plid_info,
     'weight' => 1,
     'language' => 'en',
+    'customized' => 1,
   );
   menu_link_save($item);
 
@@ -269,6 +276,7 @@ function aedcamp_update_7005() {
     'plid' => $plid_info,
     'weight' => 1,
     'language' => 'en',
+    'customized' => 1,
   );
   menu_link_save($item);
 }
@@ -281,7 +289,29 @@ function aedcamp_update_7006() {
   variable_set('theme_default','drupalcamp');
 }
 
+/**
+ * Implements hook_update_7007().
+ * Creates the news section
+ */
+function aedcamp_update_7007() {
+  // Activate module cod_news
+  $modules = array(
+    'cod_news',
+  );
+  module_enable($modules);
 
+  // Add node About the city to main-menu.
+  // To see this link will needed to disable the default News menu item.
+  $item = array(
+    'link_path' => 'news/2',
+    'link_title' => 'News',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+}
 
 
 

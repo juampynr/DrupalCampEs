@@ -14,7 +14,7 @@ function aedcamp_install() {
   menu_rebuild();
 
   // Apply updates.
-  $updates = array(7003, 7004, 7005, 7006, 7007);
+  $updates = array(7003, 7004, 7005, 7006, 7007, 7008, 7009);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -325,4 +325,14 @@ function aedcamp_update_7008() {
   variable_set('less_engine', 'less.php');
   variable_set('less_devel', 1);
   variable_set('less_source_maps', 1);
+}
+
+/**
+ * Implements hook_update_7009()
+ */
+function aedcamp_update_7009() {
+  //Create role 'featured speaker'
+  $featured_speaker = new stdClass();
+  $featured_speaker->name = 'featured speaker';
+  user_role_save($featured_speaker);
 }

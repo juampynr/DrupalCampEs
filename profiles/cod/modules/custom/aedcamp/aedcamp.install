@@ -14,7 +14,7 @@ function aedcamp_install() {
   menu_rebuild();
 
   // Apply updates.
-  $updates = array(7003, 7004, 7005, 7006, 7007, 7008, 7009);
+  $updates = array(7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -177,26 +177,6 @@ function aedcamp_update_7004() {
  */
 function aedcamp_update_7005() {
 
-  // Create node for home page
-  $node = new StdClass();
-  $node->type = 'page';
-  $node->title = 'home';
-  $node->language = 'en';
-  $node->path = array('alias' => 'home', 'pathauto' => FALSE);
-  $node->uid = 1;
-  node_save($node);
-
-  // Add node home to main-menu
-  $item = array(
-    'link_path' => 'node/' . $node->nid,
-    'link_title' => 'Home',
-    'menu_name' => 'main-menu',
-    'weight' => 0,
-    'language' => 'en',
-    'customized' => 1,
-  );
-  menu_link_save($item);
-
   // Create node for information page
   $node = new StdClass();
   $node->type = 'page';
@@ -336,3 +316,43 @@ function aedcamp_update_7009() {
   $featured_speaker->name = 'featured speaker';
   user_role_save($featured_speaker);
 }
+
+/**
+ * Implements hook_update_7010()
+ */
+function aedcamp_update_7010() {
+  //activate module aedcamp_home
+  $modules = array(
+    'aedcamp_home',
+  );
+  module_enable($modules);
+  variable_set('site_frontpage', 'home');
+}
+
+/**
+ * Implements hook_update_7011()
+ */
+function aedcamp_update_7011() {
+
+  //activate module aedcamp_image_block with the bean block type images.
+  $modules = array(
+    'aedcamp_image_block',
+  );
+  module_enable($modules);
+
+  // Create block for Renfe.
+  $bean = bean_create(array('type' => 'images'));
+  $bean->label = 'Renfe Promotion';
+  $bean->delta = 'renfe_promotion';
+  $bean->view_mode = 'default';
+  $bean->save();
+
+  // Create block for Iberia.
+  $bean = bean_create(array('type' => 'images'));
+  $bean->label = 'Iberia Promotion';
+  $bean->delta = 'iberia_promotion';
+  $bean->view_mode = 'default';
+  $bean->save();
+}
+
+

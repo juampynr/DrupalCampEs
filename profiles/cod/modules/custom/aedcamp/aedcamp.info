@@ -16,3 +16,4 @@ dependencies[] = commerce_paypal
 dependencies[] = commerce_price
 dependencies[] = commerce_product
 dependencies[] = less
+dependencies[] = bean

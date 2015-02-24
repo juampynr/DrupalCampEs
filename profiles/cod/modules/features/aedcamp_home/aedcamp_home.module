@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the aedcamp_home feature.
+ */
+
+include_once 'aedcamp_home.features.inc';

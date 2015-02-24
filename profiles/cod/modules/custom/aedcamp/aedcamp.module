@@ -27,14 +27,13 @@ function aedcamp_block_configure($delta = '') {
 
   switch ($delta) {
     case 'hashtag':
-      $key = 'aedcamp_block_hashtag_hashtag ';
+      $key = 'aedcamp_block_hashtag_hashtag';
       $form[$key] = array(
         '#type' => 'textfield',
         '#title' => t('Hashtag.'),
         '#default_value' => variable_get($key, ''),
       );
     break;
-
     //hook_block_configure_item
   }
 

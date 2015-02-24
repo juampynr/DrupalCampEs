@@ -177,26 +177,6 @@ function aedcamp_update_7004() {
  */
 function aedcamp_update_7005() {
 
-//  // Create node for home page
-//  $node = new StdClass();
-//  $node->type = 'page';
-//  $node->title = 'home';
-//  $node->language = 'en';
-//  $node->path = array('alias' => 'home', 'pathauto' => FALSE);
-//  $node->uid = 1;
-//  node_save($node);
-
-//  // Add node home to main-menu
-//  $item = array(
-//    'link_path' => 'node/' . $node->nid,
-//    'link_title' => 'Home',
-//    'menu_name' => 'main-menu',
-//    'weight' => 0,
-//    'language' => 'en',
-//    'customized' => 1,
-//  );
-//  menu_link_save($item);
-
   // Create node for information page
   $node = new StdClass();
   $node->type = 'page';

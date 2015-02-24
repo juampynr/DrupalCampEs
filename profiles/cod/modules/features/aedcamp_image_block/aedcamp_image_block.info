@@ -1,0 +1,16 @@
+name = AEDcamp image block
+description = Bean block to be used with images and links.
+core = 7.x
+package = AED
+dependencies[] = bean_admin_ui
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
+dependencies[] = link
+features[bean_type][] = images
+features[ctools][] = bean_admin_ui:bean:5
+features[features_api][] = api:2
+features[field_base][] = field_image_block
+features[field_base][] = field_link_block
+features[field_instance][] = bean-images-field_image_block
+features[field_instance][] = bean-images-field_link_block

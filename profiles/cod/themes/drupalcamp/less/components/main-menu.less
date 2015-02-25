@@ -1,0 +1,31 @@
+.main-navigation {
+  ul {
+
+    li {
+
+      &.open a,
+      &.open a:hover,
+      &.open a:focus {
+        background-color: @drupalBlueLight;
+      }
+
+      a {
+        text-transform: uppercase;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:hover {
+          background-color: @drupalBlueLight;
+          color: @drupalSand;
+        }
+
+        & + .dropdown-menu {
+          padding: 0;
+          border-radius: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}

@@ -19,15 +19,12 @@
       </div>
 
       <?php if (!empty($site_slogan)): ?>
-        <p class="lead"><?php print $site_slogan; ?></p>
+        <div class="lead"><?php print $site_slogan; ?></div>
       <?php endif; ?>
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <div class="navbar-collapse collapse">
           <nav role="navigation">
-            <?php if (!empty($primary_nav)): ?>
-              <?php print render($primary_nav); ?>
-            <?php endif; ?>
             <?php if (!empty($secondary_nav)): ?>
               <?php print render($secondary_nav); ?>
             <?php endif; ?>
@@ -37,8 +34,12 @@
           </nav>
         </div>
       <?php endif; ?>
+
+      <div class="event-date">22 · 23 · 24 <strong>May&nbsp;2015</strong></div>
+
     </div>
   </div>
+
 </header>
 
 <div class="main-container">
@@ -46,6 +47,17 @@
   <header class="content-header" role="banner" id="page-header">
     <div class="container">
       <?php print render($page['header']); ?>
+
+
+      <div class="row">
+        <div class="col-xs-12">
+          <?php if (!empty($primary_nav)): ?>
+            <nav class="main-navigation">
+              <?php print render($primary_nav); ?>
+            </nav>
+          <?php endif; ?>
+        </div>
+      </div>
     </div>
   </header>
   <!-- /#page-header -->

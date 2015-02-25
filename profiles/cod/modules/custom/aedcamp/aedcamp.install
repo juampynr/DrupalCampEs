@@ -14,7 +14,7 @@ function aedcamp_install() {
   menu_rebuild();
 
   // Apply updates.
-  $updates = array(7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011);
+  $updates = array(7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -353,6 +353,47 @@ function aedcamp_update_7011() {
   $bean->delta = 'iberia_promotion';
   $bean->view_mode = 'default';
   $bean->save();
+}
+
+/**
+ * Implements hook_update_7012()
+ */
+function aedcamp_update_7012() {
+
+  // Activate module aedcamp_image_block with the bean block type images.
+  $modules = array(
+    'cod_sponsors',
+    'aedcamp_sponsors',
+  );
+  module_enable($modules);
+
+  // Create sponsors categories a.k.a terms.
+  $vocabulary = taxonomy_vocabulary_machine_name_load('sponsorship_level');
+
+  // Create gold term.
+  $term = new StdClass();
+  $term->name = 'Gold';
+  $term->vocabulary_machine_name = 'gold';
+  $term->description = '';
+  $term->vid = $vocabulary->vid;
+  taxonomy_term_save($term);
+
+  // Create gold term.
+  $term = new StdClass();
+  $term->name = 'Silver';
+  $term->vocabulary_machine_name = 'silver';
+  $term->description = '';
+  $term->vid = $vocabulary->vid;
+  taxonomy_term_save($term);
+
+  // Create bronze term.
+  $term = new StdClass();
+  $term->name = 'Bronze';
+  $term->vocabulary_machine_name = 'bronze';
+  $term->description = '';
+  $term->vid = $vocabulary->vid;
+  taxonomy_term_save($term);
+
 }
 
 

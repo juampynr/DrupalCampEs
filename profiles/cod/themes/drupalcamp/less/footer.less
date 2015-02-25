@@ -1,28 +1,80 @@
-.footer { background: url(../images/bg-stripes.png) repeat scroll 0 0 @drupalSandDark;
-  padding: 0; border-width: 40px 0 0; border-style: solid; border-color: @drupalBlue;
-  .wrapper { padding: 35px 0; color: @drupalWhite;
-    > .container { padding: 0;
+.footer {
+  background: url(../images/bg-stripes.png) repeat scroll 0 0 @drupalSandDark;
+  padding: 0;
+  border-width: 40px 0 0;
+  border-style: solid;
+  border-color: @drupalBlue;
+  .wrapper {
+    padding: 35px 0;
+    color: @drupalWhite;
+    > .container {
+      padding: 0;
       .block-mailchimp-signup {
-        .block-title { font-size: 24px; font-weight: normal; text-transform: uppercase;
-          margin: 0 0 15px; padding: 0; }
-        .mailchimp-signup-subscribe-form { display: block; overflow: visible;
-          width: 100%; float: left; clear: both;
-          .description { display: block; width: 40%; float: left; font-size: 14px;
-            color: @drupalBrown; }
-          .mailchimp-newsletter-mergefields { display: block; width: 55%; margin: -10px 0 0 5%; float: left;
-            label { text-transform: uppercase; font-size: 14px; font-weight: bold; }
-            .form-text { border: 0; background-color: rgba(255,255,255,0.6);
-              border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; }
+        .block-title {
+          font-size: 24px;
+          font-weight: normal;
+          text-transform: uppercase;
+          margin: 0 0 15px;
+          padding: 0;
+        }
+        .mailchimp-signup-subscribe-form {
+          display: block;
+          overflow: visible;
+          width: 100%;
+          float: left;
+          clear: both;
+          .description {
+            display: block;
+            width: 40%;
+            float: left;
+            font-size: 14px;
+            color: @drupalBrown;
           }
-          .form-submit { float: right; background-color: @drupalWhite; color: @drupalSandDark;
-            border: 0; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0;
-            text-transform: uppercase; margin: -10px 0 0; padding: 3px 10px; }
+          .mailchimp-newsletter-mergefields {
+            display: block;
+            width: 55%;
+            margin: -10px 0 0 5%;
+            float: left;
+            label {
+              text-transform: uppercase;
+              font-size: 14px;
+              font-weight: bold;
+            }
+            .form-text {
+              border: 0;
+              background-color: rgba(255, 255, 255, 0.6);
+              border-radius: 0;
+              -moz-border-radius: 0;
+              -webkit-border-radius: 0;
+            }
+          }
+          .form-submit {
+            float: right;
+            background-color: @drupalWhite;
+            color: @drupalSandDark;
+            border: 0;
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+            text-transform: uppercase;
+            margin: -10px 0 0;
+            padding: 3px 10px;
+          }
         }
       }
-      .block-copyright { display: block; width: 100%; clear: both; margin: 0; padding: 35px 15px 0;
+      .block-copyright {
+        display: block;
+        width: 100%;
+        clear: both;
+        margin: 0;
+        padding: 35px 15px 0;
         background: url(../images/winery.png) no-repeat scroll 15px 0 transparent;
         .field-name-field-simple-body {
-          p { font-size: 14px; font-weight: normal; color: @drupalBrown; }
+          p {
+            font-size: 14px;
+            font-weight: normal;
+            color: @drupalBrown;
+          }
         }
       }
     }

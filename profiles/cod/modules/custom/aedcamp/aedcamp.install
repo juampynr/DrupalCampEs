@@ -360,14 +360,14 @@ function aedcamp_update_7011() {
  */
 function aedcamp_update_7012() {
 
-  // Activate module aedcamp_image_block with the bean block type images.
+  // Activate module cod_sponsors.
   $modules = array(
     'cod_sponsors',
-    'aedcamp_sponsors',
   );
   module_enable($modules);
 
   // Create sponsors categories a.k.a terms.
+  // TODO: Is not working (the vocabulary is not being loaded).
   $vocabulary = taxonomy_vocabulary_machine_name_load('sponsorship_level');
 
   // Create gold term.
@@ -394,6 +394,10 @@ function aedcamp_update_7012() {
   $term->vid = $vocabulary->vid;
   taxonomy_term_save($term);
 
+  // Activate module aedcamp_sponsors.
+  $modules = array(
+    'aedcamp_sponsors',
+  );
+  module_enable($modules);
 }
-
 

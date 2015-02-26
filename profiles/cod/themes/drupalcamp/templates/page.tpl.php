@@ -19,7 +19,8 @@
       </div>
 
       <?php if (!empty($site_slogan)): ?>
-        <div class="lead"><?php print $site_slogan; ?></div>
+<!--        <div class="lead">--><?php //print $site_slogan; ?><!--</div>-->
+        <div class="lead">GOOD WINE IMPROVES WITH TIME,<br />GOOD CODE IMPROVES WITH THE COMMUNITY</div>
       <?php endif; ?>
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
@@ -124,6 +125,30 @@
   <div class="wrapper">
     <div class="container">
       <?php print render($page['footer']); ?>
+      <section id="block-bean-logo-aed" class="block block-bean clearfix">
+
+
+        <div class="entity entity-bean bean-simple clearfix">
+
+          <div class="content">
+            <div class="field field-name-field-simple-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="http://asociaciondrupal.es" target="_blank"><img class="media-image" height="140" width="256" src="http://2015.drupalcamp.es/sites/default/files/logo_aed.png" alt="" title=""></a></p>
+                </div></div></div>  </div>
+        </div>
+
+      </section>
+
+      <section id="block-bean-copyright" class="block block-bean block-copyright clearfix">
+
+
+        <div class="entity entity-bean bean-simple clearfix">
+
+          <div class="content">
+            <div class="field field-name-field-simple-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>© 2014 Asociación Española de Drupal</p>
+                </div></div></div>  </div>
+        </div>
+
+      </section>
+
     </div>
   </div>
 </footer>

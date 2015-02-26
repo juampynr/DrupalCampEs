@@ -18,3 +18,4 @@ dependencies[] = commerce_product
 dependencies[] = less
 dependencies[] = bean
 dependencies[] = cod_sponsors
+dependencies[] = panels_mini

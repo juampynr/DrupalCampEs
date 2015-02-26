@@ -7,6 +7,7 @@
       &.open a:hover,
       &.open a:focus {
         background-color: @drupalBlueLight;
+        outline: none;
       }
 
       a {
@@ -15,9 +16,11 @@
         padding-top: 15px;
         padding-bottom: 15px;
 
-        &:hover {
+        &:hover,
+        &:focus{
           background-color: @drupalBlueLight;
           color: @drupalSand;
+          outline: none;
         }
 
         & + .dropdown-menu {

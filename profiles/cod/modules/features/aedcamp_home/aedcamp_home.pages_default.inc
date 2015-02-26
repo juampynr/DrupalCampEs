@@ -37,7 +37,7 @@ function aedcamp_home_default_page_manager_pages() {
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => '',
+    'css_id' => 'panel-home',
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
@@ -56,15 +56,15 @@ function aedcamp_home_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'News';
   $display->uuid = '803cb223-afc8-46c6-97fb-d01c7ef22506';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-b9a341e7-f67a-4aeb-b883-5f1c53f3f6bc';
+    $pane->pid = 'new-dd405bb4-5578-48cc-829d-98fc88d4254e';
     $pane->panel = 'bottom_right_content';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-iberia_promotion';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'patrocinadores_gold';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -79,31 +79,9 @@ function aedcamp_home_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'b9a341e7-f67a-4aeb-b883-5f1c53f3f6bc';
-    $display->content['new-b9a341e7-f67a-4aeb-b883-5f1c53f3f6bc'] = $pane;
-    $display->panels['bottom_right_content'][0] = 'new-b9a341e7-f67a-4aeb-b883-5f1c53f3f6bc';
-    $pane = new stdClass();
-    $pane->pid = 'new-003478b9-06c0-47a4-a795-9a7b452693a9';
-    $pane->panel = 'bottom_right_content';
-    $pane->type = 'block';
-    $pane->subtype = 'bean-renfe_promotion';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '003478b9-06c0-47a4-a795-9a7b452693a9';
-    $display->content['new-003478b9-06c0-47a4-a795-9a7b452693a9'] = $pane;
-    $display->panels['bottom_right_content'][1] = 'new-003478b9-06c0-47a4-a795-9a7b452693a9';
+    $pane->uuid = 'dd405bb4-5578-48cc-829d-98fc88d4254e';
+    $display->content['new-dd405bb4-5578-48cc-829d-98fc88d4254e'] = $pane;
+    $display->panels['bottom_right_content'][0] = 'new-dd405bb4-5578-48cc-829d-98fc88d4254e';
     $pane = new stdClass();
     $pane->pid = 'new-5ccf094c-dfec-4cef-9ba1-8bd1b2b8ec76';
     $pane->panel = 'left_content';
@@ -124,8 +102,8 @@ function aedcamp_home_default_page_manager_pages() {
       'args' => 'all',
       'url' => '',
       'display' => 'multi_news_block',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => '<none>',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -208,7 +186,7 @@ function aedcamp_home_default_page_manager_pages() {
     $pane->uuid = '31dd54c7-b245-400c-b2b7-892514f4dc5c';
     $display->content['new-31dd54c7-b245-400c-b2b7-892514f4dc5c'] = $pane;
     $display->panels['top_right_content'][2] = 'new-31dd54c7-b245-400c-b2b7-892514f4dc5c';
-  $display->hide_title = PANELS_TITLE_NONE;
+  $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

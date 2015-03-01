@@ -108,6 +108,7 @@ function aedcamp_update_7004() {
     'weight' => 0,
     'language' => 'en',
     'customized' => 1,
+    'expanded' => 1,
   );
   $plid_info = menu_link_save($item);
 
@@ -194,6 +195,7 @@ function aedcamp_update_7005() {
     'weight' => 1,
     'language' => 'en',
     'customized' => 1,
+    'expanded' => 1,
   );
   $plid_info = menu_link_save($item);
 
@@ -259,6 +261,28 @@ function aedcamp_update_7005() {
     'customized' => 1,
   );
   menu_link_save($item);
+
+  // Create node for Transportation page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Transportation';
+  $node->language = 'en';
+  $node->path = array('alias' => 'info/transportation', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Transportation menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Transportation',
+    'menu_name' => 'main-menu',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
 }
 
 /**
@@ -279,18 +303,19 @@ function aedcamp_update_7007() {
     'cod_news',
   );
   module_enable($modules);
-
-  // Add node About the city to main-menu.
-  // To see this link will needed to disable the default News menu item.
-  $item = array(
-    'link_path' => 'news/2',
-    'link_title' => 'News',
-    'menu_name' => 'main-menu',
-    'weight' => 1,
-    'language' => 'en',
-    'customized' => 1,
-  );
-  menu_link_save($item);
+//  We don't need this block because is added in a panel at home page.
+//   Add node About the city to main-menu.
+//   To see this link will needed to disable the default News menu item.
+//
+//  $item = array(
+//    'link_path' => 'news/2',
+//    'link_title' => 'News',
+//    'menu_name' => 'main-menu',
+//    'weight' => 1,
+//    'language' => 'en',
+//    'customized' => 1,
+//  );
+//  menu_link_save($item);
 }
 
 /**
@@ -400,4 +425,93 @@ function aedcamp_update_7012() {
   );
   module_enable($modules);
 }
+
+/**
+ * Implements Hook_update_7013
+ */
+function aedcamp_update_7013() {
+
+  // Create Sprint node page.
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Sprints';
+  $node->language = 'en';
+  $node->path = array('alias' => 'info/sprints', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Sprint menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Sprints',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create Business day node page.
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Business day';
+  $node->language = 'en';
+  $node->path = array('alias' => 'info/business-day', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Business menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Business Day',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create Training node page.
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Training';
+  $node->language = 'en';
+  $node->path = array('alias' => 'info/training', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Training menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Training',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create Attendees node page.
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Attendees';
+  $node->language = 'en';
+  $node->path = array('alias' => 'info/Attendees', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Attendees menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Attendees',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'en',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+}
+
+
 

@@ -61,6 +61,7 @@ function aedcamp_update_7000() {
     $direction = isset($all_languages[$langcode][2]) ? $all_languages[$langcode][2] : LANGUAGE_LTR;
 
     // Create language and set as default.
+    include_once DRUPAL_ROOT . '/includes/locale.inc';
     locale_add_language($langcode, $name, $native, $direction, '', $langcode, TRUE, TRUE);
   }
 

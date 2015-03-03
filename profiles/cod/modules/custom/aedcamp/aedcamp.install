@@ -35,7 +35,6 @@ function aedcamp_update_7000() {
     'translation',
     'i18n_node',
     'i18n_menu',
-    'entity_translation',
   );
   module_enable($modules);
 

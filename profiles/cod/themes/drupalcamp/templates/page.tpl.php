@@ -18,10 +18,7 @@
         </button>
       </div>
 
-      <?php if (!empty($site_slogan)): ?>
-<!--        <div class="lead">--><?php //print $site_slogan; ?><!--</div>-->
         <div class="lead">GOOD WINE IMPROVES WITH TIME,<br />GOOD CODE IMPROVES WITH THE COMMUNITY</div>
-      <?php endif; ?>
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <div class="navbar-collapse collapse">

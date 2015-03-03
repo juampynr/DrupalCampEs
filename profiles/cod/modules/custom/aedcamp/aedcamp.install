@@ -603,3 +603,16 @@ function aedcamp_update_7013() {
 
 }
 
+/**
+ * Implements Hook_update_7014
+ */
+function aedcamp_update_7014() {
+
+  // install i18n variable module and COD social links (twitter, FB, LI)
+  $modules = array(
+    'i18n_variable',
+    'cod_profile_social'
+  );
+  module_enable($modules);
+}
+

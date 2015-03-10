@@ -5,6 +5,51 @@ body {
   color: @drupalBlack;
   background: white;
 
+  h1,
+  h2,
+  h3
+  h4,
+  h5,
+  h6 {
+    font-family: @font-family-roboto;
+    font-weight: bold;
+    color: @drupalBlueLight;
+  }
+
+  h2 { font-size: 28px; }
+
+  .hydra {
+    .footer { margin: 20px 0 0; }
+  }
+
+  .top-right-content,
+  .bottom-right-content {
+    .panel-pane {
+      background-color: @drupalSand;
+      border-radius: 6px;
+      margin: 0 0 20px;
+      padding: 10px;
+    }
+  }
+
+  .pane-aed-sponsors-panel-pane-1,
+  .pane-aed-sponsors-panel-pane-2 {
+    background-color: @drupalSand;
+    border-radius: 6px;
+    margin: 0 0 20px;
+    padding: 10px;
+    text-align: center;
+    .pane-title {
+      margin: 0 0 10px;
+    }
+  }
+
+  .pane-bean-iberia-promotion,
+  .pane-bean-renfe-promotion {
+    .pane-title { margin: 0 0 20px; }
+    img { border-radius: 6px; }
+  }
+
   .main-container {
     .content-header {
       background-color: @drupalBlue;
@@ -28,6 +73,7 @@ body {
           }
         }
       }
+
       .block-social-links {
         .menu {
           text-align: right;

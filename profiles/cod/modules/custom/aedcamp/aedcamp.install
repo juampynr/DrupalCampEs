@@ -15,7 +15,7 @@ function aedcamp_install() {
 
   // Apply updates.
   $updates = array(7000, 7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011,
-                   7012, 7013, 7014, 7015);
+                   7012, 7013, 7014, 7015, 7017);
   foreach ($updates as $update) {
     call_user_func('aedcamp_update_' . $update);
   }
@@ -633,4 +633,22 @@ function aedcamp_update_7015() {
   db_query("UPDATE languages SET prefix='en' WHERE language='en';");
   // Set the slogan.
   variable_set('site_slogan', 'GOOD WINE IMPROVES WITH TIME, GOOD CODE IMPROVES WITH THE COMMUNITY');
+}
+
+/**
+ * Implements hook_update_7016().
+ * Enables the l10n_update module.
+ */
+function aedcamp_update_7016() {
+  $modules = array('l10n_update');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_7017().
+ *  Sets up the frequency to check for translation updates and the custom translations folder.
+ */
+function aedcamp_update_7017() {
+  variable_set('l10n_update_check_frequency', 7);
+  variable_set('l10n_update_download_store', 'profiles/cod/modules/custom/aedcamp/translations');
 }

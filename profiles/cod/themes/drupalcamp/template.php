@@ -27,6 +27,17 @@ function drupalcamp_preprocess_html(&$vars) {
  */
 function drupalcamp_preprocess_page(&$vars) {
   $vars['navbar_classes'] = 'navbar';
+
+  // Add information about the number of sidebars.
+  if (!empty($vars['page']['sidebar_first']) && !empty($vars['page']['sidebar_second'])) {
+    $vars['content_column_class'] = ' class="col-sm-6"';
+  }
+  elseif (!empty($vars['page']['sidebar_first']) || !empty($vars['page']['sidebar_second'])) {
+    $vars['content_column_class'] = ' class="col-sm-9"';
+  }
+  else {
+    $vars['content_column_class'] = ' class="col-sm-12"';
+  }
 }
 
 /**

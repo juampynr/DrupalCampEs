@@ -101,7 +101,7 @@
         </aside>  <!-- /#sidebar-first -->
       <?php endif; ?>
 
-      <section class="col-sm-8"<?php // print $content_column_class; ?>>
+      <section <?php print $content_column_class; ?>>
         <?php print render($page['content']); ?>
       </section>
 

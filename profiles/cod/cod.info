@@ -30,6 +30,7 @@ dependencies[] = admin_menu_toolbar
 dependencies[] = adminimal_admin_menu
 dependencies[] = advanced_help
 dependencies[] = auto_nodetitle
+dependencies[] = block_class
 dependencies[] = content_access
 dependencies[] = context
 dependencies[] = contextual

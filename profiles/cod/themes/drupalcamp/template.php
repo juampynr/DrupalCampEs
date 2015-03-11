@@ -33,7 +33,7 @@ function drupalcamp_preprocess_page(&$vars) {
     $vars['content_column_class'] = ' class="col-sm-6"';
   }
   elseif (!empty($vars['page']['sidebar_first']) || !empty($vars['page']['sidebar_second'])) {
-    $vars['content_column_class'] = ' class="col-sm-9"';
+    $vars['content_column_class'] = ' class="col-sm-8"';
   }
   else {
     $vars['content_column_class'] = ' class="col-sm-12"';

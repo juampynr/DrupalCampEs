@@ -42,7 +42,6 @@
 
       .lead {
         background: url(../images/bg-slogan.png) no-repeat scroll center center transparent;
-        display: block;
         top: 63px;
         width: 460px;
         font-size: 20px;
@@ -54,6 +53,12 @@
         text-transform: uppercase;
         margin-left: -230px;
         text-align: center;
+        display: none;
+
+        @media @wide {
+          display: block;
+        }
+
       }
 
       .navbar-collapse {

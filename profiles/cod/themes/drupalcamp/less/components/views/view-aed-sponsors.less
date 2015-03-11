@@ -1,19 +1,38 @@
-.view-aed-sponsors {
+.block-sponsors-silver,
+.block-sponsors-gold {
   text-align: center;
+  background-color: @drupalSand;
+  border-radius: 6px;
+  margin: 0 0 20px;
+  padding: 10px;
+  text-align: center;
+  
+  .block-title,
+  .pane-title {
+    margin: 0 0 10px;
+  }
+
+  table {
+    width: 100%;
+  }
 
   table,
-  table tr,
-  table tr td {
+  table tr {
     background: none;
     margin: 0;
     padding: 0;
   }
 
   table tr td {
+    background-color: transparent;
+    margin: 0;
     padding: 10px;
+    &:first-child {
+      width: auto;
+    }
   }
 
-  .col-sm-3 {
+  table tr td.col-sm-3 {
     width: 25%;
   }
 

@@ -72,13 +72,7 @@
   <div class="container">
     <div class="row">
 
-      <?php if (!empty($page['sidebar_first'])): ?>
-        <aside class="col-sm-3" role="complementary">
-          <?php print render($page['sidebar_first']); ?>
-        </aside>  <!-- /#sidebar-first -->
-      <?php endif; ?>
-
-      <section<?php print $content_column_class; ?>>
+      <div class="col-sm-12">
         <?php if (!empty($page['highlighted'])): ?>
           <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
         <?php endif; ?>
@@ -99,11 +93,20 @@
         <?php if (!empty($action_links)): ?>
           <ul class="action-links"><?php print render($action_links); ?></ul>
         <?php endif; ?>
+      </div>
+
+      <?php if (!empty($page['sidebar_first'])): ?>
+        <aside class="col-sm-4" role="complementary">
+          <?php print render($page['sidebar_first']); ?>
+        </aside>  <!-- /#sidebar-first -->
+      <?php endif; ?>
+
+      <section class="col-sm-8"<?php // print $content_column_class; ?>>
         <?php print render($page['content']); ?>
       </section>
 
       <?php if (!empty($page['sidebar_second'])): ?>
-        <aside class="col-sm-3" role="complementary">
+        <aside class="col-sm-4" role="complementary">
           <?php print render($page['sidebar_second']); ?>
         </aside>  <!-- /#sidebar-second -->
       <?php endif; ?>
@@ -112,7 +115,7 @@
 
   <?php if (!empty($page['post_content_fw'])): ?>
     <div class="post-content">
-      <div class="wrapper">
+      <div class="container wrapper">
         <?php print render($page['post_content_fw']); ?>
       </div>
     </div>

@@ -22,8 +22,11 @@ body {
     .footer { margin: 20px 0 0; }
   }
 
+  .region-sidebar-second,
+  .region-post-content-fw,
   .top-right-content,
   .bottom-right-content {
+    .block,
     .panel-pane {
       background-color: @drupalSand;
       border-radius: 6px;
@@ -32,22 +35,18 @@ body {
     }
   }
 
-  .pane-aed-sponsors-panel-pane-1,
-  .pane-aed-sponsors-panel-pane-2 {
-    background-color: @drupalSand;
-    border-radius: 6px;
-    margin: 0 0 20px;
-    padding: 10px;
+  .block-transport {
     text-align: center;
-    .pane-title {
-      margin: 0 0 10px;
-    }
-  }
-
-  .pane-bean-iberia-promotion,
-  .pane-bean-renfe-promotion {
+    .block-title,
     .pane-title { margin: 0 0 20px; }
     img { border-radius: 6px; }
+    &.block-iberia {
+      margin-bottom: 0;
+      border-radius: 6px 6px 0 0;
+    }
+    &.block-renfe {
+      border-radius: 0 0 6px 6px;
+    }
   }
 
   .main-container {

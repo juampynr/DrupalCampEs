@@ -44,3 +44,12 @@
 // Utility classes
 @import "../bootstrap/less/utilities.less";
 @import "../bootstrap/less/responsive-utilities.less";
+
+/* Patches */
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+ul.nav li.dropdown ul.dropdown-menu {
+  margin-top: 0;
+}
+

@@ -44,3 +44,53 @@
     }
   }
 }
+
+.sponsors-list {
+  .row-wrapper {
+    overflow: hidden;
+
+    h3 {
+      font-size: 28px;
+      width: 100%;
+      margin: 0 0 20px;
+      padding: 3px 6px;
+      background-color: @drupalBlueLight;
+      color: @drupalWhite;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    .sponsor {
+      width: 100%;
+      float: left;
+      margin: 0 0 20px;
+      padding: 5px 10px;
+      text-align: center;
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &.oro,
+    &.gold {
+      .sponsor {
+        width: 50%;
+      }
+    }
+    &.plata,
+    &.silver {
+      .sponsor {
+        width: 33%;
+      }
+    }
+    &.bronce,
+    &.bronze {
+      .sponsor {
+        width: 25%;
+      }
+    }
+  }
+}
+

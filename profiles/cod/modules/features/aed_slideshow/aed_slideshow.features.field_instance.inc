@@ -21,7 +21,6 @@ function aed_slideshow_field_default_field_instances() {
         'module' => 'flexslider_fields',
         'settings' => array(
           'caption' => 0,
-          'image_style' => 'flexslider_full',
           'optionset' => 'default',
         ),
         'type' => 'flexslider',

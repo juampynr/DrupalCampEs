@@ -33,7 +33,7 @@ function aedcamp_home_default_panels_mini() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Gold';
+  $display->title = '';
   $display->uuid = '88e27755-b1ea-43e4-8cdc-d02cbba3be1a';
   $display->content = array();
   $display->panels = array();

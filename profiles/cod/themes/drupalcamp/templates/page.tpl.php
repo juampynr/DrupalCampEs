@@ -34,7 +34,7 @@
         </div>
       <?php endif; ?>
 
-      <div class="event-date">22 · 23 · 24 <strong>May&nbsp;2015</strong></div>
+      <div class="event-date">22 · 23 · 24 <strong><?php print t('May 2015'); ?></strong></div>
 
     </div>
   </div>

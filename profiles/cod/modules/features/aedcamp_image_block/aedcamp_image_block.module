@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AEDcamp image block feature.
+ */
+
+include_once 'aedcamp_image_block.features.inc';

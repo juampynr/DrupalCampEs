@@ -1,0 +1,654 @@
+<?php
+
+/**
+ * @file
+ *  Adds dependencies and other install tasks for the AED customizations.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function aedcamp_install() {
+
+  // Rebuild menus before create new ones.
+  menu_rebuild();
+
+  // Apply updates.
+  $updates = array(7000, 7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011,
+                   7012, 7013, 7014, 7015, 7017);
+  foreach ($updates as $update) {
+    call_user_func('aedcamp_update_' . $update);
+  }
+
+  // Clear menu caches.
+  menu_cache_clear_all();
+}
+
+/**
+ * Implements hook_update_7000().
+ *  Enables the Commerce modules.
+ */
+function aedcamp_update_7000() {
+  $modules = array(
+    'locale',
+    'i18n',
+    'i18n_block',
+    'translation',
+    'i18n_node',
+    'i18n_menu',
+  );
+  module_enable($modules);
+
+  // Enable multilingual support for content types.
+  variable_set('language_content_type_page',TRANSLATION_ENABLED);
+  variable_set('language_content_type_news',TRANSLATION_ENABLED);
+  variable_set('language_content_type_event',TRANSLATION_ENABLED);
+  variable_set('language_content_type_sponsor',TRANSLATION_ENABLED);
+
+  // Set a new language 'es'.
+  $langcode = 'es';
+
+
+  // Get all languages.
+  include_once DRUPAL_ROOT . '/includes/iso.inc';
+  $all_languages = _locale_get_predefined_list();
+
+  // Whether the language is not installed.
+  if (empty($installdisped_languages[$langcode])) {
+    // Set language configuration.
+    $name = isset($all_languages[$langcode][0]) ? $all_languages[$langcode][0] : $langcode;
+    $native = isset($all_languages[$langcode][1]) ? $all_languages[$langcode][1] : $langcode;
+    $direction = isset($all_languages[$langcode][2]) ? $all_languages[$langcode][2] : LANGUAGE_LTR;
+
+    // Create language and set as default.
+    include_once DRUPAL_ROOT . '/includes/locale.inc';
+    locale_add_language($langcode, $name, $native, $direction, '', $langcode, TRUE, TRUE);
+  }
+
+  //Set the language negotiation UI detection to use the URL/browser/default.
+  $language_negotiation_language = array(
+    'locale-url' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_from_url',
+        'switcher' => 'locale_language_switcher_url',
+        'url_rewrite' => 'locale_language_url_rewrite_url'
+      ),
+      'file' => 'includes/locale.inc'
+    ),
+    'locale-browser' => array(
+      'callbacks' => array('language' => 'locale_language_from_browser'),
+      'file' => 'includes/locale.inc',
+      'cache' => 0
+    ),
+    'language-default' => array('callbacks' => array('language' => 'language_from_default'))
+  );
+  variable_set('language_negotiation_language', $language_negotiation_language);
+
+  #Set the language negotiation content detection to use the URL/browser/default.
+  $language_negotiation_content = array(
+    'locale-url' => array(
+      'callbacks' => array(
+        'language' => 'locale_language_from_url',
+        'switcher' => 'locale_language_switcher_url',
+        'url_rewrite' => 'locale_language_url_rewrite_url'
+      ),
+      'file' => 'includes/locale.inc'
+    ),
+    'locale-browser' => array(
+      'callbacks' => array('language' => 'locale_language_from_browser'),
+      'file' => 'includes/locale.inc',
+      'cache' => 0
+    ),
+    'language-default' => array('callbacks' => array('language' => 'language_from_default'))
+  );
+  variable_set('language_negotiation_content', $language_negotiation_content);
+
+
+  #Make the main menu translatable and localizable.
+  db_update('menu_custom')
+    ->fields(array('i18n_mode' => 5))
+    ->condition('menu_name', 'main-menu')
+    ->execute();
+
+  #Enable transliteration for paths.
+  variable_set('pathauto_transliterate', 1);
+}
+
+/**
+ * Implements hook_update_7001().
+ *  Enables the Commerce modules.
+ */
+function aedcamp_update_7001() {
+  $modules = array(
+    'commerce',
+    'commerce_cart',
+    'commerce_checkout',
+    'commerce_customer',
+    'commerce_line_item',
+    'commerce_order',
+    'commerce_payment',
+    'commerce_price',
+    'commerce_product',
+  );
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_7002().
+ *  Adds commerce paypal as payment method and enables CODs paid events.
+ */
+function aedcamp_update_7002() {
+  $modules = array(
+    'commerce_paypal',
+    'cod_paid_events',
+  );
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_7003().
+ *  Deletes default conference and creates a new one.
+ */
+function aedcamp_update_7003() {
+  node_delete(1);
+  $node = new StdClass();
+  $node->type = 'event';
+  $node->title = 'DrupalCamp Spain 2015';
+  $node->language = 'es';
+  $node->body['es'][] = array(
+    'value' => 'The DrupalCamp Spain is an event held every year in a different city of Spain. This year will be in Jerez.',
+    'summary' => '',
+    'format' => '',
+  );
+  $node->field_dates[LANGUAGE_NONE][] = array(
+    'value' => 1432285200,
+    'value2' => 1432486800,
+    'timezone' => 'Europe/Madrid',
+    'offset' => 3600,
+    'offset2' => 3600,
+    'timezone_db' => 'Europe/Madrid',
+    'date_type' => 'datestamp',
+  );
+  $node->path = array('alias' => 'drupalcamp-spain-2015', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Set as default event, to allow user registration without select the event.
+  $flag = flag_get_flag('default_event');
+  $flag->flag('flag', $node->nid, user_load(1), TRUE);
+
+}
+
+/**
+ * Implements hook_update_7004().
+ * Creates new node page for speaker guideline and enable cod_session.
+ */
+function aedcamp_update_7004() {
+  // Activate module cod_sessions
+  $modules = array(
+    'cod_session',
+  );
+  module_enable($modules);
+
+  // Add Sessions to main-menu.
+  // TODO: Add the correct path to the list.
+  $item = array(
+    'link_path' => 'node/2/sessions',
+    'link_title' => 'Sesiones',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'language' => 'es',
+    'customized' => 1,
+    'expanded' => 1,
+  );
+  $plid_info = menu_link_save($item);
+
+  // Create node for speaker guideline
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Guía para ponentes';
+  $node->language = 'es';
+  $node->path = array('alias' => 'sessions/guia-ponentes', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Add Speaker guideline node to main-menu.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Guía para ponentes',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $plid_info,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Add Featured Speaker to main-menu
+  // TODO: Add the correct path to the list
+  $item = array(
+    'link_path' => 'node/2/speakers',
+    'link_title' => 'Ponentes destacados',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $plid_info,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Add Speaker to main-menu
+  // TODO: Add the correct path to the list
+  $item = array(
+    'link_path' => 'node/2/speakers',
+    'link_title' => 'Ponentes',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $plid_info,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Add Proposal (aka session form) to main-menu
+  $item = array(
+    'link_path' => 'node/add/session',
+    'link_title' => 'Envío de charlas',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $plid_info,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+}
+
+/**
+ * Implements hook_update_7005().
+ * Creates new nodes page for the Information section.
+ */
+function aedcamp_update_7005() {
+
+  // Create node for information page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Información';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node Information to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Información',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+    'expanded' => 1,
+  );
+  $plid_info = menu_link_save($item);
+
+  // Create node for Accommodations page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Alojamientos';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion/alojamientos', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node Accommodations to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Alojamientos',
+    'menu_name' => 'main-menu',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create node for About the city page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Sobre la ciudad';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion/sobre-la-ciudad', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node About the city to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Sobre la ciudad',
+    'menu_name' => 'main-menu',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create node for How to get there page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Cómo llegar';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion/como-llegar', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Add node About the city to main-menu
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Cómo llegar',
+    'menu_name' => 'main-menu',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create node for Transportation page
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Transporte';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion/transporte', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Transportation menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Transporte',
+    'menu_name' => 'main-menu',
+    'plid' => $plid_info,
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+}
+
+/**
+ * Implements hook_update_7006().
+ * Set the default theme.
+ */
+function aedcamp_update_7006() {
+  variable_set('theme_default', 'drupalcamp');
+}
+
+/**
+ * Implements hook_update_7007().
+ * Creates the news section
+ */
+function aedcamp_update_7007() {
+  // Activate module cod_news
+  $modules = array(
+    'cod_news',
+  );
+  module_enable($modules);
+//  We don't need this block because is added in a panel at home page.
+//   Add node About the city to main-menu.
+//   To see this link will needed to disable the default News menu item.
+//
+//  $item = array(
+//    'link_path' => 'news/2',
+//    'link_title' => 'News',
+//    'menu_name' => 'main-menu',
+//    'weight' => 1,
+//    'language' => 'en',
+//    'customized' => 1,
+//  );
+//  menu_link_save($item);
+}
+
+/**
+ * Implements hook_update_7008().
+ *  Enables the less module.
+ */
+function aedcamp_update_7008() {
+  $modules = array(
+    'less',
+  );
+  module_enable($modules);
+  variable_set('less_engine', 'less.php');
+  variable_set('less_devel', 1);
+  variable_set('less_source_maps', 1);
+}
+
+/**
+ * Implements hook_update_7009().
+ *  Adds the featured speaker role.
+ */
+function aedcamp_update_7009() {
+  //Create role 'featured speaker'
+  $featured_speaker = new stdClass();
+  $featured_speaker->name = 'featured speaker';
+  user_role_save($featured_speaker);
+}
+
+/**
+ * Implements hook_update_7010().
+ *  Enables the aedcamp_home module. Sets the site frontpage to /home.
+ */
+function aedcamp_update_7010() {
+  //activate module aedcamp_home
+  $modules = array(
+    'aedcamp_home',
+  );
+  module_enable($modules);
+  variable_set('site_frontpage', 'home');
+}
+
+/**
+ * Implements hook_update_7011().
+ *  Adds beans for the sponsored transports. Enables aedcamp_image_block.
+ */
+function aedcamp_update_7011() {
+
+  //activate module aedcamp_image_block with the bean block type images.
+  $modules = array(
+    'aedcamp_image_block',
+  );
+  module_enable($modules);
+
+  // Create block for Renfe.
+  $bean = bean_create(array('type' => 'images'));
+  $bean->label = 'Renfe Promotion';
+  $bean->delta = 'renfe_promotion';
+  $bean->view_mode = 'default';
+  $bean->save();
+
+  // Create block for Iberia.
+  $bean = bean_create(array('type' => 'images'));
+  $bean->label = 'Iberia Promotion';
+  $bean->delta = 'iberia_promotion';
+  $bean->view_mode = 'default';
+  $bean->save();
+}
+
+/**
+ * Implements hook_update_7012().
+ *  Enables cod_sponsors and aedcamp_sponsors modules. Creates required terms for sponsors.
+ */
+function aedcamp_update_7012() {
+
+  // Activate module cod_sponsors.
+  $modules = array(
+    'cod_sponsors',
+  );
+  module_enable($modules);
+
+  // Create sponsors categories a.k.a terms.
+  // TODO: Is not working (the vocabulary is not being loaded).
+  $vocabulary = taxonomy_vocabulary_machine_name_load('sponsorship_level');
+
+  // Create gold term.
+  $term = new StdClass();
+  $term->name = 'Gold';
+  $term->vocabulary_machine_name = 'gold';
+  $term->description = '';
+  $term->vid = $vocabulary->vid;
+  taxonomy_term_save($term);
+
+  // Creates silver term.
+  $term = new StdClass();
+  $term->name = 'Silver';
+  $term->vocabulary_machine_name = 'silver';
+  $term->description = '';
+  $term->vid = $vocabulary->vid;
+  taxonomy_term_save($term);
+
+  // Create bronze term.
+  $term = new StdClass();
+  $term->name = 'Bronze';
+  $term->vocabulary_machine_name = 'bronze';
+  $term->description = '';
+  $term->vid = $vocabulary->vid;
+  taxonomy_term_save($term);
+
+  // Activate module aedcamp_sponsors.
+  $modules = array(
+    'aedcamp_sponsors',
+  );
+  module_enable($modules);
+}
+
+/**
+ * Implements Hook_update_7013().
+ *  Creates part of the default content.
+ */
+function aedcamp_update_7013() {
+
+  // Create Sprint node page.
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Sprints';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion/sprints', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Sprint menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Sprints',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create Business day node page.
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Business day';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion/business-day', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Business menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Business Day',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create Training node page.
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Formación';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion/formacion', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Training menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Formación',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+  // Create Attendees node page.
+  $node = new StdClass();
+  $node->type = 'page';
+  $node->title = 'Asistentes';
+  $node->language = 'es';
+  $node->path = array('alias' => 'informacion/asistentes', 'pathauto' => FALSE);
+  $node->uid = 1;
+  node_save($node);
+
+  // Create Attendees menu item.
+  $item = array(
+    'link_path' => 'node/' . $node->nid,
+    'link_title' => 'Asistentes',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'es',
+    'customized' => 1,
+  );
+  menu_link_save($item);
+
+}
+
+/**
+ * Implements Hook_update_7014().
+ *  Installs i18n_variable and cod_profile_social.
+ */
+function aedcamp_update_7014() {
+
+  // install i18n variable module and COD social links (twitter, FB, LI)
+  $modules = array(
+    'i18n_variable',
+    'cod_profile_social'
+  );
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_7015().
+ *  Fixes the english path prefix.
+ *  Adds the site slogan.
+ */
+function aedcamp_update_7015() {
+  // Fix the english prefix during installation.
+  db_query("UPDATE languages SET prefix='en' WHERE language='en';");
+  // Set the slogan.
+  variable_set('site_slogan', 'GOOD WINE IMPROVES WITH TIME, GOOD CODE IMPROVES WITH THE COMMUNITY');
+}
+
+/**
+ * Implements hook_update_7016().
+ * Enables the l10n_update module.
+ */
+function aedcamp_update_7016() {
+  $modules = array('l10n_update');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_7017().
+ *  Sets up the frequency to check for translation updates and the custom translations folder.
+ */
+function aedcamp_update_7017() {
+  variable_set('l10n_update_check_frequency', 7);
+  variable_set('l10n_update_download_store', 'profiles/cod/modules/custom/aedcamp/translations');
+}

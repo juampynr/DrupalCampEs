@@ -1,0 +1,40 @@
+// Lo dejo oculto desde que el menú toogle no está funcionando actualmente.
+.navbar-default .navbar-toggle {
+  display: none;
+}
+
+.main-navigation {
+  ul {
+
+    li {
+
+      &.open a,
+      &.open a:hover,
+      &.open a:focus {
+        background-color: @drupalBlueLight;
+        outline: none;
+      }
+
+      a {
+        text-transform: uppercase;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:hover,
+        &:focus {
+          background-color: @drupalBlueLight;
+          color: @drupalSand;
+          outline: none;
+        }
+
+        & + .dropdown-menu {
+          background-color: @drupalBlue;
+          padding: 0;
+          border-radius: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}

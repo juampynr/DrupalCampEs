@@ -1,0 +1,12 @@
+name = AEDcamp sponsors
+description = Feature to create sponsors page and block
+core = 7.x
+package = AED
+version = 7.x-1.0
+project = aedcamp_sponsors
+dependencies[] = ctools
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = aed_sponsors

@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * @file
+ *  Adds general customizations to the COD profile.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function aedcamp_block_info() {
+  $blocks = array();
+
+  $blocks['hashtag'] = array(
+    'info' => t('Aedcamp: hashtag'),
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_configure().
+ */
+function aedcamp_block_configure($delta = '') {
+  $form = array();
+
+  switch ($delta) {
+    case 'hashtag':
+      $key = 'aedcamp_block_hashtag_hashtag';
+      $form[$key] = array(
+        '#type' => 'textfield',
+        '#title' => t('Hashtag.'),
+        '#default_value' => variable_get($key, ''),
+      );
+    break;
+    //hook_block_configure_item
+  }
+
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ */
+function aedcamp_block_save($delta = '', $edit = array()) {
+  switch ($delta) {
+    case 'hashtag':
+      $key = 'aedcamp_block_hashtag_hashtag';
+      variable_set($key, $edit[$key]);
+      break;
+
+    //hook_block_save_item
+  }
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function aedcamp_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'hashtag':
+      $block['subject'] = t('Title');
+      $key = 'aedcamp_block_hashtag_hashtag';
+      $block['content'] = array(
+        '#markup' => '<div class="hashtag">'.variable_get($key, '').'</div>',
+      );
+    break;
+  }
+
+  return $block;
+}

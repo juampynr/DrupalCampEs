@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AED Slideshow feature.
+ */
+
+include_once 'aed_slideshow.features.inc';

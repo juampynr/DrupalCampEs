@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AED Session speakers feature.
+ */
+
+include_once 'aed_session_speakers.features.inc';

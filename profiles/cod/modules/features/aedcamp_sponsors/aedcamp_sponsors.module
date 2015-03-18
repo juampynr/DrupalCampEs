@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AEDcamp sponsors feature.
+ */
+
+include_once 'aedcamp_sponsors.features.inc';

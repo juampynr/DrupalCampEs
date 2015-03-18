@@ -1,0 +1,191 @@
+body {
+  font-family: @font-family-roboto;
+  font-size: @font-size-base;
+  font-weight: normal;
+  color: @drupalBlack;
+  background: white;
+
+  h1,
+  h2,
+  h3
+  h4,
+  h5,
+  h6 {
+    font-family: @font-family-roboto;
+    font-weight: bold;
+    color: @drupalBlueLight;
+  }
+
+  h2 { font-size: 28px; }
+
+  .hydra {
+    .footer { margin: 20px 0 0; }
+  }
+
+  .region-sidebar-second,
+  .region-post-content-fw,
+  .bottom-right-content {
+    .block,
+    .panel-pane {
+      background-color: @drupalSand;
+      border-radius: 6px;
+      margin: 0 0 20px;
+      padding: 10px;
+    }
+  }
+
+  .block-transport {
+    text-align: center;
+    .block-title,
+    .pane-title { margin: 0 0 20px; }
+    img { border-radius: 6px; }
+    &.block-iberia {
+      margin-bottom: 0;
+      border-radius: 6px 6px 0 0;
+    }
+    &.block-renfe {
+      border-radius: 0 0 6px 6px;
+    }
+  }
+
+  .block-languages-switcher {
+    .language-switcher-locale-url {
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        a { }
+        &.en {
+          float: right;
+        }
+        &.es {
+          float: left;
+        }
+      }
+    }
+  }
+  .main-container {
+    & > .container {
+      margin-top: 20px;
+    }
+    .content-header {
+      background-color: @drupalBlue;
+      .block-main-menu {
+        .menu {
+          .leaf {
+            a {
+              background-color: transparent;
+              color: @drupalWhite;
+              text-transform: uppercase;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+                color: @drupalBlueLight;
+              }
+              &.active {
+                background-color: transparent;
+                color: @drupalWhite;
+              }
+            }
+          }
+        }
+      }
+
+      .block-social-links {
+        .menu {
+          text-align: right;
+          .leaf {
+            margin: 5px 0 0;
+            padding: 0;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+            a {
+              display: inline-block;
+              vertical-align: top;
+              width: 32px;
+              height: 32px;
+              background: url(../images/social-icons-white.png) no-repeat scroll 0 0 transparent;
+              text-indent: 999em;
+              &.social-fb {
+                background-position: 5px 0;
+              }
+              &.social-tw {
+                background-position: -30px 0;
+              }
+              &.social-fk {
+                background-position: -66px 0;
+              }
+              &.social-vm {
+                background-position: -102px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .pre-content {
+      .flexslider {
+        border: 0;
+        margin: 0;
+        .flex-control-nav {
+          bottom: 20px;
+          z-index: 9999;
+          li {
+            a {
+              background-color: @drupalSand;
+              &.flex-active {
+                background-color: @drupalWhite;
+              }
+            }
+          }
+        }
+      }
+    }
+    .page-header {
+      border: 0;
+      margin: 0 0 20px 0;
+      padding: 0;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .region-content {
+      .node-landing-page {
+        .field-name-body {
+          h2 {
+            font-size: 24px;
+            line-height: 1.2em;
+            margin: 0 0 10px;
+            padding: 0;
+          }
+          p {
+            font-size: 16px;
+            line-height: 1.6em;
+            margin: 0 0 25px;
+            padding: 0;
+          }
+        }
+        & > .links {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.aed-attendees {
+  .views-view-grid { width: 100%;
+    .row {
+      .column { text-align: center; padding: 20px 0;
+        .views-field-name {
+          a { }
+        }
+        .views-field-picture { margin: 0 0 10px;
+          img { margin: 0 auto; border-radius: 50%; }
+        }
+      }
+    }
+  }
+}

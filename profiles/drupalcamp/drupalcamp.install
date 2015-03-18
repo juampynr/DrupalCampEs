@@ -71,22 +71,9 @@ function drupalcamp_install() {
 
    // Enable default permissions for system roles.
   $filtered_html_permission = filter_permission_name($filtered_html_format);
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', $filtered_html_permission));
-  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', $filtered_html_permission));
-
-  // Create a default role for site administrators, with all available permissions assigned.
-  $admin_role = new stdClass();
-  $admin_role->name = 'administrator';
-  $admin_role->weight = 2;
-  user_role_save($admin_role);
-  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
-  // Set this as the administrator role.
-  variable_set('user_admin_role', $admin_role->rid);
-
-  // Assign user 1 the "administrator" role.
-  db_insert('users_roles')
-    ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
-    ->execute();
+  $base_roles = array('access content', $filtered_html_permission);
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, $base_roles);
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, $base_roles);
 
   // Create a Home link in the main menu.
   $item = array(
@@ -99,22 +86,23 @@ function drupalcamp_install() {
   // Update the menu router information.
   menu_rebuild();
 
-  // Enable the admin and default theme.
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', array('seven', 'bootstrap'), 'IN')
-    ->execute();
+  // We don't need the administrator role.
+  variable_set('user_admin_role', 0);
 
-  variable_set('theme_default', 'bootstrap');
-  variable_set('admin_theme', 'seven');
-
-  // Disable default theme Bartik
-  db_update('system')
-    ->fields(array('status' => 0))
-    ->condition('type', 'theme')
-    ->condition('name', 'bartik')
-    ->execute();
-
+  // Configure themes
+  theme_enable(array('drupalcamp', 'adminimal'));
+  theme_disable(array('bartik', 'responsive_bartik', 'seven'));
+  variable_set('theme_default', 'drupalcamp');
+  variable_set('admin_theme', 'adminimal');
   variable_set('node_admin_theme', '1');
+
+  // Disable account creation
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
+
+  // Configure Honeypot settings
+  variable_set('honeypot_element_name', 'fullname');
+
+  // Do not display error messages
+  variable_set('error_level', '0');
 }
+

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AED Collaborators feature.
+ */
+
+include_once 'aed_collaborators.features.inc';

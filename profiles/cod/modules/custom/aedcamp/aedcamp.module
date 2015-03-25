@@ -72,3 +72,10 @@ function aedcamp_block_view($delta = '') {
 
   return $block;
 }
+
+/**
+ * Implements hook_menu_alter().
+ */
+function aedcamp_menu_alter(&$items) {
+  $items['node']['access callback'] = FALSE;
+}

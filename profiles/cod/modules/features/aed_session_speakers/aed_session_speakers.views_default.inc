@@ -79,6 +79,28 @@ function aed_session_speakers_views_default_views() {
   $handler->display->display_options['filters']['rid']['value'] = array(
     7 => '7',
   );
+  $translatables['aed_session_speakers'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Content referencing User from field_speakers'),
+    t('Speakers'),
+    t('Speakers content pane'),
+    t('View panes'),
+    t('Featured speakers'),
+    t('Featured speakers content pane'),
+  );
   $export['aed_session_speakers'] = $view;
 
   $view = new view();
@@ -119,10 +141,6 @@ function aed_session_speakers_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
   /* Field: Content: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
@@ -176,6 +194,28 @@ function aed_session_speakers_views_default_views() {
     ),
   );
   $handler->display->display_options['inherit_panels_path'] = '1';
+  $translatables['aed_sessions'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Title'),
+    t('Experience level'),
+    t('Speaker(s)'),
+    t('All'),
+    t('Content pane'),
+    t('View panes'),
+  );
   $export['aed_sessions'] = $view;
 
   return $export;

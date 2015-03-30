@@ -16,7 +16,10 @@ function aed_session_speakers_default_page_manager_pages() {
   $page->admin_title = 'AED Sessions';
   $page->admin_description = 'This panel shows all the sessions published on the web';
   $page->path = 'node/%nid/sessions';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array(
     'nid' => array(

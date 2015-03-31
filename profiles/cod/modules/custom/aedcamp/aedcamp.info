@@ -4,6 +4,7 @@ core = 7.x
 version = 7.x-1.0
 package = AED
 
+dependencies[] = aed_collaborators
 dependencies[] = aed_session_speakers
 dependencies[] = bean
 dependencies[] = cod_paid_events

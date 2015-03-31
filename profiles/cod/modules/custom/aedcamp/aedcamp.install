@@ -652,3 +652,21 @@ function aedcamp_update_7017() {
   variable_set('l10n_update_check_frequency', 7);
   variable_set('l10n_update_download_store', 'profiles/cod/modules/custom/aedcamp/translations');
 }
+
+/**
+ * Implements hook_update_7018().
+ *  Enables the custom view to list proposed sessions.
+ */
+function aedcamp_update_7018() {
+  $modules = array('aed_session_speakers');
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_7019().
+ *  Enables the aed_collaborators feature to show the credits page.
+ */
+function aedcamp_update_7019() {
+  $modules = array('aed_collaborators');
+  module_enable($modules);
+}

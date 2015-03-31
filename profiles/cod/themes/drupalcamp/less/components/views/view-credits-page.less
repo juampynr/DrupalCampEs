@@ -1,0 +1,43 @@
+.view-credits-page {
+  .text-center {
+    clear: both;
+  }
+  .views-row {
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3em;
+    padding: 5% 7%;
+    border-radius: 6px;
+    @media @tablet {
+      width: 33%;
+      margin: 0;
+    }
+    .views-field-picture {
+      margin-bottom: 1em;
+      img {
+        border-radius: 6px;
+        margin: 0 auto;
+      }
+    }
+    .views-field-field-profile-first {
+      color: @drupalWhite;
+      background: @drupalBlue;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 20px;
+      max-width: 220px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .views-field-field-company-logo {
+      margin: 0 auto;
+      margin-top: 1em;
+      min-height: 80px;
+      img {
+        max-height: 80px;
+        display: inline-block;
+      }
+    }
+  }
+}

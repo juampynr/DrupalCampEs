@@ -1,42 +1,42 @@
 .view-credits-page {
+  .text-center {
+    clear: both;
+  }
   .views-row {
     float: left;
     text-align: center;
     width: 100%;
     margin-bottom: 3em;
-    padding: 2%;
+    padding: 5% 7%;
     border-radius: 6px;
     @media @tablet {
-      width: 48%;
-      margin-right: 2%;
-      margin-bottom: 2%;
-    }
-    .even {
-      margin-right: 0;
+      width: 33%;
+      margin: 0;
     }
     .views-field-picture {
-      margin-bottom: 10px;
+      margin-bottom: 1em;
       img {
         border-radius: 6px;
         margin: 0 auto;
-        max-width: 70%;
       }
     }
     .views-field-field-profile-first {
-      margin-bottom: 15px;
       color: @drupalWhite;
       background: @drupalBlue;
       padding: 10px 20px;
       border-radius: 6px;
       font-size: 20px;
+      max-width: 220px;
+      margin: 0 auto;
+      text-align: center;
     }
     .views-field-field-company-logo {
-      max-width: 35%;
-      text-align: center;
       margin: 0 auto;
-      margin-top: 10px;
+      margin-top: 1em;
+      min-height: 80px;
       img {
         max-height: 80px;
+        display: inline-block;
       }
     }
   }

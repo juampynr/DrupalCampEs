@@ -5,7 +5,10 @@ version = 7.x-1.0
 package = AED
 
 dependencies[] = aed_collaborators
+dependencies[] = aed_session_speakers
+dependencies[] = bean
 dependencies[] = cod_paid_events
+dependencies[] = cod_sponsors
 dependencies[] = commerce
 dependencies[] = commerce_cart
 dependencies[] = commerce_checkout
@@ -18,6 +21,4 @@ dependencies[] = commerce_price
 dependencies[] = commerce_product
 dependencies[] = l10n_update
 dependencies[] = less
-dependencies[] = bean
-dependencies[] = cod_sponsors
 dependencies[] = panels_mini

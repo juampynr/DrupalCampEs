@@ -4,6 +4,7 @@ core = 7.x
 version = 7.x-1.0
 package = AED
 
+dependencies[] = aed_collaborators
 dependencies[] = cod_paid_events
 dependencies[] = commerce
 dependencies[] = commerce_cart

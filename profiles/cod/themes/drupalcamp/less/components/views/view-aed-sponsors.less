@@ -6,7 +6,7 @@
   margin: 0 0 20px;
   padding: 10px;
   text-align: center;
-  
+
   .block-title,
   .pane-title {
     margin: 0 0 10px;
@@ -69,6 +69,11 @@
       margin: 0 0 20px;
       padding: 5px 10px;
       text-align: center;
+
+      @media (max-width: @screen-xs-max) {
+        margin: 0 0 30px;
+      }
+
       img {
         margin: 0 auto;
       }
@@ -80,18 +85,33 @@
     &.gold {
       .sponsor {
         width: 50%;
+
+        @media (max-width: @screen-xs-max) {
+          width: 100%;
+        }
+
       }
     }
     &.plata,
     &.silver {
       .sponsor {
         width: 33%;
+
+        @media (max-width: @screen-xs-max) {
+          width: 100%;
+        }
+
       }
     }
     &.bronce,
     &.bronze {
       .sponsor {
         width: 25%;
+
+        @media (max-width: @screen-xs-max) {
+          width: 100%;
+        }
+
       }
     }
   }

@@ -36,6 +36,11 @@
             height: 97px;
             text-indent: -999em;
             background: url(../images/logo.png) no-repeat scroll 0 0 transparent;
+
+            @media (max-width: @screen-xs-max) {
+              width: 240px;
+            }
+
           }
         }
       }
@@ -145,6 +150,14 @@
   line-height: 0.9em;
   color: @drupalBrown;
   width: 120px;
+
+  @media (max-width: @screen-xs-max) {
+    font-size: 18px;
+    margin: 85px 0 0;
+    position: relative;
+    z-index: 1;
+  }
+
   strong:first-child {
     font-family: @font-family-roboto;
     font-weight: bold;

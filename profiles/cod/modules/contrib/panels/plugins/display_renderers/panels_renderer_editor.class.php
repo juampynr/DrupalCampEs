@@ -161,7 +161,7 @@ class panels_renderer_editor extends panels_renderer_standard {
     if ($buttons) {
       $output .= '<span class="buttons">' . $buttons . '</span>';
     }
-    $output .= '<span class="text">' . $title . '</span>';
+    $output .= '<span class="text" title="' . check_plain($title) . '">' . $title . '</span>';
     $output .= '</div>'; // grabber
 
     $output .= '<div class="panel-pane-collapsible">';
@@ -947,8 +947,11 @@ class panels_renderer_editor extends panels_renderer_standard {
         ctools_include('content');
         $pane = &$this->display->content[$pid];
         $style = isset($pane->style['style']) ? $pane->style['style'] : 'default';
-        $subtype = ctools_content_get_subtype($pane->type, $pane->subtype);
-        $title = t('Pane style for "!pane"', array('!pane' => $subtype['title']));
+        $title = ctools_content_admin_title($pane->type, $pane->subtype, $pane->configuration, $this->display->context);
+        if (!$title) {
+          $title = $pane->type;
+        }
+        $title = t('Pane style for "!title"', array('!title' => $title));
         break;
 
       default:

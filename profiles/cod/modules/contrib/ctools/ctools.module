@@ -9,7 +9,21 @@
  * must be implemented in the module file.
  */
 
-define('CTOOLS_API_VERSION', '2.0.7');
+define('CTOOLS_API_VERSION', '2.0.8');
+
+/**
+ * The current working ctools version.
+ *
+ * In a release, it should be 7.x-1.x, which should match what drush make will
+ * create. In a dev format, it should be 7.x-1.(x+1)-dev, which will allow
+ * modules depending on new features in ctools to depend on ctools > 7.x-1.x.
+ *
+ * To define a specific version of CTools as a dependency for another module,
+ * simply include a dependency line in that module's info file, e.g.:
+ *   ; Requires CTools v7.x-1.4 or newer.
+ *   dependencies[] = ctools (>=1.4)
+ */
+define('CTOOLS_MODULE_VERSION', '7.x-1.7');
 
 /**
  * Test the CTools API version.
@@ -537,6 +551,19 @@ function ctools_menu() {
 }
 
 /**
+ * Implements hook_permission().
+ */
+function ctools_permission() {
+  return array(
+    'use ctools import' => array(
+      'title' => t('Use CTools importer'),
+      'description' => t('The import functionality allows users to execute arbitrary PHP code, so extreme caution must be taken.'),
+      'restrict access' => TRUE,
+    ),
+  );
+}
+
+/**
  * Implementation of hook_cron. Clean up old caches.
  */
 function ctools_cron() {
@@ -631,7 +658,26 @@ function ctools_preprocess_node(&$vars) {
   }
 }
 
+
+/**
+ * Implements hook_page_alter().
+ *
+ * Last ditch attempt to remove sidebar regions if the "no blocks"
+ * functionality has been activated.
+ *
+ * @see ctools_block_list_alter().
+ */
 function ctools_page_alter(&$page) {
+  $check = drupal_static('ctools_set_no_blocks', TRUE);
+  if (!$check) {
+    foreach ($page as $region_id => $region) {
+      // @todo -- possibly we can set configuration for this so that users can
+      // specify which blocks will not get rendered.
+      if (strpos($region_id, 'sidebar') !== FALSE) {
+        unset($page[$region_id]);
+      }
+    }
+  }
   $page['#post_render'][] = 'ctools_page_token_processing';
 }
 

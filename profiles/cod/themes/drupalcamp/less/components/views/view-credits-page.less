@@ -12,12 +12,17 @@
     @media @tablet {
       width: 33%;
       margin: 0;
+      min-height: 300px;
+      display: block;
       &:nth-child(3n) {
         clear: right;
       }
       &:nth-child(3n+1) {
         clear: left;
       }
+    @media @normal {
+      min-height: 440px;
+    }
     }
     .views-field-picture {
       margin-bottom: 1em;
@@ -35,6 +40,12 @@
       max-width: 220px;
       margin: 0 auto;
       text-align: center;
+      @media @tablet {
+        font-size: 14px;
+      }
+      @media @normal {
+        font-size: 20px;
+      }
     }
     .views-field-field-company-logo {
       margin: 0 auto;

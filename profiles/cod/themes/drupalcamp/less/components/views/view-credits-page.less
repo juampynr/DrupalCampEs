@@ -12,6 +12,12 @@
     @media @tablet {
       width: 33%;
       margin: 0;
+      &:nth-child(3n) {
+        clear: right;
+      }
+      &:nth-child(3n+1) {
+        clear: left;
+      }
     }
     .views-field-picture {
       margin-bottom: 1em;

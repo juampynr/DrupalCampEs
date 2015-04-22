@@ -37,9 +37,12 @@ function aedcamp_image_block_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'uri_scheme' => 'public',
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'image',
   );
 
@@ -67,12 +70,13 @@ function aedcamp_image_block_field_default_field_bases() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'title' => 'optional',
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'link_field',
   );
 

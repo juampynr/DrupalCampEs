@@ -62,7 +62,7 @@ function aed_session_speakers_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Sesiones propuestas';
   $display->uuid = '71aa6435-336c-4de5-9b83-97bee511051a';
   $display->content = array();
   $display->panels = array();

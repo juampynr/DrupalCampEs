@@ -36,7 +36,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Ordenar por';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '40';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '36';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
@@ -76,11 +76,10 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['name']['label'] = '';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  /* Criterio de ordenación: Usuario: Fecha de creación */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'users';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Field: Nombre (field_profile_first) */
+  $handler->display->display_options['sorts']['field_profile_first_value']['id'] = 'field_profile_first_value';
+  $handler->display->display_options['sorts']['field_profile_first_value']['table'] = 'field_data_field_profile_first';
+  $handler->display->display_options['sorts']['field_profile_first_value']['field'] = 'field_profile_first_value';
   /* Criterios de filtrado: Usuario: Activo */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
@@ -140,6 +139,12 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_profile_last']['label'] = '';
   $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'drupalcamp-spain-2015/asistentes';
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'bd');
+  $handler->display->display_options['path'] = 'business-day/asistentes';
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'patrocinadores');
+  $handler->display->display_options['path'] = 'drupalcamp-spain-2015/sponsors/patrocinadores-individuales';
   $translatables['aed_attendees'] = array(
     t('Master'),
     t('Asistentes'),
@@ -248,9 +253,9 @@ function aed_collaborators_views_default_views() {
     'trim_length' => '600',
   );
   /* Criterio de ordenación: Contenido: Fecha del envío */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['name']['id'] = 'name';
+  $handler->display->display_options['sorts']['name']['table'] = 'field_data_field_profile_first';
+  $handler->display->display_options['sorts']['name']['field'] = 'field_profile_first_value';
   /* Criterios de filtrado: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

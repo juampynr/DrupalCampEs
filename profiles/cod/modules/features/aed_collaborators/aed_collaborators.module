@@ -5,3 +5,21 @@
  */
 
 include_once 'aed_collaborators.features.inc';
+
+/**
+ * Implements hook_views_query_alter().
+ *
+ * Make the right relationships for the attendees views.
+ */
+function aed_collaborators_views_query_alter(&$view, &$query) {
+  if ($view->name === 'aed_attendees') {
+    $view->query->table_queue['ticket_registration_users']['join']->field = 'user_uid';
+
+    if ($view->current_display === 'bd') {
+      $view->query->table_queue['ticket_registration_users']['join']->extra = 'ticket_registration_users.bundle = 7';
+    }
+    elseif ($view->current_display === 'patrocinadores') {
+      $view->query->table_queue['ticket_registration_users']['join']->extra = 'ticket_registration_users.bundle = 6';
+    }
+  }
+}

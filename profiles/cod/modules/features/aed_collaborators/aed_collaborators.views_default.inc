@@ -69,14 +69,19 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['picture']['image_style'] = 'thumbnail';
-  /* Campo: Usuario: Nombre */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'users';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['label'] = '';
-  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Field: Nombre (field_profile_first) */
+  /* Campo: Campo: Nombre */
+  $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
+  $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
+  $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
+  $handler->display->display_options['fields']['field_profile_first']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_first']['element_label_colon'] = FALSE;
+  /* Campo: Campo: Apellidos */
+  $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
+  $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
+  $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
+  $handler->display->display_options['fields']['field_profile_last']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
+  /* Criterio de ordenación: Campo: Nombre (field_profile_first) */
   $handler->display->display_options['sorts']['field_profile_first_value']['id'] = 'field_profile_first_value';
   $handler->display->display_options['sorts']['field_profile_first_value']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['sorts']['field_profile_first_value']['field'] = 'field_profile_first_value';
@@ -139,11 +144,21 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_profile_last']['label'] = '';
   $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'drupalcamp-spain-2015/asistentes';
+
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'bd');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['perm'] = 'access user profiles';
   $handler->display->display_options['path'] = 'business-day/asistentes';
+
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'patrocinadores');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Esponsor Individual';
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['perm'] = 'access user profiles';
   $handler->display->display_options['path'] = 'drupalcamp-spain-2015/sponsors/patrocinadores-individuales';
   $translatables['aed_attendees'] = array(
     t('Master'),
@@ -164,6 +179,7 @@ function aed_collaborators_views_default_views() {
     t('Todavía las entradas no estan a la venta pero te puedes registrar, <a href="/user/register">¡sé el primero!</a>'),
     t('Ticket registration'),
     t('Page'),
+    t('Esponsor Individual'),
   );
   $export['aed_attendees'] = $view;
 
@@ -253,9 +269,9 @@ function aed_collaborators_views_default_views() {
     'trim_length' => '600',
   );
   /* Criterio de ordenación: Contenido: Fecha del envío */
-  $handler->display->display_options['sorts']['name']['id'] = 'name';
-  $handler->display->display_options['sorts']['name']['table'] = 'field_data_field_profile_first';
-  $handler->display->display_options['sorts']['name']['field'] = 'field_profile_first_value';
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
   /* Criterios de filtrado: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

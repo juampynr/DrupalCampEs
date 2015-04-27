@@ -209,6 +209,25 @@ function aed_session_speakers_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'session' => 'session',
   );
+  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
+  $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
+  $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
+  $handler->display->display_options['filters']['field_experience_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_experience_value']['expose']['operator_id'] = 'field_experience_value_op';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['label'] = 'Nivel de experiencia';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['operator'] = 'field_experience_value_op';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['identifier'] = 'field_experience_value';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    5 => 0,
+    3 => 0,
+    7 => 0,
+    8 => 0,
+    4 => 0,
+    6 => 0,
+  );
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');

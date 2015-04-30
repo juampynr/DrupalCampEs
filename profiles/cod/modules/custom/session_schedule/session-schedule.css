@@ -6,28 +6,45 @@
     display: table;
 }
 
-.session-table .tr{
-    display: table-row;
+.session-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
 }
 
-.session-table .td{
-    display: table-cell;
+.session-table td[rowspan="2"] {
+    vertical-align: middle;
 }
 
-.leyendas {
-    background: none repeat scroll 0 0 #FFFFFF;
-    margin-bottom: 10px;
-    padding: 14px 10px 0;
-}
-
-.leyendas .row .sesion-kind {
-    line-height: 24px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    padding-left: 31px;
+.session-table .headings td,
+.session-table .headings {
+    background: #0a5486;
+    color: #ffffff;
+    vertical-align: middle;
     white-space: nowrap;
-    width: auto;
-    width: 72px;
+}
+
+.session-table .all-tracks {
+    background: red;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+.session-table .speaker {
+    font-weight: bold;
+    color: #9a0000;
+}
+
+.session-table .beginner {
+    background: #60889a;
+}
+
+.session-table .medium {
+    background: #9a983d;
+}
+
+.session-table .advanced {
+    background: #9a5e47;
 }
 
 .sesion-kind {
@@ -65,23 +82,6 @@
 
 .sesion-kind.training {
     background-position: 0 -160px;
-}
-
-.session-table .dia, .session-table .almuerzo {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    background: #ff6600;
-    color: white;
-}
-
-.session-table .inhabil {
-    background: grey;
-}
-
-.session-table .horario {
-    background: #006666;
 }
 
 .session-table .dificultad-wrapper {

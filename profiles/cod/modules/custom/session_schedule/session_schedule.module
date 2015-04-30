@@ -1,4 +1,19 @@
 <?php
+
+/**
+ * Implements hook_menu().
+ */
+function session_schedule_menu() {
+  // @todo la url es temporal.
+  $items['sesiones'] = array(
+    'title' => 'Session schedule',
+    'page callback' => 'render_session_schedule',
+    'access arguments' => array(TRUE),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
 /**
  * Implementa hook_block_info().
  */

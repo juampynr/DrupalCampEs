@@ -1,3 +1,13 @@
+
+<div class="leyendas">
+  Dificultad:
+  <div class="skills">
+    <div class="beginner">Beginner</div>
+    <div class="medium">Intermediate</div>
+    <div class="advanced">Advanced</div>
+  </div>
+</div>
+
 <h2>Sabado</h2>
 <table class="session-table">
   <tr class="headings">

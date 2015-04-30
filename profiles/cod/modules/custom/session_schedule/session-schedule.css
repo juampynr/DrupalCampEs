@@ -1,4 +1,15 @@
+/* No se por que no es posible quitar los bloques del
+sidebar por url... de momento lo manipulo por css*/
+aside.col-sm-4 {
+    display: none;
+}
 
+section.col-sm-8 {
+    width: 100%;
+}
+
+
+/**************/
 .session-table {
     border-collapse: collapse;
     width: 100%;
@@ -35,16 +46,25 @@
     color: #9a0000;
 }
 
-.session-table .beginner {
+.session-table .beginner,
+.skills .beginner {
     background: #60889a;
 }
 
-.session-table .medium {
+.session-table .medium,
+.skills .medium {
     background: #9a983d;
 }
 
-.session-table .advanced {
+.session-table .advanced,
+.skills .advanced {
     background: #9a5e47;
+}
+
+.skills > * {
+    max-width: 200px;
+    padding: 10px;
+    display: inline-block;
 }
 
 .sesion-kind {

@@ -15,28 +15,6 @@ function session_schedule_menu() {
 }
 
 /**
- * Implementa hook_block_info().
- */
-function session_schedule_block_info() {
-  $blocks['session_schedule'] = array(
-    'info' => 'Tabla de horarios de las charlas.',
-  );
-
-  return $blocks;
-}
-
-/**
- * Implementa hook_block_view().
- */
-function session_schedule_block_view($delta = '') {
-  switch ($delta) {
-    case 'session_schedule':
-      $block['content'] = render_session_schedule();
-      return $block;
-  }
-}
-
-/**
  * Implementa hook_theme().
  */
 function session_schedule_theme() {

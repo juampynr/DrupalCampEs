@@ -7,7 +7,7 @@ function session_schedule_menu() {
   $items['schedule'] = array(
     'title' => 'Session schedule',
     'page callback' => 'render_session_schedule',
-    'access arguments' => array(TRUE),
+    'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
   );
   return $items;
@@ -27,6 +27,5 @@ function session_schedule_theme() {
 
 function render_session_schedule() {
   drupal_add_css(drupal_get_path('module', 'session_schedule') . '/session-schedule.css');
-  drupal_add_js(drupal_get_path('module', 'session_schedule') . '/responsiveTable.js');
   return theme('session_schedule');
 }

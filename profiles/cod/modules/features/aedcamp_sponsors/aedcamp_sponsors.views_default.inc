@@ -340,7 +340,7 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['fields']['field_sponsor_logo']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_sponsor_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_sponsor_logo']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => '',
     'image_link' => '',
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;

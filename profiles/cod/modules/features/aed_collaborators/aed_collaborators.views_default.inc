@@ -111,6 +111,12 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['css_class'] = 'aed-attendees';
   $handler->display->display_options['defaults']['group_by'] = FALSE;
   $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['defaults']['cache'] = FALSE;
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Campo: Usuario: Imagen */
   $handler->display->display_options['fields']['picture']['id'] = 'picture';

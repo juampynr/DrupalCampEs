@@ -8,7 +8,6 @@ section.col-sm-8 {
     width: 100%;
 }
 
-
 /**************/
 .session-table {
     border-collapse: collapse;
@@ -21,6 +20,14 @@ section.col-sm-8 {
     padding: 20px;
     text-align: center;
     vertical-align: top;
+    border: 1px solid #0a5486;
+    width: 18%;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.session-table td a{
+    color: #000;
 }
 
 .session-table td[rowspan="2"] {
@@ -33,32 +40,38 @@ section.col-sm-8 {
     color: #ffffff;
     vertical-align: middle;
     white-space: nowrap;
+    font-size: 120%;
+    width: 10%;
 }
 
 .session-table .all-tracks {
-    background: red;
+    background: #0083DC;
     color: #ffffff;
     vertical-align: middle;
+    font-size: 140%;
+    padding: 40px;
 }
 
 .session-table .speaker {
     font-weight: bold;
     color: #9a0000;
+    margin-top: 6px;
+    display: block;
 }
 
 .session-table .beginner,
 .skills .beginner {
-    background: #60889a;
+    background: #B3D7E7;
 }
 
 .session-table .medium,
 .skills .medium {
-    background: #9a983d;
+    background: #E9E8AA;
 }
 
 .session-table .advanced,
 .skills .advanced {
-    background: #9a5e47;
+    background: #ECB8A4;
 }
 
 .skills > * {

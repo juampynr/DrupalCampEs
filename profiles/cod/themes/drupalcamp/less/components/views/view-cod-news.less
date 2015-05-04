@@ -29,6 +29,29 @@
         margin: 20px 0 40px;
         font-size: @font-size-base + 2;
       }
+
+      .views-field-view-node {
+        margin-bottom: 20px;
+        text-align: right;
+
+        a {
+          &:after {
+            content: '>';
+            position: relative;
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  .more-link {
+    text-align: center;
+    background: #2a6496;
+    padding: 10px;
+
+    a {
+      color: white;
     }
   }
 }

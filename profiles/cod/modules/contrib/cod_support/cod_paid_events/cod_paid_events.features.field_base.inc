@@ -28,7 +28,9 @@ function cod_paid_events_field_default_field_bases() {
     ),
     'locked' => 1,
     'module' => 'commerce_price',
-    'settings' => array(),
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'commerce_price',
   );
@@ -59,6 +61,7 @@ function cod_paid_events_field_default_field_bases() {
         'checked_in' => 'Checked-In',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_ticket_state',
@@ -74,14 +77,7 @@ function cod_paid_events_field_default_field_bases() {
     'field_permissions' => array(
       'type' => 1,
     ),
-    'foreign keys' => array(
-      'commerce_order' => array(
-        'columns' => array(
-          'target_id' => 'order_id',
-        ),
-        'table' => 'commerce_order',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -90,6 +86,7 @@ function cod_paid_events_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
@@ -138,6 +135,7 @@ function cod_paid_events_field_default_field_bases() {
     'locked' => 0,
     'module' => 'commerce_product_reference',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'options_list_limit' => '',
     ),
     'translatable' => 0,

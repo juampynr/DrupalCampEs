@@ -40,6 +40,7 @@ function cod_session_field_default_field_bases() {
       ),
       'allowed_values_function' => '',
       'allowed_values_php' => '',
+      'entity_translation_sync' => FALSE,
       'field_permissions' => array(
         'create' => 0,
         'edit' => 'edit',
@@ -76,6 +77,7 @@ function cod_session_field_default_field_bases() {
         1 => 'Accepted',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_text',
@@ -101,11 +103,12 @@ function cod_session_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'advanced' => 'Advanced',
-        'beginner' => 'Beginner',
-        'intermediate' => 'Intermediate',
+        'advanced' => 'Avanzado',
+        'beginner' => 'Novato',
+        'intermediate' => 'Intermedio',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'field_permissions' => array(
         'create' => 'create',
         'edit' => 'edit',
@@ -145,6 +148,9 @@ function cod_session_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -179,6 +185,9 @@ function cod_session_field_default_field_bases() {
     'settings' => array(
       'display_default' => 1,
       'display_field' => 1,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'field_permissions' => array(
         'create' => 'create',
         'edit' => 0,
@@ -218,6 +227,7 @@ function cod_session_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
@@ -263,6 +273,7 @@ function cod_session_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
@@ -295,6 +306,9 @@ function cod_session_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'upload',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'fid' => array(
         'columns' => array(
@@ -314,6 +328,9 @@ function cod_session_field_default_field_bases() {
       'default_file' => 0,
       'display_default' => 1,
       'display_field' => 1,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,

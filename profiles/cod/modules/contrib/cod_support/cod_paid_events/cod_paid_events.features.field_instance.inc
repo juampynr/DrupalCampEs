@@ -77,6 +77,7 @@ function cod_paid_events_field_default_field_instances() {
     'label' => 'Price',
     'required' => TRUE,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -102,8 +103,8 @@ function cod_paid_events_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'type' => 'hidden',
         'settings' => array(),
+        'type' => 'hidden',
         'weight' => 9,
       ),
     ),
@@ -112,6 +113,7 @@ function cod_paid_events_field_default_field_instances() {
     'label' => 'Checkout Complete State',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -142,6 +144,7 @@ function cod_paid_events_field_default_field_instances() {
     'label' => 'Product',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'field_injection' => 1,
       'referenceable_types' => array(
         'cod_paid_event' => 'cod_paid_event',

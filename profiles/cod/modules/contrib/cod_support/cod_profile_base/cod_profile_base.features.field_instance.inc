@@ -37,6 +37,7 @@ function cod_profile_base_field_default_field_instances() {
     'label' => 'Bio',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => 0,
     ),
@@ -75,9 +76,15 @@ function cod_profile_base_field_default_field_instances() {
     ),
     'entity_type' => 'user',
     'field_name' => 'field_profile_first',
-    'label' => 'First name',
+    'label' => 'Nombre',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => 1,
     ),
@@ -109,14 +116,20 @@ function cod_profile_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'user',
     'field_name' => 'field_profile_interests',
-    'label' => 'Interests',
+    'label' => 'Intereses',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => 0,
     ),
@@ -155,9 +168,15 @@ function cod_profile_base_field_default_field_instances() {
     ),
     'entity_type' => 'user',
     'field_name' => 'field_profile_job_title',
-    'label' => 'Job title',
+    'label' => 'Puesto de trabajo',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => 0,
     ),
@@ -196,9 +215,15 @@ function cod_profile_base_field_default_field_instances() {
     ),
     'entity_type' => 'user',
     'field_name' => 'field_profile_last',
-    'label' => 'Last name',
+    'label' => 'Apellidos',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => 1,
     ),
@@ -216,15 +241,7 @@ function cod_profile_base_field_default_field_instances() {
   // Exported field_instance: 'user-user-field_profile_location'
   $field_instances['user-user-field_profile_location'] = array(
     'bundle' => 'user',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'user|user|field_profile_location|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'country' => 'AF',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -236,16 +253,23 @@ function cod_profile_base_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'user',
     'field_name' => 'field_profile_location',
-    'label' => 'Location',
+    'label' => 'Dirección',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => 0,
     ),
     'widget' => array(
@@ -253,12 +277,16 @@ function cod_profile_base_field_default_field_instances() {
       'module' => 'addressfield',
       'settings' => array(
         'available_countries' => array(),
+        'default_country' => 'ES',
         'format_handlers' => array(
           'address' => 'address',
+          'address-hide-postal-code' => 'address-hide-postal-code',
+          'address-hide-street' => 'address-hide-street',
+          'address-optional' => 'address-optional',
           'address-hide-country' => 0,
           'organisation' => 0,
-          'name-full' => 0,
           'name-oneline' => 0,
+          'name-full' => 0,
         ),
       ),
       'type' => 'addressfield_standard',
@@ -290,9 +318,15 @@ function cod_profile_base_field_default_field_instances() {
     ),
     'entity_type' => 'user',
     'field_name' => 'field_profile_org',
-    'label' => 'Organization',
+    'label' => 'Organización',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => 0,
     ),
@@ -324,14 +358,20 @@ function cod_profile_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 10,
       ),
     ),
     'entity_type' => 'user',
     'field_name' => 'field_profile_phone',
-    'label' => 'Phone number',
+    'label' => 'Teléfono',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 0,
       'user_register_form' => 0,
     ),
@@ -348,14 +388,14 @@ function cod_profile_base_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Apellidos');
   t('Bio');
-  t('First name');
-  t('Interests');
-  t('Job title');
-  t('Last name');
-  t('Location');
-  t('Organization');
-  t('Phone number');
+  t('Dirección');
+  t('Intereses');
+  t('Nombre');
+  t('Organización');
+  t('Puesto de trabajo');
+  t('Teléfono');
 
   return $field_instances;
 }

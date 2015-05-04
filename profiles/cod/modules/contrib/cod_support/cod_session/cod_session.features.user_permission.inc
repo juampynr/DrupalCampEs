@@ -24,11 +24,7 @@ function cod_session_user_default_permissions() {
   // Exported permission: 'create session content'.
   $permissions['create session content'] = array(
     'name' => 'create session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'session organizer' => 'session organizer',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -46,22 +42,14 @@ function cod_session_user_default_permissions() {
   // Exported permission: 'delete any session content'.
   $permissions['delete any session content'] = array(
     'name' => 'delete any session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'content editor' => 'content editor',
-      'session organizer' => 'session organizer',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own session content'.
   $permissions['delete own session content'] = array(
     'name' => 'delete own session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'content editor' => 'content editor',
-      'session organizer' => 'session organizer',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -79,21 +67,14 @@ function cod_session_user_default_permissions() {
   // Exported permission: 'edit any session content'.
   $permissions['edit any session content'] = array(
     'name' => 'edit any session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'content editor' => 'content editor',
-      'session organizer' => 'session organizer',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own session content'.
   $permissions['edit own session content'] = array(
     'name' => 'edit own session content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 

@@ -240,7 +240,6 @@ function cod_base_user_default_permissions() {
     'name' => 'flush caches',
     'roles' => array(
       'administrator' => 'administrator',
-      'content editor' => 'content editor',
     ),
     'module' => 'admin_menu',
   );
@@ -285,16 +284,6 @@ function cod_base_user_default_permissions() {
     'module' => 'advanced_help',
   );
 
-  // Exported permission: 'view the administration theme'.
-  $permissions['view the administration theme'] = array(
-    'name' => 'view the administration theme',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'content editor' => 'content editor',
-    ),
-    'module' => 'system',
-  );
-
   // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
@@ -303,6 +292,16 @@ function cod_base_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'view the administration theme'.
+  $permissions['view the administration theme'] = array(
+    'name' => 'view the administration theme',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content editor' => 'content editor',
+    ),
+    'module' => 'system',
   );
 
   return $permissions;

@@ -136,15 +136,15 @@ function cod_session_node_info() {
       'base' => 'node_content',
       'description' => t('Use schedule items for content you wish to have in the schedule but not be part of any session submission workflows. Examples include scheduling lunch or breaks.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Título'),
       'help' => '',
     ),
     'session' => array(
-      'name' => t('Session'),
+      'name' => t('Sesión'),
       'base' => 'node_content',
       'description' => t('Use this content type to propose sessions at the event. Users can vote on proposed sessions and add sessions to their individual session agendas.'),
       'has_title' => '1',
-      'title_label' => t('Session Title'),
+      'title_label' => t('Título de la Sesión'),
       'help' => '',
     ),
   );

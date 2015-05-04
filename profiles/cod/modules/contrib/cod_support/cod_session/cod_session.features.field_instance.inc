@@ -45,6 +45,7 @@ function cod_session_field_default_field_instances() {
     'label' => 'Default Session View',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -71,9 +72,10 @@ function cod_session_field_default_field_instances() {
         'weight' => 0,
       ),
       'listing' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'text_default',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -92,6 +94,7 @@ function cod_session_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -130,7 +133,7 @@ function cod_session_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -141,10 +144,9 @@ function cod_session_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => NULL,
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -153,12 +155,14 @@ function cod_session_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 1,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp',
-      'max_filesize' => '1 MB',
+      'max_filesize' => '3 MB',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'file',
       'settings' => array(
         'progress_indicator' => 'throbber',
@@ -204,6 +208,7 @@ function cod_session_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -250,6 +255,7 @@ function cod_session_field_default_field_instances() {
     'label' => 'Status',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -316,6 +322,7 @@ function cod_session_field_default_field_instances() {
           'status' => 1,
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'view modes' => array(
@@ -371,10 +378,16 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Description',
+    'label' => 'Descripción',
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -386,7 +399,7 @@ function cod_session_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 2,
     ),
     'widget_type' => 'text_textarea_with_summary',
   );
@@ -428,6 +441,7 @@ function cod_session_field_default_field_instances() {
     'label' => 'Status',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -468,9 +482,10 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_experience',
-    'label' => 'Experience level',
+    'label' => 'Nivel de experiencia',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -486,7 +501,7 @@ function cod_session_field_default_field_instances() {
   $field_instances['node-session-field_news_image'] = array(
     'bundle' => 'session',
     'deleted' => 0,
-    'description' => 'An image to be used for highlighted sessions in the front page rotator.',
+    'description' => 'Un imagen para usar en el bloque de sesiones destacadas.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -509,11 +524,12 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_news_image',
-    'label' => 'Image',
+    'label' => 'Imagen',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -530,7 +546,7 @@ function cod_session_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 12,
+      'weight' => 7,
     ),
   );
 
@@ -538,7 +554,7 @@ function cod_session_field_default_field_instances() {
   $field_instances['node-session-field_slides'] = array(
     'bundle' => 'session',
     'deleted' => 0,
-    'description' => 'Upload your slides here as a PDF, or link to them from the description. (This is typically done after your session.)',
+    'description' => 'Sube tus diapositivas aquí en PDF o enlaza a ellas en el campo descripción (esto se hace normalmente tras la sesión).',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -562,10 +578,11 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_slides',
-    'label' => 'Slides',
+    'label' => 'Diapositivas',
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
+      'entity_translation_sync' => 0,
       'file_directory' => 'slides',
       'file_extensions' => 'ppt pdf odt odp',
       'max_filesize' => '',
@@ -578,7 +595,7 @@ function cod_session_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -588,7 +605,7 @@ function cod_session_field_default_field_instances() {
     'default_value' => NULL,
     'default_value_function' => '',
     'deleted' => 0,
-    'description' => 'Type the username of the speaker, and to add more speakers click "Add another speaker"',
+    'description' => 'Escriba el nombre de usuario del ponente y, para añadir más ponentes, haga clic en "Añadir nuevo ponente"',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -614,7 +631,7 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_speakers',
-    'label' => 'Speaker(s)',
+    'label' => 'Ponentes',
     'required' => 0,
     'settings' => array(
       'behaviors' => array(
@@ -622,6 +639,7 @@ function cod_session_field_default_field_instances() {
           'status' => 0,
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -692,6 +710,7 @@ function cod_session_field_default_field_instances() {
           'status' => 1,
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'view modes' => array(
@@ -711,7 +730,7 @@ function cod_session_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -758,6 +777,7 @@ function cod_session_field_default_field_instances() {
           'status' => TRUE,
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -771,20 +791,20 @@ function cod_session_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('An image to be used for highlighted sessions in the front page rotator.');
   t('Body');
-  t('Default Session View');
-  t('Description');
   t('Conference');
-  t('Experience level');
+  t('Default Session View');
+  t('Descripción');
+  t('Diapositivas');
+  t('Escriba el nombre de usuario del ponente y, para añadir más ponentes, haga clic en "Añadir nuevo ponente"');
   t('File attachments');
-  t('Image');
+  t('Imagen');
+  t('Nivel de experiencia');
+  t('Ponentes');
   t('Session Track');
-  t('Slides');
-  t('Speaker(s)');
   t('Status');
-  t('Type the username of the speaker, and to add more speakers click "Add another speaker"');
-  t('Upload your slides here as a PDF, or link to them from the description. (This is typically done after your session.)');
+  t('Sube tus diapositivas aquí en PDF o enlaza a ellas en el campo descripción (esto se hace normalmente tras la sesión).');
+  t('Un imagen para usar en el bloque de sesiones destacadas.');
 
   return $field_instances;
 }

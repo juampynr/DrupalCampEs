@@ -81,7 +81,7 @@ function cod_events_node_info() {
       'base' => 'node_content',
       'description' => t('Manages all content and registrations related to a conference.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Título'),
       'help' => '',
     ),
   );

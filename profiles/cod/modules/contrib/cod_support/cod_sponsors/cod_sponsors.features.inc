@@ -35,8 +35,8 @@ function cod_sponsors_image_default_styles() {
     'label' => 'COD Sponsors',
     'effects' => array(
       2 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'label' => 'Escala',
+        'help' => 'El escalado mantiene la relación de proporciones de la imagen original. Si sólo se especifica una dimensión, la otra se calculará.',
         'effect callback' => 'image_scale_effect',
         'dimensions callback' => 'image_scale_dimensions',
         'form callback' => 'image_scale_form',
@@ -44,7 +44,7 @@ function cod_sponsors_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 220,
+          'width' => 500,
           'height' => '',
           'upscale' => 1,
         ),

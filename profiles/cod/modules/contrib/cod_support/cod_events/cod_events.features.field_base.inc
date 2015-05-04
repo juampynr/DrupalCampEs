@@ -38,6 +38,7 @@ function cod_events_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'field_permissions' => array(
         'create' => 'create',
         'edit' => 0,
@@ -67,6 +68,7 @@ function cod_events_field_default_field_bases() {
     'settings' => array(
       'cache_count' => 4,
       'cache_enabled' => 0,
+      'entity_translation_sync' => FALSE,
       'granularity' => array(
         'day' => 'day',
         'hour' => 'hour',
@@ -109,6 +111,9 @@ function cod_events_field_default_field_bases() {
     'settings' => array(
       'default_image' => 0,
       'description_field' => 0,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'list_default' => 1,
       'list_field' => 0,
       'uri_scheme' => 'public',
@@ -143,6 +148,7 @@ function cod_events_field_default_field_bases() {
         1 => 'Private - accessible only to group members',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
@@ -169,6 +175,7 @@ function cod_events_field_default_field_bases() {
         1 => 'Group',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
@@ -200,6 +207,7 @@ function cod_events_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'handler' => 'og_events',
       'handler_settings' => array(
         'behaviors' => array(
@@ -250,6 +258,7 @@ function cod_events_field_default_field_bases() {
         1 => 'Override default roles and permissions',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_boolean',

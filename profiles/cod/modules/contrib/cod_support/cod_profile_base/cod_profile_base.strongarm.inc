@@ -48,7 +48,7 @@ function cod_profile_base_strongarm() {
             'visible' => FALSE,
           ),
           'full' => array(
-            'weight' => '9',
+            'weight' => '12',
             'visible' => FALSE,
           ),
         ),
@@ -89,7 +89,7 @@ function cod_profile_base_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_style';
-  $strongarm->value = 'thumbnail';
+  $strongarm->value = 'medium';
   $export['user_picture_style'] = $strongarm;
 
   return $export;

@@ -98,7 +98,7 @@ function cod_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_page';
-  $strongarm->value = 0;
+  $strongarm->value = '0';
   $export['comment_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -245,10 +245,10 @@ function cod_session_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '8',
         ),
         'mollom' => array(
-          'weight' => '11',
+          'weight' => '9',
         ),
         'redirect' => array(
           'weight' => '9',
@@ -258,6 +258,13 @@ function cod_session_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__session'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_session';
+  $strongarm->value = '0';
+  $export['language_content_type_session'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -330,7 +337,9 @@ function cod_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_session';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'status',
+  );
   $export['node_options_session'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -358,7 +367,7 @@ function cod_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_page';
-  $strongarm->value = FALSE;
+  $strongarm->value = 0;
   $export['node_submitted_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -372,7 +381,7 @@ function cod_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_session';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_session'] = $strongarm;
 
   $strongarm = new stdClass();

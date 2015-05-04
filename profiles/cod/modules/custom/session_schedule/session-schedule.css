@@ -16,6 +16,16 @@ section.col-sm-8 {
     display: table;
 }
 
+.session-table.mobile {
+    display: none;
+}
+
+.session-table tr {
+}
+
+.session-table tr:not(.headings) {
+}
+
 .session-table td {
     padding: 20px;
     text-align: center;
@@ -26,7 +36,36 @@ section.col-sm-8 {
     line-height: 22px;
 }
 
-.session-table td a{
+@media (max-width: 768px) {
+    .session-table {
+        display: none;
+    }
+
+    .session-table.mobile {
+        display: table;
+    }
+
+    .session-table td {
+        text-align: left;
+        padding: 4px 10px;
+        width: 90%;
+    }
+
+    .session-table td > div {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    .session-table .headings td,
+    .session-table .headings {
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+}
+
+.session-table tr td a {
     color: #000;
 }
 
@@ -78,6 +117,10 @@ section.col-sm-8 {
     max-width: 200px;
     padding: 10px;
     display: inline-block;
+}
+
+.room {
+    font-weight: bold;
 }
 
 .sesion-kind {

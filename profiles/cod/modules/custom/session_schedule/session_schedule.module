@@ -4,8 +4,7 @@
  * Implements hook_menu().
  */
 function session_schedule_menu() {
-  // @todo la url es temporal.
-  $items['sesiones'] = array(
+  $items['schedule'] = array(
     'title' => 'Session schedule',
     'page callback' => 'render_session_schedule',
     'access arguments' => array(TRUE),
@@ -28,5 +27,6 @@ function session_schedule_theme() {
 
 function render_session_schedule() {
   drupal_add_css(drupal_get_path('module', 'session_schedule') . '/session-schedule.css');
+  drupal_add_js(drupal_get_path('module', 'session_schedule') . '/responsiveTable.js');
   return theme('session_schedule');
 }

@@ -47,7 +47,7 @@
         <span class="speaker">Tobias St&#246;ckler</span>
       </div>
       <div class="medium">
-        <span class="room">Sala 2:</span><a href="http://2015.drupalcamp.es/node/87">Render API en Drupal 7 & 8 <br/>
+        <span class="room">Sala 2:</span><a href="http://2015.drupalcamp.es/node/87">Render API en Drupal 7 &#38; 8 <br/>
         </a><span class="speaker">Jose Luis Bellido</span>
       </div>
       <div class="medium">
@@ -88,7 +88,7 @@
       <div class="beginner">
         <span class="room">Sala 3:</span><a href="http://2015.drupalcamp.es/node/155">
           Encontrando mi lugar: el paso de desarrollo a direcci&#243;n de proyectos <br/>
-        </a><span class="speaker">Laura Portilla & Patricia Peinado</span>
+        </a><span class="speaker">Laura Portilla &#38; Patricia Peinado</span>
       </div>
       <div class="beginner">
         <span class="room">Sala 4:</span><a href="http://2015.drupalcamp.es/node/123">
@@ -106,10 +106,7 @@
   <tr>
     <td class="headings">13:00 a 14:00</td>
     <td>
-      <div class="advanced">
-        <span class="room">Sala 1:</span><a href="http://2015.drupalcamp.es/node/111">
-          Drupal Extreme Scaling <br/>
-        </a><span class="speaker">Zeki V&#225;zquez</span>
+      <div><span class="room">Sala 1:</span>ORO 2<br/>
       </div>
       <div class="medium">
         <span class="room">Sala 2:</span><a href="http://2015.drupalcamp.es/node/161">
@@ -119,12 +116,12 @@
       <div class="beginner">
         <span class="room">Sala 3:</span><a href="http://2015.drupalcamp.es/node/112">
           Peer reviews: revisando el c&#243;digo en equipo <br/>
-        </a><span class="speaker">Juampy Novillo & Rodrigo Aguilera</span>
+        </a><span class="speaker">Juampy Novillo &#38; Rodrigo Aguilera</span>
       </div>
       <div class="beginner">
         <span class="room">Sala 4:</span><a href="http://2015.drupalcamp.es/node/89">
           Comunidad Drupal &#191;Hay vida detr&#225;s del c&#243;digo? <br/>
-        </a><span class="speaker">Monta&#241;a Franco, Jose Luis Bellido & Francisco Garde</span>
+        </a><span class="speaker">Monta&#241;a Franco, Jose Luis Bellido &#38; Francisco Garde</span>
       </div>
       <div>
         <span class="room">Sala 5:</span>
@@ -151,11 +148,11 @@
       <div class="medium">
         <span class="room">Sala 2:</span><a href="http://2015.drupalcamp.es/node/110">
           Women in tech <br/>
-        </a><span class="speaker">Cathy Theys & Monta&#241;a Franco</span>
+        </a><span class="speaker">Cathy Theys &#38; Monta&#241;a Franco</span>
       </div>
       <div class="advanced">
         <span class="room">Sala 3:</span><a href="http://2015.drupalcamp.es/node/88">
-          JavaScript tips & tricks <br/>
+          JavaScript tips &#38; tricks <br/>
         </a><span class="speaker">Marcelo Tosco</span>
       </div>
       <div class="beginner">
@@ -178,7 +175,7 @@
     <div class="beginner">
       <span class="room">Sala 2:</span><a href="http://2015.drupalcamp.es/node/135">
         Tecnolog&#237;a y consciencia. Buscando la coherencia entre la persona y el profesional <br/>
-      </a><span class="speaker">Noem&#237; Rodriguez & Juan Olalla</span>
+      </a><span class="speaker">Noem&#237; Rodriguez &#38; Juan Olalla</span>
     </div>
     <div class="medium">
       <span class="room">Sala 3:</span><a href="http://2015.drupalcamp.es/node/142">
@@ -235,7 +232,7 @@
     <td>FEATURED 2 <br/>
       <span class="speaker">Tobias St&#246;ckler</span>
     </td>
-    <td class="medium"><a href="http://2015.drupalcamp.es/node/87">Render API en Drupal 7 & 8 <br/>
+    <td class="medium"><a href="http://2015.drupalcamp.es/node/87">Render API en Drupal 7 &#38; 8 <br/>
       </a><span class="speaker">Jose Luis Bellido</span>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/153">
@@ -262,7 +259,7 @@
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/155">
         Encontrando mi lugar: el paso de desarrollo a direcci&#243;n de proyectos <br/>
-      </a><span class="speaker">Laura Portilla & Patricia Peinado</span>
+      </a><span class="speaker">Laura Portilla &#38; Patricia Peinado</span>
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/123">
         Deploy de desarrollos Drupal con Capistrano <br/>
@@ -275,9 +272,7 @@
   </tr>
   <tr>
     <td class="headings">13:00 a 14:00</td>
-    <td class="advanced"><a href="http://2015.drupalcamp.es/node/111">
-        Drupal Extreme Scaling <br/>
-      </a><span class="speaker">Zeki V&#225;zquez</span>
+    <td>ORO 2<br/>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/161">
         Behat y Drupal Extension <br/>
@@ -285,11 +280,11 @@
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/112">
         Peer reviews: revisando el c&#243;digo en equipo <br/>
-      </a><span class="speaker">Juampy Novillo & Rodrigo Aguilera</span>
+      </a><span class="speaker">Juampy Novillo &#38; Rodrigo Aguilera</span>
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/89">
         Comunidad Drupal &#191;Hay vida detr&#225;s del c&#243;digo? <br/>
-      </a><span class="speaker">Monta&#241;a Franco, Jose Luis Bellido & Francisco Garde</span>
+      </a><span class="speaker">Monta&#241;a Franco, Jose Luis Bellido &#38; Francisco Garde</span>
     </td>
   </tr>
   <tr>
@@ -305,10 +300,10 @@
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/110">
         Women in tech <br/>
-      </a><span class="speaker">Cathy Theys & Monta&#241;a Franco</span>
+      </a><span class="speaker">Cathy Theys &#38; Monta&#241;a Franco</span>
     </td>
     <td class="advanced"><a href="http://2015.drupalcamp.es/node/88">
-        JavaScript tips & tricks <br/>
+        JavaScript tips &#38; tricks <br/>
       </a><span class="speaker">Marcelo Tosco</span>
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/151">
@@ -321,11 +316,11 @@
     <td class="headings">16:30 a 17:30</td>
     <td class="advanced"><a href="http://2015.drupalcamp.es/node/147">
         D7 as D8 <br/>
-      </a><span class="speaker">Pablo LÃ³pez</span>
+      </a><span class="speaker">Pablo L&#243;pez</span>
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/135">
         Tecnolog&#237;a y consciencia. Buscando la coherencia entre la persona y el profesional <br/>
-      </a><span class="speaker">Noem&#237; Rodriguez & Juan Olalla</span>
+      </a><span class="speaker">Noem&#237; Rodriguez &#38; Juan Olalla</span>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/142">
         Arquitectura de desarrollo en proyectos Drupal <br/>
@@ -348,7 +343,9 @@
   <tr>
     <td class="headings">9:30 a 10:30</td>
     <td>
-      <div><span class="room">Sala 1:</span> ORO 1</div>
+      <div class="beginner">
+        <span class="room">Sala 1:</span> <a href="http://2015.drupalcamp.es/es/sessions/cultura-empresarial-open-source-y-drupal">Cultura empresarial, Open Source y Drupal</a><br/>
+        <span class="speaker">Siddharta Navarro</span></div>
       <div class="advanced">
         <span class="room">Sala 2:</span> <a href="http://2015.drupalcamp.es/node/128">Los desarrolladores tambi&#233;n somos personas<br/>
         </a><span class="speaker">&#193;lvaro Hurtado</span></div>
@@ -369,12 +366,15 @@
   <tr>
     <td class="headings">10:30 a 11:30</td>
     <td>
-      <div><span class="room">Sala 1:</span>ORO 2<br/>
+      <div class="advanced">
+        <span class="room">Sala 1:</span><a href="http://2015.drupalcamp.es/node/111">
+          Drupal Extreme Scaling <br/>
+        </a><span class="speaker">Zeki V&#225;zquez</span>
       </div>
       <div class="medium">
         <span class="room">Sala 2:</span><a href="http://2015.drupalcamp.es/node/152">
           Panels: From Zero to Hero in 2000 seconds<br/>
-        </a><span class="speaker">Salva Molina & Joeri Poesen</span>
+        </a><span class="speaker">Salva Molina &#38; Joeri Poesen</span>
       </div>
       <div class="beginner">
         <span class="room">Sala 3:</span> <a href="http://2015.drupalcamp.es/node/66">[Taller] Drupal Architecture Workshop<br/>
@@ -413,7 +413,7 @@
       <div class="beginner">
         <span class="room">Sala 3:</span><a href="http://2015.drupalcamp.es/node/67">
           [Taller] Drupal 8 multilingual sobre el terreno<br/>
-        </a><span class="speaker">Cathy Theys & Rodrigo Aguilera</span>
+        </a><span class="speaker">Cathy Theys &#38; Rodrigo Aguilera</span>
       </div>
       <div class="beginner">
         <span class="room">Sala 4:</span><a href="http://2015.drupalcamp.es/node/132">
@@ -445,7 +445,7 @@
       <div class="beginner">
         <span class="room">Sala 3:</span><a href="http://2015.drupalcamp.es/node/67">
           [Taller] Drupal 8 multilingual sobre el terreno<br/>
-        </a><span class="speaker">Cathy Theys & Rodrigo Aguilera</span>
+        </a><span class="speaker">Cathy Theys &#38; Rodrigo Aguilera</span>
       </div>
       <div class="beginner">
         <span class="room">Sala 4:</span><a href="http://2015.drupalcamp.es/node/75">
@@ -477,7 +477,8 @@
   </tr>
   <tr>
     <td class="headings">9:30 a 10:30</td>
-    <td>ORO 1</td>
+    <td class="beginner"><a href="http://2015.drupalcamp.es/es/sessions/cultura-empresarial-open-source-y-drupal">Cultura empresarial, Open Source y Drupal</a><br/>
+      <span class="speaker">Siddharta Navarro</span></td>
     <td class="advanced"><a href="http://2015.drupalcamp.es/node/128">Los desarrolladores tambi&#233;n somos personas<br/>
       </a><span class="speaker">&#193;lvaro Hurtado</span></td>
     <td class="beginner" rowspan="2"><a href="http://2015.drupalcamp.es/node/66">[Taller] Drupal Architecture Workshop<br/>
@@ -490,11 +491,13 @@
   </tr>
   <tr>
     <td class="headings">10:30 a 11:30</td>
-    <td>ORO 2<br/>
+    <td class="advanced"><a href="http://2015.drupalcamp.es/node/111">
+        Drupal Extreme Scaling <br/>
+      </a><span class="speaker">Zeki V&#225;zquez</span>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/152">
         Panels: From Zero to Hero in 2000 seconds<br/>
-      </a><span class="speaker">Salva Molina & Joeri Poesen</span>
+      </a><span class="speaker">Salva Molina &#38; Joeri Poesen</span>
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/70">Desacoplando Drupal con React y CouchDB<br/>
       </a><span class="speaker">Juampy Novillo</span>
@@ -515,7 +518,7 @@
     </td>
     <td class="beginner" rowspan="2"><a href="http://2015.drupalcamp.es/node/67">
         [Taller] Drupal 8 multilingual sobre el terreno<br/>
-      </a><span class="speaker">Cathy Theys & Rodrigo Aguilera</span>
+      </a><span class="speaker">Cathy Theys &#38; Rodrigo Aguilera</span>
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/132">
         Propuesta de mejora del sistema de pruebas de Drupal<br/>

@@ -369,7 +369,7 @@
       <div class="advanced">
         <span class="room">Sala 1:</span><a href="http://2015.drupalcamp.es/node/111">
           Drupal Extreme Scaling <br/>
-        </a><span class="speaker">Zeki V&#225;zquez</span>
+        </a><span class="speaker">Ezequiel V&#225;zquez De la Calle</span>
       </div>
       <div class="medium">
         <span class="room">Sala 2:</span><a href="http://2015.drupalcamp.es/node/152">

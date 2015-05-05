@@ -493,7 +493,7 @@
     <td class="headings">10:30 a 11:30</td>
     <td class="advanced"><a href="http://2015.drupalcamp.es/node/111">
         Drupal Extreme Scaling <br/>
-      </a><span class="speaker">Zeki V&#225;zquez</span>
+      </a><span class="speaker">Ezequiel V&#225;zquez De la Calle</span>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/152">
         Panels: From Zero to Hero in 2000 seconds<br/>

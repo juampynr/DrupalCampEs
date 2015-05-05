@@ -540,7 +540,7 @@
     </td>
 
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/75">
-        &#191;C&#243;mo y por quÃ© contribuir con Drupal?<br/>
+        &#191;C&#243;mo y por qu&#233; contribuir con Drupal?<br/>
       </a><span class="speaker">Jose Manuel Rodr&#205;guez</span>
     </td>
   </tr>

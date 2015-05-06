@@ -372,11 +372,11 @@
       <div class="advanced">
         <span class="room">Sala 1:</span><a href="http://2015.drupalcamp.es/node/111">
           Drupal Extreme Scaling <br/>
-        </a><span class="speaker">Ezequiel V&#225;zquez De la Calle</span>
+        </a><span class="speaker">Zequi V&#225;zquez</span>
       </div>
       <div class="beginner">
         <span class="room">Sala 2:</span> <a href="http://2015.drupalcamp.es/node/128">Los desarrolladores tambi&#233;n somos personas<br/>
-        </a><span class="speaker">&#193;lvaro Hurtado</span></div>
+        </a><span class="speaker">&#193;lvaro Hurtado &#38; Juan Olalla</span></div>
       <div class="beginner">
         <span class="room">Sala 3:</span> <a href="http://2015.drupalcamp.es/node/66">[Taller] Drupal Architecture Workshop<br/>
         </a><span class="speaker">David Hern&#225;ndez</span></div>
@@ -480,8 +480,10 @@
     <td class="headings">9:30 a 10:30</td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/es/sessions/cultura-empresarial-open-source-y-drupal">Cultura empresarial, Open Source y Drupal</a><br/>
       <span class="speaker">Siddharta Navarro</span></td>
-    <td class="advanced"><a href="http://2015.drupalcamp.es/node/128">Los desarrolladores tambi&#233;n somos personas<br/>
-      </a><span class="speaker">&#193;lvaro Hurtado &#38; Juan Olalla</span></td>
+    <td class="medium"><a href="http://2015.drupalcamp.es/node/152">
+        Panels: From Zero to Hero in 2000 seconds<br/>
+      </a><span class="speaker">Salva Molina &#38; Joeri Poesen</span>
+    </td>
     <td class="beginner" rowspan="2"><a href="http://2015.drupalcamp.es/node/66">[Taller] Drupal Architecture Workshop<br/>
       </a><span class="speaker">David Hern&#225;ndez</span></td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/69">"&#209;apa certified" - C&#243;mo crear un drupal inmantenible<br/>
@@ -494,12 +496,10 @@
     <td class="headings">10:30 a 11:30</td>
     <td class="advanced"><a href="http://2015.drupalcamp.es/node/111">
         Drupal Extreme Scaling <br/>
-      </a><span class="speaker">Ezequiel V&#225;zquez De la Calle</span>
+      </a><span class="speaker">Zequi V&#225;zquez</span>
     </td>
-    <td class="medium"><a href="http://2015.drupalcamp.es/node/152">
-        Panels: From Zero to Hero in 2000 seconds<br/>
-      </a><span class="speaker">Salva Molina &#38; Joeri Poesen</span>
-    </td>
+    <td class="beginner"><a href="http://2015.drupalcamp.es/node/128">Los desarrolladores tambi&#233;n somos personas<br/>
+      </a><span class="speaker">&#193;lvaro Hurtado &#38; Juan Olalla</span></td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/70">Desacoplando Drupal con React y CouchDB<br/>
       </a><span class="speaker">Juampy Novillo</span>
     </td>

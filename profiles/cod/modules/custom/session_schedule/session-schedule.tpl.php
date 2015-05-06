@@ -175,7 +175,7 @@
     <div class="beginner">
       <span class="room">Sala 2:</span><a href="http://2015.drupalcamp.es/node/135">
         Tecnolog&#237;a y consciencia. Buscando la coherencia entre la persona y el profesional <br/>
-      </a><span class="speaker">Noem&#237; Rodriguez &#38; Juan Olalla</span>
+      </a><span class="speaker">Noem&#237; Rodriguez</span>
     </div>
     <div class="medium">
       <span class="room">Sala 3:</span><a href="http://2015.drupalcamp.es/node/142">
@@ -320,7 +320,7 @@
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/135">
         Tecnolog&#237;a y consciencia. Buscando la coherencia entre la persona y el profesional <br/>
-      </a><span class="speaker">Noem&#237; Rodriguez &#38; Juan Olalla</span>
+      </a><span class="speaker">Noem&#237; Rodriguez</span>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/142">
         Arquitectura de desarrollo en proyectos Drupal <br/>
@@ -348,7 +348,7 @@
         <span class="speaker">Siddharta Navarro</span></div>
       <div class="advanced">
         <span class="room">Sala 2:</span> <a href="http://2015.drupalcamp.es/node/128">Los desarrolladores tambi&#233;n somos personas<br/>
-        </a><span class="speaker">&#193;lvaro Hurtado</span></div>
+        </a><span class="speaker">&#193;lvaro Hurtado &#38; Juan Olalla</span></div>
       <div class="beginner">
         <span class="room">Sala 3:</span> <a href="http://2015.drupalcamp.es/node/66">[Taller] Drupal Architecture Workshop<br/>
         </a><span class="speaker">David Hern&#225;ndez</span></div>
@@ -480,7 +480,7 @@
     <td class="beginner"><a href="http://2015.drupalcamp.es/es/sessions/cultura-empresarial-open-source-y-drupal">Cultura empresarial, Open Source y Drupal</a><br/>
       <span class="speaker">Siddharta Navarro</span></td>
     <td class="advanced"><a href="http://2015.drupalcamp.es/node/128">Los desarrolladores tambi&#233;n somos personas<br/>
-      </a><span class="speaker">&#193;lvaro Hurtado</span></td>
+      </a><span class="speaker">&#193;lvaro Hurtado &#38; Juan Olalla</span></td>
     <td class="beginner" rowspan="2"><a href="http://2015.drupalcamp.es/node/66">[Taller] Drupal Architecture Workshop<br/>
       </a><span class="speaker">David Hern&#225;ndez</span></td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/69">"&#209;apa certified" - C&#243;mo crear un drupal inmantenible<br/>

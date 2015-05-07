@@ -1,9 +1,9 @@
 <div class="leyendas">
-<?php print t('Dificultad:'); ?>
+<?php print t('Difficulty:'); ?>
   <div class="skills">
     <div class="beginner"><?php print t('Beginner'); ?></div>
-    <div class="medium"><?php print t('Dificultad:'); ?></div>
-    <div class="advanced"><?php print t('Dificultad:'); ?></div>
+    <div class="medium"><?php print t('Medium'); ?></div>
+    <div class="advanced"><?php print t('Advanced'); ?></div>
   </div>
 </div>
 

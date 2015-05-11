@@ -14,7 +14,6 @@
     <td class="headings">9:00 <?php print t('to') ?> 9:30</td>
     <td class="all-tracks"><?php print t('WELCOME'); ?></td>
   </tr>
-
   <tr>
     <td class="headings">9:30 <?php print t('to'); ?> 10:30</td>
     <td>
@@ -37,7 +36,6 @@
       </div>
     </td>
   </tr>
-
   <tr>
     <td class="headings">10:30 <?php print t('to'); ?> 11:30</td>
     <td>
@@ -64,12 +62,10 @@
       </div>
     </td>
   </tr>
-
   <tr>
     <td class="headings">11:30 <?php print t('to'); ?> 12:00</td>
     <td class="all-tracks">COFFEE BREAK</td>
   </tr>
-
   <tr>
     <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
     <td>
@@ -99,11 +95,11 @@
       </div>
     </td>
   </tr>
-
   <tr>
     <td class="headings">13:00 <?php print t('to'); ?> 14:00</td>
     <td>
-      <div><span class="room"><?php print t('Room'); ?> 1:</span>ORO 2<br/>
+      <div><span class="room"><?php print t('Room'); ?> 1:</span><a href="http://2015.drupalcamp.es/es/sessions/pensando-en-big-data">Pensando en big data</a><br/>
+        <span class="speaker">Javier Lafora</span>
       </div>
       <div class="medium">
         <span class="room"><?php print t('Room'); ?> 2:</span><a href="http://2015.drupalcamp.es/node/161">
@@ -127,12 +123,10 @@
       </div>
     </td>
   </tr>
-
   <tr>
     <td class="headings">14:00 <?php print t('to'); ?> 15:30</td>
     <td class="all-tracks"><?php print t('LUNCH'); ?></td>
   </tr>
-
   <tr>
     <td class="headings">15:30 <?php print t('to'); ?> 16:30</td>
     <td>
@@ -140,7 +134,6 @@
         <span class="room"><?php print t('Room'); ?> 1:</span><a href="http://2015.drupalcamp.es/node/113">
           Thinking about starting *now* a project with Drupal 8? Here is my story <br/>
         </a><span class="speaker">Christian L&#243;pez</span>
-
       </div>
       <div class="medium">
         <span class="room"><?php print t('Room'); ?> 2:</span><a href="http://2015.drupalcamp.es/node/110">
@@ -160,7 +153,6 @@
       <div><span class="room"><?php print t('Room'); ?> 5:</span>SPRINTS</div>
     </td>
   </tr>
-
   <tr>
     <td class="headings">16:30 <?php print t('to'); ?> 17:30</td>
     <td>
@@ -187,12 +179,10 @@
       <div><span class="room"><?php print t('Room'); ?> 5:</span>SPRINTS</div>
     </td>
   </tr>
-
   <tr>
     <td class="headings">17:30 <?php print t('to'); ?> 19:30</td>
     <td class="all-tracks"><?php print t('Assembly'); ?></td>
   </tr>
-
 </table>
 
 <table class="session-table">
@@ -269,7 +259,8 @@
   </tr>
   <tr>
     <td class="headings">13:00 <?php print t('to'); ?> 14:00</td>
-    <td>ORO 2<br/>
+    <td><a href="http://2015.drupalcamp.es/es/sessions/pensando-en-big-data">Pensando en big data</a><br/>
+    <span class="speaker">Javier Lafora</span>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/161">
         Behat y Drupal Extension <br/>
@@ -293,7 +284,6 @@
     <td class="advanced"><a href="http://2015.drupalcamp.es/node/113">
         Thinking about starting *now* a project with Drupal 8? Here is my story <br/>
       </a><span class="speaker">Christian L&#243;pez</span>
-
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/110">
         Women in tech <br/>
@@ -334,7 +324,6 @@
   </tr>
 </table>
 
-
 <h2><?php print t('Sunday'); ?></h2>
 <table class="session-table mobile">
   <tr>
@@ -361,8 +350,6 @@
       </div>
     </td>
   </tr>
-
-
   <tr>
     <td class="headings">10:30 <?php print t('to'); ?> 11:30</td>
     <td>
@@ -387,15 +374,12 @@
       </div>
     </td>
   </tr>
-
-
   <tr>
     <td class="headings">11:30 <?php print t('to'); ?> 12:00</td>
     <td class="all-tracks">
       <div>COFFEE BREAK</div>
     </td>
   </tr>
-
   <tr>
     <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
     <td>
@@ -420,10 +404,8 @@
       <div><span class="room"><?php print t('Room'); ?> 5:</span>
         SPRINTS
       </div>
-
     </td>
   </tr>
-
   <tr>
     <td class="headings">13:00 <?php print t('to'); ?> 14:00</td>
     <td>
@@ -450,11 +432,8 @@
       <div><span class="room"><?php print t('Room'); ?> 5:</span>
         SPRINTS
       </div>
-
     </td>
   </tr>
-
-
   <tr>
     <td class="headings">14:00 <?php print t('to'); ?> 14:30</td>
     <td class="all-tracks"><?php print t('CLOSING SESSION'); ?></td>

@@ -210,7 +210,7 @@
   </tr>
   <tr>
     <td class="headings">9:30 <?php print t('to'); ?> 10:30</td>
-    <td>FEATURED 1<br/>
+    <td><a href="http://2015.drupalcamp.es/node/170">Building mentoring into an open source<br/> community that welcomes and values new contributors</a><br/>
       <span class="speaker">Cathy Theys</span></td>
     <td class="medium">
       <a href="http://2015.drupalcamp.es/node/144">Theming en Drupal 8:<br/>un soplo de aire fresco <br/>
@@ -226,7 +226,7 @@
   </tr>
   <tr>
     <td class="headings">10:30 <?php print t('to'); ?> 11:30</td>
-    <td>FEATURED 2 <br/>
+    <td><a href="http://2015.drupalcamp.es/node/171">Drupal 8 Entity API</a><br/>
       <span class="speaker">Tobias St&#246;ckler</span>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/87">Render API en Drupal 7 &#38; 8 <br/>
@@ -247,7 +247,7 @@
   <tr>
     <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
     <td>
-      FEATURED 3 <br/>
+      <a href="http://2015.drupalcamp.es/node/172">Seguridad en PHP</a><br/>
       <span class="speaker">Ricardo</span>
     </td>
     <td class="medium"><a href="http://2015.drupalcamp.es/node/72">

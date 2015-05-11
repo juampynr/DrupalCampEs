@@ -10,18 +10,16 @@
 <h2><?php print t('Saturday'); ?></h2>
 
 <table class="session-table mobile">
-
   <tr>
-  <td class="headings">9:00 <?php print t('to') ?> 9:30</td>
-  <td class="all-tracks"><?php print t('WELCOME'); ?></td>
+    <td class="headings">9:00 <?php print t('to') ?> 9:30</td>
+    <td class="all-tracks"><?php print t('WELCOME'); ?></td>
   </tr>
 
   <tr>
     <td class="headings">9:30 <?php print t('to'); ?> 10:30</td>
     <td>
       <div>
-        <span class="room"><?php print t('Room'); ?> 1:</span>
-        FEATURED 1<br/>
+        <span class="room"><?php print t('Room'); ?> 1:</span><a href="http://2015.drupalcamp.es/node/170">Building mentoring into an open source<br/> community that welcomes and values new contributors</a><br/>
         <span class="speaker">Cathy Theys</span></div>
       <div class="medium">
         <span class="room"><?php print t('Room'); ?> 2:</span><a href="http://2015.drupalcamp.es/node/144">Theming en Drupal 8:<br/>un soplo de aire fresco <br/>
@@ -43,7 +41,7 @@
   <tr>
     <td class="headings">10:30 <?php print t('to'); ?> 11:30</td>
     <td>
-      <div><span class="room"><?php print t('Room'); ?> 1:</span>FEATURED 2 <br/>
+      <div><span class="room"><?php print t('Room'); ?> 1:</span><a href="http://2015.drupalcamp.es/node/171">Drupal 8 Entity API</a><br/>
         <span class="speaker">Tobias St&#246;ckler</span>
       </div>
       <div class="medium">
@@ -76,8 +74,7 @@
     <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
     <td>
       <div>
-        <span class="room"><?php print t('Room'); ?> 1:</span>
-        FEATURED 3 <br/>
+        <span class="room"><?php print t('Room'); ?> 1:</span><a href="http://2015.drupalcamp.es/node/172">Seguridad en PHP</a><br/>
         <span class="speaker">Ricardo</span>
       </div>
       <div class="medium">

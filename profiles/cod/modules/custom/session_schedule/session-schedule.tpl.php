@@ -31,8 +31,8 @@
         </a><span class="speaker">Monta&#241;a Franco</span></div>
       <div>
         <span class="room"><?php print t('Room'); ?> 5:</span>
-        Curso FORCONTU <br/>
-        Parte 1
+        <a href="http://2015.drupalcamp.es/es/sessions/curso-de-formaci%C3%B3n-en-drupal">Curso de formaci&#243;n en Drupal</a><br/>
+        <span class="speaker">Fran Gil</span>
       </div>
     </td>
   </tr>
@@ -57,8 +57,8 @@
       </div>
       <div>
         <span class="room"><?php print t('Room'); ?> 5:</span>
-        Curso FORCONTU <br/>
-        Parte 1
+        <a href="http://2015.drupalcamp.es/es/sessions/curso-de-formaci%C3%B3n-en-drupal">Curso de formaci&#243;n en Drupal</a><br/>
+        <span class="speaker">Fran Gil</span>
       </div>
     </td>
   </tr>
@@ -90,8 +90,8 @@
       </div>
       <div>
         <span class="room"><?php print t('Room'); ?> 5:</span>
-        Curso FORCONTU <br/>
-        Parte 2
+        <a href="http://2015.drupalcamp.es/es/sessions/curso-de-formaci%C3%B3n-en-drupal">Curso de formaci&#243;n en Drupal</a><br/>
+        <span class="speaker">Fran Gil</span>
       </div>
     </td>
   </tr>
@@ -118,8 +118,8 @@
       </div>
       <div>
         <span class="room"><?php print t('Room'); ?> 5:</span>
-        Curso FORCONTU <br/>
-        Parte 2
+        <a href="http://2015.drupalcamp.es/es/sessions/curso-de-formaci%C3%B3n-en-drupal">Curso de formaci&#243;n en Drupal</a><br/>
+        <span class="speaker">Fran Gil</span>
       </div>
     </td>
   </tr>
@@ -210,8 +210,8 @@
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/85">Drupal 8 for site builders <br/>
       </a><span class="speaker">Monta&#241;a Franco</span></td>
     <td rowspan="2">
-      Curso FORCONTU <br/>
-      Parte 1
+      <a href="http://2015.drupalcamp.es/es/sessions/curso-de-formaci%C3%B3n-en-drupal">Curso de formaci&#243;n en Drupal</a><br/>
+      <span class="speaker">Fran Gil</span>
     </td>
   </tr>
   <tr>
@@ -253,8 +253,8 @@
       </a><span class="speaker">David Gil</span>
     </td>
     <td rowspan="2">
-      Curso FORCONTU <br/>
-      Parte 2
+      <a href="http://2015.drupalcamp.es/es/sessions/curso-de-formaci%C3%B3n-en-drupal">Curso de formaci&#243;n en Drupal</a><br/>
+      <span class="speaker">Fran Gil</span>
     </td>
   </tr>
   <tr>
@@ -365,7 +365,7 @@
         <span class="room"><?php print t('Room'); ?> 3:</span> <a href="http://2015.drupalcamp.es/node/66">[Taller] Drupal Architecture Workshop<br/>
         </a><span class="speaker">David Hern&#225;ndez</span></div>
       <div class="beginner">
-        <span class="room"><?php print t('Room'); ?> 4:</span><a href="http://2015.drupalcamp.es/node/70">Desacoplando Drupal con React y CouchDB<br/>
+        <span class="room"><?php print t('Room'); ?> 4:</span><a href="http://2015.drupalcamp.es/node/70">Decoupling Drupal with React and CouchDB<br/>
         </a><span class="speaker">Juampy Novillo</span>
       </div>
       <div>
@@ -473,7 +473,7 @@
     </td>
     <td class="beginner"><a href="http://2015.drupalcamp.es/node/128">Los desarrolladores tambi&#233;n somos personas<br/>
       </a><span class="speaker">&#193;lvaro Hurtado &#38; Juan Olalla</span></td>
-    <td class="beginner"><a href="http://2015.drupalcamp.es/node/70">Desacoplando Drupal con React y CouchDB<br/>
+    <td class="beginner"><a href="http://2015.drupalcamp.es/node/70">Decoupling Drupal with React and CouchDB<br/>
       </a><span class="speaker">Juampy Novillo</span>
     </td>
   </tr>

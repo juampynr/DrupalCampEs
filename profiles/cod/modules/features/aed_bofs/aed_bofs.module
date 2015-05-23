@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AED Bofs feature.
+ */
+
+include_once 'aed_bofs.features.inc';

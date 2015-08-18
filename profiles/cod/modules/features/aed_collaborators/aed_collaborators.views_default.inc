@@ -156,6 +156,33 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access user profiles';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Usuario: Imagen */
+  $handler->display->display_options['fields']['picture']['id'] = 'picture';
+  $handler->display->display_options['fields']['picture']['table'] = 'users';
+  $handler->display->display_options['fields']['picture']['field'] = 'picture';
+  $handler->display->display_options['fields']['picture']['label'] = '';
+  $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['picture']['image_style'] = 'thumbnail';
+  /* Campo: Campo: Nombre */
+  $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
+  $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
+  $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
+  $handler->display->display_options['fields']['field_profile_first']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_first']['element_label_colon'] = FALSE;
+  /* Campo: Campo: Apellidos */
+  $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
+  $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
+  $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
+  $handler->display->display_options['fields']['field_profile_last']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
+  /* Campo: Usuario: Organización */
+  $handler->display->display_options['fields']['field_profile_org']['id'] = 'field_profile_org';
+  $handler->display->display_options['fields']['field_profile_org']['table'] = 'field_data_field_profile_org';
+  $handler->display->display_options['fields']['field_profile_org']['field'] = 'field_profile_org';
+  $handler->display->display_options['fields']['field_profile_org']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_org']['alter']['text'] = 'Organización: [field_profile_org]';
+  $handler->display->display_options['fields']['field_profile_org']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'business-day/asistentes';
 
   /* Display: Page */
@@ -166,6 +193,28 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access user profiles';
   $handler->display->display_options['path'] = 'drupalcamp-spain-2015/sponsors/patrocinadores-individuales';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    5 => '5',
+  );
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Campo: Usuario: Correo electrónico */
+  $handler->display->display_options['fields']['mail']['id'] = 'mail';
+  $handler->display->display_options['fields']['mail']['table'] = 'users';
+  $handler->display->display_options['fields']['mail']['field'] = 'mail';
+  $handler->display->display_options['fields']['mail']['label'] = '';
+  $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
+  $handler->display->display_options['path'] = 'business-day/asistentes-email';
   $translatables['aed_attendees'] = array(
     t('Master'),
     t('Asistentes'),
@@ -185,6 +234,7 @@ function aed_collaborators_views_default_views() {
     t('Todavía las entradas no estan a la venta pero te puedes registrar, <a href="/user/register">¡sé el primero!</a>'),
     t('Ticket registration'),
     t('Page'),
+    t('Organización: [field_profile_org]'),
     t('Esponsor Individual'),
   );
   $export['aed_attendees'] = $view;
@@ -274,7 +324,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_company']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Criterio de ordenación: Contenido: Fecha del envío */
+  /* Criterio de ordenación: Contenido: Fecha de mensaje */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';

@@ -16,7 +16,6 @@ features[field_base][] = field_fecha
 features[field_instance][] = node-bofs-body
 features[field_instance][] = node-bofs-field_fecha
 features[node][] = bofs
-features[user_permission][] = administer panelizer node bofs defaults
 features[user_permission][] = create bofs content
 features[user_permission][] = delete any bofs content
 features[user_permission][] = delete own bofs content

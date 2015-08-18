@@ -10,13 +10,6 @@
 function aed_bofs_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer node bofs defaults'.
-  $permissions['administer panelizer node bofs defaults'] = array(
-    'name' => 'administer panelizer node bofs defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'create bofs content'.
   $permissions['create bofs content'] = array(
     'name' => 'create bofs content',

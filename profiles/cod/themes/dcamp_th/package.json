@@ -1,5 +1,5 @@
 {
-  "name": "frontid_th",
+  "name": "dcamp_th",
   "version": "1.0.0",
   "scripts": {
     "sass:dev": "./node_modules/.bin/gulp",

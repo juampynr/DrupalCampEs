@@ -3816,70 +3816,25 @@ textarea,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.055);
-  transition: all .3s;
-}
-/* line 15, ../sass/components/_forms.scss */
-textarea:focus,
-.form-text:focus,
-.form-file:focus {
-  border-color: #20c3c4;
-  box-shadow: inset 0 0 5px rgba(32, 195, 196, 0.5);
-  outline: 0;
 }
 
-/* line 22, ../sass/components/_forms.scss */
-.form-text,
-.form-file {
-  padding: 17px 18px 19px;
-}
-
-/* line 27, ../sass/components/_forms.scss */
-textarea {
-  padding: 7px 18px;
-}
-
-/* line 37, ../sass/components/_forms.scss */
+/* line 17, ../sass/components/_forms.scss */
 .form-file {
   vertical-align: top;
 }
 
-/* line 41, ../sass/components/_forms.scss */
+/* line 21, ../sass/components/_forms.scss */
 .form-item {
   margin: 0 0 1.5em;
 }
 
-/* line 45, ../sass/components/_forms.scss */
-.form-actions .form-submit {
-  color: #fff;
-  background: #20c3c4;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-  transition: all 0.3s ease-in-out;
-  border: none;
-  border-radius: 2px;
-  padding: 18px 35px 19px;
-}
-
-/* line 64, ../sass/components/_forms.scss */
-label {
-  margin: 0 0 12px;
-}
-
-/* line 68, ../sass/components/_forms.scss */
+/* line 31, ../sass/components/_forms.scss */
 .form-checkbox {
   position: relative;
   top: 3px;
 }
 
-/* line 73, ../sass/components/_forms.scss */
+/* line 36, ../sass/components/_forms.scss */
 fieldset {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3888,10 +3843,39 @@ fieldset {
   position: relative;
   margin: 0;
 }
-/* line 79, ../sass/components/_forms.scss */
+/* line 42, ../sass/components/_forms.scss */
 fieldset legend {
   position: absolute;
   top: 10px;
+}
+
+/* line 3, ../sass/components/blocks/_block-system-main-menu.scss */
+#block-system-main-menu ul.menu {
+  /* */
+}
+/* line 8, ../sass/components/blocks/_block-system-main-menu.scss */
+#block-system-main-menu ul.menu li.expanded {
+  /* */
+}
+/* line 11, ../sass/components/blocks/_block-system-main-menu.scss */
+#block-system-main-menu ul.menu li.expanded a {
+  /* */
+}
+/* line 15, ../sass/components/blocks/_block-system-main-menu.scss */
+#block-system-main-menu ul.menu li.expanded ul {
+  /* */
+}
+/* line 18, ../sass/components/blocks/_block-system-main-menu.scss */
+#block-system-main-menu ul.menu li.expanded ul li {
+  /* */
+}
+/* line 21, ../sass/components/blocks/_block-system-main-menu.scss */
+#block-system-main-menu ul.menu li.expanded ul li a {
+  /* */
+}
+/* line 31, ../sass/components/blocks/_block-system-main-menu.scss */
+#block-system-main-menu ul.menu li a {
+  /* */
 }
 
 /* No files to import found in pages/**\/* */

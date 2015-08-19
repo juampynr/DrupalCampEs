@@ -3,15 +3,30 @@
   .flexslider {
 
     ul.slides {
-
       li {
-
-        img {
-
-        }
-
+        position: relative;
       }
+    }
 
+    .flex-control-nav {
+      margin: 0;
+    }
+
+    .flex-direction-nav {
+      a {
+        display: none;
+      }
+    }
+
+    &:hover {
+      .flex-direction-nav {
+        a {
+          display: block;
+
+          &:hover {
+          }
+        }
+      }
     }
 
   }

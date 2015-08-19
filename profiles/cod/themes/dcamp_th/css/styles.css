@@ -54,54 +54,37 @@ table {
 
 /* line 3, ../sass/_base.scss */
 body * {
-  color: #4e4e4e;
+  color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1em;
 }
-/* line 10, ../sass/_base.scss */
-body a {
-  color: #20c3c4;
-  text-decoration: none;
-}
-/* line 14, ../sass/_base.scss */
-body a:hover, body a:visited {
-  text-decoration: underline;
-}
-/* line 21, ../sass/_base.scss */
-body h1, body h2, body h3, body h4, body h5, body h6 {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-/* line 26, ../sass/_base.scss */
+/* line 23, ../sass/_base.scss */
 body h1 {
   font-size: 36px;
   line-height: 46px;
-  font-weight: 700;
 }
-/* line 32, ../sass/_base.scss */
+/* line 28, ../sass/_base.scss */
 body h2 {
   font-size: 32px;
   line-height: 42px;
 }
-/* line 37, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 body h3 {
   font-size: 28px;
   line-height: 38px;
 }
-/* line 42, ../sass/_base.scss */
+/* line 38, ../sass/_base.scss */
 body h4 {
   font-size: 24px;
   line-height: 36px;
-  font-weight: 700;
 }
-/* line 48, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 body h5 {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
 }
-/* line 54, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 body h6 {
   font-size: 14px;
   line-height: 24px;
@@ -3847,6 +3830,23 @@ fieldset {
 fieldset legend {
   position: absolute;
   top: 10px;
+}
+
+/* line 6, ../sass/components/blocks/_block-bean-home-slider.scss */
+#block-bean-home-slider .flexslider ul.slides li {
+  position: relative;
+}
+/* line 11, ../sass/components/blocks/_block-bean-home-slider.scss */
+#block-bean-home-slider .flexslider .flex-control-nav {
+  margin: 0;
+}
+/* line 16, ../sass/components/blocks/_block-bean-home-slider.scss */
+#block-bean-home-slider .flexslider .flex-direction-nav a {
+  display: none;
+}
+/* line 23, ../sass/components/blocks/_block-bean-home-slider.scss */
+#block-bean-home-slider .flexslider:hover .flex-direction-nav a {
+  display: block;
 }
 
 /* line 3, ../sass/components/blocks/_block-system-main-menu.scss */

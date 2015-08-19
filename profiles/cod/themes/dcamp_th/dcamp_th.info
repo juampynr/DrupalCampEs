@@ -15,6 +15,7 @@ stylesheets[all][] = css/styles.css
 ; Scripts
 ; ========================================
 scripts[] = js/dcamp-th.behaviors.js
+scripts[] = js/mobile-menu.js
 
 ; ========================================
 ; Regions

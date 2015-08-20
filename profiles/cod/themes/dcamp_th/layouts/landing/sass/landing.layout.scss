@@ -1,0 +1,39 @@
+/*******************************************************************************
+ * simple.layout.scss
+ *
+ * Styling of the "simple" layout demonstrating the Compass grid extension Susy
+ * and building mobile first layouts.
+ ******************************************************************************/
+@import "susy";
+@import "base.style";
+
+// Susy Variables
+
+// Set consistent vertical and horizontal spacing units.
+$horz-spacing-unit: 1em;
+
+// Define Susy grid variables mobile first.
+$total-columns: 4;
+$column-width: 4em;
+$gutter-width: $horz-spacing-unit;
+$grid-padding: 5px;
+
+$container-style: magic;
+$container-width: 1200px;
+
+// Todos los row son meron contenedores. Inernamente los l-region
+// con los que realmente tienen el contenido.
+.l-one,
+.l-two,
+.l-three,
+.l-four,
+.l-five,
+.l-six,
+.l-seven,
+.l-eight,
+.l-nine,
+.l-ten {
+  > .l-region {
+    @include container;
+  }
+}

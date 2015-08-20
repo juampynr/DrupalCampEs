@@ -15,5 +15,3 @@ relative_assets = true
 output_style = (environment == :development) ? :expanded : :compressed
 line_comments = (environment == :development) ? true : false
 sass_options = {:sourcemap => true}
-
-add_import_path 'layouts'

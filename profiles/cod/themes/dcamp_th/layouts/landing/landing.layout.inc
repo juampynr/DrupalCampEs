@@ -11,9 +11,12 @@ regions[four]   = Four
 regions[five]   = Five
 regions[six]    = Six
 regions[seven]  = Seven
-regions[eight]  = eight
+regions[eight]  = Eight
 regions[nine]   = Nine
 regions[ten]    = Ten
 
 ; Stylesheets
 stylesheets[all][] = css/landing.layout.css
+
+; Scripts
+;scripts[] = js/off-layout.js

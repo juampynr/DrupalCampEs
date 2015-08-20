@@ -51,6 +51,48 @@ table {
   border-spacing: 0;
 }
 
+/*
+Estructura:
+<div id="home-video" class="content-absolute-centered">
+    <div class="content">
+        <div class="inner">
+            <div class="vertical-content">
+                <img src="/<?php print $path; ?>/assets/img/logo-543x229.png" class="logo" alt="Front.id">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis commodi iste. Ab, animi beatae dignissimos eligendi enim eos laudantium, libero, magnam minima nemo nesciunt odio quis reiciendis rerum ut.</div>
+            </div>
+        </div>
+    </div>
+    <video autoplay loop poster="">
+        <source src="/<?php print $path; ?>/assets/videos/home/960x400.m4v" type="video/mp4">
+    </video>
+</div>
+
+*/
+/* line 22, ../sass/abstractions/_content-absolute-centered.scss */
+.content-absolute-centered {
+  position: relative;
+}
+/* line 25, ../sass/abstractions/_content-absolute-centered.scss */
+.content-absolute-centered .content {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+/* line 33, ../sass/abstractions/_content-absolute-centered.scss */
+.content-absolute-centered .content .inner {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 8, ../sass/abstractions/_vertical-multiline.scss */
+.content-absolute-centered .content .inner > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* line 3, ../sass/abstractions/_css-table.scss */
 .table {
   display: table;

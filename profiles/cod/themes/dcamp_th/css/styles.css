@@ -90,6 +90,48 @@ body h6 {
   line-height: 24px;
 }
 
+/*
+Estructura:
+<div id="home-video" class="content-absolute-centered">
+    <div class="content">
+        <div class="inner">
+            <div class="vertical-content">
+                <img src="/<?php print $path; ?>/assets/img/logo-543x229.png" class="logo" alt="Front.id">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis commodi iste. Ab, animi beatae dignissimos eligendi enim eos laudantium, libero, magnam minima nemo nesciunt odio quis reiciendis rerum ut.</div>
+            </div>
+        </div>
+    </div>
+    <video autoplay loop poster="">
+        <source src="/<?php print $path; ?>/assets/videos/home/960x400.m4v" type="video/mp4">
+    </video>
+</div>
+
+*/
+/* line 22, ../sass/abstractions/_content-absolute-centered.scss */
+.content-absolute-centered {
+  position: relative;
+}
+/* line 25, ../sass/abstractions/_content-absolute-centered.scss */
+.content-absolute-centered .content {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+/* line 33, ../sass/abstractions/_content-absolute-centered.scss */
+.content-absolute-centered .content .inner {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 8, ../sass/abstractions/_vertical-multiline.scss */
+.content-absolute-centered .content .inner > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* line 3, ../sass/abstractions/_css-table.scss */
 .table {
   display: table;
@@ -3832,6 +3874,115 @@ fieldset legend {
   top: 10px;
 }
 
+/* line 3, ../sass/components/_home-video.scss */
+#home-video .content {
+  color: #fff;
+}
+/* line 6, ../sass/components/_home-video.scss */
+#home-video .content .inner {
+  width: 50%;
+}
+/* line 10, ../sass/components/_home-video.scss */
+#home-video .content .logo {
+  max-width: 50%;
+  width: 100%;
+  display: block;
+  margin: 0 auto 20px;
+}
+/* line 22, ../sass/components/_home-video.scss */
+#home-video video {
+  width: 100%;
+}
+
+/* line 1, ../sass/components/_menu-fixed.scss */
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.43);
+  width: 100%;
+  z-index: 998;
+}
+/* line 9, ../sass/components/_menu-fixed.scss */
+.menu-fixed a.logo {
+  display: inline-block;
+  padding: 6px;
+}
+/* line 13, ../sass/components/_menu-fixed.scss */
+.menu-fixed a.logo img {
+  width: 100px;
+}
+/* line 18, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav {
+  float: right;
+}
+/* line 23, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li {
+  color: white;
+  display: inline-block;
+  list-style: none;
+}
+/* line 28, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li.expanded {
+  position: relative;
+}
+/* line 33, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li.expanded.active ul, .menu-fixed nav ul li.expanded:hover ul {
+  display: inline-block;
+}
+/* line 39, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li.expanded ul {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.43);
+  position: absolute;
+  top: 54px;
+  left: 0;
+}
+/* line 46, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li.expanded ul li {
+  display: block;
+}
+/* line 49, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li.expanded ul li:first-child {
+  padding-top: 2px;
+}
+/* line 53, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li.expanded ul li a {
+  padding: 10px 20px;
+  line-height: normal;
+  display: block;
+  border-bottom: none;
+  white-space: nowrap;
+}
+/* line 66, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li a {
+  color: #FFF;
+  padding: 20px 20px 20px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  transition: all 500ms;
+  border-bottom: 0 solid transparent;
+  text-decoration: none;
+}
+/* line 76, ../sass/components/_menu-fixed.scss */
+.menu-fixed nav ul li a.active, .menu-fixed nav ul li a:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.65);
+  border-bottom: 15px solid rgba(255, 255, 255, 0.71);
+  color: black;
+  padding-bottom: 5px;
+}
+
+/* line 1, ../sass/components/_parallax.scss */
+.parallax-content {
+  color: #fff;
+}
+/* line 4, ../sass/components/_parallax.scss */
+.parallax-content .inner {
+  width: 50%;
+}
+
 /* line 6, ../sass/components/blocks/_block-bean-home-slider.scss */
 #block-bean-home-slider .flexslider ul.slides li {
   position: relative;
@@ -3847,60 +3998,6 @@ fieldset legend {
 /* line 23, ../sass/components/blocks/_block-bean-home-slider.scss */
 #block-bean-home-slider .flexslider:hover .flex-direction-nav a {
   display: block;
-}
-
-/* line 1, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  text-align: center;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  left: 0;
-}
-/* line 10, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu ul.menu {
-  display: inline-block;
-}
-/* line 13, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu ul.menu li {
-  display: inline-block;
-  list-style: none;
-}
-/* line 17, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu ul.menu li.active a {
-  font-weight: bold;
-}
-/* line 21, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu ul.menu li.expanded {
-  position: relative;
-}
-/* line 24, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu ul.menu li.expanded:hover ul {
-  display: block;
-}
-/* line 32, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu ul.menu li.expanded ul {
-  display: none;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 58px;
-  left: 0;
-}
-/* line 41, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu ul.menu li.expanded ul li a {
-  padding: 5px 15px;
-}
-/* line 51, ../sass/components/blocks/_block-system-main-menu.scss */
-#block-system-main-menu ul.menu li a {
-  color: #fff;
-  font-size: 14px;
-  line-height: 28px;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  padding: 15px;
 }
 
 /* line 1, ../sass/components/blocks/_countdown.scss */
@@ -3935,11 +4032,6 @@ fieldset legend {
   color: #e22626;
   font-size: 48px;
   font-weight: bold;
-}
-
-/* line 4, ../sass/pages/_front.scss */
-body.front .l-one {
-  min-height: 190px;
 }
 
 /*# sourceMappingURL=styles.css.map */

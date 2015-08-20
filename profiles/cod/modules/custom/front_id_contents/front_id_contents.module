@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function front_id_contents_block_info() {
+
+  $blocks['video-home'] = array(
+    'info' => 'Video home',
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function front_id_contents_block_view($delta = '') {
+
+  $block = array();
+
+  switch ($delta) {
+    case 'video-home':
+      $block['subject'] = t('Home video');
+      $block['content'] = theme('home_video');
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function front_id_contents_theme() {
+  $module_path = drupal_get_path('module', 'front_id_contents');
+
+  return array(
+    'home_video' => array(
+      'template' => 'templates/video-home',
+      'variables' => array('path' => $module_path),
+    ),
+  );
+}

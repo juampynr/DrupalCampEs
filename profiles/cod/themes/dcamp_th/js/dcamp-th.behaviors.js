@@ -54,6 +54,11 @@
         // The anchor is then appended to the current element.
         $anchor.appendTo(this);
       });
+        /////////////////
+        $('.parallax-wrapper').parallax({
+            holderClass: 'parallax-wrapper content-absolute-centered'
+        });
+        ////////////////
     }
   };
 

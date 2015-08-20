@@ -1,0 +1,87 @@
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.43);
+  width: 100%;
+  z-index: 998; // uno por debajo del admin menu.
+
+  a.logo {
+    display: inline-block;
+    padding: 6px;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  nav {
+    float: right;
+
+    ul {
+
+      li {
+        color: white;
+        display: inline-block;
+        list-style: none;
+
+        &.expanded {
+          position: relative;
+
+          &.active, &:hover {
+
+            ul {
+              display: inline-block;
+            }
+
+          }
+
+          ul {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.43);
+            position: absolute;
+            top: 54px;
+            left: 0;
+
+            li {
+              display: block;
+
+              &:first-child {
+                padding-top: 2px;
+              }
+
+              a {
+                padding: 10px 20px;
+                line-height: normal;
+                display: block;
+                border-bottom: none;
+                white-space: nowrap;
+              }
+
+            }
+          }
+
+        }
+
+        a {
+          color: #FFF;
+          padding: 20px 20px 20px 20px;
+          text-transform: uppercase;
+          font-size: 14px;
+          display: inline-block;
+          transition: all 500ms;
+          border-bottom: 0 solid transparent;
+          text-decoration: none;
+
+          &.active, &:hover {
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.65);
+            border-bottom: 15px solid rgba(255, 255, 255, 0.71);
+            color: black;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 name = Da Vinci Theme
-description = Da Vinci Theme - Drupal 7 Full theme with the <b>best Sass's components</b>. <br />Developed by <b>Front-end Team</b> of <a href="http://ladrupalera.com">@ladrupalera</a> by <a href="http://emergya.com">Emergya</a> & <b>collaborators:</b> <a href="https://www.drupal.org/u/enno">@Enno</a>, <a href="https://www.drupal.org/u/capynet">@Capynet</a>, <a href="https://www.drupal.org/u/nicobot">@Nicobot</a>.<br /> <b>Important!!</b> Require Jquery Update & Libraries module.
+description = Da Vinci Theme - Drupal 7 Full theme with the best Sass's components. Developed by Front-end Team of Emergya & collaborators: Enno, Capynet, Nicobot. Important!! Require Jquery Update, Libraries module.
 core = 7.x
 engine = phptemplate
 
@@ -51,9 +51,9 @@ settings[js_exclude][]  = 'misc/tableheader.js'
 ;multipliers[mobile][] = 1.5x
 ;multipliers[mobile][] = 2x
 
-; Information added by Drupal.org packaging script on 2015-08-25
-version = "7.x-2.4"
+; Information added by Drupal.org packaging script on 2015-04-15
+version = "7.x-2.0"
 core = "7.x"
 project = "da_vinci"
-datestamp = "1440488355"
+datestamp = "1429084656"
 

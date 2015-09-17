@@ -4,6 +4,13 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700)
 @import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,500,600,700)
+@import url(https://fonts.googleapis.com/css?family=Allerta)
+@font-face
+  font-family: Aller-Regular
+  src: url('/sites/default/files/fonts/Aller-Regular.eot')
+  src: url('/sites/default/files/fonts/Aller-Regular.eot?#iefix') format('embedded-opentype'), url('sites/default/files/fonts/Aller-Regular.woff') format('woff'), url('sites/default/files/fonts/Aller-Regular.ttf') format('truetype'), url('sites/default/files/fonts/Aller-Regular.svg#fontname') format('svg')
+  font-weight: normal
+  font-style: normal
 // Structure
 html,
 body
@@ -78,7 +85,7 @@ select,
 textarea
   +border-radius(5px)
   background: $background-form-element
-  border: 1px solid $border-form-element 
+  border: 1px solid $border-form-element
   color: $color-form-element
   font-size: 0.9em
   max-width: 100%
@@ -100,4 +107,7 @@ select
 // dd
 dd
   margin-bottom: 10px
+
+#block-system-main
+  display: none
 

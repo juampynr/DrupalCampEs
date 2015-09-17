@@ -5,12 +5,14 @@
 .top-bar
   overflow: hidden
   background: $background-top-bar
+.header-wrapper
+  padding: 25px 40px
 .site-header
   background: $background-header
   min-height: 75px
   #name-slogan
-    position: absolute
-    bottom: 10px
+    position: relative
+    float: right
     .site-name
       h1
         margin: 0
@@ -19,5 +21,25 @@
         color: $color-site-name
     .site-slogan
       color: $color-site-slogan
+    .site-social
+      position: relative
+      float: right
+      width: 100px
+      margin-top: 5px
+      ul
+        float: right
+        list-style-type: none
+        li
+          margin: 0 0 0 10px
+          display: inline
+          &:first-child
+            margin-right: -5px
+    .site-languaje
+      margin: 0 90px 0
+      +vertical-align()
+      font-family: 'Allerta', sans-serif
+      font-size: 18px
+      color: black
 #site-logo img
   max-width: 100%
+

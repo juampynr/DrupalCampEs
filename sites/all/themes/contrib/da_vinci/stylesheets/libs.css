@@ -1,0 +1,56 @@
+/*
+Error: File to import not found or unreadable: partials/lib/*.
+       Load paths:
+         Compass::SpriteImporter
+         /var/www/html/granada2016/sites/all/themes/contrib/da_vinci/sass
+         /home/aparajon/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets
+         /home/aparajon/.rvm/gems/ruby-2.1.2/gems/susy-2.2.1/sass
+         /home/aparajon/.rvm/gems/ruby-2.1.2/gems/compass-normalize-1.5/stylesheets
+        on line 1 of /var/www/html/granada2016/sites/all/themes/contrib/da_vinci/sass/libs.sass
+
+1: @import partials/lib/*
+
+Backtrace:
+/var/www/html/granada2016/sites/all/themes/contrib/da_vinci/sass/libs.sass:1
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/import_node.rb:45:in `import'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/tree/root_node.rb:20:in `render'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/engine.rb:278:in `render'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/listen-2.7.11/lib/listen/listener.rb:282:in `call'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/listen-2.7.11/lib/listen/listener.rb:282:in `_process_changes'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/listen-2.7.11/lib/listen/listener.rb:239:in `block in _wait_for_changes'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/listen-2.7.11/lib/listen/listener.rb:222:in `loop'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/listen-2.7.11/lib/listen/listener.rb:222:in `_wait_for_changes'
+/home/aparajon/.rvm/gems/ruby-2.1.2/gems/listen-2.7.11/lib/listen/listener.rb:318:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: partials/lib/*.\A        Load paths:\A          Compass::SpriteImporter\A          /var/www/html/granada2016/sites/all/themes/contrib/da_vinci/sass\A          /home/aparajon/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets\A          /home/aparajon/.rvm/gems/ruby-2.1.2/gems/susy-2.2.1/sass\A          /home/aparajon/.rvm/gems/ruby-2.1.2/gems/compass-normalize-1.5/stylesheets\A         on line 1 of /var/www/html/granada2016/sites/all/themes/contrib/da_vinci/sass/libs.sass\A \A 1: @import partials/lib/*"; }

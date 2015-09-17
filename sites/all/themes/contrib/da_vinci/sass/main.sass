@@ -1,7 +1,7 @@
-@import ../bower_components/compass-mixins/lib/compass
-@import ../bower_components/susy/sass/susy
-@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
-@import ../bower_components/bourbon/app/assets/stylesheets/bourbon
+@import 'susy'
+@import 'breakpoint'
+@import 'sassy-buttons'
+@import 'bourbon/bourbon'
 
 @import partials/utilities/variables
 @import partials/utilities/normalize
@@ -9,10 +9,8 @@
 @import partials/utilities/extends
 
 @import partials/base/susy
-@import 'maps/base'
-@import 'maps/components'
-@import 'maps/content'
-@import 'maps/regions'
+@import partials/base/*
 
-h1
-  color: blue
+@import partials/components/**/*
+@import partials/regions/*
+@import partials/content/**/*

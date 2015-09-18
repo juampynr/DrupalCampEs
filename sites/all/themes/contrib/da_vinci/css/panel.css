@@ -68,11 +68,11 @@ html {
  *  Justified element list
  *  @pre  justified-list.js  required.
  *  @pre  DOM structure: <container><element></element><element></element></container>
- *  @see  http://code.jelmerdemaat.nl/2012/perfectly-justified-css-grid-technique-using-inline-block/ 
+ *  @see  http://code.jelmerdemaat.nl/2012/perfectly-justified-css-grid-technique-using-inline-block/
  */
 /**
  *  Layer info on hover
- *  @param $overlay-color; 
+ *  @param $overlay-color;
  *  @param $opacity;
  */
 /**
@@ -194,7 +194,7 @@ html {
 }
 /* line 49, ../sass/partials/utilities/_extends.sass */
 .button:hover {
-  background: #16a085;
+  background: #b0b0b0;
   text-decoration: none;
 }
 

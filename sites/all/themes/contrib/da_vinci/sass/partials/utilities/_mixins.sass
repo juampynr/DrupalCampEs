@@ -114,7 +114,7 @@
  *  Justified element list
  *  @pre  justified-list.js  required.
  *  @pre  DOM structure: <container><element></element><element></element></container>
- *  @see  http://code.jelmerdemaat.nl/2012/perfectly-justified-css-grid-technique-using-inline-block/ 
+ *  @see  http://code.jelmerdemaat.nl/2012/perfectly-justified-css-grid-technique-using-inline-block/
  */
 =justified-list($font-size: 12px, $text-align: center, $vertical-align: top)
   width: 100%
@@ -141,7 +141,7 @@
     *display: inline
 /**
  *  Layer info on hover
- *  @param $overlay-color; 
+ *  @param $overlay-color;
  *  @param $opacity;
  */
 
@@ -199,3 +199,9 @@
         color: adjust-lightness(desaturate(lighten($color, $i*10), 10),1/$i*70)
       &:hover
         background-color: lighten($color, $i*15)
+=vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)

@@ -1,5 +1,5 @@
 /**
- *  @file 
+ *  @file
  *  Sass Vars
  */
 /**
@@ -182,7 +182,7 @@ html {
   font-size: 13px;
   text-align: center;
   color: #ffffff;
-  background: #1abc9c;
+  background: #000000;
   border: none;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
@@ -194,7 +194,7 @@ html {
 }
 /* line 49, ../sass/partials/utilities/_extends.sass */
 .button:hover {
-  background: #16a085;
+  background: #b0b0b0;
   text-decoration: none;
 }
 

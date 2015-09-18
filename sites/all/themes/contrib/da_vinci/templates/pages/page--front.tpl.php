@@ -76,13 +76,12 @@ ini_set('display_startup_errors', TRUE);
 ?>
 
 <?php global $base_url; ?>
-<section id="page">
+<section id="page" class="container">
   <?php if($page['top_bar']): ?>
     <nav class="top-bar" role="navigation">
       <?php print render($page['top_bar']); ?>
     </nav>
   <?php endif; ?>
-
   <header id="masthead" class="site-header" role="banner">
     <div class="header-wrapper container">
       <div class="header-left">
@@ -109,7 +108,8 @@ ini_set('display_startup_errors', TRUE);
       </div>
     </div>
   </header>
-
+  <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
+  <div class="rompe">&nbsp;</div>
   <?php if($page['preface']) : ?>
   <div id="preface">
     <?php print render($page['preface']); ?>
@@ -124,10 +124,8 @@ ini_set('display_startup_errors', TRUE);
     <?php endif; ?>
 
     <?php print render($title_prefix); ?>
-
     <?php print render($title_suffix); ?>
     <?php print $messages; ?>
-    <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
 
     <section id="content" role="main">
       <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>

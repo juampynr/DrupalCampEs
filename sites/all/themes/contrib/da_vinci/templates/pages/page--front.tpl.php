@@ -132,6 +132,7 @@ ini_set('display_startup_errors', TRUE);
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
       <?php print render($page['content']); ?>
+      <?php unset($page['content']['system_main']); ?>
     </section>
 
     <?php if ($page['sidebar_first']): ?>

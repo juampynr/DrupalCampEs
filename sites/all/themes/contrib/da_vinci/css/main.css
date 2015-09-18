@@ -2548,6 +2548,11 @@ div.vertical-tabs ul.vertical-tabs-list {
   background-size: cover;
 }
 
+/* line 36, ../sass/partials/content/block/_blocks.sass */
+#block-system-main {
+  display: none;
+}
+
 /**
  *  @file
  *  Search Form Block Styles

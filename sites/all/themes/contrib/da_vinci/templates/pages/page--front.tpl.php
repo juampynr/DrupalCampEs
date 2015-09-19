@@ -97,8 +97,8 @@ ini_set('display_startup_errors', TRUE);
         <div id="name-slogan">
           <div class="site-social">
             <ul>
-              <li><a class="facebook" href="#" target="_blank"><img src="/sites/all/themes/contrib/da_vinci/images/icono-facebook.svg" alt="FaceBook DrupalCamp Granada 2016" title="FaceBook DrupalCamp Granada 2016" width="28px" height="28px" /></a></li>
-              <li><a class="twitter" href="#" target="_blank"><img src="/sites/all/themes/contrib/da_vinci/images/icono-twitter.svg" alt="Twitter DrupalCamp Granada 2016" title="Twitter DrupalCamp Granada 2016" width="28px" height="28px"/></a></li>
+              <li><a class="facebook" href="https://www.facebook.com/DrupalCampSpain" target="_blank"><img src="/sites/all/themes/contrib/da_vinci/images/icono-facebook.svg" alt="FaceBook DrupalCamp Granada 2016" title="FaceBook DrupalCamp Granada 2016" width="28px" height="28px" /></a></li>
+              <li><a class="twitter" href="https://twitter.com/drupalcampspain" target="_blank"><img src="/sites/all/themes/contrib/da_vinci/images/icono-twitter.svg" alt="Twitter DrupalCamp Granada 2016" title="Twitter DrupalCamp Granada 2016" width="28px" height="28px"/></a></li>
             </ul>
           </div>
           <div class="site-languaje">

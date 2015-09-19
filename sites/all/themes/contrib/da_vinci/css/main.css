@@ -2270,6 +2270,10 @@ div.vertical-tabs ul.vertical-tabs-list {
   padding: 2em 0;
   color: #ffffff;
 }
+/* line 14, ../sass/partials/regions/_footer.sass */
+.site-footer .simbolo {
+  margin: -70px 0 0 40px;
+}
 
 /**
  *  @file

@@ -48,7 +48,7 @@
       $('.messages').not($('.admin .messages')).click(function() {$(this).addClass('hide');});
       // Show back to top button.
       $(window).scroll(function() {
-        if ($(window).scrollTop() < $(window).height() * 2) {
+        if ($(window).scrollTop() < 10 ) {
           $('.backtotop').removeClass('active');
         } else {
           $('.backtotop').addClass('active');
@@ -57,10 +57,8 @@
       // Back to top click event.
       $(".backtotop").click(function(e) {
         e.preventDefault();
-        $('body').animate({
-          scrollTop: $('body').offset().top
-        }, 500);
-        return false;
+         $("html, body").animate({ scrollTop: 0 }, "slow");
+         return false;
       });
       // Footer height.
       footerpush = function(){

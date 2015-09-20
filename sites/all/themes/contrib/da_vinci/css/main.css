@@ -2683,6 +2683,32 @@ div.vertical-tabs ul.vertical-tabs-list {
   img-padding: 0 !important;
 }
 
+/* line 16, ../sass/partials/content/block/_slider.sass */
+.textos-slider {
+  position: relative;
+  margin: -825px auto;
+  z-index: 9999;
+  text-align: center;
+}
+/* line 21, ../sass/partials/content/block/_slider.sass */
+.textos-slider .simbolo {
+  margin: 0 0 0 70px;
+}
+/* line 23, ../sass/partials/content/block/_slider.sass */
+.textos-slider p {
+  font: italic bold 60px "Noto Serif";
+  line-height: 1.2em;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+/* line 30, ../sass/partials/content/block/_slider.sass */
+.textos-slider .banderola {
+  margin: 20px 0;
+  padding: 0;
+}
+
 /**
  *  @file
  *  IE specific styles

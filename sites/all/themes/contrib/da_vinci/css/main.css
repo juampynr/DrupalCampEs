@@ -2262,6 +2262,7 @@ div.vertical-tabs ul.vertical-tabs-list {
  */
 /* line 5, ../sass/partials/regions/_footer.sass */
 .site-footer {
+  margin: -70px 0;
   background: #348bc2;
   position: absolute;
   bottom: 0;
@@ -2270,7 +2271,7 @@ div.vertical-tabs ul.vertical-tabs-list {
   padding: 2em 0;
   color: #ffffff;
 }
-/* line 14, ../sass/partials/regions/_footer.sass */
+/* line 15, ../sass/partials/regions/_footer.sass */
 .site-footer .simbolo {
   margin: -70px 0 0 40px;
 }
@@ -2637,7 +2638,7 @@ div.vertical-tabs ul.vertical-tabs-list {
 }
 
 /* line 89, ../sass/partials/content/block/_blocks.sass */
-#block-system-main {
+#first-time {
   display: none;
 }
 
@@ -2693,8 +2694,9 @@ div.vertical-tabs ul.vertical-tabs-list {
 /* line 21, ../sass/partials/content/block/_slider.sass */
 .textos-slider .simbolo {
   margin: 0 0 0 70px;
+  max-width: 400px;
 }
-/* line 23, ../sass/partials/content/block/_slider.sass */
+/* line 24, ../sass/partials/content/block/_slider.sass */
 .textos-slider p {
   font: italic bold 60px "Noto Serif";
   line-height: 1.2em;
@@ -2703,10 +2705,11 @@ div.vertical-tabs ul.vertical-tabs-list {
   margin: 0;
   padding: 0;
 }
-/* line 30, ../sass/partials/content/block/_slider.sass */
+/* line 31, ../sass/partials/content/block/_slider.sass */
 .textos-slider .banderola {
   margin: 20px 0;
   padding: 0;
+  max-width: 250px;
 }
 
 /**

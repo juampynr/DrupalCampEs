@@ -109,8 +109,8 @@ ini_set('display_startup_errors', TRUE);
     </div>
   </header>
   <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
+  <div class="rompe">&nbsp;</div>
   <?php if($page['preface']) : ?>
-    <div class="rompe">&nbsp;</div>
   <div id="preface">
     <?php print render($page['preface']); ?>
   </div>

@@ -360,20 +360,38 @@ head:hover ~ body .region-footer:before {
 }
 /* line 15, ../sass/partials/base/_layouts.sass */
 .site-header .header-left {
-  width: 23.72881%;
+  width: 40.67797%;
   float: left;
   margin-left: 0;
   margin-right: -100%;
 }
-/* line 17, ../sass/partials/base/_layouts.sass */
+@media (min-width: 640px) {
+  /* line 15, ../sass/partials/base/_layouts.sass */
+  .site-header .header-left {
+    width: 23.72881%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+  }
+}
+/* line 19, ../sass/partials/base/_layouts.sass */
 .site-header .header-right {
-  width: 74.57627%;
+  width: 57.62712%;
   float: left;
-  margin-left: 25.42373%;
+  margin-left: 42.37288%;
   margin-right: -100%;
 }
+@media (min-width: 640px) {
+  /* line 19, ../sass/partials/base/_layouts.sass */
+  .site-header .header-right {
+    width: 74.57627%;
+    float: left;
+    margin-left: 25.42373%;
+    margin-right: -100%;
+  }
+}
 
-/* line 19, ../sass/partials/base/_layouts.sass */
+/* line 23, ../sass/partials/base/_layouts.sass */
 .hx {
   clear: both;
   width: 100%;
@@ -384,7 +402,7 @@ head:hover ~ body .region-footer:before {
 }
 
 @media (min-width: 44em) {
-  /* line 23, ../sass/partials/base/_layouts.sass */
+  /* line 27, ../sass/partials/base/_layouts.sass */
   .container, .region-top-bar,
   .region-preface,
   .region-footer {
@@ -427,14 +445,14 @@ head:hover ~ body .region-footer:before {
     background-position: left top;
   }
 
-  /* line 26, ../sass/partials/base/_layouts.sass */
+  /* line 30, ../sass/partials/base/_layouts.sass */
   .one-sidebar.sidebar-first #content {
     width: 74.57627%;
     float: left;
     margin-left: 25.42373%;
     margin-right: -100%;
   }
-  /* line 28, ../sass/partials/base/_layouts.sass */
+  /* line 32, ../sass/partials/base/_layouts.sass */
   .one-sidebar.sidebar-first #sidebar-first {
     width: 23.72881%;
     float: left;
@@ -442,14 +460,14 @@ head:hover ~ body .region-footer:before {
     margin-right: -100%;
   }
 
-  /* line 31, ../sass/partials/base/_layouts.sass */
+  /* line 35, ../sass/partials/base/_layouts.sass */
   .one-sidebar.sidebar-second #content {
     width: 74.57627%;
     float: left;
     margin-left: 0;
     margin-right: -100%;
   }
-  /* line 33, ../sass/partials/base/_layouts.sass */
+  /* line 37, ../sass/partials/base/_layouts.sass */
   .one-sidebar.sidebar-second #sidebar-second {
     width: 23.72881%;
     float: left;
@@ -457,21 +475,21 @@ head:hover ~ body .region-footer:before {
     margin-right: -100%;
   }
 
-  /* line 36, ../sass/partials/base/_layouts.sass */
+  /* line 40, ../sass/partials/base/_layouts.sass */
   .two-sidebars #content {
     width: 49.15254%;
     float: left;
     margin-left: 25.42373%;
     margin-right: -100%;
   }
-  /* line 38, ../sass/partials/base/_layouts.sass */
+  /* line 42, ../sass/partials/base/_layouts.sass */
   .two-sidebars #sidebar-first {
     width: 23.72881%;
     float: left;
     margin-left: 0;
     margin-right: -100%;
   }
-  /* line 40, ../sass/partials/base/_layouts.sass */
+  /* line 44, ../sass/partials/base/_layouts.sass */
   .two-sidebars #sidebar-second {
     width: 23.72881%;
     float: left;
@@ -480,7 +498,7 @@ head:hover ~ body .region-footer:before {
   }
 }
 @media (min-width: 64em) {
-  /* line 43, ../sass/partials/base/_layouts.sass */
+  /* line 47, ../sass/partials/base/_layouts.sass */
   .container, .region-top-bar,
   .region-preface,
   .region-footer {
@@ -2512,58 +2530,122 @@ div.vertical-tabs ul.vertical-tabs-list {
 /* line 7, ../sass/partials/content/block/_blocks.sass */
 .textos-centro {
   text-align: center;
-  font-family: Noto;
-  font-size: 48px;
-  font-style: italic;
+  font: italic normal 18px Noto;
   line-height: 1.2em;
   letter-spacing: -0.035em;
+  margin: 50px 0;
 }
-/* line 14, ../sass/partials/content/block/_blocks.sass */
+/* line 13, ../sass/partials/content/block/_blocks.sass */
 .textos-centro img {
   margin: 35px 0;
 }
-/* line 16, ../sass/partials/content/block/_blocks.sass */
+/* line 15, ../sass/partials/content/block/_blocks.sass */
 .textos-centro img.banderola {
   float: right;
-  margin: -50px 0;
+  margin: 50px 0;
   -webkit-transform: rotate(-10deg);
   -moz-transform: rotate(-10deg);
   -ms-transform: rotate(-10deg);
   -o-transform: rotate(-10deg);
   transform: rotate(-10deg);
+  width: 100px;
+  height: auto;
 }
-/* line 20, ../sass/partials/content/block/_blocks.sass */
+/* line 21, ../sass/partials/content/block/_blocks.sass */
+.textos-centro img.logo-aed {
+  width: 150px;
+  heigth: auto;
+}
+@media (min-width: 640px) {
+  /* line 7, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro {
+    font: italic normal 36px Noto;
+  }
+}
+@media (min-width: 960px) {
+  /* line 7, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro {
+    font: italic normal 48px Noto;
+  }
+  /* line 29, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro img.banderola {
+    margin: -50px 0;
+    width: 200px;
+    height: auto;
+  }
+  /* line 33, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro img.logo-aed {
+    width: 200px;
+    heigth: auto;
+  }
+}
+/* line 36, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .tres-columnas {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
   text-align: left;
 }
-/* line 23, ../sass/partials/content/block/_blocks.sass */
+/* line 39, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .tres-columnas h2 {
-  font-family: Noto;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 32px;
+  font: italic bold 16px Noto;
+  text-align: center;
 }
-/* line 28, ../sass/partials/content/block/_blocks.sass */
+/* line 42, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .tres-columnas p {
   font-size: 14px;
   line-height: 1.2em;
   letter-spacing: 0em;
   font-style: normal;
 }
-/* line 33, ../sass/partials/content/block/_blocks.sass */
+@media (min-width: 640px) {
+  /* line 36, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .tres-columnas {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  /* line 49, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .tres-columnas h2 {
+    font: italic bold 32px Noto;
+  }
+}
+@media (min-width: 960px) {
+  /* line 36, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .tres-columnas {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  /* line 53, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .tres-columnas h2 {
+    text-align: left;
+    font: italic bold 32px Noto;
+  }
+}
+/* line 57, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter {
+  display: inline-block;
   margin: 50px 0;
   width: 100%;
-  height: 500px;
+  height: 400px;
   background: url("/sites/all/themes/contrib/da_vinci/images/foto_grupo_drupalcamp_caceres-pedro-lozano.jpg");
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
 }
-/* line 41, ../sass/partials/content/block/_blocks.sass */
+@media (min-width: 960px) {
+  /* line 57, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter {
+    background: url("/sites/all/themes/contrib/da_vinci/images/foto_grupo_drupalcamp_caceres-pedro-lozano.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+  }
+}
+/* line 73, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla {
   display: table;
   background: #ffffff;
@@ -2575,69 +2657,124 @@ div.vertical-tabs ul.vertical-tabs-list {
   transform: translateY(-50%);
   margin: 0 auto;
 }
-/* line 47, ../sass/partials/content/block/_blocks.sass */
+/* line 79, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila {
   display: table-row;
 }
-/* line 49, ../sass/partials/content/block/_blocks.sass */
+/* line 81, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila .titulo {
-  font: italic bold 32px Noto;
+  font: italic bold 16px Noto;
 }
-/* line 51, ../sass/partials/content/block/_blocks.sass */
+@media (min-width: 960px) {
+  /* line 81, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter .cont-tabla .cont-fila .titulo {
+    font: italic bold 32px Noto;
+  }
+}
+/* line 85, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila .colum-izq {
-  font: normal normal 16px Noto;
+  font: normal normal 10px Noto;
   line-height: 1.2em;
   letter-spacing: 0.035em;
   display: table-cell;
   float: left;
 }
-/* line 58, ../sass/partials/content/block/_blocks.sass */
+/* line 92, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila .colum-izq ul li {
   display: inline;
   margin: 0 3px 0;
 }
-/* line 61, ../sass/partials/content/block/_blocks.sass */
+/* line 95, ../sass/partials/content/block/_blocks.sass */
+.textos-centro .newsletter .cont-tabla .cont-fila .colum-izq ul li img {
+  width: 20px;
+  heigth: 20px;
+}
+@media (min-width: 960px) {
+  /* line 85, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter .cont-tabla .cont-fila .colum-izq {
+    font: normal normal 16px Noto;
+  }
+  /* line 101, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter .cont-tabla .cont-fila .colum-izq ul li {
+    display: inline;
+    margin: 0 3px 0;
+  }
+  /* line 104, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter .cont-tabla .cont-fila .colum-izq ul li img {
+    width: 40px;
+    heigth: 40px;
+  }
+}
+/* line 107, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha {
   margin-left: 50px;
-  font: normal normal 16px Noto;
+  font: normal normal 10px Noto;
   line-height: 1.2em;
   letter-spacing: -0.035em;
   display: table-cell;
   float: right;
 }
-/* line 68, ../sass/partials/content/block/_blocks.sass */
+@media (min-width: 960px) {
+  /* line 107, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha {
+    font: normal normal 16px Noto;
+  }
+}
+/* line 116, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha .descripcion {
-  font: normal normal 12px Allerta;
+  font: normal normal 8px Allerta;
   line-height: 1.2em;
-  width: 315px;
+  width: 225px;
   margin: 10px 0;
 }
-/* line 74, ../sass/partials/content/block/_blocks.sass */
+@media (min-width: 960px) {
+  /* line 116, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha .descripcion {
+    font: normal normal 12px Noto;
+    width: 315px;
+  }
+}
+/* line 125, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input {
   border: 2px solid black;
   float: right;
   clear: none;
 }
-/* line 78, ../sass/partials/content/block/_blocks.sass */
+/* line 129, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input.email {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  width: 265px;
+  width: 180px;
 }
-/* line 81, ../sass/partials/content/block/_blocks.sass */
+/* line 132, ../sass/partials/content/block/_blocks.sass */
 .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input.button, .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input.form-submit, .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup .confirmation input#edit-cancel, .confirmation .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input#edit-cancel {
-  width: 40px;
+  width: 35px;
   height: 35px;
-  margin: 20px 0 0 5px;
+  margin: 10px 0 0 5px;
   -moz-border-radius: 2;
   -webkit-border-radius: 2;
   border-radius: 2;
   background: url("/sites/all/themes/contrib/da_vinci/images/send.png");
   background-repeat: no-repeat;
 }
+@media (min-width: 960px) {
+  /* line 141, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input.email {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    width: 265px;
+  }
+  /* line 144, ../sass/partials/content/block/_blocks.sass */
+  .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input.button, .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input.form-submit, .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup .confirmation input#edit-cancel, .confirmation .textos-centro .newsletter .cont-tabla .cont-fila .colum-dcha #mc_embed_signup input#edit-cancel {
+    width: 40px;
+    height: 35px;
+    margin: 20px 0 0 5px;
+  }
+}
 
-/* line 89, ../sass/partials/content/block/_blocks.sass */
+/* line 151, ../sass/partials/content/block/_blocks.sass */
 #first-time {
   display: none;
 }

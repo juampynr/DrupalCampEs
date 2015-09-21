@@ -6,28 +6,31 @@
   margin: 0 !important
   padding: 0 !important
   border: none !important
+
 #flexislider-1
-  margin: -50px 0 !important
+  margin: 0 !important
   padding: 0 !important
-  img:
-    margin: -50px 0 !important
-    margin: 0 !important
-    padding: 0 !important
+  position: absolute
+
 .textos-slider
-  position: relative
-  margin: -825px auto
+  position: absolute
   z-index: 9999
   text-align: center
+  +horizontal-align
   .simbolo
     margin: 0 0 0 70px
     max-width: 400px
   p
-    font: italic bold 60px 'Noto Serif'
+    font: italic bold 24px 'Noto Serif'
     line-height: 1.2em
     letter-spacing: -0.035em
     color: $white
     margin: 0
     padding: 0
+    +breakpoint($camp-640)
+      font: italic bold 48px 'Noto Serif'
+    +breakpoint($camp-960)
+      font: italic bold 60px 'Noto Serif'
   .banderola
     margin: 20px 0
     padding: 0

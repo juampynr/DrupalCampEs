@@ -18,6 +18,9 @@
       +transform(rotate(-10deg))
       width: 100px
       height: auto
+    &.logo-aed
+      width: 150px
+      height: auto
   +breakpoint($camp-640)
     font: italic normal 36px Noto
   +breakpoint($camp-960)
@@ -25,6 +28,9 @@
     img
       &.banderola
         margin: -50px 0
+        width: 200px
+        height: auto
+      &.logo-aed
         width: 200px
         height: auto
   .tres-columnas
@@ -49,10 +55,11 @@
         font: italic bold 32px Noto
 
   .newsletter
+    display: inline-block
     margin: 50px 0
     width: 100%
-    height: 300px
-    background: url("/sites/all/themes/contrib/da_vinci/images/foto_grupo_drupalcamp_caceres-pedro-lozano.jpg")
+    height: 400px
+    background-image: url("/sites/all/themes/contrib/da_vinci/images/foto_grupo_drupalcamp_caceres-pedro-lozano.jpg")
     background-attachment: fixed
     background-size: cover
     text-align: center

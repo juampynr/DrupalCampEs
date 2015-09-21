@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' =>
     array (
-      'database' => 'granada2016',
-      'username' => 'root',
-      'password' => '48816957',
+      'database' => '2016camp',
+      'username' => '2016camp',
+      'password' => '2016camp',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',

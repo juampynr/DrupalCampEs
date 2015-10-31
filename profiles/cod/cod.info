@@ -73,6 +73,7 @@ dependencies[] = panels
 dependencies[] = page_manager
 dependencies[] = quicktabs
 dependencies[] = quicktabs_tabstyles
+dependencies[] = redirect
 dependencies[] = rules
 dependencies[] = rules_admin
 dependencies[] = strongarm

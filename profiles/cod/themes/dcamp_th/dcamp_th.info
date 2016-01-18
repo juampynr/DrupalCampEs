@@ -1,5 +1,5 @@
-name = dcamp_th theme
-description = Please provide a description for your theme.
+name = DrupalCamp 2016
+description = Theme para la dcamp 2016.
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
@@ -16,7 +16,6 @@ stylesheets[all][] = css/styles.css
 ; ========================================
 scripts[] = js/dcamp-th.behaviors.js
 scripts[] = js/mobile-menu.js
-scripts[] = js/jquery.imageScroll.js
 
 ; ========================================
 ; Regions

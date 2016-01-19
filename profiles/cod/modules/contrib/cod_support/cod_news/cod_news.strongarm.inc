@@ -91,11 +91,31 @@ function cod_news_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'language' => array(
+          'weight' => '3',
+        ),
+        'metatags' => array(
+          'weight' => '7',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '5',
+        ),
+        'redirect' => array(
+          'weight' => '4',
+        ),
+      ),
       'display' => array(
         'language' => array(
           'default' => array(
-            'weight' => '1',
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
+          'listing' => array(
+            'weight' => '2',
             'visible' => FALSE,
           ),
         ),

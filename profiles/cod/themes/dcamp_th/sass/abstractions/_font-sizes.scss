@@ -1,0 +1,15 @@
+// Font sizes responsive
+@mixin font-size($mobile, $tablet: $mobile, $desktop: $tablet){
+  font-size: $mobile;
+
+  @include breakpoint($tab) {
+    // tablet
+    font-size: $tablet;
+  }
+
+  @include breakpoint($desk) {
+    // desktop
+    font-size: $desktop;
+  }
+
+}

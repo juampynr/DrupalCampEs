@@ -1,0 +1,22 @@
+#block-custom-1 {
+  padding: 19px;
+}
+
+.social {
+  a {
+    display: inline-block;
+
+    &.fb {
+      @include bg-build('facebook-white-21x20.png');
+    }
+
+    &.tw {
+      @include bg-build('twitter-white-21x21.png');
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+}

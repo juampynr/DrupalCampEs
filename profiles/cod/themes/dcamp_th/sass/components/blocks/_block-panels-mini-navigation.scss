@@ -1,0 +1,24 @@
+#block-panels-mini-navigation {
+  > .block__content {
+    > .inner-content {
+      text-align: center;
+
+      > div > div > div > div {
+        display: inline-block;
+
+        .block__title {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #block-blockify-blockify-logo {
+    float: left;
+  }
+
+  #block-custom-1,
+  #block-locale-language {
+    float: right;
+  }
+}

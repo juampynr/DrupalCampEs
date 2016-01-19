@@ -21,8 +21,9 @@ Estructura:
 */
 .content-absolute-centered {
   position: relative;
+  height: 100%;
 
-  .content {
+  > .content {
     position: absolute;
     height: 100%;
     top: 0;
@@ -30,7 +31,7 @@ Estructura:
     width: 100%;
     z-index: 2;
 
-    .inner {
+    > .inner {
       @include vertical-multi-line;
       margin: 0 auto;
     }

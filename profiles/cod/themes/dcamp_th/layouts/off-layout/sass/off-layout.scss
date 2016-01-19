@@ -51,17 +51,6 @@ $desk: 70em;
   @include span(12);
 }
 
-@include breakpoint($tab) {
-
-  .l-branding {
-    @include span(4);
-  }
-
-  .l-region--header {
-    @include span(8 last);
-  }
-
-}
 
 @include breakpoint($desk) {
 

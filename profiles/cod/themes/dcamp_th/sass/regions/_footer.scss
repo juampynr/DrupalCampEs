@@ -1,7 +1,20 @@
 .l-footer {
+  background: #32657E;
+  margin-top: 50px;
 
   .l-container {
+    position: relative;
 
+    &:before {
+      $img: 'drop-blue-119x153.png';
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 0;
+      background: image-url($img) no-repeat;
+      width: image-width($img);
+      height: image-height($img);
+    }
   }
 
 }

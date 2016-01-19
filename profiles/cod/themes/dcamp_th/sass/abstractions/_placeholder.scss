@@ -19,18 +19,17 @@
   @each $prefix in $form_placeholder_prefixes {
 
     @if $elements == 'input' {
-      input[placeholder]#{$prefix} {
+      &#{$prefix} {
         @content
       }
 
     } @else if $elements == 'textarea' {
-      textarea[placeholder]#{$prefix} {
+      &#{$prefix} {
         @content
       }
 
     } @else {
-      input[placeholder]#{$prefix},
-      textarea[placeholder]#{$prefix} {
+      &#{$prefix} {
         @content
       }
     }

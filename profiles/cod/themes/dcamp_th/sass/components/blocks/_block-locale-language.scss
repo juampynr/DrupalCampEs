@@ -1,11 +1,14 @@
 #block-locale-language {
+  font-family: $font-aller;
+  padding: 22px;
 
   .language-switcher-locale-url {
 
     li {
 
       &.active {
-
+        // El idioma activo no lo mostramos segun el diseño.
+        display: none;
         a {
 
         }
@@ -13,7 +16,8 @@
       }
 
       a {
-
+        color: #fff;
+        text-decoration: none;
       }
 
     }

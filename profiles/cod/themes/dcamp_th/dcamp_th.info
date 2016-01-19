@@ -20,25 +20,19 @@ scripts[] = js/mobile-menu.js
 ; ========================================
 ; Regions
 ; ========================================
-regions[branding] = Branding
-regions[header] = Header
-regions[navigation] = Navigation
-regions[highlighted] = Highlighted
-regions[help] = Help
-regions[content] = Content
-regions[sidebar_first] = First Sidebar
-regions[sidebar_second] = Second Sidebar
-regions[footer] = Footer
-regions[one]    = One
-regions[two]    = Two
-regions[three]  = Three
-regions[four]   = Four
-regions[five]   = Five
-regions[six]    = Six
-regions[seven]  = Seven
-regions[eight]  = Eight
-regions[nine]   = Nine
-regions[ten]    = Ten
+regions[heading]        = Heading
+regions[branding]       = Branding
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[pre_content]    = Pre Content
+regions[content]        = Content
+regions[post_content]   = Post Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer]         = Footer
+regions[post_footer]    = Post Footer
 
 ; ========================================
 ; Settings

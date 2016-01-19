@@ -1,0 +1,45 @@
+#block-system-main-menu {
+  font-family: $font-aller;
+
+  .inner-content {
+    > ul {
+
+      li {
+        display: inline-block;
+        vertical-align: top;
+        list-style: none;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          padding: 22px;
+          display: block;
+
+          & + ul {
+            display: none;
+            position: absolute;
+            background: #222E3B;
+
+            li {
+              display: block;
+            }
+          }
+
+        }
+
+        &:hover {
+          > a {
+            background: #32657E;
+          }
+
+          > ul {
+            display: block;
+            background: #32657E;
+          }
+        }
+
+      }
+
+    }
+  }
+}

@@ -51,6 +51,8 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
   <div<?php print $content_attributes; ?>>
-    <?php print $content; ?>
+    <div class="inner-content">
+      <?php print $content; ?>
+    </div>
   </div>
 </div>

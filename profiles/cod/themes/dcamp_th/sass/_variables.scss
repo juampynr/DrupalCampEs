@@ -35,11 +35,44 @@ $desk: 960px;
 // ------------------------------------------
 // ------------------------------------------
 // Fuentes locales.
-//@include font-face("Quicksand", font-files("Quicksand/Quicksand-Regular.woff", "Quicksand/Quicksand-Regular.ttf", "Quicksand/Quicksand-Regular.svg"), "Quicksand/Quicksand-Regular.eot", normal);
-//@include font-face("Quicksand", font-files("Quicksand/Quicksand-Bold.woff", "Quicksand/Quicksand-Bold.ttf", "Quicksand/Quicksand-Bold.svg"), "Quicksand/Quicksand-Bold.eot", bold);
+@font-face {
+  font-family: "Noto Serif";
+  src: font-files("notoserif/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  src: font-files("notoserif/NotoSerif-Italic.ttf");
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  src: font-files("notoserif/NotoSerif-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Aller";
+  src: font-files("aller/Aller_Rg.ttf");
+}
+
+@font-face {
+  font-family: "Aller";
+  src: font-files("aller/Aller_Rg.ttf");
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Aller";
+  src: font-files("aller/Aller_Rg.ttf");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
 
 // Google fonts
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 // ------------------------------------------
 // ------------------------------------------
@@ -47,9 +80,10 @@ $desk: 960px;
 // ------------------------------------------
 // ------------------------------------------
 // Para fuentes web ir a _webfonts.scss
-//$font-family-trebuchet: "Trebuchet MS", 'Geneva', Helvetica, Sans-serif;
-$font-family-OpenSans: 'Open Sans', sans-serif;
+$font-aller: 'Allert', sans-serif;
+$font-noto: 'Noto Serif', sans-serif;
 
+$base-font-family: $font-noto;
 $base-font-size: 16px;
 $base-line-height: 1em;
 

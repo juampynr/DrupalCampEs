@@ -1,0 +1,22 @@
+@mixin grid-items($cols, $hspacing: 1%, $vspacing: 1%) {
+  @include pie-clearfix;
+  $vspacing: $hspacing !default;
+
+  > * {
+    $item-width: (100% - ($hspacing *  ($cols - 1) )) / $cols;
+    float: left;
+    width: $item-width;
+    margin-left: $hspacing;
+    margin-bottom: $vspacing;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:nth-child(#{$cols}n+1) {
+      margin-left: 0;
+      clear: left;
+    }
+
+  }
+}

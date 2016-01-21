@@ -9,6 +9,7 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = text
+dependencies[] = title
 datestamp = 1420619009
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2

@@ -12,9 +12,10 @@ function commerce_billy_default_rules_configuration() {
   $items['rules_commerce_billy_generate_invoice_number_on_order_insert'] = entity_import('rules_config', '{ "rules_commerce_billy_generate_invoice_number_on_order_insert" : {
       "LABEL" : "Generate invoice number on order insert",
       "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
       "TAGS" : [ "commerce_billy" ],
       "REQUIRES" : [ "rules", "entity" ],
-      "ON" : [ "commerce_order_insert" ],
+      "ON" : { "commerce_order_insert" : [] },
       "IF" : [
         { "data_is" : { "data" : [ "commerce-order:status" ], "value" : "invoiced" } }
       ],
@@ -26,9 +27,10 @@ function commerce_billy_default_rules_configuration() {
   $items['rules_commerce_billy_generate_invoice_number_on_order_update'] = entity_import('rules_config', '{ "rules_commerce_billy_generate_invoice_number_on_order_update" : {
       "LABEL" : "Generate invoice number on order update",
       "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
       "TAGS" : [ "commerce_billy" ],
       "REQUIRES" : [ "rules", "entity" ],
-      "ON" : [ "commerce_order_update" ],
+      "ON" : { "commerce_order_update" : [] },
       "IF" : [
         { "NOT data_is" : { "data" : [ "commerce-order-unchanged:status" ], "value" : "invoiced" } },
         { "data_is" : { "data" : [ "commerce-order:status" ], "value" : "invoiced" } }
@@ -41,9 +43,10 @@ function commerce_billy_default_rules_configuration() {
   $items['rules_commerce_billy_invoice_order_on_completion'] = entity_import('rules_config', '{ "rules_commerce_billy_invoice_order_on_completion" : {
       "LABEL" : "Invoice order on completion",
       "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
       "TAGS" : [ "commerce_billy" ],
       "REQUIRES" : [ "rules", "commerce_order", "entity" ],
-      "ON" : [ "commerce_order_update" ],
+      "ON" : { "commerce_order_update" : [] },
       "IF" : [
         { "data_is" : { "data" : [ "commerce-order:status" ], "value" : "completed" } },
         { "NOT data_is" : { "data" : [ "commerce-order-unchanged:status" ], "value" : "completed" } }
@@ -53,15 +56,13 @@ function commerce_billy_default_rules_configuration() {
       ]
     }
   }');
-  // Only activate this rule if auto-billing is set.
-  $items['rules_commerce_billy_invoice_order_on_completion']->active = variable_get('commerce_billy_auto_invoice', FALSE);
-
   $items['rules_commerce_billy_set_cancel_date'] = entity_import('rules_config', '{ "rules_commerce_billy_set_cancel_date" : {
       "LABEL" : "Set cancel date",
       "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
       "TAGS" : [ "commerce_billy" ],
       "REQUIRES" : [ "rules", "entity" ],
-      "ON" : [ "commerce_order_update" ],
+      "ON" : { "commerce_order_update" : [] },
       "IF" : [
         { "NOT data_is" : { "data" : [ "commerce-order-unchanged:status" ], "value" : "canceled" } },
         { "data_is" : { "data" : [ "commerce-order:status" ], "value" : "canceled" } },
@@ -79,6 +80,7 @@ function commerce_billy_default_rules_configuration() {
   $items['rules_commerce_billy_set_to_canceled'] = entity_import('rules_config', '{ "rules_commerce_billy_set_to_canceled" : {
       "LABEL" : "Set order to canceled",
       "PLUGIN" : "rule",
+      "OWNER" : "rules",
       "TAGS" : [ "commerce_billy" ],
       "REQUIRES" : [ "rules", "commerce_order" ],
       "USES VARIABLES" : { "order" : { "label" : "Order", "type" : "commerce_order" } },
@@ -93,6 +95,7 @@ function commerce_billy_default_rules_configuration() {
   $items['rules_commerce_billy_set_to_invoiced'] = entity_import('rules_config', '{ "rules_commerce_billy_set_to_invoiced" : {
       "LABEL" : "Set order to invoiced",
       "PLUGIN" : "rule",
+      "OWNER" : "rules",
       "TAGS" : [ "commerce_billy" ],
       "REQUIRES" : [ "rules", "commerce_order", "commerce_billy" ],
       "USES VARIABLES" : { "order" : { "label" : "Order", "type" : "commerce_order" } },

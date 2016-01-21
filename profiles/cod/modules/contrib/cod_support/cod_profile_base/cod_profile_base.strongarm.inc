@@ -29,16 +29,31 @@ function cod_profile_base_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'ckeditor' => array(
-          'weight' => '12',
+          'weight' => '14',
         ),
         'account' => array(
           'weight' => '0',
         ),
         'timezone' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'picture' => array(
           'weight' => '1',
+        ),
+        'masquerade' => array(
+          'weight' => '18',
+        ),
+        'metatags' => array(
+          'weight' => '17',
+        ),
+        'mollom' => array(
+          'weight' => '19',
+        ),
+        'redirect' => array(
+          'weight' => '16',
+        ),
+        'locale' => array(
+          'weight' => '7',
         ),
       ),
       'display' => array(
@@ -49,6 +64,12 @@ function cod_profile_base_strongarm() {
           ),
           'full' => array(
             'weight' => '12',
+            'visible' => FALSE,
+          ),
+        ),
+        'masquerade' => array(
+          'full' => array(
+            'weight' => '7',
             'visible' => FALSE,
           ),
         ),

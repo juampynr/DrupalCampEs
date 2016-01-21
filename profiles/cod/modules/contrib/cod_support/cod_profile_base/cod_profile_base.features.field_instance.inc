@@ -48,7 +48,7 @@ function cod_profile_base_field_default_field_instances() {
         'rows' => 4,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 11,
     ),
   );
 
@@ -113,10 +113,11 @@ function cod_profile_base_field_default_field_instances() {
         'weight' => 8,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
+        'type' => 'text_default',
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'user',
@@ -140,7 +141,7 @@ function cod_profile_base_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 12,
     ),
   );
 
@@ -160,10 +161,9 @@ function cod_profile_base_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'type' => 'hidden',
+        'weight' => 9,
       ),
     ),
     'entity_type' => 'user',
@@ -187,7 +187,7 @@ function cod_profile_base_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -252,16 +252,10 @@ function cod_profile_base_field_default_field_instances() {
         'weight' => 5,
       ),
       'full' => array(
-        'label' => 'above',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 7,
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
       ),
     ),
     'entity_type' => 'user',
@@ -290,7 +284,7 @@ function cod_profile_base_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 7,
+      'weight' => 10,
     ),
   );
 
@@ -310,10 +304,14 @@ function cod_profile_base_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
+        'module' => 'title',
+        'settings' => array(
+          'title_class' => '',
+          'title_link' => '',
+          'title_style' => '',
+        ),
+        'type' => 'title_linked',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'user',
@@ -337,7 +335,7 @@ function cod_profile_base_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -358,7 +356,7 @@ function cod_profile_base_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'user',
@@ -382,7 +380,7 @@ function cod_profile_base_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 

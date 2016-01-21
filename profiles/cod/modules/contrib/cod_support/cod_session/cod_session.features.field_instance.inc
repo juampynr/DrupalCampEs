@@ -584,7 +584,7 @@ function cod_session_field_default_field_instances() {
       'description_field' => 0,
       'entity_translation_sync' => 0,
       'file_directory' => 'slides',
-      'file_extensions' => 'ppt pdf odt odp',
+      'file_extensions' => 'ppt pdf odt odp zip rar tgz tar gz',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),

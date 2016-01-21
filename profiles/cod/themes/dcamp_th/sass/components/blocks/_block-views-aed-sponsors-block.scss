@@ -1,0 +1,33 @@
+#block-views-aed-sponsors-block {
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+
+  h2 {
+    color: #669FD5;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .view-content {
+
+    table.views-view-grid {
+      width: 100%;
+
+      tr {
+        /**/
+        td {
+          vertical-align: middle;
+          padding: 30px;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+}

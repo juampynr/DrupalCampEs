@@ -92,12 +92,12 @@ $base-line-height: 1em;
 // Susy global config.
 // ------------------------------------------
 // ------------------------------------------
-$susy: (
-        global-box-sizing: border-box,
-        columns: 12,
-        gutters: 1/4,
-        math: fluid,
-        output: float,
-        gutter-position: after,
-        debug: (image: hide)
-)
+
+  // Este class solo se tiene que utilizar dentro de una
+  // region para restringir el ancho del contenido.
+.l-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}

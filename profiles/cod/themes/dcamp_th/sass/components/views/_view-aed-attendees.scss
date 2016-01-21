@@ -1,0 +1,78 @@
+.view-aed-attendees {
+  @include views-view-grid(10px);
+  margin-bottom: 60px;
+
+  table {
+    tr {
+      td {
+        vertical-align: top;
+      }
+    }
+  }
+
+  .pager {
+    margin-top: 60px;
+  }
+}
+
+.user-item {
+  background: #69ACE5;
+  display: table;
+
+  .image {
+    display: table-cell;
+    vertical-align: top;
+
+    .inner-content {
+      position: relative;
+      img {
+        width: 130px;
+        height: auto;
+      }
+
+      .featured {
+        position: absolute;
+        bottom: 0;
+        background: #D60053;
+        text-align: center;
+        width: 100%;
+        font-size: 12px;
+        line-height: 21px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+  }
+
+  .content {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    padding: 12px 10px 27px;
+
+    .name {
+      font-weight: bold;
+      line-height: normal;
+
+      > * {
+        display: inline;
+        margin-right: 4px;
+      }
+    }
+
+    .organization {
+      color: white;
+      font-size: 12px;
+      line-height: 14px;
+      margin-top: 6px;
+    }
+
+    .nick {
+      position: absolute;
+      bottom: 7px;
+      color: white;
+      font-size: 12px;
+    }
+
+  }
+}

@@ -1,0 +1,20 @@
+#block-blockify-blockify-page-title {
+  background: #901235;
+  position: relative;
+  text-align: center;
+
+  > * {
+    height: 400px;
+    position: relative;
+
+    h1 {
+      position: absolute;
+      width: 100%;
+      bottom: 26px;
+      color: white;
+      font-size: 90px;
+      font-weight: bold;
+      line-height: 56px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.pager {
+  margin: 20px;
+
+  // Reset
+  .pager__item {
+    text-decoration: none;
+    background: #222E3B;
+    display: inline-block;
+    color: white;
+    transition: all 400ms;
+    margin: 0 2px;
+    cursor: pointer;
+
+    &:hover {
+      color: #222E3B;
+      background: white;
+
+      a {
+        color: #222E3B;
+      }
+    }
+
+  }
+
+  .pager__item a {
+    text-decoration: none;
+    display: block;
+    color: white;
+
+  }
+
+}

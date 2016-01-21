@@ -31,9 +31,7 @@
 
   <?php if (!empty($page['pre_content'])) : ?>
     <div class="l-pre-content">
-      <div class="l-container">
-        <?php print render($page['pre_content']); ?>
-      </div>
+      <?php print render($page['pre_content']); ?>
     </div>
   <?php endif; ?>
 

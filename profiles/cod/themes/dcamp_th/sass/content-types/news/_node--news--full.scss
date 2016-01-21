@@ -1,4 +1,17 @@
 body.node-type-news {
+
+  // Reseteamos algunas cosillas generales de la web.
+  .l-content {
+    > .l-container {
+      padding-top: 0;
+    }
+  }
+
+  #block-blockify-blockify-page-title {
+    display: none;
+  }
+
+  ////////////////////
   .l-content {
     > .l-container {
       max-width: none;

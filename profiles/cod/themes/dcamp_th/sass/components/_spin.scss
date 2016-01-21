@@ -1,0 +1,34 @@
+@include keyframes(spin) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+.ajax-progress-throbber {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(#69ACE5, 0.5);
+  z-index: 999;
+
+  .throbber {
+    display: none;
+  }
+
+  &:after {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 10px);
+    content: '';
+    background: image-url('spin.png');
+    width: image-width('spin.png');
+    height: image-height('spin.png');
+    @include animation(spin 2s infinite linear);
+    z-index: 99999;
+  }
+}

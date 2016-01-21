@@ -1,3 +1,7 @@
 body {
-
+  .l-content {
+    > .l-container {
+      padding-top: 80px;
+    }
+  }
 }

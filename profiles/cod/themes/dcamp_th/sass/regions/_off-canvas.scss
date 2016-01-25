@@ -1,5 +1,8 @@
 #off-canvas {
-  background: #222E3B;
+  // Omega pone siempre el css del layout despues de nuestros estilos.
+  //De momento pongo importants, cuando tenga tiempo hago un preprocess
+  //para cambiarle los weight a los css
+  background: #222E3B !important;
 
   .l-container {
 

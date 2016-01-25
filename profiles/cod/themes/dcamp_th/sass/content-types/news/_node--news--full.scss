@@ -26,9 +26,14 @@ body.node-type-news {
             text-align: center;
 
             > .inner-content {
-              height: 400px;
+              height: 260px;
               position: relative;
               @extend .l-container;
+
+              @include breakpoint($tab) {
+                height: 400px;
+              }
+
             }
 
             .field--name-title-field {
@@ -38,9 +43,15 @@ body.node-type-news {
               color: white;
 
               h1 {
-                font-size: 68px;
+                font-size: 30px;
                 font-weight: bold;
-                line-height: 56px;
+                line-height: normal;
+
+                @include breakpoint($tab) {
+                  font-size: 68px;
+                  line-height: 56px;
+                }
+
               }
             }
           }
@@ -48,16 +59,29 @@ body.node-type-news {
 
         .heading {
           position: relative;
-          height: 400px;
+          height: 260px;
           background-repeat: no-repeat;
           background-size: cover;
           background-position: 50%;
           text-align: center;
 
+          @include breakpoint($tab) {
+            height: 260px;
+
+            @include breakpoint($tab) {
+              height: 400px;
+            }
+          }
+
           > .inner-content {
             position: relative;
             @extend .l-container;
-            height: 400px;
+            height: 260px;
+
+            @include breakpoint($tab) {
+              height: 400px;
+            }
+
           }
 
           .field--name-title-field {
@@ -67,16 +91,27 @@ body.node-type-news {
             color: white;
 
             h1 {
-              font-size: 68px;
+              font-size: 30px;
               font-weight: bold;
-              line-height: 56px;
+              line-height: normal;
+
+              @include breakpoint($tab) {
+                font-size: 68px;
+                line-height: 56px;
+              }
+
             }
           }
         }
 
         .node__content {
-          padding: 30px;
+          padding: 10px;
           @include typo-styles;
+
+          @include breakpoint($tab) {
+            padding: 30px;
+          }
+
         }
       }
 

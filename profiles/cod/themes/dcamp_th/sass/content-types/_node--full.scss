@@ -1,0 +1,8 @@
+.node--full {
+  padding: 10px;
+
+  @include breakpoint($tab) {
+    padding: 0;
+  }
+
+}

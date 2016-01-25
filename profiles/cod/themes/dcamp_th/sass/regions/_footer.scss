@@ -1,6 +1,10 @@
 .l-footer {
   background: #32657E;
-  margin-top: 50px;
+  margin-top: 40px;
+
+  @include breakpoint($tab) {
+    margin-top: 50px;
+  }
 
   .l-container {
     position: relative;
@@ -10,10 +14,18 @@
       content: '';
       position: absolute;
       top: -30px;
-      left: 0;
       background: image-url($img) no-repeat;
-      width: image-width($img);
-      height: image-height($img);
+      width: 59px;
+      height: 76px;
+      background-size: cover;
+      left: calc(50% - 30px);
+
+      @include breakpoint($tab) {
+        width: image-width($img);
+        height: image-height($img);
+        left: 0;
+      }
+
     }
   }
 

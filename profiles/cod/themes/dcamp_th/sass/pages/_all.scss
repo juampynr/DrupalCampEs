@@ -1,7 +1,12 @@
 body {
   .l-content {
     > .l-container {
-      padding-top: 80px;
+      padding-top: 20px;
+
+      @include breakpoint($tab) {
+        padding-top: 80px;
+      }
+
     }
   }
 }

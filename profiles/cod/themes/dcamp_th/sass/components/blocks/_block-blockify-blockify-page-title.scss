@@ -4,17 +4,27 @@
   text-align: center;
 
   > * {
-    height: 400px;
+    height: 260px;
     position: relative;
+
+    @include breakpoint($tab) {
+      height: 400px;
+    }
 
     h1 {
       position: absolute;
       width: 100%;
       bottom: 26px;
       color: white;
-      font-size: 90px;
       font-weight: bold;
-      line-height: 56px;
+      font-size: 30px;
+      line-height: normal;
+
+      @include breakpoint($tab) {
+        font-size: 90px;
+        line-height: 56px;
+      }
+
     }
   }
 }

@@ -1,7 +1,11 @@
 .footer-aed {
-  padding: 60px;
+  padding: 60px 30px 30px 30px;
   color: white;
   text-align: center;
+
+  @include breakpoint($tab) {
+    padding: 60px;
+  }
 
   a {
     color: #fff;

@@ -5,29 +5,63 @@
     > ul {
 
       li {
-        display: inline-block;
         vertical-align: top;
         list-style: none;
+
+        @include breakpoint($tab) {
+          display: inline-block;
+        }
+
+        &.link-add-session {
+          a {
+            background: #0A84C1;
+          }
+        }
 
         a {
           color: #fff;
           text-decoration: none;
           padding: 22px;
           display: block;
+          transition: all .2s;
+
+          @include breakpoint(0 $tab) {
+            font-weight: bold;
+          }
 
           & + ul {
-            display: none;
-            position: absolute;
+            @include breakpoint($tab) {
+              display: none;
+              position: absolute;
+            }
+
             background: #222E3B;
 
             li {
               display: block;
+
+              @include breakpoint(0 $tab) {
+                padding-left: 20px;
+              }
+
+              a {
+                @include breakpoint(0 $tab) {
+                  font-weight: normal;
+                }
+              }
             }
           }
 
         }
 
         &:hover {
+
+          &.link-add-session {
+            a {
+              background: #0A84C1;
+            }
+          }
+
           > a {
             background: #32657E;
           }
@@ -35,6 +69,11 @@
           > ul {
             display: block;
             background: #32657E;
+
+            a:hover {
+              background: #347089;
+            }
+
           }
         }
 

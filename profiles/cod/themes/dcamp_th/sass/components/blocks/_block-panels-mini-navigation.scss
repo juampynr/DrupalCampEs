@@ -1,10 +1,15 @@
 #block-panels-mini-navigation {
+  position: relative;
+  z-index: 1;
+
   > .block__content {
     > .inner-content {
       text-align: center;
 
       > div > div > div > div {
-        display: inline-block;
+        @include breakpoint($tab) {
+          display: inline-block;
+        }
 
         .block__title {
           display: none;
@@ -14,7 +19,9 @@
   }
 
   #block-blockify-blockify-logo {
-    float: left;
+    @include breakpoint($tab) {
+      float: left;
+    }
   }
 
   #block-custom-1,

@@ -1,0 +1,78 @@
+#session-node-form {
+  padding: 10px;
+
+  @include breakpoint($tab) {
+    padding: 0;
+  }
+
+  .tabledrag-toggle-weight {
+    display: none;
+  }
+
+  #field-speakers-values {
+
+    .tabledrag-hide {
+      display: none;
+    }
+
+    thead {
+      tr {
+        th {
+          background: none;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        background: none;
+
+        td {
+          background: none;
+        }
+      }
+    }
+  }
+
+  #edit-body-und-0-format {
+    padding: 0;
+
+    .fieldset-wrapper {
+      border: none;
+      padding: 10px 0;
+    }
+
+    .filter-guidelines {
+      padding: 0;
+    }
+
+    .filter-help {
+      display: none;
+    }
+
+    .form-item-body-und-0-format {
+      display: none;
+    }
+  }
+
+  #og-vocabulary-add-more-wrapper {
+    fieldset {
+      .fieldset-wrapper {
+        padding: 0;
+        border: none;
+
+        > * {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .field-name-field-news-image {
+    margin-top: 20px;
+  }
+
+  .mollom-privacy {
+    margin: 20px 0;
+  }
+}

@@ -1,7 +1,8 @@
 .view-news-home {
   .view-content {
-    @include grid-items(2, 2%, 2%);
-    .views-row {
+
+    @include breakpoint($tab){
+      @include grid-items(2, 2%, 2%);
     }
   }
 }

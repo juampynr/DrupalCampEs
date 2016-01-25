@@ -1,7 +1,18 @@
-.l-off-canvas {
+#off-canvas {
   background: #222E3B;
 
   .l-container {
+
+    .off-canvas-toggler {
+      top: 10px;
+
+      span {
+        background-size: contain;
+        text-indent: -9999px;
+      }
+
+    }
+
     .navigation-wrapper {
     }
   }

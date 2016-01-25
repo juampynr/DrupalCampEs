@@ -24,7 +24,9 @@ function cod_session_user_default_permissions() {
   // Exported permission: 'create session content'.
   $permissions['create session content'] = array(
     'name' => 'create session content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
@@ -49,7 +51,9 @@ function cod_session_user_default_permissions() {
   // Exported permission: 'delete own session content'.
   $permissions['delete own session content'] = array(
     'name' => 'delete own session content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
@@ -74,7 +78,9 @@ function cod_session_user_default_permissions() {
   // Exported permission: 'edit own session content'.
   $permissions['edit own session content'] = array(
     'name' => 'edit own session content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 

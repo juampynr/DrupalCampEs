@@ -1,0 +1,41 @@
+.field--type-file {
+  margin-bottom: 30px;
+
+  table {
+    width: 100%;
+
+    thead {
+      tr {
+        th {
+          background: white;
+          padding: 10px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        background: none;
+
+        td {
+          padding: 10px;
+          background: rgba(255, 255, 255, 0.3);
+
+          .file {
+            a {
+              font-family: $font-aller;
+              text-decoration: none;
+              color: #000;
+
+              &:hover {
+                text-decoration: underline;
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

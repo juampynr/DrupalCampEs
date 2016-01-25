@@ -1,17 +1,26 @@
 .tabs {
+  @extend .l-container;
+  margin-top: 20px;
+  margin-bottom: 0;
+  border-bottom: none;
 
   li {
 
-    &:active {
+    &.active {
 
       a {
-
+        color: #fff;
+        background: #222E3B;
       }
 
     }
 
     a {
-
+      padding: 12px 30px;
+      font-family: arial, sans-serif;
+      color: #fff;
+      transition: all .3s;
+      background: #5b6774;
     }
 
   }

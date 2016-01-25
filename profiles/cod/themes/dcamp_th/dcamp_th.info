@@ -16,6 +16,8 @@ stylesheets[all][] = css/styles.css
 ; ========================================
 scripts[] = js/dcamp-th.behaviors.js
 scripts[] = js/mobile-menu.js
+scripts[] = js/plugins/jquery.actual.min.js
+scripts[] = js/responsiveTag.behaviors.js
 
 ; ========================================
 ; Regions

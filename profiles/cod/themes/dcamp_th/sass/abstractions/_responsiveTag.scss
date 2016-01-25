@@ -1,0 +1,12 @@
+// Junto a responsiveTag.behaviors.js logramos que los iframe sean responsive.
+.responsive-tag-wrapper {
+  > * {
+    // Si o si tenemos que hacer todo important para ganarle a cualquier otra maquetacion.
+    // Esto es estructural y no puede/debe ser afectado por los estilos.
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

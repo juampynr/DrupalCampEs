@@ -76,43 +76,7 @@ body.node-type-news {
 
         .node__content {
           padding: 30px;
-
-          h2, h3, h4, h5, h5, p, span {
-            font-family: $base-font-family !important;
-            white-space: normal !important;
-          }
-
-          h2 {
-            font-size: 32px;
-            font-weight: bold;
-            color: #901235;
-            line-height: normal;
-            margin: 10px 0;
-          }
-
-          h3 {
-            font-size: 26px;
-            font-weight: bold;
-            color: #901235;
-            line-height: normal;
-            margin: 10px 0;
-          }
-
-          span, p {
-            line-height: 24px;
-          }
-
-          a {
-            color: #5784AE;
-          }
-
-          ul {
-            margin: 10px 30px;
-            li {
-              list-style: initial;
-              margin-bottom: 10px;
-            }
-          }
+          @include typo-styles;
         }
       }
 

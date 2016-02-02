@@ -1241,6 +1241,88 @@ fieldset .fieldset-wrapper {
   text-decoration: none;
 }
 
+/* line 1, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en {
+  font-family: "Allert", sans-serif;
+}
+/* line 4, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en .block__title {
+  display: none;
+}
+/* line 10, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li {
+  vertical-align: top;
+  list-style: none;
+}
+@media (min-width: 720px) {
+  /* line 10, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+  #block-menu-menu-main-menu-en > ul li {
+    display: inline-block;
+  }
+}
+/* line 19, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li.link-add-session a {
+  background: #0A84C1;
+}
+/* line 24, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 22px;
+  display: block;
+  transition: all .2s;
+}
+@media (min-width: 0) and (max-width: 720px) {
+  /* line 24, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+  #block-menu-menu-main-menu-en > ul li a {
+    font-weight: bold;
+  }
+}
+/* line 35, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li a + ul {
+  background: #222E3B;
+}
+@media (min-width: 720px) {
+  /* line 35, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+  #block-menu-menu-main-menu-en > ul li a + ul {
+    display: none;
+    position: absolute;
+  }
+}
+/* line 43, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li a + ul li {
+  display: block;
+}
+@media (min-width: 0) and (max-width: 720px) {
+  /* line 43, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+  #block-menu-menu-main-menu-en > ul li a + ul li {
+    padding-left: 20px;
+  }
+}
+@media (min-width: 0) and (max-width: 720px) {
+  /* line 50, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+  #block-menu-menu-main-menu-en > ul li a + ul li a {
+    font-weight: normal;
+  }
+}
+/* line 63, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li:hover.link-add-session a {
+  background: #0A84C1;
+}
+/* line 68, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li:hover > a {
+  background: #32657E;
+}
+/* line 72, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li:hover > ul {
+  display: block;
+  background: #32657E;
+}
+/* line 76, ../sass/components/blocks/_block-menu-menu-main-menu-en.scss */
+#block-menu-menu-main-menu-en > ul li:hover > ul a:hover {
+  background: #347089;
+}
+
 /* line 1, ../sass/components/blocks/_block-panels-mini-navigation.scss */
 #block-panels-mini-navigation {
   position: relative;

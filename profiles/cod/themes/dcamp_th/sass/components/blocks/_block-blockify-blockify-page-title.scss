@@ -2,6 +2,13 @@
   background: $secondary-color;
   position: relative;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include breakpoint($desk) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   > * {
     height: 260px;
@@ -22,6 +29,10 @@
 
       @include breakpoint($tab) {
         font-size: 90px;
+        line-height: 75px;
+      }
+
+      @include breakpoint($desk) {
         line-height: 56px;
       }
 

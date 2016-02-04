@@ -1,7 +1,7 @@
 .call-to-action {
   background-color: $color-red-a;
   text-align: center;
-  padding: 40px 10px 20px;
+  padding: 40px 20px 20px;
 
   @include breakpoint($desk) {
     padding: 70px 0 55px;

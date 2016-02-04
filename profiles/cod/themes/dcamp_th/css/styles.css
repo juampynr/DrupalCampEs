@@ -833,43 +833,44 @@ select {
   color: white;
   border: none;
   cursor: pointer;
+  white-space: normal;
   margin: 5px 0;
 }
 
-/* line 46, ../sass/components/_forms.scss */
+/* line 47, ../sass/components/_forms.scss */
 textarea[disabled],
 .form-text[disabled],
 .form-file[disabled] {
   /**/
 }
 
-/* line 52, ../sass/components/_forms.scss */
+/* line 53, ../sass/components/_forms.scss */
 .form-file {
   vertical-align: top;
 }
 
-/* line 56, ../sass/components/_forms.scss */
+/* line 57, ../sass/components/_forms.scss */
 .form-item {
   margin: 0 0 1.5em;
 }
 
-/* line 60, ../sass/components/_forms.scss */
+/* line 61, ../sass/components/_forms.scss */
 input.form-autocomplete {
   /**/
 }
 
-/* line 64, ../sass/components/_forms.scss */
+/* line 65, ../sass/components/_forms.scss */
 label {
   /**/
 }
 
-/* line 68, ../sass/components/_forms.scss */
+/* line 69, ../sass/components/_forms.scss */
 .form-checkbox {
   position: relative;
   top: 3px;
 }
 
-/* line 73, ../sass/components/_forms.scss */
+/* line 74, ../sass/components/_forms.scss */
 fieldset {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -878,7 +879,7 @@ fieldset {
   position: relative;
   margin: 0;
 }
-/* line 79, ../sass/components/_forms.scss */
+/* line 80, ../sass/components/_forms.scss */
 fieldset legend {
   position: absolute;
   top: 17px;
@@ -887,47 +888,47 @@ fieldset legend {
   background: white;
   padding: 5px;
 }
-/* line 89, ../sass/components/_forms.scss */
+/* line 90, ../sass/components/_forms.scss */
 fieldset legend a {
   color: black;
 }
-/* line 94, ../sass/components/_forms.scss */
+/* line 95, ../sass/components/_forms.scss */
 fieldset .fieldset-wrapper {
   border: 1px solid;
   padding: 20px;
 }
 
-/* line 101, ../sass/components/_forms.scss */
+/* line 102, ../sass/components/_forms.scss */
 .grippie {
   display: none;
 }
 
-/* line 105, ../sass/components/_forms.scss */
+/* line 106, ../sass/components/_forms.scss */
 .form-radios {
   margin-top: 10px;
 }
 
-/* line 109, ../sass/components/_forms.scss */
+/* line 110, ../sass/components/_forms.scss */
 .form-actions {
   margin: 50px 0 10px;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 109, ../sass/components/_forms.scss */
+  /* line 110, ../sass/components/_forms.scss */
   .form-actions {
     margin-top: 0;
     text-align: left;
   }
 }
-/* line 118, ../sass/components/_forms.scss */
+/* line 119, ../sass/components/_forms.scss */
 .form-actions > * {
   margin: 0 10px;
 }
-/* line 121, ../sass/components/_forms.scss */
+/* line 122, ../sass/components/_forms.scss */
 .form-actions > *:first-child {
   margin-left: 0;
 }
-/* line 125, ../sass/components/_forms.scss */
+/* line 126, ../sass/components/_forms.scss */
 .form-actions > *:last-child {
   margin-right: 0;
 }
@@ -1215,6 +1216,8 @@ fieldset .fieldset-wrapper {
 @media (min-width: 768px) {
   /* line 1, ../sass/components/_tabs.scss */
   .tabs {
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 20px;
   }
 }
@@ -1222,26 +1225,28 @@ fieldset .fieldset-wrapper {
   /* line 1, ../sass/components/_tabs.scss */
   .tabs {
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-/* line 15, ../sass/components/_tabs.scss */
+/* line 19, ../sass/components/_tabs.scss */
 .tabs li {
   float: none;
   margin-right: 0;
 }
 @media (min-width: 768px) {
-  /* line 15, ../sass/components/_tabs.scss */
+  /* line 19, ../sass/components/_tabs.scss */
   .tabs li {
     float: left;
     margin-right: 1em;
   }
 }
-/* line 26, ../sass/components/_tabs.scss */
+/* line 30, ../sass/components/_tabs.scss */
 .tabs li.active a {
   color: #fff;
   background: #222E3B;
 }
-/* line 33, ../sass/components/_tabs.scss */
+/* line 37, ../sass/components/_tabs.scss */
 .tabs li a {
   color: #fff;
   font-family: arial, sans-serif;
@@ -1250,7 +1255,7 @@ fieldset .fieldset-wrapper {
   padding: 15px;
 }
 @media (min-width: 768px) {
-  /* line 33, ../sass/components/_tabs.scss */
+  /* line 37, ../sass/components/_tabs.scss */
   .tabs li a {
     padding: 12px 30px;
   }
@@ -2558,7 +2563,7 @@ body.front #block-views-aed-sponsors-block {
 @media (min-width: 960px) {
   /* line 5, ../sass/pages/_page-user.scss */
   .page-user.not-logged-in #block-blockify-blockify-page-title > * {
-    height: 400px;
+    height: 150px;
   }
 }
 /* line 18, ../sass/pages/_page-user.scss */

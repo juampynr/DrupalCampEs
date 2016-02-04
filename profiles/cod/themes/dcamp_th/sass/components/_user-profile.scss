@@ -1,0 +1,125 @@
+.user-profile {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include breakpoint($desk) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .user-picture {
+    text-align: center;
+    margin-bottom: 15px;
+
+    @include breakpoint($tab) {
+      float: left;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    img {
+      vertical-align: top;
+    }
+
+  }
+
+  .group-info-wrapper {
+    float: left;
+
+    .field__label {
+      font-size: 16px;
+      font-family: $font-aller;
+      font-weight: normal;
+    }
+
+    .field--name-field-profile-first {
+      padding-right: 7px;
+    }
+
+    .field--name-field-profile-last {
+    }
+
+    .field--name-field-profile-first,
+    .field--name-field-profile-last {
+      display: inline-block;
+      float: left;
+      padding-top: 6px;
+      margin-bottom: 25px;
+
+      .field__item {
+        font-size: 30px;
+      }
+
+    }
+
+    .field--name-field-profile-org {
+      clear: both;
+      margin-bottom: 15px;
+    }
+
+    .field--name-field-nick {
+      margin-bottom: 15px;
+    }
+
+    .group-social {
+
+      > div {
+        margin-bottom: 15px;
+
+        .field__label {
+          width: 25px;
+          height: 25px;
+          text-indent: -999px;
+          margin-right: 10px;
+        }
+
+        .field__items {
+          padding-top: 4px;
+        }
+
+      }
+
+      .field--name-field-twitter-url .field__label {
+        background: image-url('square-twitter-50x50.png') no-repeat 0 0;
+        background-size: contain;
+      }
+
+      .field--name-field-facebook-url .field__label {
+        background: image-url('square-facebook-50x50.png') no-repeat 0 0;
+        background-size: contain;
+      }
+
+      .field--name-field-linkedin-url .field__label {
+        background: image-url('square-linkedin-50x50.png') no-repeat 0 0;
+        background-size: contain;
+      }
+
+    }
+
+  }
+
+  .field--name-field-profile-bio {
+    clear: both;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .field--name-field-profile-interests {
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .field--name-field-profile-bio,
+  .field--name-field-profile-interests {
+
+    .field__label {
+      font-size: 18px;
+    }
+
+    .field__items {
+      padding-left: 15px;
+    }
+
+  }
+
+}

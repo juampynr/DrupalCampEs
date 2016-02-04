@@ -694,21 +694,21 @@ fieldset legend {
 
 /* line 1, ../sass/components/_call-to-action.scss */
 .call-to-action {
-  background-color: #e22626;
+  background-color: #901235;
   text-align: center;
   padding: 40px 10px 20px;
 }
 @media (min-width: 960px) {
   /* line 1, ../sass/components/_call-to-action.scss */
   .call-to-action {
-    padding: 70px 0;
+    padding: 70px 0 55px;
   }
 }
 /* line 10, ../sass/components/_call-to-action.scss */
 .call-to-action .block__title {
   color: white;
   font-size: 40px;
-  font-family: "Allert", sans-serif;
+  font-family: "Noto Serif", sans-serif;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -742,15 +742,16 @@ fieldset legend {
   color: white;
   font-family: "Allert", sans-serif;
   background-color: #222E3B;
-  display: inline-block;
-  text-decoration: none;
-  outline: none;
-  padding: 15px 45px 12px;
+  border-radius: 3px;
   transition: all 250ms;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  padding: 15px 45px 12px;
 }
-/* line 49, ../sass/components/_call-to-action.scss */
+/* line 50, ../sass/components/_call-to-action.scss */
 .call-to-action .block__content a:hover, .call-to-action .block__content a:focus {
-  background-color: #15a4a5;
+  background-color: #5b6774;
 }
 
 /* line 1, ../sass/components/_field--type-file.scss */
@@ -1350,23 +1351,32 @@ fieldset .fieldset-wrapper {
   background: url('../images/square-linkedin-50x50.png?1454517896') no-repeat 0 0;
   background-size: contain;
 }
+/* line 97, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .group-social a {
+  color: #222E3B;
+  text-decoration: none;
+}
 /* line 101, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .group-social a:hover, .user-profile .group-info-wrapper .group-social a:focus {
+  color: #901235;
+}
+/* line 112, ../sass/components/_user-profile.scss */
 .user-profile .field--name-field-profile-bio {
   clear: both;
   line-height: 1.4;
   margin-bottom: 20px;
 }
-/* line 107, ../sass/components/_user-profile.scss */
+/* line 118, ../sass/components/_user-profile.scss */
 .user-profile .field--name-field-profile-interests {
   line-height: 1.4;
   margin-bottom: 15px;
 }
-/* line 115, ../sass/components/_user-profile.scss */
+/* line 126, ../sass/components/_user-profile.scss */
 .user-profile .field--name-field-profile-bio .field__label,
 .user-profile .field--name-field-profile-interests .field__label {
   font-size: 18px;
 }
-/* line 119, ../sass/components/_user-profile.scss */
+/* line 130, ../sass/components/_user-profile.scss */
 .user-profile .field--name-field-profile-bio .field__items,
 .user-profile .field--name-field-profile-interests .field__items {
   padding-left: 15px;
@@ -1778,7 +1788,7 @@ fieldset .fieldset-wrapper {
 }
 /* line 25, ../sass/components/blocks/_countdown.scss */
 #countdown ul li span {
-  color: #e22626;
+  color: #901235;
   font-size: 48px;
   font-weight: bold;
 }
@@ -2220,37 +2230,37 @@ body.node-type-news .l-content > .l-container .node--news--full .node__content h
     font-size: 24px;
   }
 }
-/* line 47, ../sass/components/_typo-styles.scss */
+/* line 46, ../sass/components/_typo-styles.scss */
 body.node-type-news .l-content > .l-container .node--news--full .node__content span, body.node-type-news .l-content > .tabs .node--news--full .node__content span, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content span, body.node-type-news .l-content > .l-container .node--news--full .node__content p, body.node-type-news .l-content > .tabs .node--news--full .node__content p, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content p {
   line-height: 24px;
 }
-/* line 51, ../sass/components/_typo-styles.scss */
+/* line 50, ../sass/components/_typo-styles.scss */
 body.node-type-news .l-content > .l-container .node--news--full .node__content p, body.node-type-news .l-content > .tabs .node--news--full .node__content p, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content p {
   margin: 10px 0;
 }
-/* line 55, ../sass/components/_typo-styles.scss */
+/* line 54, ../sass/components/_typo-styles.scss */
 body.node-type-news .l-content > .l-container .node--news--full .node__content a, body.node-type-news .l-content > .tabs .node--news--full .node__content a, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content a {
   color: #5784AE;
 }
-/* line 59, ../sass/components/_typo-styles.scss */
+/* line 58, ../sass/components/_typo-styles.scss */
 body.node-type-news .l-content > .l-container .node--news--full .node__content ul, body.node-type-news .l-content > .tabs .node--news--full .node__content ul, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content ul {
   margin: 10px 30px;
 }
-/* line 61, ../sass/components/_typo-styles.scss */
+/* line 60, ../sass/components/_typo-styles.scss */
 body.node-type-news .l-content > .l-container .node--news--full .node__content ul li, body.node-type-news .l-content > .tabs .node--news--full .node__content ul li, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content ul li {
   list-style: initial;
   margin-bottom: 10px;
 }
-/* line 70, ../sass/components/_typo-styles.scss */
+/* line 69, ../sass/components/_typo-styles.scss */
 body.node-type-news .l-content > .l-container .node--news--full .node__content table thead tr th, body.node-type-news .l-content > .tabs .node--news--full .node__content table thead tr th, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content table thead tr th {
   background: white;
   padding: 10px;
 }
-/* line 78, ../sass/components/_typo-styles.scss */
+/* line 77, ../sass/components/_typo-styles.scss */
 body.node-type-news .l-content > .l-container .node--news--full .node__content table tbody tr, body.node-type-news .l-content > .tabs .node--news--full .node__content table tbody tr, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content table tbody tr {
   background: none;
 }
-/* line 81, ../sass/components/_typo-styles.scss */
+/* line 80, ../sass/components/_typo-styles.scss */
 body.node-type-news .l-content > .l-container .node--news--full .node__content table tbody tr td, body.node-type-news .l-content > .tabs .node--news--full .node__content table tbody tr td, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content .node--news--full .node__content table tbody tr td {
   padding: 10px;
   background: rgba(255, 255, 255, 0.3);
@@ -2382,37 +2392,37 @@ body.node-type-news .l-content > .l-container .node--news--full .node__content t
     font-size: 24px;
   }
 }
-/* line 47, ../sass/components/_typo-styles.scss */
+/* line 46, ../sass/components/_typo-styles.scss */
 .node--page--full .field--name-body span, .node--page--full .field--name-body p {
   line-height: 24px;
 }
-/* line 51, ../sass/components/_typo-styles.scss */
+/* line 50, ../sass/components/_typo-styles.scss */
 .node--page--full .field--name-body p {
   margin: 10px 0;
 }
-/* line 55, ../sass/components/_typo-styles.scss */
+/* line 54, ../sass/components/_typo-styles.scss */
 .node--page--full .field--name-body a {
   color: #5784AE;
 }
-/* line 59, ../sass/components/_typo-styles.scss */
+/* line 58, ../sass/components/_typo-styles.scss */
 .node--page--full .field--name-body ul {
   margin: 10px 30px;
 }
-/* line 61, ../sass/components/_typo-styles.scss */
+/* line 60, ../sass/components/_typo-styles.scss */
 .node--page--full .field--name-body ul li {
   list-style: initial;
   margin-bottom: 10px;
 }
-/* line 70, ../sass/components/_typo-styles.scss */
+/* line 69, ../sass/components/_typo-styles.scss */
 .node--page--full .field--name-body table thead tr th {
   background: white;
   padding: 10px;
 }
-/* line 78, ../sass/components/_typo-styles.scss */
+/* line 77, ../sass/components/_typo-styles.scss */
 .node--page--full .field--name-body table tbody tr {
   background: none;
 }
-/* line 81, ../sass/components/_typo-styles.scss */
+/* line 80, ../sass/components/_typo-styles.scss */
 .node--page--full .field--name-body table tbody tr td {
   padding: 10px;
   background: rgba(255, 255, 255, 0.3);
@@ -2541,37 +2551,37 @@ body.page-node-34 .field--name-body h4 {
     font-size: 24px;
   }
 }
-/* line 47, ../sass/components/_typo-styles.scss */
+/* line 46, ../sass/components/_typo-styles.scss */
 body.page-node-34 .field--name-body span, body.page-node-34 .field--name-body p {
   line-height: 24px;
 }
-/* line 51, ../sass/components/_typo-styles.scss */
+/* line 50, ../sass/components/_typo-styles.scss */
 body.page-node-34 .field--name-body p {
   margin: 10px 0;
 }
-/* line 55, ../sass/components/_typo-styles.scss */
+/* line 54, ../sass/components/_typo-styles.scss */
 body.page-node-34 .field--name-body a {
   color: #5784AE;
 }
-/* line 59, ../sass/components/_typo-styles.scss */
+/* line 58, ../sass/components/_typo-styles.scss */
 body.page-node-34 .field--name-body ul {
   margin: 10px 30px;
 }
-/* line 61, ../sass/components/_typo-styles.scss */
+/* line 60, ../sass/components/_typo-styles.scss */
 body.page-node-34 .field--name-body ul li {
   list-style: initial;
   margin-bottom: 10px;
 }
-/* line 70, ../sass/components/_typo-styles.scss */
+/* line 69, ../sass/components/_typo-styles.scss */
 body.page-node-34 .field--name-body table thead tr th {
   background: white;
   padding: 10px;
 }
-/* line 78, ../sass/components/_typo-styles.scss */
+/* line 77, ../sass/components/_typo-styles.scss */
 body.page-node-34 .field--name-body table tbody tr {
   background: none;
 }
-/* line 81, ../sass/components/_typo-styles.scss */
+/* line 80, ../sass/components/_typo-styles.scss */
 body.page-node-34 .field--name-body table tbody tr td {
   padding: 10px;
   background: rgba(255, 255, 255, 0.3);

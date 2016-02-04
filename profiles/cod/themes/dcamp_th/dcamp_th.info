@@ -18,6 +18,7 @@ scripts[] = js/dcamp-th.behaviors.js
 scripts[] = js/mobile-menu.js
 scripts[] = js/plugins/jquery.actual.min.js
 scripts[] = js/responsiveTag.behaviors.js
+scripts[] = js/sticky-element.js
 
 ; ========================================
 ; Regions

@@ -1,0 +1,14 @@
+.sticky-element-clone {
+
+}
+
+.sticky-element {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+
+  .l-container {
+    padding-right: 10px;
+  }
+}

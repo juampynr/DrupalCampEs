@@ -1,5 +1,6 @@
 .l-header {
-  @include clearfix;
+  @include pie-clearfix;
+  overflow: visible;
 
   > .l-container {
 

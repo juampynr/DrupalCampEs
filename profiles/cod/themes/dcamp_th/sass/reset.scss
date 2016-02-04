@@ -1,3 +1,5 @@
+// Librerias externas
+@import "compass";
 // http://meyerweb.com/eric/tools/css/reset/
 // v2.0 | 20110126
 
@@ -47,4 +49,8 @@ q {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.clearfix {
+  @include pie-clearfix;
 }

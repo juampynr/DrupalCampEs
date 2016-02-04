@@ -1,10 +1,22 @@
 .tabs {
   @extend .l-container;
-  margin-top: 20px;
-  margin-bottom: 0;
   border-bottom: none;
+  padding-top: 45px;
+  margin-bottom: 0;
+
+  @include breakpoint($tab) {
+    padding-top: 0;
+    margin-top: 20px;
+  }
 
   li {
+    float: none;
+    margin-right: 0;
+
+    @include breakpoint($tab) {
+      float: left;
+      margin-right: 1em;
+    }
 
     &.active {
 
@@ -16,11 +28,16 @@
     }
 
     a {
-      padding: 12px 30px;
-      font-family: arial, sans-serif;
       color: #fff;
+      font-family: arial, sans-serif;
       transition: all .3s;
       background: #5b6774;
+      padding: 15px;
+
+      @include breakpoint($tab) {
+        padding: 12px 30px;
+      }
+
     }
 
   }

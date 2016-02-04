@@ -1,4 +1,5 @@
 .l-header {
+  @include clearfix;
 
   > .l-container {
 
@@ -9,7 +10,7 @@
     }
   }
 
-  #off-canvas .l-region--navigation{
+  #off-canvas .l-region--navigation {
   }
 
 }

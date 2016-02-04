@@ -9,16 +9,16 @@ $color-grey-b: #666;
 $color-grey-c: #999;
 
 // Azules
-$color-blue-a: #20c3c4;
-$color-blue-b: #15a4a5;
+$color-blue-a: #222E3B;
+$color-blue-b: #5b6774;
 
 // Rojos
-$color-red-a: #e22626;
+$color-red-a: #901235;
 
 // Verdes
-$color-green-a: #4B8413;
-$color-green-b: #3D690A;
-$color-green-c: #739159;
+
+$primary-color: $color-blue-a;
+$secondary-color: $color-red-a;
 
 // ------------------------------------------
 // ------------------------------------------
@@ -93,8 +93,8 @@ $base-line-height: 1em;
 // ------------------------------------------
 // ------------------------------------------
 
-  // Este class solo se tiene que utilizar dentro de una
-  // region para restringir el ancho del contenido.
+// Este class solo se tiene que utilizar dentro de una
+// region para restringir el ancho del contenido.
 .l-container {
   max-width: 1200px;
   margin-left: auto;

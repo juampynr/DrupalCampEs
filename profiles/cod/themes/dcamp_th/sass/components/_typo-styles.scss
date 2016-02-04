@@ -8,7 +8,7 @@
   h2 {
     font-size: 22px;
     font-weight: bold;
-    color: #901235;
+    color: $secondary-color;
     line-height: normal;
     margin: 10px 0;
 
@@ -21,7 +21,7 @@
   h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #901235;
+    color: $secondary-color;
     line-height: normal;
     margin: 10px 0;
 
@@ -33,10 +33,9 @@
   h4 {
     font-size: 18px;
     font-weight: bold;
-    color: #901235;
+    color: $secondary-color;
     line-height: normal;
     margin: 10px 0;
-
 
     @include breakpoint($tab) {
       font-size: 24px;

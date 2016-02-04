@@ -4,7 +4,7 @@
   // Reset
   .pager__item {
     text-decoration: none;
-    background: #222E3B;
+    background: $primary-color;
     display: inline-block;
     color: white;
     transition: all 400ms;
@@ -12,11 +12,11 @@
     cursor: pointer;
 
     &:hover {
-      color: #222E3B;
+      color: $primary-color;
       background: white;
 
       a {
-        color: #222E3B;
+        color: $primary-color;
       }
     }
 

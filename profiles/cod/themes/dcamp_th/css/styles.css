@@ -1,31 +1,31 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Noto Serif";
-  src: url('../fonts/notoserif/NotoSerif-Regular.ttf?1403840006') format('truetype');
+  src: url('../fonts/notoserif/NotoSerif-Regular.ttf?1454514779') format('truetype');
 }
 @font-face {
   font-family: "Noto Serif";
-  src: url('../fonts/notoserif/NotoSerif-Italic.ttf?1403840006') format('truetype');
+  src: url('../fonts/notoserif/NotoSerif-Italic.ttf?1454514779') format('truetype');
   font-style: italic, oblique;
 }
 @font-face {
   font-family: "Noto Serif";
-  src: url('../fonts/notoserif/NotoSerif-BoldItalic.ttf?1403840006') format('truetype');
+  src: url('../fonts/notoserif/NotoSerif-BoldItalic.ttf?1454514779') format('truetype');
   font-weight: bold;
   font-style: italic, oblique;
 }
 @font-face {
   font-family: "Aller";
-  src: url('../fonts/aller/Aller_Rg.ttf?1231479762') format('truetype');
+  src: url('../fonts/aller/Aller_Rg.ttf?1454514779') format('truetype');
 }
 @font-face {
   font-family: "Aller";
-  src: url('../fonts/aller/Aller_Rg.ttf?1231479762') format('truetype');
+  src: url('../fonts/aller/Aller_Rg.ttf?1454514779') format('truetype');
   font-style: italic, oblique;
 }
 @font-face {
   font-family: "Aller";
-  src: url('../fonts/aller/Aller_Rg.ttf?1231479762') format('truetype');
+  src: url('../fonts/aller/Aller_Rg.ttf?1454514779') format('truetype');
   font-weight: bold;
   font-style: italic, oblique;
 }
@@ -585,7 +585,7 @@ fieldset legend {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../lib/gems/1.9.1/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../lib/gems/2.1.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 .layout-container:after {
   content: " ";
   display: block;
@@ -1123,7 +1123,7 @@ fieldset .fieldset-wrapper {
   top: calc(50% - 12px);
   left: calc(50% - 10px);
   content: '';
-  background: url('../images/spin.png?1447184545');
+  background: url('../images/spin.png?1454514779');
   width: 21px;
   height: 24px;
   -moz-animation: spin 2s infinite linear;
@@ -1134,22 +1134,164 @@ fieldset .fieldset-wrapper {
 
 /* line 1, ../sass/components/_tabs.scss */
 .tabs {
-  margin-top: 20px;
-  margin-bottom: 0;
   border-bottom: none;
+  padding-top: 45px;
+  margin-bottom: 0;
 }
-/* line 11, ../sass/components/_tabs.scss */
+@media (min-width: 720px) {
+  /* line 1, ../sass/components/_tabs.scss */
+  .tabs {
+    padding-top: 0;
+    margin-top: 20px;
+  }
+}
+/* line 12, ../sass/components/_tabs.scss */
+.tabs li {
+  float: none;
+  margin-right: 0;
+}
+@media (min-width: 720px) {
+  /* line 12, ../sass/components/_tabs.scss */
+  .tabs li {
+    float: left;
+    margin-right: 1em;
+  }
+}
+/* line 23, ../sass/components/_tabs.scss */
 .tabs li.active a {
   color: #fff;
   background: #222E3B;
 }
-/* line 18, ../sass/components/_tabs.scss */
+/* line 30, ../sass/components/_tabs.scss */
 .tabs li a {
-  padding: 12px 30px;
-  font-family: arial, sans-serif;
   color: #fff;
+  font-family: arial, sans-serif;
   transition: all .3s;
   background: #5b6774;
+  padding: 15px;
+}
+@media (min-width: 720px) {
+  /* line 30, ../sass/components/_tabs.scss */
+  .tabs li a {
+    padding: 12px 30px;
+  }
+}
+
+/* line 1, ../sass/components/_user-profile.scss */
+.user-profile {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 960px) {
+  /* line 1, ../sass/components/_user-profile.scss */
+  .user-profile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 10, ../sass/components/_user-profile.scss */
+.user-profile .user-picture {
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (min-width: 720px) {
+  /* line 10, ../sass/components/_user-profile.scss */
+  .user-profile .user-picture {
+    float: left;
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+/* line 20, ../sass/components/_user-profile.scss */
+.user-profile .user-picture img {
+  vertical-align: top;
+}
+/* line 26, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper {
+  float: left;
+}
+/* line 29, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .field__label {
+  font-size: 16px;
+  font-family: "Allert", sans-serif;
+  font-weight: normal;
+}
+/* line 35, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .field--name-field-profile-first {
+  padding-right: 7px;
+}
+/* line 42, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .field--name-field-profile-first,
+.user-profile .group-info-wrapper .field--name-field-profile-last {
+  display: inline-block;
+  float: left;
+  padding-top: 6px;
+  margin-bottom: 25px;
+}
+/* line 49, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .field--name-field-profile-first .field__item,
+.user-profile .group-info-wrapper .field--name-field-profile-last .field__item {
+  font-size: 30px;
+}
+/* line 55, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .field--name-field-profile-org {
+  clear: both;
+  margin-bottom: 15px;
+}
+/* line 60, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .field--name-field-nick {
+  margin-bottom: 15px;
+}
+/* line 66, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .group-social > div {
+  margin-bottom: 15px;
+}
+/* line 69, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .group-social > div .field__label {
+  width: 25px;
+  height: 25px;
+  text-indent: -999px;
+  margin-right: 10px;
+}
+/* line 76, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .group-social > div .field__items {
+  padding-top: 4px;
+}
+/* line 82, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .group-social .field--name-field-twitter-url .field__label {
+  background: url('../images/square-twitter-50x50.png?1454517939') no-repeat 0 0;
+  background-size: contain;
+}
+/* line 87, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .group-social .field--name-field-facebook-url .field__label {
+  background: url('../images/square-facebook-50x50.png?1454517918') no-repeat 0 0;
+  background-size: contain;
+}
+/* line 92, ../sass/components/_user-profile.scss */
+.user-profile .group-info-wrapper .group-social .field--name-field-linkedin-url .field__label {
+  background: url('../images/square-linkedin-50x50.png?1454517896') no-repeat 0 0;
+  background-size: contain;
+}
+/* line 101, ../sass/components/_user-profile.scss */
+.user-profile .field--name-field-profile-bio {
+  clear: both;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+/* line 107, ../sass/components/_user-profile.scss */
+.user-profile .field--name-field-profile-interests {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+/* line 115, ../sass/components/_user-profile.scss */
+.user-profile .field--name-field-profile-bio .field__label,
+.user-profile .field--name-field-profile-interests .field__label {
+  font-size: 18px;
+}
+/* line 119, ../sass/components/_user-profile.scss */
+.user-profile .field--name-field-profile-bio .field__items,
+.user-profile .field--name-field-profile-interests .field__items {
+  padding-left: 15px;
 }
 
 /* line 6, ../sass/components/blocks/_block-bean-home-slider.scss */
@@ -1349,6 +1491,7 @@ fieldset .fieldset-wrapper {
   }
 }
 /* line 27, ../sass/components/blocks/_block-panels-mini-navigation.scss */
+#block-panels-mini-navigation .pane-system-user-menu,
 #block-panels-mini-navigation #block-custom-1,
 #block-panels-mini-navigation #block-locale-language {
   float: right;
@@ -1581,7 +1724,7 @@ fieldset .fieldset-wrapper {
 
 /* line 1, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro {
-  background: url('../images/imgs/hero.jpg?1453139479') no-repeat 50% 50%;
+  background: url('../images/imgs/hero.jpg?1454514779') no-repeat 50% 50%;
   width: 100%;
   background-size: cover;
   position: relative;
@@ -1610,7 +1753,7 @@ fieldset .fieldset-wrapper {
 }
 /* line 30, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content p {
-  background: url('../images/ribbon-white-borders.png?1453125458');
+  background: url('../images/ribbon-white-borders.png?1454514779');
   display: inline-block;
   box-sizing: border-box;
   position: relative;
@@ -1621,7 +1764,7 @@ fieldset .fieldset-wrapper {
 }
 /* line 40, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content p:before {
-  background: url('../images/ribbon-white-230x55.png?1453125458') no-repeat;
+  background: url('../images/ribbon-white-230x55.png?1454514779') no-repeat;
   content: '';
   position: absolute;
   right: 100%;
@@ -1636,8 +1779,32 @@ fieldset .fieldset-wrapper {
   left: 100%;
   top: 0;
   width: 30px;
-  background: url('../images/ribbon-white-230x55.png?1453125458') no-repeat 100% 0;
+  background: url('../images/ribbon-white-230x55.png?1454514779') no-repeat 100% 0;
   height: 55px;
+}
+
+/* line 3, ../sass/components/blocks/_pane-system-user-menu.scss */
+.pane-system-user-menu .pane-title {
+  display: none;
+}
+/* line 9, ../sass/components/blocks/_pane-system-user-menu.scss */
+.pane-system-user-menu ul.menu li {
+  display: inline-block;
+  list-style: none;
+}
+/* line 13, ../sass/components/blocks/_pane-system-user-menu.scss */
+.pane-system-user-menu ul.menu li a {
+  font-family: "Allert", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  padding: 22px 10px;
+  display: block;
+  transition: all .2s;
+  outline: none;
+}
+/* line 22, ../sass/components/blocks/_pane-system-user-menu.scss */
+.pane-system-user-menu ul.menu li a:hover {
+  background: #32657E;
 }
 
 /* line 1, ../sass/components/blocks/_social.scss */
@@ -1651,13 +1818,13 @@ fieldset .fieldset-wrapper {
 }
 /* line 9, ../sass/components/blocks/_social.scss */
 .social a.fb {
-  background: url('../images/facebook-white-21x20.png?1453125332') no-repeat 0 0 transparent;
+  background: url('../images/facebook-white-21x20.png?1454514779') no-repeat 0 0 transparent;
   width: 21px;
   height: 20px;
 }
 /* line 13, ../sass/components/blocks/_social.scss */
 .social a.tw {
-  background: url('../images/twitter-white-21x21.png?1453125359') no-repeat 0 0 transparent;
+  background: url('../images/twitter-white-21x21.png?1454514779') no-repeat 0 0 transparent;
   width: 21px;
   height: 21px;
 }
@@ -1787,7 +1954,7 @@ fieldset .fieldset-wrapper {
   .view-news-home .view-content {
     *zoom: 1;
   }
-  /* line 38, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .view-news-home .view-content:after {
     content: "";
     display: table;
@@ -2044,7 +2211,7 @@ body.node-type-news .l-content > .l-container .node--news--full .node__content t
     position: absolute;
     top: 100%;
     left: 0;
-    background: url('../images/star-magenta-28x29.png?1453212869') no-repeat 0 0 transparent;
+    background: url('../images/star-magenta-28x29.png?1454514779') no-repeat 0 0 transparent;
     width: 28px;
     height: 29px;
   }
@@ -2193,7 +2360,7 @@ body.node-type-news .l-content > .l-container .node--news--full .node__content t
   content: '';
   position: absolute;
   top: -30px;
-  background: url('../images/drop-blue-119x153.png?1453125311') no-repeat;
+  background: url('../images/drop-blue-119x153.png?1454514779') no-repeat;
   width: 59px;
   height: 76px;
   background-size: cover;

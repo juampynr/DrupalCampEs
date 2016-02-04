@@ -2099,13 +2099,15 @@ fieldset .fieldset-wrapper {
   }
 }
 
-/* line 1, ../sass/content-types/_node--full.scss */
-.node--full {
+/* line 3, ../sass/content-types/_node--full.scss */
+.node--full .heading,
+.node--full .node__content {
   padding: 10px;
 }
 @media (min-width: 768px) {
-  /* line 1, ../sass/content-types/_node--full.scss */
-  .node--full {
+  /* line 3, ../sass/content-types/_node--full.scss */
+  .node--full .heading,
+  .node--full .node__content {
     padding: 0;
   }
 }

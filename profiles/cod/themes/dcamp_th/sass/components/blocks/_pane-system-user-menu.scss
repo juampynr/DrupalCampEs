@@ -1,0 +1,32 @@
+.pane-system-user-menu {
+
+  .pane-title {
+    display: none;
+  }
+
+  ul.menu {
+
+    li {
+      display: inline-block;
+      list-style: none;
+
+      a {
+        font-family: $font-aller;
+        color: #fff;
+        text-decoration: none;
+        padding: 22px 10px;
+        display: block;
+        transition: all .2s;
+        outline: none;
+
+        &:hover {
+          background: #32657E;
+        }
+
+      }
+
+    }
+
+  }
+
+}

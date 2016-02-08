@@ -1,0 +1,31 @@
+.page-user {
+
+  &.not-logged-in {
+
+    #block-blockify-blockify-page-title > * {
+      height: 115px;
+
+      @include breakpoint($tab) {
+        height: 205px;
+      }
+
+      @include breakpoint($desk) {
+        height: 150px;
+      }
+
+    }
+
+    .l-container > .content {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include breakpoint($desk) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+    }
+
+  }
+
+}

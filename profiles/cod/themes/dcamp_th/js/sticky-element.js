@@ -1,10 +1,14 @@
 (function ($) {
+  var $window = $(window);
+
+  // Si estamos en mobile nada de lo siguiente procede.
+  if ($window.width() < 768) return;
+
   // Agregar los selectores que quieras que sean sticky
   var elements = [
     $('#off-canvas')
   ];
 
-  var $window = $(window);
   var className = 'sticky-element';
 
   $.each(elements, function () {

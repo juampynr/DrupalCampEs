@@ -7,7 +7,7 @@
   @include box-sizing(border-box);
   width: 100%;
   padding: 12px;
-  border: 1px solid #222E3B;
+  border: 1px solid $primary-color;
   margin: 5px 0;
 }
 
@@ -15,7 +15,7 @@
 .form-file {
   @include box-sizing(border-box);
   padding: 6px;
-  border: 1px solid #222E3B;
+  border: 1px solid $primary-color;
   margin: 5px 0;
   background: #fff;
 
@@ -28,18 +28,19 @@
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #222E3B;
+  border: 1px solid $primary-color;
   margin: 5px 0;
   background: white;
 }
 
 .form-submit {
   padding: 10px;
-  background: #901235;
+  background: $secondary-color;
   text-transform: uppercase;
   color: white;
   border: none;
   cursor: pointer;
+  white-space: normal;
   margin: 5px 0;
 }
 

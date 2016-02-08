@@ -94,6 +94,17 @@
         background-size: contain;
       }
 
+      a {
+        color: $color-blue-a;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          color: $color-red-a;
+        }
+
+      }
+
     }
 
   }

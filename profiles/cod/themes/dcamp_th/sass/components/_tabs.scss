@@ -5,11 +5,15 @@
   margin-bottom: 0;
 
   @include breakpoint($tab) {
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 20px;
   }
 
   @include breakpoint($desk) {
     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   li {
@@ -25,7 +29,7 @@
 
       a {
         color: #fff;
-        background: #222E3B;
+        background: $primary-color;
       }
 
     }

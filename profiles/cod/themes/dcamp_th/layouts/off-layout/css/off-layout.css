@@ -5,7 +5,7 @@
 .off-canvas-toggler {
   display: none; }
 
-@media (min-width: 0) and (max-width: 70em) {
+@media (min-width: 0) and (max-width: 768px) {
   /* line 17, ../sass/_mobile-menu.scss */
   #off-canvas {
     position: absolute;
@@ -27,12 +27,12 @@
         width: 100%; }
         /* line 34, ../sass/_mobile-menu.scss */
         #off-canvas.open .off-canvas-toggler span {
-          background: url('../img/close.png?1453079582') 97% 50% no-repeat; }
+          background: url('../img/close.png?1454514779') 97% 50% no-repeat; }
     /* line 40, ../sass/_mobile-menu.scss */
     #off-canvas .off-canvas-toggler {
       cursor: pointer;
       z-index: 1000;
-      width: 110%;
+      width: 100%;
       height: 33px;
       display: inline-block;
       position: absolute;
@@ -40,7 +40,7 @@
       top: 0; }
       /* line 51, ../sass/_mobile-menu.scss */
       #off-canvas .off-canvas-toggler span {
-        background: url('../img/menu.png?1453079582') 89% 50% no-repeat;
+        background: url('../img/menu.png?1454514779') 96% 50% no-repeat;
         display: block;
         color: white;
         text-transform: uppercase;
@@ -59,12 +59,12 @@
   margin-right: auto;
   *zoom: 1;
   padding: 0; }
-  /* line 12, ../../../../../../../../../lib/gems/1.9.1/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../lib/gems/2.1.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   .l-container:after {
     content: " ";
     display: block;
     clear: both; }
-  /* line 38, ../../../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .l-container:after {
     content: "";
     display: table;

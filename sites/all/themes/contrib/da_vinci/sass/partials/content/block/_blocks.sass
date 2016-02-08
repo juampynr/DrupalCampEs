@@ -1,0 +1,152 @@
+/**
+ *  @file
+ *  Generic Blocks Styles
+ */
+.block
+  margin-bottom: 15px
+.textos-centro
+  text-align: center
+  font: italic normal 18px Noto
+  line-height: 1.2em
+  letter-spacing: -0.035em
+  margin: 50px 0
+  img
+    margin: 35px 0
+    &.banderola
+      float: right
+      margin: 50px 0
+      +transform(rotate(-10deg))
+      width: 100px
+      height: auto
+    &.logo-aed
+      width: 150px
+      heigth: auto
+  +breakpoint($camp-640)
+    font: italic normal 36px Noto
+  +breakpoint($camp-960)
+    font: italic normal 48px Noto
+    img
+      &.banderola
+        margin: -50px 0
+        width: 200px
+        height: auto
+      &.logo-aed
+        width: 200px
+        heigth: auto
+  .tres-columnas
+    +column-count(1)
+    text-align: left
+    h2
+      font: italic bold 16px Noto
+      text-align: center
+    p
+      font-size: 14px
+      line-height: 1.2em
+      letter-spacing: 0em
+      font-style: normal
+    +breakpoint($camp-640)
+      +column-count(1)
+      h2
+        font: italic bold 32px Noto
+    +breakpoint($camp-960)
+      +column-count(3)
+      h2
+        text-align: left
+        font: italic bold 32px Noto
+
+  .newsletter
+    display: inline-block
+    margin: 50px 0
+    width: 100%
+    height: 400px
+    background: url("/sites/all/themes/contrib/da_vinci/images/foto_grupo_drupalcamp_caceres-pedro-lozano.jpg")
+    background-attachment: fixed
+    background-size: cover
+    text-align: center
+    +breakpoint($camp-960)
+      background: url("/sites/all/themes/contrib/da_vinci/images/foto_grupo_drupalcamp_caceres-pedro-lozano.jpg")
+      background-attachment: fixed
+      background-size: cover
+      text-align: center
+      width: 100%
+      height: 500px
+    .cont-tabla
+      display: table
+      background: $white
+      padding: 20px
+      +vertical-align()
+      margin: 0 auto
+      .cont-fila
+        display: table-row
+        .titulo
+          font: italic bold 16px Noto
+          +breakpoint($camp-960)
+            font: italic bold 32px Noto
+        .colum-izq
+          font: normal normal 10px Noto
+          line-height: 1.2em
+          letter-spacing: 0.035em
+          display: table-cell
+          float: left
+          ul
+            li
+              display: inline
+              margin: 0 3px 0
+              img
+                width: 20px
+                heigth: 20px
+          +breakpoint($camp-960)
+            font: normal normal 16px Noto
+            ul
+              li
+                display: inline
+                margin: 0 3px 0
+                img
+                  width: 40px
+                  heigth: 40px
+        .colum-dcha
+          margin-left: 50px
+          font: normal normal 10px Noto
+          line-height: 1.2em
+          letter-spacing: -0.035em
+          display: table-cell
+          float: right
+          +breakpoint($camp-960)
+            font: normal normal 16px Noto
+          .descripcion
+            font: normal normal 8px Allerta
+            line-height: 1.2em
+            width: 225px
+            margin: 10px 0
+            +breakpoint($camp-960)
+              font: normal normal 12px Noto
+              width: 315px
+          #mc_embed_signup
+            input
+              border: 2px solid black
+              float: right
+              clear: none
+              &.email
+                +border-radius(0)
+                width: 180px
+              &.button
+                width: 35px
+                height: 35px
+                margin: 10px 0 0 5px
+                +border-radius(2)
+                background: url("/sites/all/themes/contrib/da_vinci/images/send.png")
+                background-repeat: no-repeat
+            +breakpoint($camp-960)
+              input
+                &.email
+                  +border-radius(0)
+                  width: 265px
+                &.button
+                  width: 40px
+                  height: 35px
+                  margin: 20px 0 0 5px
+
+
+
+#first-time
+  display: none

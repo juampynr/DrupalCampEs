@@ -1,0 +1,45 @@
+/**
+ *  @file
+ *  Header Region Styles
+ */
+.top-bar
+  overflow: hidden
+  background: $background-top-bar
+.header-wrapper
+  padding: 25px 40px
+.site-header
+  background: transparent
+  min-height: 75px
+  z-index: 9
+  #name-slogan
+    position: relative
+    float: right
+    .site-name
+      h1
+        margin: 0
+        font-family: $title
+      a
+        color: $color-site-name
+    .site-slogan
+      color: $color-site-slogan
+    .site-social
+      position: relative
+      float: right
+      width: 100px
+      margin-top: 5px
+      ul
+        float: right
+        list-style-type: none
+        li
+          margin: 0 0 0 10px
+          display: inline
+          &:first-child
+            margin-right: -5px
+    .site-languaje
+      margin: 0 90px 0
+      +vertical-align()
+      font-family: 'Allerta', sans-serif
+      font-size: 18px
+      color: black
+#site-logo img
+  max-width: 100%

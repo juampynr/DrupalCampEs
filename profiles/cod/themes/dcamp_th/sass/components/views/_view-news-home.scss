@@ -1,8 +1,14 @@
 .view-news-home {
   .view-content {
 
-    @include breakpoint($tab){
-      @include grid-items(2, 2%, 2%);
+    // @todo temporalmente he deshecho la grilla porque tenemos solo un articulo. Cuando haya mas de uno hay que revertir esto
+    @include breakpoint($tab) {
+      //@include grid-items(2, 2%, 2%);
+    }
+
+    // @todo eliminar esto cuando se resuelva el todo anterior.
+    > * {
+      margin-bottom: 30px;
     }
   }
 }

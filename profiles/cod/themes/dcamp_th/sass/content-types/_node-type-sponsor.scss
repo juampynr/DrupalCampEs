@@ -1,0 +1,34 @@
+.node-type-sponsor {
+  .l-content {
+    background: #fff;
+  }
+
+  .view-mode-full {
+    @include typo-styles;
+
+    .group-left {
+      width: 30%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .group-right {
+      width: 70%;
+      padding-left: 20px;
+      box-sizing: border-box;
+
+      > .field {
+        margin-bottom: 10px;
+      }
+    }
+
+    .group-footer {
+      padding-top: 20px;
+      padding-bottom: 60px;
+    }
+
+  }
+}

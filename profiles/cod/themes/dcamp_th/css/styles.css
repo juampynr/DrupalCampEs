@@ -1,31 +1,31 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Noto Serif";
-  src: url('../fonts/notoserif/NotoSerif-Regular.ttf?1403840006') format('truetype');
+  src: url('../fonts/notoserif/NotoSerif-Regular.ttf?1454949045') format('truetype');
 }
 @font-face {
   font-family: "Noto Serif";
-  src: url('../fonts/notoserif/NotoSerif-Italic.ttf?1403840006') format('truetype');
+  src: url('../fonts/notoserif/NotoSerif-Italic.ttf?1454949045') format('truetype');
   font-style: italic, oblique;
 }
 @font-face {
   font-family: "Noto Serif";
-  src: url('../fonts/notoserif/NotoSerif-BoldItalic.ttf?1403840006') format('truetype');
+  src: url('../fonts/notoserif/NotoSerif-BoldItalic.ttf?1454949045') format('truetype');
   font-weight: bold;
   font-style: italic, oblique;
 }
 @font-face {
   font-family: "Aller";
-  src: url('../fonts/aller/Aller_Rg.ttf?1231479762') format('truetype');
+  src: url('../fonts/aller/Aller_Rg.ttf?1454949045') format('truetype');
 }
 @font-face {
   font-family: "Aller";
-  src: url('../fonts/aller/Aller_Rg.ttf?1231479762') format('truetype');
+  src: url('../fonts/aller/Aller_Rg.ttf?1454949045') format('truetype');
   font-style: italic, oblique;
 }
 @font-face {
   font-family: "Aller";
-  src: url('../fonts/aller/Aller_Rg.ttf?1231479762') format('truetype');
+  src: url('../fonts/aller/Aller_Rg.ttf?1454949045') format('truetype');
   font-weight: bold;
   font-style: italic, oblique;
 }
@@ -1186,7 +1186,7 @@ fieldset .fieldset-wrapper {
   top: calc(50% - 12px);
   left: calc(50% - 10px);
   content: '';
-  background: url('../images/spin.png?1447184545');
+  background: url('../images/spin.png?1454949045');
   width: 21px;
   height: 24px;
   -moz-animation: spin 2s infinite linear;
@@ -1343,17 +1343,17 @@ fieldset .fieldset-wrapper {
 }
 /* line 82, ../sass/components/_user-profile.scss */
 .user-profile .group-info-wrapper .group-social .field--name-field-twitter-url .field__label {
-  background: url('../images/square-twitter-50x50.png?1454582282') no-repeat 0 0;
+  background: url('../images/square-twitter-50x50.png?1454949045') no-repeat 0 0;
   background-size: contain;
 }
 /* line 87, ../sass/components/_user-profile.scss */
 .user-profile .group-info-wrapper .group-social .field--name-field-facebook-url .field__label {
-  background: url('../images/square-facebook-50x50.png?1454582282') no-repeat 0 0;
+  background: url('../images/square-facebook-50x50.png?1454949045') no-repeat 0 0;
   background-size: contain;
 }
 /* line 92, ../sass/components/_user-profile.scss */
 .user-profile .group-info-wrapper .group-social .field--name-field-linkedin-url .field__label {
-  background: url('../images/square-linkedin-50x50.png?1454582282') no-repeat 0 0;
+  background: url('../images/square-linkedin-50x50.png?1454949045') no-repeat 0 0;
   background-size: contain;
 }
 /* line 97, ../sass/components/_user-profile.scss */
@@ -1584,21 +1584,23 @@ fieldset .fieldset-wrapper {
 }
 @media (min-width: 768px) {
   /* line 9, ../sass/components/blocks/_block-panels-mini-navigation.scss */
-  #block-panels-mini-navigation > .block__content > .inner-content > div > div > div > div {
+  #block-panels-mini-navigation > .block__content > .inner-content > div > div > div > div,
+  #block-panels-mini-navigation > .block__content > .inner-content > div > div > div > nav {
     display: inline-block;
   }
 }
-/* line 14, ../sass/components/blocks/_block-panels-mini-navigation.scss */
-#block-panels-mini-navigation > .block__content > .inner-content > div > div > div > div .block__title {
+/* line 15, ../sass/components/blocks/_block-panels-mini-navigation.scss */
+#block-panels-mini-navigation > .block__content > .inner-content > div > div > div > div .block__title,
+#block-panels-mini-navigation > .block__content > .inner-content > div > div > div > nav .block__title {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 21, ../sass/components/blocks/_block-panels-mini-navigation.scss */
+  /* line 22, ../sass/components/blocks/_block-panels-mini-navigation.scss */
   #block-panels-mini-navigation #block-blockify-blockify-logo {
     float: left;
   }
 }
-/* line 27, ../sass/components/blocks/_block-panels-mini-navigation.scss */
+/* line 28, ../sass/components/blocks/_block-panels-mini-navigation.scss */
 #block-panels-mini-navigation .pane-system-user-menu,
 #block-panels-mini-navigation #block-custom-1,
 #block-panels-mini-navigation #block-locale-language {
@@ -1850,7 +1852,7 @@ fieldset .fieldset-wrapper {
 
 /* line 1, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro {
-  background: url('../images/imgs/hero.jpg?1453139479') no-repeat 50% 50%;
+  background: url('../images/imgs/hero.jpg?1454949045') no-repeat 50% 50%;
   width: 100%;
   background-size: cover;
   position: relative;
@@ -1879,7 +1881,7 @@ fieldset .fieldset-wrapper {
 }
 /* line 30, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content p {
-  background: url('../images/ribbon-white-borders.png?1453125458');
+  background: url('../images/ribbon-white-borders.png?1454949045');
   display: inline-block;
   box-sizing: border-box;
   position: relative;
@@ -1890,7 +1892,7 @@ fieldset .fieldset-wrapper {
 }
 /* line 40, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content p:before {
-  background: url('../images/ribbon-white-230x55.png?1453125458') no-repeat;
+  background: url('../images/ribbon-white-230x55.png?1454949045') no-repeat;
   content: '';
   position: absolute;
   right: 100%;
@@ -1905,7 +1907,7 @@ fieldset .fieldset-wrapper {
   left: 100%;
   top: 0;
   width: 30px;
-  background: url('../images/ribbon-white-230x55.png?1453125458') no-repeat 100% 0;
+  background: url('../images/ribbon-white-230x55.png?1454949045') no-repeat 100% 0;
   height: 55px;
 }
 
@@ -1944,13 +1946,13 @@ fieldset .fieldset-wrapper {
 }
 /* line 9, ../sass/components/blocks/_social.scss */
 .social a.fb {
-  background: url('../images/facebook-white-21x20.png?1453125332') no-repeat 0 0 transparent;
+  background: url('../images/facebook-white-21x20.png?1454949045') no-repeat 0 0 transparent;
   width: 21px;
   height: 20px;
 }
 /* line 13, ../sass/components/blocks/_social.scss */
 .social a.tw {
-  background: url('../images/twitter-white-21x21.png?1453125359') no-repeat 0 0 transparent;
+  background: url('../images/twitter-white-21x21.png?1454949045') no-repeat 0 0 transparent;
   width: 21px;
   height: 21px;
 }
@@ -2075,6 +2077,40 @@ fieldset .fieldset-wrapper {
   font-size: 12px;
 }
 
+/* line 4, ../sass/components/views/_view-aed-sessions.scss */
+.view-aed-sessions .view-content table {
+  width: 100%;
+}
+/* line 9, ../sass/components/views/_view-aed-sessions.scss */
+.view-aed-sessions .view-content table thead tr th {
+  background: white;
+  padding: 20px;
+}
+/* line 17, ../sass/components/views/_view-aed-sessions.scss */
+.view-aed-sessions .view-content table tbody tr {
+  background: none;
+}
+/* line 21, ../sass/components/views/_view-aed-sessions.scss */
+.view-aed-sessions .view-content table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 26, ../sass/components/views/_view-aed-sessions.scss */
+.view-aed-sessions .view-content table tbody tr td {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all .2s;
+}
+/* line 32, ../sass/components/views/_view-aed-sessions.scss */
+.view-aed-sessions .view-content table tbody tr td .file a {
+  font-family: "Allert", sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+/* line 37, ../sass/components/views/_view-aed-sessions.scss */
+.view-aed-sessions .view-content table tbody tr td .file a:hover {
+  text-decoration: underline;
+}
+
 /* line 10, ../sass/components/views/_view-news-home.scss */
 .view-news-home .view-content > * {
   margin-bottom: 30px;
@@ -2091,6 +2127,97 @@ fieldset .fieldset-wrapper {
   .node--full .node__content {
     padding: 0;
   }
+}
+
+/* line 3, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full h2, .node-type-session .node--session--full h3, .node-type-session .node--session--full h4, .node-type-session .node--session--full h5, .node-type-session .node--session--full h5, .node-type-session .node--session--full p, .node-type-session .node--session--full span {
+  font-family: "Noto Serif", sans-serif !important;
+  white-space: normal !important;
+}
+/* line 8, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #901235;
+  line-height: normal;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  /* line 8, ../sass/components/_typo-styles.scss */
+  .node-type-session .node--session--full h2 {
+    font-size: 32px;
+  }
+}
+/* line 21, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #901235;
+  line-height: normal;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  /* line 21, ../sass/components/_typo-styles.scss */
+  .node-type-session .node--session--full h3 {
+    font-size: 26px;
+  }
+}
+/* line 33, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #901235;
+  line-height: normal;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  /* line 33, ../sass/components/_typo-styles.scss */
+  .node-type-session .node--session--full h4 {
+    font-size: 24px;
+  }
+}
+/* line 46, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full span, .node-type-session .node--session--full p {
+  line-height: 24px;
+}
+/* line 50, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full p {
+  margin: 10px 0;
+}
+/* line 54, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full a {
+  color: #5784AE;
+}
+/* line 58, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full ul {
+  margin: 10px 30px;
+}
+/* line 60, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full ul li {
+  list-style: initial;
+  margin-bottom: 10px;
+}
+/* line 69, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full table thead tr th {
+  background: white;
+  padding: 10px;
+}
+/* line 77, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full table tbody tr {
+  background: none;
+}
+/* line 80, ../sass/components/_typo-styles.scss */
+.node-type-session .node--session--full table tbody tr td {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 6, ../sass/content-types/_node-type-session.scss */
+.node-type-session .node--session--full .field {
+  margin-bottom: 20px;
+}
+/* line 9, ../sass/content-types/_node-type-session.scss */
+.node-type-session .node--session--full .field > .field__items > * {
+  margin-top: 5px;
 }
 
 /* line 2, ../sass/content-types/_node-type-sponsor.scss */
@@ -2204,6 +2331,7 @@ fieldset .fieldset-wrapper {
   padding-bottom: 60px;
 }
 
+/**/
 /* line 5, ../sass/content-types/news/_node--news--full.scss */
 body.node-type-news .l-content > .l-container, body.node-type-news .l-content > .tabs, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content {
   padding-top: 0;
@@ -2426,7 +2554,7 @@ body.node-type-news .l-content > .l-container .node--news--full .node__content t
     position: absolute;
     top: 100%;
     left: 0;
-    background: url('../images/star-magenta-28x29.png?1453212869') no-repeat 0 0 transparent;
+    background: url('../images/star-magenta-28x29.png?1454949045') no-repeat 0 0 transparent;
     width: 28px;
     height: 29px;
   }
@@ -2575,7 +2703,7 @@ body.node-type-news .l-content > .l-container .node--news--full .node__content t
   content: '';
   position: absolute;
   top: -30px;
-  background: url('../images/drop-blue-119x153.png?1453125311') no-repeat;
+  background: url('../images/drop-blue-119x153.png?1454949045') no-repeat;
   width: 59px;
   height: 76px;
   background-size: cover;

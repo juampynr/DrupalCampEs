@@ -6,7 +6,8 @@
     > .inner-content {
       text-align: center;
 
-      > div > div > div > div {
+      > div > div > div > div,
+      > div > div > div > nav{
         @include breakpoint($tab) {
           display: inline-block;
         }

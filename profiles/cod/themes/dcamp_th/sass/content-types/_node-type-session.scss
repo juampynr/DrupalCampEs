@@ -1,0 +1,14 @@
+.node-type-session {
+
+  .node--session--full {
+    @include typo-styles;
+
+    .field {
+      margin-bottom: 20px;
+
+      > .field__items > * {
+        margin-top: 5px;
+      }
+    }
+  }
+}

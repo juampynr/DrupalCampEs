@@ -1,4 +1,0 @@
-name = Drupalcamp Custom Module
-description = Customizations made for Drupalcamp website
-core = 7.x
-package = Drupalcamp

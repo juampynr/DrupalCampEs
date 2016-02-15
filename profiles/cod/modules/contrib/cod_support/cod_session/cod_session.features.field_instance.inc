@@ -497,6 +497,54 @@ function cod_session_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-session-field_language'
+  $field_instances['node-session-field_language'] = array(
+    'bundle' => 'session',
+    'default_value' => array(
+      0 => array(
+        'value' => 'spanish',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 11,
+      ),
+      'listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_language',
+    'label' => 'Language',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 41,
+    ),
+  );
+
   // Exported field_instance: 'node-session-field_news_image'
   $field_instances['node-session-field_news_image'] = array(
     'bundle' => 'session',
@@ -799,6 +847,7 @@ function cod_session_field_default_field_instances() {
   t('Escriba el nombre de usuario del ponente y, para añadir más ponentes, haga clic en "Añadir nuevo ponente"');
   t('File attachments');
   t('Imagen');
+  t('Language');
   t('Nivel de experiencia');
   t('Ponentes');
   t('Session Track');

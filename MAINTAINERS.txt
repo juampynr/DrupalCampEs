@@ -1,7 +1,8 @@
 
 Drupal core is built and maintained by the Drupal project community. Everyone is
 encouraged to submit issues and changes (patches) to improve Drupal, and to
-contribute in other ways -- see http://drupal.org/contribute to find out how.
+contribute in other ways -- see https://www.drupal.org/contribute to find out
+how.
 
 Branch maintainers
 ------------------

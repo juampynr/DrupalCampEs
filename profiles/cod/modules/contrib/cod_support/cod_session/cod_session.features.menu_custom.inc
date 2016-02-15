@@ -15,8 +15,8 @@ function cod_session_menu_default_menu_custom() {
     'menu_name' => 'main-menu',
     'title' => 'Main menu',
     'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
-    'language' => 'es',
-    'i18n_mode' => 2,
+    'language' => 'und',
+    'i18n_mode' => 0,
   );
   // Exported menu: menu-menu-quick-links.
   $menus['menu-menu-quick-links'] = array(

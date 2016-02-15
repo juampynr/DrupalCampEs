@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' =>
     array (
-      'database' => '2016camp',
-      'username' => '2016camp',
-      'password' => '2016camp',
+      'database' => 'dcamp',
+      'username' => 'root',
+      'password' => 'capy',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',

@@ -121,6 +121,36 @@ function cod_session_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_language'
+  $field_bases['field_language'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_language',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'spanish' => 'Spanish',
+        'english' => 'English',
+      ),
+      'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_news_image'
   $field_bases['field_news_image'] = array(
     'active' => 1,

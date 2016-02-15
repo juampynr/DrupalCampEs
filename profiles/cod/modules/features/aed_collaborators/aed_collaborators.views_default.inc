@@ -22,65 +22,75 @@ function aed_collaborators_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Attendees';
+  $handler->display->display_options['title'] = 'Asistentes';
   $handler->display->display_options['css_class'] = 'aed-attendees';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'más';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access user profiles';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Aplicar';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Ordenar por';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Elementos por página';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Todos -';
+  $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Desplazamiento';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« primera';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ anterior';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'siguiente ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'última »';
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['style_options']['row_class'] = 'column col-sm-2';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* No results behavior: Global: Text area */
+  /* Comportamiento si no hay resultados: Global: Área de texto */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'Still tickets are not sell but you can register, <a href="/user/register">Be the first!!</a>';
+  $handler->display->display_options['empty']['area']['content'] = 'Todavía las entradas no estan a la venta pero te puedes registrar, <a href="/user/register">¡sé el primero!</a>';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
-  /* Relationship: User: Ticket registration */
+  /* Relación: Usuario: Ticket registration */
   $handler->display->display_options['relationships']['ticket_registration']['id'] = 'ticket_registration';
   $handler->display->display_options['relationships']['ticket_registration']['table'] = 'users';
   $handler->display->display_options['relationships']['ticket_registration']['field'] = 'ticket_registration';
-  /* Field: User: Picture */
+  /* Campo: Usuario: Imagen */
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['picture']['image_style'] = 'thumbnail';
-  /* Field: Field: Nombre */
+  /* Campo: Campo: Nombre */
   $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['label'] = '';
   $handler->display->display_options['fields']['field_profile_first']['element_label_colon'] = FALSE;
-  /* Field: Field: Apellidos */
+  /* Campo: Campo: Apellidos */
   $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['label'] = '';
   $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
-  /* Sort criterion: Field: Nombre (field_profile_first) */
+  /* Criterio de ordenación: Campo: Nombre (field_profile_first) */
   $handler->display->display_options['sorts']['field_profile_first_value']['id'] = 'field_profile_first_value';
   $handler->display->display_options['sorts']['field_profile_first_value']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['sorts']['field_profile_first_value']['field'] = 'field_profile_first_value';
-  /* Filter criterion: User: Active */
+  /* Criterios de filtrado: Usuario: Activo */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-
   /* Criterios de filtrado: Ticket registration: State */
   $handler->display->display_options['filters']['state']['id'] = 'state';
   $handler->display->display_options['filters']['state']['table'] = 'ticket_registration';
@@ -88,8 +98,6 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['filters']['state']['relationship'] = 'ticket_registration';
   $handler->display->display_options['filters']['state']['value'] = 'completed';
   /* Criterios de filtrado: Usuario: ID del usuario */
-
-  /* Filter criterion: User: The user ID */
   $handler->display->display_options['filters']['uid_raw']['id'] = 'uid_raw';
   $handler->display->display_options['filters']['uid_raw']['table'] = 'users';
   $handler->display->display_options['filters']['uid_raw']['field'] = 'uid_raw';
@@ -105,14 +113,14 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['defaults']['cache'] = FALSE;
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: User: Picture */
+  /* Campo: Usuario: Imagen */
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['picture']['image_style'] = 'thumbnail';
-  /* Field: User: Name */
+  /* Campo: Usuario: Nombre */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
   $handler->display->display_options['fields']['name']['field'] = 'name';
@@ -121,7 +129,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
-  /* Field: Field: Nombre */
+  /* Campo: Campo: Nombre */
   $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
@@ -130,17 +138,17 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_profile_first']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Field: Field: Apellidos */
+  /* Campo: Campo: Apellidos */
   $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['label'] = '';
   $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
-  /* Field: User: Nick */
+  /* Campo: Usuario: Nick */
   $handler->display->display_options['fields']['field_nick']['id'] = 'field_nick';
   $handler->display->display_options['fields']['field_nick']['table'] = 'field_data_field_nick';
   $handler->display->display_options['fields']['field_nick']['field'] = 'field_nick';
-  /* Field: User: Uid */
+  /* Campo: Usuario: Uid */
   $handler->display->display_options['fields']['uid']['id'] = 'uid';
   $handler->display->display_options['fields']['uid']['table'] = 'users';
   $handler->display->display_options['fields']['uid']['field'] = 'uid';
@@ -149,28 +157,28 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['uid']['alter']['text'] = '[uid]';
   $handler->display->display_options['fields']['uid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['uid']['link_to_user'] = FALSE;
-  /* Field: User: Organización */
+  /* Campo: Usuario: Organización */
   $handler->display->display_options['fields']['field_profile_org']['id'] = 'field_profile_org';
   $handler->display->display_options['fields']['field_profile_org']['table'] = 'field_data_field_profile_org';
   $handler->display->display_options['fields']['field_profile_org']['field'] = 'field_profile_org';
   $handler->display->display_options['path'] = 'asistentes';
   $translatables['aed_attendees'] = array(
     t('Master'),
-    t('Attendees'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
+    t('Asistentes'),
+    t('más'),
+    t('Aplicar'),
+    t('Reiniciar'),
+    t('Ordenar por'),
     t('Asc'),
     t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Still tickets are not sell but you can register, <a href="/user/register">Be the first!!</a>'),
+    t('Elementos por página'),
+    t('- Todos -'),
+    t('Desplazamiento'),
+    t('« primera'),
+    t('‹ anterior'),
+    t('siguiente ›'),
+    t('última »'),
+    t('Todavía las entradas no estan a la venta pero te puedes registrar, <a href="/user/register">¡sé el primero!</a>'),
     t('Ticket registration'),
     t('Attenders'),
     t('Nick'),
@@ -205,13 +213,12 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Entity Reference: Referenced Entity */
+  /* Relación: Referencia a entidades: Entidad referenciada */
   $handler->display->display_options['relationships']['field_user_collaborator_target_id']['id'] = 'field_user_collaborator_target_id';
   $handler->display->display_options['relationships']['field_user_collaborator_target_id']['table'] = 'field_data_field_user_collaborator';
   $handler->display->display_options['relationships']['field_user_collaborator_target_id']['field'] = 'field_user_collaborator_target_id';
-  $handler->display->display_options['relationships']['field_user_collaborator_target_id']['label'] = 'Usuario entidad referenciada de field_user_collaborator';
   $handler->display->display_options['relationships']['field_user_collaborator_target_id']['required'] = TRUE;
-  /* Field: User: Picture */
+  /* Campo: Usuario: Imagen */
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
@@ -219,21 +226,21 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['picture']['image_style'] = 'medium';
-  /* Field: Field: Nombre */
+  /* Campo: Campo: Nombre */
   $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['relationship'] = 'field_user_collaborator_target_id';
   $handler->display->display_options['fields']['field_profile_first']['label'] = '';
   $handler->display->display_options['fields']['field_profile_first']['element_label_colon'] = FALSE;
-  /* Field: Field: Apellidos */
+  /* Campo: Campo: Apellidos */
   $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['relationship'] = 'field_user_collaborator_target_id';
   $handler->display->display_options['fields']['field_profile_last']['label'] = '';
   $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
-  /* Field: Content: Empresa link */
+  /* Campo: Contenido: Empresa link */
   $handler->display->display_options['fields']['field_company_link']['id'] = 'field_company_link';
   $handler->display->display_options['fields']['field_company_link']['table'] = 'field_data_field_company_link';
   $handler->display->display_options['fields']['field_company_link']['field'] = 'field_company_link';
@@ -241,7 +248,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_company_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_company_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_company_link']['click_sort_column'] = 'url';
-  /* Field: Content: Logo empresa */
+  /* Campo: Contenido: Logo empresa */
   $handler->display->display_options['fields']['field_company_logo']['id'] = 'field_company_logo';
   $handler->display->display_options['fields']['field_company_logo']['table'] = 'field_data_field_company_logo';
   $handler->display->display_options['fields']['field_company_logo']['field'] = 'field_company_logo';
@@ -254,7 +261,7 @@ function aed_collaborators_views_default_views() {
     'image_style' => 'flexslider_thumbnail',
     'image_link' => '',
   );
-  /* Field: Content: Empresa */
+  /* Campo: Contenido: Empresa */
   $handler->display->display_options['fields']['field_company']['id'] = 'field_company';
   $handler->display->display_options['fields']['field_company']['table'] = 'field_data_field_company';
   $handler->display->display_options['fields']['field_company']['field'] = 'field_company';
@@ -265,18 +272,18 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_company']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Sort criterion: Content: Post date */
+  /* Criterio de ordenación: Contenido: Fecha de mensaje */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
-  /* Filter criterion: Content: Published */
+  /* Criterios de filtrado: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Criterios de filtrado: Contenido: Tipo */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -287,7 +294,7 @@ function aed_collaborators_views_default_views() {
   /* Display: Credits */
   $handler = $view->new_display('page', 'Credits', 'page');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Field: Apellidos */
+  /* Campo: Campo: Apellidos */
   $handler->display->display_options['fields']['field_profile_last']['id'] = 'field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['table'] = 'field_data_field_profile_last';
   $handler->display->display_options['fields']['field_profile_last']['field'] = 'field_profile_last';
@@ -295,7 +302,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_profile_last']['label'] = '';
   $handler->display->display_options['fields']['field_profile_last']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_profile_last']['element_label_colon'] = FALSE;
-  /* Field: User: Picture */
+  /* Campo: Usuario: Imagen */
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
   $handler->display->display_options['fields']['picture']['field'] = 'picture';
@@ -303,7 +310,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['picture']['label'] = '';
   $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['picture']['image_style'] = 'credits_220x220';
-  /* Field: Field: Nombre */
+  /* Campo: Campo: Nombre */
   $handler->display->display_options['fields']['field_profile_first']['id'] = 'field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['fields']['field_profile_first']['field'] = 'field_profile_first';
@@ -312,7 +319,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_profile_first']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_profile_first']['alter']['text'] = '[field_profile_first] [field_profile_last]';
   $handler->display->display_options['fields']['field_profile_first']['element_label_colon'] = FALSE;
-  /* Field: Content: Empresa link */
+  /* Campo: Contenido: Empresa link */
   $handler->display->display_options['fields']['field_company_link']['id'] = 'field_company_link';
   $handler->display->display_options['fields']['field_company_link']['table'] = 'field_data_field_company_link';
   $handler->display->display_options['fields']['field_company_link']['field'] = 'field_company_link';
@@ -320,7 +327,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_company_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_company_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_company_link']['click_sort_column'] = 'url';
-  /* Field: Content: Logo empresa */
+  /* Campo: Contenido: Logo empresa */
   $handler->display->display_options['fields']['field_company_logo']['id'] = 'field_company_logo';
   $handler->display->display_options['fields']['field_company_logo']['table'] = 'field_data_field_company_logo';
   $handler->display->display_options['fields']['field_company_logo']['field'] = 'field_company_logo';
@@ -346,7 +353,6 @@ function aed_collaborators_views_default_views() {
     t('Desc'),
     t('Usuario entidad referenciada de field_user_collaborator'),
     t('Credits'),
-    t('more'),
     t('[field_profile_first] [field_profile_last]'),
   );
   $export['credits_page'] = $view;

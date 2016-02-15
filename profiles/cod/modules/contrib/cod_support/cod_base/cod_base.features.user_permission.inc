@@ -115,6 +115,7 @@ function cod_base_user_default_permissions() {
     'name' => 'administer content types',
     'roles' => array(
       'administrator' => 'administrator',
+      'content editor' => 'content editor',
     ),
     'module' => 'node',
   );

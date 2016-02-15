@@ -63,13 +63,13 @@ function cod_profile_base_strongarm() {
             'visible' => FALSE,
           ),
           'full' => array(
-            'weight' => '12',
+            'weight' => '13',
             'visible' => FALSE,
           ),
         ),
         'masquerade' => array(
           'full' => array(
-            'weight' => '7',
+            'weight' => '8',
             'visible' => FALSE,
           ),
         ),

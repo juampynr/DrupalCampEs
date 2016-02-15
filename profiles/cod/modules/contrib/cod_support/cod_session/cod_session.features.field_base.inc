@@ -157,37 +157,6 @@ function cod_session_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_session_length'
-  $field_bases['field_session_length'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_session_length',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'light_talk' => 'Light talk (5m)',
-        'session' => 'Session (45m)',
-        'workshop' => 'Workshop (2h)',
-      ),
-      'allowed_values_function' => '',
-      'entity_translation_sync' => FALSE,
-    ),
-    'translatable' => 1,
-    'type' => 'list_text',
-  );
-
   // Exported field_base: 'field_slides'
   $field_bases['field_slides'] = array(
     'active' => 1,

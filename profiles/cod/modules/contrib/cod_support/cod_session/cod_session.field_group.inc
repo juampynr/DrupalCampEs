@@ -49,7 +49,7 @@ function cod_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Audience',
-    'weight' => '6',
+    'weight' => '5',
     'children' => array(
       0 => 'og_vocabulary',
       1 => 'field_experience',
@@ -184,7 +184,7 @@ function cod_session_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Schedule Info',
-    'weight' => '7',
+    'weight' => '6',
     'children' => array(
       0 => 'field_accepted',
     ),

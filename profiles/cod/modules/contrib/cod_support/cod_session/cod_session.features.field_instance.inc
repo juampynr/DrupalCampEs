@@ -546,51 +546,7 @@ function cod_session_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-session-field_session_length'
-  $field_instances['node-session-field_session_length'] = array(
-    'bundle' => 'session',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 11,
-      ),
-      'listing' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_session_length',
-    'label' => 'Session Length',
-    'required' => 1,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 4,
+      'weight' => 7,
     ),
   );
 
@@ -774,7 +730,7 @@ function cod_session_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -845,7 +801,6 @@ function cod_session_field_default_field_instances() {
   t('Imagen');
   t('Nivel de experiencia');
   t('Ponentes');
-  t('Session Length');
   t('Session Track');
   t('Status');
   t('Sube tus diapositivas aquí en PDF o enlaza a ellas en el campo descripción (esto se hace normalmente tras la sesión).');

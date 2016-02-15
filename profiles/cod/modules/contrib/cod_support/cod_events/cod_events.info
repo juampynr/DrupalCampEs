@@ -22,7 +22,6 @@ dependencies[] = flag
 dependencies[] = image
 dependencies[] = inline_entity_form
 dependencies[] = list
-dependencies[] = node
 dependencies[] = og
 dependencies[] = og_ui
 dependencies[] = options

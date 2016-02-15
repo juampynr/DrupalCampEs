@@ -1947,20 +1947,21 @@ fieldset .fieldset-wrapper {
 /* line 6, ../sass/components/blocks/_social.scss */
 .social a {
   display: inline-block;
+  text-indent: -99999px;
 }
-/* line 9, ../sass/components/blocks/_social.scss */
+/* line 10, ../sass/components/blocks/_social.scss */
 .social a.fb {
   background: url('../images/facebook-white-21x20.png?1454949045') no-repeat 0 0 transparent;
   width: 21px;
   height: 20px;
 }
-/* line 13, ../sass/components/blocks/_social.scss */
+/* line 14, ../sass/components/blocks/_social.scss */
 .social a.tw {
   background: url('../images/twitter-white-21x21.png?1454949045') no-repeat 0 0 transparent;
   width: 21px;
   height: 21px;
 }
-/* line 17, ../sass/components/blocks/_social.scss */
+/* line 18, ../sass/components/blocks/_social.scss */
 .social a span {
   display: none;
 }

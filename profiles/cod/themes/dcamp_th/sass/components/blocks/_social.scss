@@ -5,6 +5,7 @@
 .social {
   a {
     display: inline-block;
+    text-indent: -99999px;
 
     &.fb {
       @include bg-build('facebook-white-21x20.png');

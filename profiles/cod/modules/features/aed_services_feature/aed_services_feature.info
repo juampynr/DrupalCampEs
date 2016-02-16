@@ -1,0 +1,16 @@
+name = AED Services Feature
+description = Contains the server configuration and active resources for the AED Services
+core = 7.x
+package = AED
+version = 7.x-1.0
+project = aed_services_feature
+dependencies[] = aedcamp_resources
+dependencies[] = commerce_coupon
+dependencies[] = commerce_features
+dependencies[] = ctools
+dependencies[] = services
+dependencies[] = rest_server
+features[ctools][] = services:services:3
+features[features_api][] = api:2
+features[services_endpoint][] = dcamp
+project path = profiles/cod/modules/features

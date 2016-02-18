@@ -103,9 +103,9 @@ function cod_session_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'advanced' => 'Avanzado',
-        'beginner' => 'Novato',
-        'intermediate' => 'Intermedio',
+        'advanced' => 'Advanced',
+        'beginner' => 'Beginner',
+        'intermediate' => 'Intermediate',
       ),
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,

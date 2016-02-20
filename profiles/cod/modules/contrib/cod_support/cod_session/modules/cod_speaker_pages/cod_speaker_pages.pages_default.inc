@@ -36,6 +36,8 @@ function cod_speaker_pages_default_page_manager_pages() {
       ),
     ),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'tab',
@@ -173,25 +175,25 @@ function cod_speaker_pages_default_page_manager_pages() {
   $display->uuid = '0eeda185-558c-46be-bee1-c6c1962556c5';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-eab403ae-9c33-45fb-b8b6-23db79e4aa43';
-    $pane->panel = 'content';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'cod_session_speakers-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'eab403ae-9c33-45fb-b8b6-23db79e4aa43';
-    $display->content['new-eab403ae-9c33-45fb-b8b6-23db79e4aa43'] = $pane;
-    $display->panels['content'][0] = 'new-eab403ae-9c33-45fb-b8b6-23db79e4aa43';
+  $pane = new stdClass();
+  $pane->pid = 'new-eab403ae-9c33-45fb-b8b6-23db79e4aa43';
+  $pane->panel = 'content';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'cod_session_speakers-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'eab403ae-9c33-45fb-b8b6-23db79e4aa43';
+  $display->content['new-eab403ae-9c33-45fb-b8b6-23db79e4aa43'] = $pane;
+  $display->panels['content'][0] = 'new-eab403ae-9c33-45fb-b8b6-23db79e4aa43';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

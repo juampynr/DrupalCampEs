@@ -35,7 +35,9 @@ function cod_registration_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'ticket',
-    'settings' => array(),
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'ticket_type',
   );

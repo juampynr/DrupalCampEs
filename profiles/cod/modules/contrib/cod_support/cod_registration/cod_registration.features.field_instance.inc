@@ -44,6 +44,7 @@ function cod_registration_field_default_field_instances() {
     'label' => 'Tickets',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(

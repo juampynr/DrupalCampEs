@@ -18,7 +18,7 @@
           }
         }
 
-        a {
+        a, .nolink {
           color: #fff;
           text-decoration: none;
           padding: 22px;
@@ -44,7 +44,7 @@
                 padding-left: 20px;
               }
 
-              a {
+              a, .nolink {
                 @include breakpoint(0 $tab) {
                   font-weight: normal;
                 }
@@ -57,12 +57,12 @@
         &:hover {
 
           &.link-add-session {
-            a {
+            a, .nolink {
               background: #0A84C1;
             }
           }
 
-          > a {
+          > a, > .nolink {
             background: #32657E;
           }
 
@@ -70,7 +70,7 @@
             display: block;
             background: #32657E;
 
-            a:hover {
+            a:hover, .nolink:hover {
               background: #347089;
             }
 

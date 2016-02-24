@@ -349,7 +349,25 @@ function cod_session_field_default_field_instances() {
   // Exported field_instance: 'node-session-body'
   $field_instances['node-session-body'] = array(
     'bundle' => 'session',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'summary' => '',
+        'value' => '<p>Please give us a detailed overview of your session and why attendees will be excited to hear about it. &nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Ensure that you let us know:</p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>What level of knowledge should attendees have before walking into your session</li>
+	<li>What will your session accomplish and what will attendees walk away having learned</li>
+</ul>
+',
+        'format' => 'filtered_html',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -378,7 +396,7 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Descripción',
+    'label' => 'Description',
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
@@ -482,7 +500,7 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_experience',
-    'label' => 'Nivel de experiencia',
+    'label' => 'Experience level',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -549,7 +567,7 @@ function cod_session_field_default_field_instances() {
   $field_instances['node-session-field_news_image'] = array(
     'bundle' => 'session',
     'deleted' => 0,
-    'description' => 'Un imagen para usar en el bloque de sesiones destacadas.',
+    'description' => 'An image to use at the promoted sessions block.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -572,7 +590,7 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_news_image',
-    'label' => 'Imagen',
+    'label' => 'Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -602,7 +620,7 @@ function cod_session_field_default_field_instances() {
   $field_instances['node-session-field_slides'] = array(
     'bundle' => 'session',
     'deleted' => 0,
-    'description' => 'Sube tus diapositivas aquí en PDF o enlaza a ellas en el campo descripción (esto se hace normalmente tras la sesión).',
+    'description' => 'Upload your slides here as a PDF, or link to them from the description. (This is typically done after your session.)',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -626,7 +644,7 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_slides',
-    'label' => 'Diapositivas',
+    'label' => 'Slides',
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
@@ -653,7 +671,7 @@ function cod_session_field_default_field_instances() {
     'default_value' => NULL,
     'default_value_function' => '',
     'deleted' => 0,
-    'description' => 'Escriba el nombre de usuario del ponente y, para añadir más ponentes, haga clic en "Añadir nuevo ponente"',
+    'description' => 'Type the username of the speaker, and to add more speakers click "Add another speaker"',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -679,7 +697,7 @@ function cod_session_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_speakers',
-    'label' => 'Ponentes',
+    'label' => 'Speakers',
     'required' => 0,
     'settings' => array(
       'behaviors' => array(
@@ -839,21 +857,21 @@ function cod_session_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('An image to use at the promoted sessions block.');
   t('Body');
   t('Conference');
   t('Default Session View');
-  t('Descripción');
-  t('Diapositivas');
-  t('Escriba el nombre de usuario del ponente y, para añadir más ponentes, haga clic en "Añadir nuevo ponente"');
+  t('Description');
+  t('Experience level');
   t('File attachments');
-  t('Imagen');
+  t('Image');
   t('Language');
-  t('Nivel de experiencia');
-  t('Ponentes');
   t('Session Track');
+  t('Slides');
+  t('Speakers');
   t('Status');
-  t('Sube tus diapositivas aquí en PDF o enlaza a ellas en el campo descripción (esto se hace normalmente tras la sesión).');
-  t('Un imagen para usar en el bloque de sesiones destacadas.');
+  t('Type the username of the speaker, and to add more speakers click "Add another speaker"');
+  t('Upload your slides here as a PDF, or link to them from the description. (This is typically done after your session.)');
 
   return $field_instances;
 }

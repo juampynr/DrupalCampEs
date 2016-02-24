@@ -242,7 +242,7 @@ function aed_session_speakers_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
-  $handler->display->display_options['header']['area_text_custom']['content'] = 'Para proponer tu sesión debes <a href="http://drupalcamp.es/es/user/register">registrarte</a> e ir a <a href="http://drupalcamp.es/es/node/add/session">proponer una sesión</a>.
+  $handler->display->display_options['header']['area_text_custom']['content'] = 'In order to submit a session, <a href="http://drupalcamp.es/user/register">register</a> and then open <a href="http://drupalcamp.es/node/add/session">this link</a>.
 <br/><br/>';
   /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -250,11 +250,11 @@ function aed_session_speakers_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Campo: Contenido: Nivel de experiencia */
+  /* Campo: Contenido: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
   $handler->display->display_options['fields']['field_experience']['field'] = 'field_experience';
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
@@ -262,7 +262,7 @@ function aed_session_speakers_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_speakers']['delta_offset'] = '0';
-  /* Criterio de ordenación: Contenido: Fecha de mensaje */
+  /* Criterio de ordenación: Contenido: Fecha del envío */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
@@ -290,13 +290,13 @@ function aed_session_speakers_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'session' => 'session',
   );
-  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  /* Criterios de filtrado: Contenido: Experience level (field_experience) */
   $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
   $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_experience_value']['expose']['operator_id'] = 'field_experience_value_op';
-  $handler->display->display_options['filters']['field_experience_value']['expose']['label'] = 'Nivel de experiencia';
+  $handler->display->display_options['filters']['field_experience_value']['expose']['label'] = 'Experience level';
   $handler->display->display_options['filters']['field_experience_value']['expose']['operator'] = 'field_experience_value_op';
   $handler->display->display_options['filters']['field_experience_value']['expose']['identifier'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['expose']['remember_roles'] = array(
@@ -329,6 +329,7 @@ function aed_session_speakers_views_default_views() {
 
   /* Display: Accepted sessions */
   $handler = $view->new_display('page', 'Accepted sessions', 'page_2');
+  $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Criterios de filtrado: Contenido: Publicado */
@@ -345,7 +346,7 @@ function aed_session_speakers_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'session' => 'session',
   );
-  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  /* Criterios de filtrado: Contenido: Experience level (field_experience) */
   $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
   $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
@@ -393,14 +394,15 @@ function aed_session_speakers_views_default_views() {
     t('‹ anterior'),
     t('siguiente ›'),
     t('última »'),
-    t('Para proponer tu sesión debes <a href="http://drupalcamp.es/es/user/register">registrarte</a> e ir a <a href="http://drupalcamp.es/es/node/add/session">proponer una sesión</a>.
+    t('In order to submit a session, <a href="http://drupalcamp.es/user/register">register</a> and then open <a href="http://drupalcamp.es/node/add/session">this link</a>.
 <br/><br/>'),
     t('Título'),
-    t('Nivel de experiencia'),
-    t('Ponentes'),
+    t('Experience level'),
+    t('Speakers'),
     t('Todo(s)'),
     t('Sesiones propuestas'),
     t('Accepted sessions'),
+    t('Nivel de experiencia'),
   );
   $export['aed_sessions'] = $view;
 

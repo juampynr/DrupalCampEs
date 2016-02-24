@@ -131,7 +131,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
@@ -157,7 +157,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['field_accepted']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_accepted']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_accepted']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Nivel de experiencia */
+  /* Campo: Contenido: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
   $handler->display->display_options['fields']['field_experience']['field'] = 'field_experience';
@@ -197,7 +197,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'session' => 'session',
   );
-  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  /* Criterios de filtrado: Contenido: Experience level (field_experience) */
   $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
   $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
@@ -272,7 +272,7 @@ function cod_session_views_default_views() {
     'session' => 'session',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  /* Criterios de filtrado: Contenido: Experience level (field_experience) */
   $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
   $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
@@ -354,7 +354,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'session' => 'session',
   );
-  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  /* Criterios de filtrado: Contenido: Experience level (field_experience) */
   $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
   $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
@@ -652,12 +652,12 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Nivel de experiencia */
+  /* Campo: Contenido: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
   $handler->display->display_options['fields']['field_experience']['field'] = 'field_experience';
@@ -763,7 +763,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
@@ -774,7 +774,7 @@ function cod_session_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_speakers']['delta_offset'] = '0';
-  /* Campo: Contenido: Nivel de experiencia */
+  /* Campo: Contenido: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
   $handler->display->display_options['fields']['field_experience']['field'] = 'field_experience';
@@ -847,9 +847,9 @@ function cod_session_views_default_views() {
     t('autor'),
     t('Suscripción OG de node'),
     t('Sesión'),
-    t('Ponentes'),
+    t('Speakers'),
     t('Estado'),
-    t('Nivel de experiencia'),
+    t('Experience level'),
     t('Título'),
     t('Todo(s)'),
     t('Experience'),
@@ -862,7 +862,6 @@ function cod_session_views_default_views() {
     t('Block: Sessions Details'),
     t('Sessions Details'),
     t('Block: Speakers'),
-    t('Speakers'),
     t('([name_1])'),
     t('Sessions: Speakers'),
     t('My Sessions'),
@@ -981,52 +980,10 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
-    'action::node_assign_owner_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
     'action::views_bulk_operations_delete_item' => array(
       'selected' => 1,
       'postpone_processing' => 0,
       'skip_confirmation' => 1,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_delete_revision' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_script_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::flag_node_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_make_sticky_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_make_unsticky_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
     ),
@@ -1043,68 +1000,10 @@ function cod_session_views_default_views() {
         ),
       ),
     ),
-    'action::views_bulk_operations_argument_selector_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'url' => '',
-      ),
-    ),
-    'action::node_promote_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
     'action::node_publish_action' => array(
       'selected' => 1,
       'postpone_processing' => 0,
       'skip_confirmation' => 1,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_unpromote_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_save_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::system_send_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_unpublish_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_unpublish_by_keyword_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::pathauto_node_update_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
     ),
@@ -1124,13 +1023,13 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['field_accepted']['label'] = 'Estado';
   $handler->display->display_options['fields']['field_accepted']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_accepted']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_speakers']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Nivel de experiencia */
+  /* Campo: Contenido: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
   $handler->display->display_options['fields']['field_experience']['field'] = 'field_experience';
@@ -1192,7 +1091,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['filters']['keys']['expose']['label'] = 'Filter by keywords:';
   $handler->display->display_options['filters']['keys']['expose']['operator'] = 'keys_op';
   $handler->display->display_options['filters']['keys']['expose']['identifier'] = 'keys';
-  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  /* Criterios de filtrado: Contenido: Experience level (field_experience) */
   $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
   $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
@@ -1224,52 +1123,10 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
-    'action::node_assign_owner_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
     'action::views_bulk_operations_delete_item' => array(
       'selected' => 1,
       'postpone_processing' => 0,
       'skip_confirmation' => 1,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_delete_revision' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_script_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::flag_node_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_make_sticky_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_make_unsticky_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
     ),
@@ -1286,68 +1143,10 @@ function cod_session_views_default_views() {
         ),
       ),
     ),
-    'action::views_bulk_operations_argument_selector_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'url' => '',
-      ),
-    ),
-    'action::node_promote_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_publish_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 1,
-      'skip_confirmation' => 1,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_unpromote_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_save_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::system_send_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
     'action::node_unpublish_action' => array(
       'selected' => 1,
       'postpone_processing' => 0,
       'skip_confirmation' => 1,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_unpublish_by_keyword_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::pathauto_node_update_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
     ),
@@ -1367,13 +1166,13 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['field_accepted']['label'] = 'Estado';
   $handler->display->display_options['fields']['field_accepted']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_accepted']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_speakers']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Nivel de experiencia */
+  /* Campo: Contenido: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
   $handler->display->display_options['fields']['field_experience']['field'] = 'field_experience';
@@ -1488,52 +1287,10 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
   $handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
-    'action::node_assign_owner_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
     'action::views_bulk_operations_delete_item' => array(
       'selected' => 1,
       'postpone_processing' => 0,
       'skip_confirmation' => 1,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_delete_revision' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_script_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::flag_node_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_make_sticky_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_make_unsticky_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
     ),
@@ -1550,68 +1307,10 @@ function cod_session_views_default_views() {
         ),
       ),
     ),
-    'action::views_bulk_operations_argument_selector_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'url' => '',
-      ),
-    ),
-    'action::node_promote_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_publish_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_unpromote_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_save_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::system_send_email_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
     'action::node_unpublish_action' => array(
       'selected' => 1,
       'postpone_processing' => 0,
       'skip_confirmation' => 1,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_unpublish_by_keyword_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::pathauto_node_update_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
     ),
@@ -1631,13 +1330,13 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['field_accepted']['label'] = 'Estado';
   $handler->display->display_options['fields']['field_accepted']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_accepted']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_speakers']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Nivel de experiencia */
+  /* Campo: Contenido: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
   $handler->display->display_options['fields']['field_experience']['field'] = 'field_experience';
@@ -1704,7 +1403,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['filters']['keys']['expose']['label'] = 'Filter by keywords:';
   $handler->display->display_options['filters']['keys']['expose']['operator'] = 'keys_op';
   $handler->display->display_options['filters']['keys']['expose']['identifier'] = 'keys';
-  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  /* Criterios de filtrado: Contenido: Experience level (field_experience) */
   $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
   $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
@@ -1856,7 +1555,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
@@ -1868,7 +1567,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['field_accepted']['label'] = 'Estado';
   $handler->display->display_options['fields']['field_accepted']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_accepted']['hide_alter_empty'] = FALSE;
-  /* Campo: Contenido: Nivel de experiencia */
+  /* Campo: Contenido: Experience level */
   $handler->display->display_options['fields']['field_experience']['id'] = 'field_experience';
   $handler->display->display_options['fields']['field_experience']['table'] = 'field_data_field_experience';
   $handler->display->display_options['fields']['field_experience']['field'] = 'field_experience';
@@ -1940,7 +1639,7 @@ function cod_session_views_default_views() {
     'session' => 'session',
   );
   $handler->display->display_options['filters']['type']['group'] = 0;
-  /* Criterios de filtrado: Contenido: Nivel de experiencia (field_experience) */
+  /* Criterios de filtrado: Contenido: Experience level (field_experience) */
   $handler->display->display_options['filters']['field_experience_value']['id'] = 'field_experience_value';
   $handler->display->display_options['filters']['field_experience_value']['table'] = 'field_data_field_experience';
   $handler->display->display_options['filters']['field_experience_value']['field'] = 'field_experience_value';
@@ -2111,11 +1810,10 @@ function cod_session_views_default_views() {
     t('Change Session Status'),
     t('Título'),
     t('Estado'),
-    t('Ponentes'),
-    t('Nivel de experiencia'),
+    t('Speakers'),
+    t('Experience level'),
     t('Todo(s)'),
     t('Filter by keywords:'),
-    t('Experience level'),
     t('Published Sessions'),
     t('Paneles de vista'),
     t('Unpublished Sessions'),
@@ -2321,7 +2019,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['mail']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['mail']['link_to_user'] = 0;
-  /* Campo: Contenido: Ponentes */
+  /* Campo: Contenido: Speakers */
   $handler->display->display_options['fields']['field_speakers']['id'] = 'field_speakers';
   $handler->display->display_options['fields']['field_speakers']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['fields']['field_speakers']['field'] = 'field_speakers';
@@ -2753,7 +2451,7 @@ function cod_session_views_default_views() {
     t('Título'),
     t('Nombre de usuario'),
     t('Correo electrónico'),
-    t('Ponentes'),
+    t('Speakers'),
     t('Nombre'),
     t('Apellidos'),
     t('Todo(s)'),
@@ -2871,7 +2569,7 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['ops']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['ops']['empty'] = 'Confirmed';
   $handler->display->display_options['fields']['ops']['hide_alter_empty'] = FALSE;
-  /* Filtro contextual: Contenido: Ponentes (field_speakers) */
+  /* Filtro contextual: Contenido: Speakers (field_speakers) */
   $handler->display->display_options['arguments']['field_speakers_target_id']['id'] = 'field_speakers_target_id';
   $handler->display->display_options['arguments']['field_speakers_target_id']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['arguments']['field_speakers_target_id']['field'] = 'field_speakers_target_id';
@@ -3307,12 +3005,12 @@ function cod_session_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Criterio de ordenación: Contenido: Fecha de mensaje */
+  /* Criterio de ordenación: Contenido: Fecha del envío */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filtro contextual: Contenido: Ponentes (field_speakers) */
+  /* Filtro contextual: Contenido: Speakers (field_speakers) */
   $handler->display->display_options['arguments']['field_speakers_target_id']['id'] = 'field_speakers_target_id';
   $handler->display->display_options['arguments']['field_speakers_target_id']['table'] = 'field_data_field_speakers';
   $handler->display->display_options['arguments']['field_speakers_target_id']['field'] = 'field_speakers_target_id';

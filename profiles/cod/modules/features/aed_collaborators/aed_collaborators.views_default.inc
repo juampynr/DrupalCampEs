@@ -272,7 +272,7 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_company']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Criterio de ordenación: Contenido: Fecha de mensaje */
+  /* Criterio de ordenación: Contenido: Fecha del envío */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';

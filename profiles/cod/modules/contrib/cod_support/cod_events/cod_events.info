@@ -5,7 +5,6 @@ package = COD
 version = 7.x-1.0-beta6
 project = cod_events
 dependencies[] = cod_base
-dependencies[] = cod_events
 dependencies[] = cod_registration
 dependencies[] = cod_session
 dependencies[] = ctools

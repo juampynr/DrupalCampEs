@@ -183,7 +183,7 @@ function aedcamp_sponsors_views_default_views() {
     'event' => 'event',
   );
   $handler->display->display_options['arguments']['gid']['validate_options']['access'] = TRUE;
-  $handler->display->display_options['path'] = 'drupalcamp-spain-2015/sponsors';
+  $handler->display->display_options['path'] = 'drupalcamp-spain-2016/sponsors';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Sponsors';
   $handler->display->display_options['menu']['weight'] = '-1';
@@ -211,7 +211,7 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'Aún no tenemos Patrocinadores Oro.<br /><a href="/drupalcamp-spain-2015/sponsors/patrocinios">¡¡Tu puedes ser el primero!!</a>';
+  $handler->display->display_options['empty']['area']['content'] = 'Still not have Gold Sponsors. <a href="/drupalcamp-spain-2016/sponsors/sponsorships">You can be the first!!</a>';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Campo: Contenido: Título */
@@ -315,7 +315,7 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* Comportamiento si no hay resultados: Global: Área de texto */
+  /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
@@ -323,7 +323,7 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['empty']['area']['content'] = 'Aún no tenemos Patrocinadores Plata. <a href="/drupalcamp-spain-2015/sponsors/patrocinios">¡¡Tu puedes ser el primero!!</a>';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Campo: Contenido: Título */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -422,7 +422,7 @@ function aedcamp_sponsors_views_default_views() {
     t('Todo(s)'),
     t('Block Sponsors Gold'),
     t('Patrocinadores Oro'),
-    t('Aún no tenemos Patrocinadores Oro.<br /><a href="/drupalcamp-spain-2015/sponsors/patrocinios">¡¡Tu puedes ser el primero!!</a>'),
+    t('Still not have Gold Sponsors. <a href="/drupalcamp-spain-2016/sponsors/sponsorships">You can be the first!!</a>'),
     t('Tiene un término de taxonomía'),
     t('Patrocinadores Gold'),
     t('Block Sponsors Silver'),

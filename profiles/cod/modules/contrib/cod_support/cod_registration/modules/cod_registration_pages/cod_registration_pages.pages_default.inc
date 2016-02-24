@@ -36,6 +36,8 @@ function cod_registration_pages_default_page_manager_pages() {
       ),
     ),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'tab',
@@ -96,36 +98,36 @@ function cod_registration_pages_default_page_manager_pages() {
   $display->uuid = 'f1fa21f4-4b7a-4978-91b5-af69f96fe648';
   $display->content = array();
   $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-54e43e9a-96ee-4a66-ba91-b05ca3b2c688';
-    $pane->panel = 'content';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_event_tickets';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'ticket_type',
-      'delta_limit' => '0',
-      'delta_offset' => '0',
-      'delta_reversed' => 0,
-      'formatter_settings' => array(
-        'submit_text' => 'Register',
-        'show_unavailable' => 0,
-      ),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array();
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '54e43e9a-96ee-4a66-ba91-b05ca3b2c688';
-    $display->content['new-54e43e9a-96ee-4a66-ba91-b05ca3b2c688'] = $pane;
-    $display->panels['content'][0] = 'new-54e43e9a-96ee-4a66-ba91-b05ca3b2c688';
+  $pane = new stdClass();
+  $pane->pid = 'new-54e43e9a-96ee-4a66-ba91-b05ca3b2c688';
+  $pane->panel = 'content';
+  $pane->type = 'entity_field';
+  $pane->subtype = 'node:field_event_tickets';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'label' => 'hidden',
+    'formatter' => 'ticket_type',
+    'delta_limit' => '0',
+    'delta_offset' => '0',
+    'delta_reversed' => 0,
+    'formatter_settings' => array(
+      'submit_text' => 'Register',
+      'show_unavailable' => 0,
+    ),
+    'context' => 'argument_entity_id:node_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+  );
+  $pane->cache = array();
+  $pane->style = array();
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '54e43e9a-96ee-4a66-ba91-b05ca3b2c688';
+  $display->content['new-54e43e9a-96ee-4a66-ba91-b05ca3b2c688'] = $pane;
+  $display->panels['content'][0] = 'new-54e43e9a-96ee-4a66-ba91-b05ca3b2c688';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-54e43e9a-96ee-4a66-ba91-b05ca3b2c688';
   $handler->conf['display'] = $display;

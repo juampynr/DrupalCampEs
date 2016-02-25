@@ -2,6 +2,14 @@
   @include pie-clearfix;
   overflow: visible;
 
+  > .relative {
+
+    @include breakpoint($desk) {
+      position: static;
+    }
+
+  }
+
   > .l-container {
 
     .l-branding {

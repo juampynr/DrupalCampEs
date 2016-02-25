@@ -58,6 +58,35 @@
         }
 
       }
+
+      .arrow-down {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        bottom: -60px;
+        margin-left: -20px;
+
+        &:hover {
+
+          span {
+            opacity: 1;
+          }
+
+        }
+
+        span {
+          opacity: .6;
+          background: image-url('arrow-down.png') no-repeat 0 0;
+          background-size: contain;
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          transition: all .2s ease-in-out;
+        }
+
+      }
+
     }
   }
+
 }

@@ -60,11 +60,15 @@
       }
 
       .arrow-down {
-        display: inline-block;
+        display: none;
         position: absolute;
         left: 50%;
         bottom: -60px;
         margin-left: -20px;
+
+        @include breakpoint($desk) {
+          display: inline-block;
+        }
 
         &:hover {
 

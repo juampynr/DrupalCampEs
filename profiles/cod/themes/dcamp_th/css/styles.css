@@ -1954,11 +1954,7 @@ fieldset .fieldset-wrapper {
     display: inline-block;
   }
 }
-/* line 75, ../sass/components/blocks/_hero-intro.scss */
-.hero-intro .block__content > .inner-content .arrow-down:hover span {
-  opacity: 1;
-}
-/* line 81, ../sass/components/blocks/_hero-intro.scss */
+/* line 73, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content .arrow-down span {
   opacity: .6;
   background: url('../images/arrow-down.png?1456417797') no-repeat 0 0;

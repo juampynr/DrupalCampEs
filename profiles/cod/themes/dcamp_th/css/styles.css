@@ -1942,17 +1942,23 @@ fieldset .fieldset-wrapper {
 }
 /* line 62, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content .arrow-down {
-  display: inline-block;
+  display: none;
   position: absolute;
   left: 50%;
   bottom: -60px;
   margin-left: -20px;
 }
-/* line 71, ../sass/components/blocks/_hero-intro.scss */
+@media (min-width: 960px) {
+  /* line 62, ../sass/components/blocks/_hero-intro.scss */
+  .hero-intro .block__content > .inner-content .arrow-down {
+    display: inline-block;
+  }
+}
+/* line 75, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content .arrow-down:hover span {
   opacity: 1;
 }
-/* line 77, ../sass/components/blocks/_hero-intro.scss */
+/* line 81, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content .arrow-down span {
   opacity: .6;
   background: url('../images/arrow-down.png?1456417797') no-repeat 0 0;

@@ -3,7 +3,7 @@
 // coverRatio es el mismo que tiene la sección apuntado en el atributo "data-cover-ratio"
 var el = document.getElementById("block-block-3");
 if (el != null) {
-  el.style.height = window.innerHeight + "px";
+  el.style.height = window.innerHeight - 61 + "px";
   el.style.overflow = "hidden";
 }
 

@@ -1,0 +1,79 @@
+.view-commerce-cart-summary {
+
+  .view-content {
+
+    table {
+      width: 100%;
+    }
+
+    tr {
+
+      &.even {
+        background: #E8E8E8;
+      }
+
+      &.odd {
+        background: #DCDCDC;
+      }
+
+      &:last-child td {
+        padding: 10px 5px 20px;
+
+        @include breakpoint($desk) {
+          padding: 15px 10px 25px;
+        }
+      }
+
+    }
+
+  }
+
+  .view-footer {
+
+    .commerce-order-handler-area-order-total .commerce-price-formatted-components {
+      width: 75%;
+
+      @include breakpoint($tab) {
+        width: 50%;
+      }
+
+    }
+
+    tr {
+      background: none;
+      border-top: 1px solid black;
+
+    }
+
+  }
+
+  th {
+    color: white;
+    background: $color-blue-a;
+    padding: 5px;
+
+    @include breakpoint($desk) {
+      padding: 10px;
+    }
+
+  }
+
+  td {
+    padding: 10px 5px;
+
+    @include breakpoint($desk) {
+      padding: 15px 10px;
+    }
+
+    &.views-field-quantity {
+      text-align: center;
+
+      @include breakpoint($tab) {
+        text-align: left;
+      }
+
+    }
+
+  }
+
+}

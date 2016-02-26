@@ -1,0 +1,13 @@
+.payment-redirect-form {
+  padding: 0 10px;
+  margin-bottom: 40px;
+
+  @include breakpoint($desk) {
+    padding: 0;
+  }
+
+  .checkout-help {
+    margin-bottom: 30px;
+  }
+
+}

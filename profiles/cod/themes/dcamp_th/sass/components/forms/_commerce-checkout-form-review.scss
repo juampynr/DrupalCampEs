@@ -1,0 +1,112 @@
+.commerce-checkout-form-review {
+  padding: 0 10px;
+
+  @include breakpoint($desk) {
+    padding: 0;
+  }
+
+  .checkout-help {
+    font-size: 18px;
+    font-weight: bold;
+    color: $secondary-color;
+    line-height: normal;
+    margin: 10px 0 20px;
+
+    @include breakpoint($tab) {
+      font-size: 24px;
+    }
+
+  }
+
+  .checkout_review {
+
+    .pane-data-full {
+      padding: 0;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    .view-commerce-cart-summary td {
+      padding-bottom: 30px;
+    }
+
+    .pane-title {
+      color: white;
+      background: $color-blue-b;
+
+      td {
+        padding: 10px 5px;
+
+        @include breakpoint($desk) {
+          padding: 15px 10px;
+        }
+      }
+
+    }
+
+    .pane-title + .pane-data + .pane-title {
+
+      + .pane-data {
+
+        td {
+          padding: 10px 5px 20px;
+
+          @include breakpoint($desk) {
+            padding: 15px 10px 25px;
+          }
+
+          label {
+            margin-bottom: 5px;
+          }
+
+          .field__item > div {
+            margin-bottom: 5px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .checkout-buttons {
+    text-align: center;
+
+    @include breakpoint($tab) {
+
+      .fieldset-wrapper {
+        @include pie-clearfix;
+      }
+
+    }
+
+    .button-operator {
+      display: none;
+    }
+
+    .checkout-continue {
+      margin-bottom: 17px;
+
+      @include breakpoint($tab) {
+        float: left;
+        margin-bottom: 5px;
+      }
+
+    }
+
+    .checkout-back {
+
+      @include breakpoint($tab) {
+        float: right;
+        margin-top: 13px;
+      }
+
+    }
+
+  }
+
+}

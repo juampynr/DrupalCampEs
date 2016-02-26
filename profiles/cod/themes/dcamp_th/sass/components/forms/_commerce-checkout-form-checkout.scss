@@ -1,0 +1,78 @@
+.commerce-checkout-form-checkout {
+  padding: 0 10px;
+
+  @include breakpoint($desk) {
+    padding: 0;
+  }
+
+  fieldset .fieldset-wrapper {
+
+    @include breakpoint($tab) {
+      padding: 30px 20px 10px;
+    }
+
+  }
+
+  .cart_contents .fieldset-wrapper {
+    padding: 20px 10px 10px;
+
+    @include breakpoint($desk) {
+      padding: 20px;
+    }
+
+  }
+
+  .checkout-buttons .fieldset-wrapper {
+
+    @include breakpoint($tab) {
+      padding: 10px 20px 10px;
+    }
+
+  }
+
+  .checkout-buttons {
+    text-align: center;
+
+    @include breakpoint($tab) {
+
+      .fieldset-wrapper {
+        @include pie-clearfix;
+      }
+
+    }
+
+    .button-operator {
+      display: none;
+    }
+
+    .checkout-continue {
+      margin-bottom: 17px;
+
+      @include breakpoint($tab) {
+        float: left;
+        margin-bottom: 5px;
+      }
+
+    }
+
+    .checkout-cancel {
+
+      @include breakpoint($tab) {
+        float: right;
+        margin-top: 13px;
+      }
+
+    }
+
+  }
+
+  div.addressfield-container-inline > div.form-item {
+    float: none;
+    margin-right: 0;
+  }
+
+  .messages {
+    margin-bottom: 20px;
+  }
+
+}

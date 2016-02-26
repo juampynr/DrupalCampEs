@@ -1869,13 +1869,19 @@ fieldset .fieldset-wrapper {
   color: white;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 960px) {
+  /* line 1, ../sass/components/blocks/_footer-aed.scss */
+  .footer-aed {
+    padding: 60px 60px 60px 130px;
+  }
+}
+@media (min-width: 960px) {
   /* line 1, ../sass/components/blocks/_footer-aed.scss */
   .footer-aed {
     padding: 60px;
   }
 }
-/* line 10, ../sass/components/blocks/_footer-aed.scss */
+/* line 14, ../sass/components/blocks/_footer-aed.scss */
 .footer-aed a {
   color: #fff;
 }
@@ -1954,11 +1960,7 @@ fieldset .fieldset-wrapper {
     display: inline-block;
   }
 }
-/* line 75, ../sass/components/blocks/_hero-intro.scss */
-.hero-intro .block__content > .inner-content .arrow-down:hover span {
-  opacity: 1;
-}
-/* line 81, ../sass/components/blocks/_hero-intro.scss */
+/* line 73, ../sass/components/blocks/_hero-intro.scss */
 .hero-intro .block__content > .inner-content .arrow-down span {
   opacity: .6;
   background: url('../images/arrow-down.png?1456417797') no-repeat 0 0;
@@ -2018,6 +2020,327 @@ fieldset .fieldset-wrapper {
 /* line 18, ../sass/components/blocks/_social.scss */
 .social a span {
   display: none;
+}
+
+/* line 1, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+.commerce-checkout-form-checkout {
+  padding: 0 10px;
+}
+@media (min-width: 960px) {
+  /* line 1, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+  .commerce-checkout-form-checkout {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  /* line 8, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+  .commerce-checkout-form-checkout fieldset .fieldset-wrapper {
+    padding: 30px 20px 10px;
+  }
+}
+/* line 16, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+.commerce-checkout-form-checkout .cart_contents .fieldset-wrapper {
+  padding: 20px 10px 10px;
+}
+@media (min-width: 960px) {
+  /* line 16, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+  .commerce-checkout-form-checkout .cart_contents .fieldset-wrapper {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 25, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+  .commerce-checkout-form-checkout .checkout-buttons .fieldset-wrapper {
+    padding: 10px 20px 10px;
+  }
+}
+/* line 33, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+.commerce-checkout-form-checkout .checkout-buttons {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 38, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+  .commerce-checkout-form-checkout .checkout-buttons .fieldset-wrapper {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .commerce-checkout-form-checkout .checkout-buttons .fieldset-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* line 44, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+.commerce-checkout-form-checkout .checkout-buttons .button-operator {
+  display: none;
+}
+/* line 48, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+.commerce-checkout-form-checkout .checkout-buttons .checkout-continue {
+  margin-bottom: 17px;
+}
+@media (min-width: 768px) {
+  /* line 48, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+  .commerce-checkout-form-checkout .checkout-buttons .checkout-continue {
+    float: left;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 58, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+  .commerce-checkout-form-checkout .checkout-buttons .checkout-cancel {
+    float: right;
+    margin-top: 13px;
+  }
+}
+/* line 69, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+.commerce-checkout-form-checkout div.addressfield-container-inline > div.form-item {
+  float: none;
+  margin-right: 0;
+}
+/* line 74, ../sass/components/forms/_commerce-checkout-form-checkout.scss */
+.commerce-checkout-form-checkout .messages {
+  margin-bottom: 20px;
+}
+
+/* line 1, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review {
+  padding: 0 10px;
+}
+@media (min-width: 960px) {
+  /* line 1, ../sass/components/forms/_commerce-checkout-form-review.scss */
+  .commerce-checkout-form-review {
+    padding: 0;
+  }
+}
+/* line 8, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout-help {
+  font-size: 18px;
+  font-weight: bold;
+  color: #901235;
+  line-height: normal;
+  margin: 10px 0 20px;
+}
+@media (min-width: 768px) {
+  /* line 8, ../sass/components/forms/_commerce-checkout-form-review.scss */
+  .commerce-checkout-form-review .checkout-help {
+    font-size: 24px;
+  }
+}
+/* line 23, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout_review .pane-data-full {
+  padding: 0;
+}
+/* line 27, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout_review table {
+  width: 100%;
+}
+/* line 31, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout_review .view-commerce-cart-summary td {
+  padding-bottom: 30px;
+}
+/* line 35, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout_review .pane-title {
+  color: white;
+  background: #5b6774;
+}
+/* line 39, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout_review .pane-title td {
+  padding: 10px 5px;
+}
+@media (min-width: 960px) {
+  /* line 39, ../sass/components/forms/_commerce-checkout-form-review.scss */
+  .commerce-checkout-form-review .checkout_review .pane-title td {
+    padding: 15px 10px;
+  }
+}
+/* line 53, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout_review .pane-title + .pane-data + .pane-title + .pane-data td {
+  padding: 10px 5px 20px;
+}
+@media (min-width: 960px) {
+  /* line 53, ../sass/components/forms/_commerce-checkout-form-review.scss */
+  .commerce-checkout-form-review .checkout_review .pane-title + .pane-data + .pane-title + .pane-data td {
+    padding: 15px 10px 25px;
+  }
+}
+/* line 60, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout_review .pane-title + .pane-data + .pane-title + .pane-data td label {
+  margin-bottom: 5px;
+}
+/* line 64, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout_review .pane-title + .pane-data + .pane-title + .pane-data td .field__item > div {
+  margin-bottom: 5px;
+}
+/* line 76, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout-buttons {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 81, ../sass/components/forms/_commerce-checkout-form-review.scss */
+  .commerce-checkout-form-review .checkout-buttons .fieldset-wrapper {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .commerce-checkout-form-review .checkout-buttons .fieldset-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* line 87, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout-buttons .button-operator {
+  display: none;
+}
+/* line 91, ../sass/components/forms/_commerce-checkout-form-review.scss */
+.commerce-checkout-form-review .checkout-buttons .checkout-continue {
+  margin-bottom: 17px;
+}
+@media (min-width: 768px) {
+  /* line 91, ../sass/components/forms/_commerce-checkout-form-review.scss */
+  .commerce-checkout-form-review .checkout-buttons .checkout-continue {
+    float: left;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 101, ../sass/components/forms/_commerce-checkout-form-review.scss */
+  .commerce-checkout-form-review .checkout-buttons .checkout-back {
+    float: right;
+    margin-top: 13px;
+  }
+}
+
+/* line 1, ../sass/components/forms/_payment-redirect-form.scss */
+.payment-redirect-form {
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+@media (min-width: 960px) {
+  /* line 1, ../sass/components/forms/_payment-redirect-form.scss */
+  .payment-redirect-form {
+    padding: 0;
+  }
+}
+/* line 9, ../sass/components/forms/_payment-redirect-form.scss */
+.payment-redirect-form .checkout-help {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 960px) {
+  /* line 3, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form > div {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .ticket-field-formatter-view-form > div:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/* line 9, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+.ticket-field-formatter-view-form .ticket-wrapper {
+  position: relative;
+}
+@media (min-width: 960px) {
+  /* line 9, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper {
+    width: 50%;
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 960px) {
+  /* line 19, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:first-child {
+    background: #e8e8e8;
+    float: left;
+    min-height: 278px;
+    margin-bottom: 15px;
+  }
+  /* line 27, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:first-child .form-type-select {
+    width: calc(100% - 40px);
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 38, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) {
+    background: #e8e8e8;
+    float: right;
+    min-height: 278px;
+    margin-bottom: 15px;
+  }
+  /* line 46, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) .form-type-select {
+    width: calc(100% - 40px);
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 57, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:nth-child(3) {
+    float: left;
+    clear: left;
+  }
+  /* line 63, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:nth-child(3) h3 {
+    font-size: 21px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 71, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:nth-child(4) {
+    float: right;
+  }
+  /* line 76, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:nth-child(4) h3 {
+    font-size: 21px;
+  }
+}
+/* line 84, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+.ticket-field-formatter-view-form .ticket-wrapper h3 {
+  margin-bottom: 10px;
+}
+/* line 88, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+.ticket-field-formatter-view-form .ticket-wrapper .content {
+  margin-bottom: 15px;
+}
+@media (min-width: 960px) {
+  /* line 92, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper .form-type-select {
+    margin-bottom: 20px;
+  }
+}
+/* line 98, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+.ticket-field-formatter-view-form .ticket-wrapper .form-type-select select {
+  cursor: pointer;
+}
+/* line 104, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+.ticket-field-formatter-view-form .ticket-wrapper .description {
+  display: none;
+}
+@media (min-width: 960px) {
+  /* line 110, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .form-submit {
+    display: block;
+    clear: both;
+  }
+}
+
+/* line 3, ../sass/components/forms/_user-info-from-cookie ticket-register-form.scss */
+.ticket-register-form .fieldset-description {
+  margin: 5px 0 15px;
+}
+/* line 7, ../sass/components/forms/_user-info-from-cookie ticket-register-form.scss */
+.ticket-register-form .form-submit {
+  margin-top: 20px;
 }
 
 /* line 1, ../sass/components/views/_view-aed-attendees.scss */
@@ -2170,9 +2493,159 @@ fieldset .fieldset-wrapper {
   text-decoration: underline;
 }
 
+/* line 5, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary .view-content table {
+  width: 100%;
+}
+/* line 11, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary .view-content tr.even {
+  background: #E8E8E8;
+}
+/* line 15, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary .view-content tr.odd {
+  background: #DCDCDC;
+}
+/* line 19, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary .view-content tr:last-child td {
+  padding: 10px 5px 20px;
+}
+@media (min-width: 960px) {
+  /* line 19, ../sass/components/views/_view-commerce-cart-summary.scss */
+  .view-commerce-cart-summary .view-content tr:last-child td {
+    padding: 15px 10px 25px;
+  }
+}
+/* line 33, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary .view-footer .commerce-order-handler-area-order-total .commerce-price-formatted-components {
+  width: 75%;
+}
+@media (min-width: 768px) {
+  /* line 33, ../sass/components/views/_view-commerce-cart-summary.scss */
+  .view-commerce-cart-summary .view-footer .commerce-order-handler-area-order-total .commerce-price-formatted-components {
+    width: 50%;
+  }
+}
+/* line 42, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary .view-footer tr {
+  background: none;
+  border-top: 1px solid black;
+}
+/* line 50, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary th {
+  color: white;
+  background: #222E3B;
+  padding: 5px;
+}
+@media (min-width: 960px) {
+  /* line 50, ../sass/components/views/_view-commerce-cart-summary.scss */
+  .view-commerce-cart-summary th {
+    padding: 10px;
+  }
+}
+/* line 61, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary td {
+  padding: 10px 5px;
+}
+@media (min-width: 960px) {
+  /* line 61, ../sass/components/views/_view-commerce-cart-summary.scss */
+  .view-commerce-cart-summary td {
+    padding: 15px 10px;
+  }
+}
+/* line 68, ../sass/components/views/_view-commerce-cart-summary.scss */
+.view-commerce-cart-summary td.views-field-quantity {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 68, ../sass/components/views/_view-commerce-cart-summary.scss */
+  .view-commerce-cart-summary td.views-field-quantity {
+    text-align: left;
+  }
+}
+
 /* line 10, ../sass/components/views/_view-news-home.scss */
 .view-news-home .view-content > * {
   margin-bottom: 30px;
+}
+
+/* line 3, ../sass/components/_typo-styles.scss */
+.node--event--full h2, .node--event--full h3, .node--event--full h4, .node--event--full h5, .node--event--full h5, .node--event--full p, .node--event--full span {
+  white-space: normal !important;
+  line-height: 1.5em;
+  font-style: normal;
+}
+/* line 9, ../sass/components/_typo-styles.scss */
+.node--event--full h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #901235;
+  line-height: normal;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  /* line 9, ../sass/components/_typo-styles.scss */
+  .node--event--full h2 {
+    font-size: 32px;
+  }
+}
+/* line 22, ../sass/components/_typo-styles.scss */
+.node--event--full h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #901235;
+  line-height: normal;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  /* line 22, ../sass/components/_typo-styles.scss */
+  .node--event--full h3 {
+    font-size: 26px;
+  }
+}
+/* line 34, ../sass/components/_typo-styles.scss */
+.node--event--full h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #901235;
+  line-height: normal;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  /* line 34, ../sass/components/_typo-styles.scss */
+  .node--event--full h4 {
+    font-size: 24px;
+  }
+}
+/* line 47, ../sass/components/_typo-styles.scss */
+.node--event--full p {
+  margin: 10px 0;
+}
+/* line 51, ../sass/components/_typo-styles.scss */
+.node--event--full a {
+  color: #5784AE;
+}
+/* line 55, ../sass/components/_typo-styles.scss */
+.node--event--full ul {
+  margin: 10px 30px;
+}
+/* line 57, ../sass/components/_typo-styles.scss */
+.node--event--full ul li {
+  list-style: initial;
+  margin-bottom: 10px;
+}
+/* line 66, ../sass/components/_typo-styles.scss */
+.node--event--full table thead tr th {
+  background: white;
+  padding: 10px;
+}
+/* line 74, ../sass/components/_typo-styles.scss */
+.node--event--full table tbody tr {
+  background: none;
+}
+/* line 77, ../sass/components/_typo-styles.scss */
+.node--event--full table tbody tr td {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 /* line 3, ../sass/content-types/_node--full.scss */
@@ -2180,7 +2653,7 @@ fieldset .fieldset-wrapper {
 .node--full .node__content {
   padding: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   /* line 3, ../sass/content-types/_node--full.scss */
   .node--full .heading,
   .node--full .node__content {
@@ -2816,6 +3289,12 @@ body .l-content > .l-container, body .l-content > .tabs, body.node-type-news .l-
 /* line 3, ../sass/pages/_front.scss */
 body.front #block-views-aed-sponsors-block {
   margin-bottom: 30px;
+}
+
+/* line 3, ../sass/pages/_page-cart.scss */
+.page-cart .cart-empty-page {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* line 5, ../sass/pages/_page-user.scss */

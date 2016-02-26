@@ -70,14 +70,6 @@
           display: inline-block;
         }
 
-        &:hover {
-
-          span {
-            opacity: 1;
-          }
-
-        }
-
         span {
           opacity: .6;
           background: image-url('arrow-down.png') no-repeat 0 0;
@@ -89,7 +81,6 @@
         }
 
       }
-
     }
   }
 

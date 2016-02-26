@@ -1869,13 +1869,19 @@ fieldset .fieldset-wrapper {
   color: white;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 960px) {
+  /* line 1, ../sass/components/blocks/_footer-aed.scss */
+  .footer-aed {
+    padding: 60px 60px 60px 130px;
+  }
+}
+@media (min-width: 960px) {
   /* line 1, ../sass/components/blocks/_footer-aed.scss */
   .footer-aed {
     padding: 60px;
   }
 }
-/* line 10, ../sass/components/blocks/_footer-aed.scss */
+/* line 14, ../sass/components/blocks/_footer-aed.scss */
 .footer-aed a {
   color: #fff;
 }
@@ -2014,6 +2020,44 @@ fieldset .fieldset-wrapper {
 /* line 18, ../sass/components/blocks/_social.scss */
 .social a span {
   display: none;
+}
+
+/* line 3, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+.ticket-field-formatter-view-form > div {
+  width: 100%;
+  display: table;
+}
+@media (min-width: 960px) {
+  /* line 8, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper {
+    width: 50%;
+    display: table-cell;
+    padding: 20px;
+  }
+  /* line 15, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper:last-child {
+    clear: right;
+  }
+}
+/* line 21, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+.ticket-field-formatter-view-form .ticket-wrapper h3 {
+  margin-bottom: 15px;
+}
+@media (min-width: 0) and (max-width: 960px) {
+  /* line 21, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .ticket-wrapper h3 {
+    line-height: 1;
+  }
+}
+/* line 30, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+.ticket-field-formatter-view-form .ticket-wrapper .content {
+  margin-bottom: 15px;
+}
+@media (min-width: 960px) {
+  /* line 40, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  .ticket-field-formatter-view-form .form-submit {
+    clear: both;
+  }
 }
 
 /* line 3, ../sass/components/forms/_user-info-from-cookie ticket-register-form.scss */
@@ -2185,7 +2229,7 @@ fieldset .fieldset-wrapper {
 .node--full .node__content {
   padding: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   /* line 3, ../sass/content-types/_node--full.scss */
   .node--full .heading,
   .node--full .node__content {

@@ -9,5 +9,8 @@ if (el != null) {
 
 
 (function ($) {
-
+  $('.arrow-down').click(function () {
+    var dest = $("#block-panels-mini-navigation").offset().top;
+    $("html, body").animate({scrollTop: dest});
+  });
 })(jQuery);

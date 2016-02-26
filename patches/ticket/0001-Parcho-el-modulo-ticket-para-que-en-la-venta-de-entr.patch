@@ -1,0 +1,96 @@
+From ebf782fa12d06edaf3d0c32cd70b141a4d6a013a Mon Sep 17 00:00:00 2001
+From: capynet <capy.net@gmail.com>
+Date: Thu, 25 Feb 2016 19:56:12 +0100
+Subject: [PATCH] Parcho el modulo ticket para que en la venta de entradas la
+ seleccion de cantidad sea un select en lugar de un input, y que los ticket
+ esten agrupados en wrappers para poder maquetarlos correctamente.
+
+---
+ .../contrib/ticket/includes/ticket.field.inc       | 41 +++++++++++++++-------
+ 1 file changed, 29 insertions(+), 12 deletions(-)
+
+diff --git a/profiles/cod/modules/contrib/ticket/includes/ticket.field.inc b/profiles/cod/modules/contrib/ticket/includes/ticket.field.inc
+index 03d5a0e..3c690c2 100644
+--- a/profiles/cod/modules/contrib/ticket/includes/ticket.field.inc
++++ b/profiles/cod/modules/contrib/ticket/includes/ticket.field.inc
+@@ -202,26 +202,43 @@ function ticket_field_formatter_view_form($form, &$form_state, $vars = NULL) {
+ 
+   // Generate the displays.
+   foreach ($vars['ticket_types'] as $ticket_type) {
++
++    $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'] = array(
++      '#type' => 'container',
++      '#attributes' => array(
++        'class' => array(
++          'ticket-wrapper',
++        ),
++      ),
++    );
++
+     $wrapper = entity_metadata_wrapper('ticket_type', $ticket_type);
+ 
+     // Output the ticket type entity.
+-    $form[TICKET_PREFIX . $ticket_type->ttid] = entity_view('ticket_type', array($ticket_type), 'default', $vars['langcode']);
++    $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_PREFIX . $ticket_type->ttid] = entity_view('ticket_type', array($ticket_type), 'default', $vars['langcode']);
+ 
+-    $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid] = array(
++    $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid] = array(
+       '#title' => t('Quantity'),
+       '#description' => t('Enter the number of tickets you would like to register for.'),
+-      '#type' => 'textfield',
++      '#type' => 'select',
++      '#options' => array(
++        0,
++        1,
++        2,
++        3,
++        4,
++        5
++      ),
+     );
+ 
+     // Change the QTY field depending on the ticket type settings.
+     if (!$wrapper->ticket_type_order_max->value() || $wrapper->ticket_type_order_max->value() > 20) {
+-      $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#size'] = 3;
+-      $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#default_value'] = '';
++      $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#default_value'] = '';
+     }
+     elseif ($wrapper->ticket_type_order_max->value() == 1 && count($vars['ticket_types']) == 1) {
+       // If we only have one ticket type, and its max QTY is one, don't show anything
+-        $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#type'] = 'value';
+-        $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#value'] = '1';
++        $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#type'] = 'value';
++        $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#value'] = '1';
+     }
+     else {
+       $qty_range = array();
+@@ -229,13 +246,13 @@ function ticket_field_formatter_view_form($form, &$form_state, $vars = NULL) {
+         $qty_range[$i] = $i;
+       }
+ 
+-      $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#type'] = 'select';
+-      $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#default_value'] = (int)$wrapper->ticket_type_order_min->value();
+-      $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#options'] = $qty_range;
++      $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#type'] = 'select';
++      $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#default_value'] = (int)$wrapper->ticket_type_order_min->value();
++      $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#options'] = $qty_range;
+     }
+ 
+     if (ticket_type_available($ticket_type)) {
+-      $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid] += array(
++      $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid] += array(
+         '#element_validate' => array(
+           'element_validate_integer',
+           'ticket_field_formatter_view_form_quantity_validate',
+@@ -248,7 +265,7 @@ function ticket_field_formatter_view_form($form, &$form_state, $vars = NULL) {
+       );
+     }
+     else {
+-      $form[TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#disabled'] = TRUE;
++      $form[TICKET_PREFIX . $ticket_type->ttid . '_fieldset'][TICKET_QUANTITY_PREFIX . $ticket_type->ttid]['#disabled'] = TRUE;
+     }
+   }
+ 
+-- 
+1.9.1
+

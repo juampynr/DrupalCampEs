@@ -895,39 +895,44 @@ select {
 }
 
 /* line 47, ../sass/components/_forms.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 51, ../sass/components/_forms.scss */
 textarea[disabled],
 .form-text[disabled],
 .form-file[disabled] {
   /**/
 }
 
-/* line 53, ../sass/components/_forms.scss */
+/* line 57, ../sass/components/_forms.scss */
 .form-file {
   vertical-align: top;
 }
 
-/* line 57, ../sass/components/_forms.scss */
+/* line 61, ../sass/components/_forms.scss */
 .form-item {
   margin: 0 0 1.5em;
 }
 
-/* line 61, ../sass/components/_forms.scss */
+/* line 65, ../sass/components/_forms.scss */
 input.form-autocomplete {
   /**/
 }
 
-/* line 65, ../sass/components/_forms.scss */
+/* line 69, ../sass/components/_forms.scss */
 label {
   /**/
 }
 
-/* line 69, ../sass/components/_forms.scss */
+/* line 73, ../sass/components/_forms.scss */
 .form-checkbox {
   position: relative;
   top: 3px;
 }
 
-/* line 74, ../sass/components/_forms.scss */
+/* line 78, ../sass/components/_forms.scss */
 fieldset {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -936,7 +941,7 @@ fieldset {
   position: relative;
   margin: 0;
 }
-/* line 80, ../sass/components/_forms.scss */
+/* line 84, ../sass/components/_forms.scss */
 fieldset legend {
   position: absolute;
   top: 17px;
@@ -945,47 +950,47 @@ fieldset legend {
   background: white;
   padding: 5px;
 }
-/* line 90, ../sass/components/_forms.scss */
+/* line 94, ../sass/components/_forms.scss */
 fieldset legend a {
   color: black;
 }
-/* line 95, ../sass/components/_forms.scss */
+/* line 99, ../sass/components/_forms.scss */
 fieldset .fieldset-wrapper {
   border: 1px solid;
   padding: 20px;
 }
 
-/* line 102, ../sass/components/_forms.scss */
+/* line 106, ../sass/components/_forms.scss */
 .grippie {
   display: none;
 }
 
-/* line 106, ../sass/components/_forms.scss */
+/* line 110, ../sass/components/_forms.scss */
 .form-radios {
   margin-top: 10px;
 }
 
-/* line 110, ../sass/components/_forms.scss */
+/* line 114, ../sass/components/_forms.scss */
 .form-actions {
   margin: 50px 0 10px;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 110, ../sass/components/_forms.scss */
+  /* line 114, ../sass/components/_forms.scss */
   .form-actions {
     margin-top: 0;
     text-align: left;
   }
 }
-/* line 119, ../sass/components/_forms.scss */
+/* line 123, ../sass/components/_forms.scss */
 .form-actions > * {
   margin: 0 10px;
 }
-/* line 122, ../sass/components/_forms.scss */
+/* line 126, ../sass/components/_forms.scss */
 .form-actions > *:first-child {
   margin-left: 0;
 }
-/* line 126, ../sass/components/_forms.scss */
+/* line 130, ../sass/components/_forms.scss */
 .form-actions > *:last-child {
   margin-right: 0;
 }

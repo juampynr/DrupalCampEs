@@ -2659,6 +2659,10 @@ fieldset .fieldset-wrapper {
   padding: 10px;
   background: rgba(255, 255, 255, 0.3);
 }
+/* line 4, ../sass/content-types/_node--event--full.scss */
+.node--event--full #block-blockify-blockify-tabs {
+  display: none;
+}
 
 /* line 3, ../sass/content-types/_node--full.scss */
 .node--full .heading,

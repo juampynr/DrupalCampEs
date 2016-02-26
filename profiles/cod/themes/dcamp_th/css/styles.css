@@ -2256,10 +2256,11 @@ fieldset .fieldset-wrapper {
   .ticket-field-formatter-view-form .ticket-wrapper:first-child {
     background: #e8e8e8;
     float: left;
-    min-height: 278px;
+    min-height: 300px;
+    padding-bottom: 100px;
     margin-bottom: 15px;
   }
-  /* line 27, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 28, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:first-child .form-type-select {
     width: calc(100% - 40px);
     position: absolute;
@@ -2268,14 +2269,15 @@ fieldset .fieldset-wrapper {
   }
 }
 @media (min-width: 960px) {
-  /* line 38, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 39, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) {
     background: #e8e8e8;
     float: right;
-    min-height: 278px;
+    min-height: 300px;
+    padding-bottom: 100px;
     margin-bottom: 15px;
   }
-  /* line 46, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 48, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) .form-type-select {
     width: calc(100% - 40px);
     position: absolute;
@@ -2284,50 +2286,50 @@ fieldset .fieldset-wrapper {
   }
 }
 @media (min-width: 960px) {
-  /* line 57, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 59, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(3) {
     float: left;
     clear: left;
   }
-  /* line 63, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 65, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(3) h3 {
     font-size: 21px;
   }
 }
 @media (min-width: 960px) {
-  /* line 71, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 73, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(4) {
     float: right;
   }
-  /* line 76, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 78, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(4) h3 {
     font-size: 21px;
   }
 }
-/* line 84, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 86, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper h3 {
   margin-bottom: 10px;
 }
-/* line 88, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 90, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper .content {
   margin-bottom: 15px;
 }
 @media (min-width: 960px) {
-  /* line 92, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 94, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper .form-type-select {
     margin-bottom: 20px;
   }
 }
-/* line 98, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 100, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper .form-type-select select {
   cursor: pointer;
 }
-/* line 104, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 106, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper .description {
   display: none;
 }
 @media (min-width: 960px) {
-  /* line 110, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 112, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .form-submit {
     display: block;
     clear: both;

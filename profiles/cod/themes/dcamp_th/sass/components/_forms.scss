@@ -44,6 +44,10 @@ select {
   margin: 5px 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 textarea[disabled],
 .form-text[disabled],
 .form-file[disabled] {

@@ -1,25 +1,88 @@
 .ticket-field-formatter-view-form {
 
   > div {
-    width: 100%;
-    display: table;
+    @include breakpoint($desk) {
+      @include pie-clearfix;
+    }
   }
 
   .ticket-wrapper {
+    position: relative;
 
     @include breakpoint($desk) {
       width: 50%;
-      display: table-cell;
+      vertical-align: top;
       padding: 20px;
+      box-sizing: border-box;
+    }
 
-      &:last-child {
-        clear: right;
+    &:first-child {
+      background: #e8e8e8;
+
+      @include breakpoint($desk) {
+        float: left;
+        min-height: 278px;
+        margin-bottom: 15px;
+
+        .form-type-select {
+          width: calc(100% - 40px);
+          position: absolute;
+          left: 20px;
+          bottom: 0;
+        }
+
+      }
+
+    }
+
+    &:nth-child(2) {
+      background: #e8e8e8;
+
+      @include breakpoint($desk) {
+        float: right;
+        min-height: 278px;
+        margin-bottom: 15px;
+
+        .form-type-select {
+          width: calc(100% - 40px);
+          position: absolute;
+          left: 20px;
+          bottom: 0;
+        }
+
+      }
+
+    }
+
+    &:nth-child(3) {
+
+      @include breakpoint($desk) {
+        float: left;
+        clear: left;
+
+        h3 {
+          font-size: 21px;
+        }
+
+      }
+
+    }
+
+    &:nth-child(4) {
+
+      @include breakpoint($desk) {
+        float: right;
+
+        h3 {
+          font-size: 21px;
+        }
+
       }
 
     }
 
     h3 {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
 
       @include breakpoint(0 $desk) {
         line-height: 1;
@@ -33,6 +96,18 @@
 
     .form-type-select {
 
+      @include breakpoint($desk) {
+        margin-bottom: 20px;
+      }
+
+      select {
+        cursor: pointer;
+      }
+
+    }
+
+    .description {
+      display: none;
     }
 
   }
@@ -40,6 +115,7 @@
   .form-submit {
 
     @include breakpoint($desk) {
+      display: block;
       clear: both;
     }
 

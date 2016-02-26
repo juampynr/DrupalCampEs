@@ -1,0 +1,53 @@
+.data-hotels-wrapper {
+
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  .hotel-wrappers {
+    @include pie-clearfix;
+    margin-bottom: 40px;
+
+    li {
+      list-style: none !important;
+    }
+
+    a {
+      word-wrap: break-word;
+    }
+
+    strong {
+
+      @include breakpoint(0 $tab) {
+        display: block;
+      }
+
+    }
+
+    .image {
+
+      img {
+        float: none;
+        margin-bottom: 15px;
+
+        @include breakpoint($tab) {
+          float: left;
+          margin-right: 20px;
+        }
+
+        @include breakpoint($tab $desk) {
+          padding-top: 10px;
+        }
+
+      }
+
+    }
+
+    .info {
+      clear: both;
+    }
+
+  }
+
+}

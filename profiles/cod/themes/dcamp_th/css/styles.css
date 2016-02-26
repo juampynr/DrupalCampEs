@@ -2256,7 +2256,7 @@ fieldset .fieldset-wrapper {
   .ticket-field-formatter-view-form .ticket-wrapper:first-child {
     background: #e8e8e8;
     float: left;
-    min-height: 278px;
+    min-height: 300px;
     padding-bottom: 100px;
     margin-bottom: 15px;
   }
@@ -2273,7 +2273,7 @@ fieldset .fieldset-wrapper {
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) {
     background: #e8e8e8;
     float: right;
-    min-height: 278px;
+    min-height: 300px;
     padding-bottom: 100px;
     margin-bottom: 15px;
   }

@@ -2016,6 +2016,15 @@ fieldset .fieldset-wrapper {
   display: none;
 }
 
+/* line 3, ../sass/components/forms/_user-info-from-cookie ticket-register-form.scss */
+.ticket-register-form .fieldset-description {
+  margin: 5px 0 15px;
+}
+/* line 7, ../sass/components/forms/_user-info-from-cookie ticket-register-form.scss */
+.ticket-register-form .form-submit {
+  margin-top: 20px;
+}
+
 /* line 1, ../sass/components/views/_view-aed-attendees.scss */
 .view-aed-attendees {
   width: 100%;

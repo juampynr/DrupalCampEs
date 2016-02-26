@@ -1,7 +1,9 @@
-.node--event--full {
-  @include typo-styles;
-
+body.node-type-event {
   #block-blockify-blockify-tabs {
     display: none;
+  }
+  .node--event--full {
+    @include typo-styles;
+
   }
 }

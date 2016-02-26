@@ -2580,14 +2580,18 @@ fieldset .fieldset-wrapper {
   margin-bottom: 30px;
 }
 
+/* line 2, ../sass/content-types/_node--event--full.scss */
+body.node-type-event #block-blockify-blockify-tabs {
+  display: none;
+}
 /* line 3, ../sass/components/_typo-styles.scss */
-.node--event--full h2, .node--event--full h3, .node--event--full h4, .node--event--full h5, .node--event--full h5, .node--event--full p, .node--event--full span {
+body.node-type-event .node--event--full h2, body.node-type-event .node--event--full h3, body.node-type-event .node--event--full h4, body.node-type-event .node--event--full h5, body.node-type-event .node--event--full h5, body.node-type-event .node--event--full p, body.node-type-event .node--event--full span {
   white-space: normal !important;
   line-height: 1.5em;
   font-style: normal;
 }
 /* line 9, ../sass/components/_typo-styles.scss */
-.node--event--full h2 {
+body.node-type-event .node--event--full h2 {
   font-size: 22px;
   font-weight: bold;
   color: #901235;
@@ -2596,12 +2600,12 @@ fieldset .fieldset-wrapper {
 }
 @media (min-width: 768px) {
   /* line 9, ../sass/components/_typo-styles.scss */
-  .node--event--full h2 {
+  body.node-type-event .node--event--full h2 {
     font-size: 32px;
   }
 }
 /* line 22, ../sass/components/_typo-styles.scss */
-.node--event--full h3 {
+body.node-type-event .node--event--full h3 {
   font-size: 20px;
   font-weight: bold;
   color: #901235;
@@ -2610,12 +2614,12 @@ fieldset .fieldset-wrapper {
 }
 @media (min-width: 768px) {
   /* line 22, ../sass/components/_typo-styles.scss */
-  .node--event--full h3 {
+  body.node-type-event .node--event--full h3 {
     font-size: 26px;
   }
 }
 /* line 34, ../sass/components/_typo-styles.scss */
-.node--event--full h4 {
+body.node-type-event .node--event--full h4 {
   font-size: 18px;
   font-weight: bold;
   color: #901235;
@@ -2624,44 +2628,40 @@ fieldset .fieldset-wrapper {
 }
 @media (min-width: 768px) {
   /* line 34, ../sass/components/_typo-styles.scss */
-  .node--event--full h4 {
+  body.node-type-event .node--event--full h4 {
     font-size: 24px;
   }
 }
 /* line 47, ../sass/components/_typo-styles.scss */
-.node--event--full p {
+body.node-type-event .node--event--full p {
   margin: 10px 0;
 }
 /* line 51, ../sass/components/_typo-styles.scss */
-.node--event--full a {
+body.node-type-event .node--event--full a {
   color: #5784AE;
 }
 /* line 55, ../sass/components/_typo-styles.scss */
-.node--event--full ul {
+body.node-type-event .node--event--full ul {
   margin: 10px 30px;
 }
 /* line 57, ../sass/components/_typo-styles.scss */
-.node--event--full ul li {
+body.node-type-event .node--event--full ul li {
   list-style: initial;
   margin-bottom: 10px;
 }
 /* line 66, ../sass/components/_typo-styles.scss */
-.node--event--full table thead tr th {
+body.node-type-event .node--event--full table thead tr th {
   background: white;
   padding: 10px;
 }
 /* line 74, ../sass/components/_typo-styles.scss */
-.node--event--full table tbody tr {
+body.node-type-event .node--event--full table tbody tr {
   background: none;
 }
 /* line 77, ../sass/components/_typo-styles.scss */
-.node--event--full table tbody tr td {
+body.node-type-event .node--event--full table tbody tr td {
   padding: 10px;
   background: rgba(255, 255, 255, 0.3);
-}
-/* line 4, ../sass/content-types/_node--event--full.scss */
-.node--event--full #block-blockify-blockify-tabs {
-  display: none;
 }
 
 /* line 3, ../sass/content-types/_node--full.scss */

@@ -1,0 +1,48 @@
+.ticket-field-formatter-view-form {
+
+  > div {
+    width: 100%;
+    display: table;
+  }
+
+  .ticket-wrapper {
+
+    @include breakpoint($desk) {
+      width: 50%;
+      display: table-cell;
+      padding: 20px;
+
+      &:last-child {
+        clear: right;
+      }
+
+    }
+
+    h3 {
+      margin-bottom: 15px;
+
+      @include breakpoint(0 $desk) {
+        line-height: 1;
+      }
+
+    }
+
+    .content {
+      margin-bottom: 15px;
+    }
+
+    .form-type-select {
+
+    }
+
+  }
+
+  .form-submit {
+
+    @include breakpoint($desk) {
+      clear: both;
+    }
+
+  }
+
+}

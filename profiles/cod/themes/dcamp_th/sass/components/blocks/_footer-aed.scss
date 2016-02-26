@@ -3,11 +3,16 @@
   color: white;
   text-align: center;
 
-  @include breakpoint($tab) {
+  @include breakpoint($tab $desk) {
+    padding: 60px 60px 60px 130px;
+  }
+
+  @include breakpoint($desk) {
     padding: 60px;
   }
 
   a {
     color: #fff;
   }
+
 }

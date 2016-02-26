@@ -4,7 +4,7 @@
   .node__content {
     padding: 10px;
 
-    @include breakpoint($tab) {
+    @include breakpoint($desk) {
       padding: 0;
     }
 

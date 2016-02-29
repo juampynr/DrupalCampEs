@@ -697,6 +697,48 @@ fieldset legend {
   /**/
 }
 
+/* line 1, ../sass/components/_c2a-buy-ticket.scss */
+.c2a-buy-ticket {
+  background-color: #540B1F;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+@media (min-width: 960px) {
+  /* line 1, ../sass/components/_c2a-buy-ticket.scss */
+  .c2a-buy-ticket {
+    padding: 60px;
+  }
+}
+/* line 10, ../sass/components/_c2a-buy-ticket.scss */
+.c2a-buy-ticket .block__content {
+  color: white;
+}
+@media (min-width: 960px) {
+  /* line 10, ../sass/components/_c2a-buy-ticket.scss */
+  .c2a-buy-ticket .block__content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 19, ../sass/components/_c2a-buy-ticket.scss */
+.c2a-buy-ticket .block__content a {
+  color: white;
+  font-family: "Allert", sans-serif;
+  background-color: #3E6A98;
+  border-radius: 3px;
+  transition: all 250ms;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  padding: 30px 90px;
+  font-size: 30px;
+}
+/* line 31, ../sass/components/_c2a-buy-ticket.scss */
+.c2a-buy-ticket .block__content a:hover, .c2a-buy-ticket .block__content a:focus {
+  background-color: #6f8bb2;
+}
+
 /* line 1, ../sass/components/_call-to-action.scss */
 .call-to-action {
   background-color: #901235;

@@ -853,6 +853,57 @@ fieldset legend {
   clear: both;
 }
 
+/* line 3, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order table {
+  width: 100%;
+  margin: 20px 0;
+}
+/* line 9, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order table thead tr th {
+  background: white;
+  padding: 20px;
+}
+/* line 17, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order table tbody tr {
+  background: none;
+}
+/* line 21, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 26, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order table tbody tr td {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all .2s;
+}
+/* line 32, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order table tbody tr td .file a {
+  font-family: "Allert", sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+/* line 37, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order table tbody tr td .file a:hover {
+  text-decoration: underline;
+}
+/* line 49, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order .field--name-commerce-customer-billing {
+  margin-bottom: 30px;
+}
+/* line 52, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order .field--name-commerce-customer-billing .field__label {
+  margin-bottom: 10px;
+}
+/* line 56, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order .field--name-commerce-customer-billing .field__items {
+  margin-bottom: 10px;
+}
+/* line 59, ../sass/components/_entity-commerce-order.scss */
+.entity-commerce-order .field--name-commerce-customer-billing .field__items .field {
+  margin-bottom: 10px;
+}
+
 /* line 1, ../sass/components/_field--type-file.scss */
 .field--type-file {
   margin-bottom: 30px;
@@ -981,7 +1032,7 @@ fieldset {
   box-sizing: border-box;
   padding-top: 30px;
   position: relative;
-  margin: 0;
+  margin: 0 0 20px;
 }
 /* line 84, ../sass/components/_forms.scss */
 fieldset legend {
@@ -2681,9 +2732,140 @@ fieldset .fieldset-wrapper {
   }
 }
 
-/* line 10, ../sass/components/views/_view-news-home.scss */
-.view-news-home .view-content > * {
-  margin-bottom: 30px;
+/* line 4, ../sass/components/views/_view-commerce-user-orders.scss */
+.view-commerce-user-orders .view-content table {
+  width: 100%;
+  margin: 20px 0;
+}
+/* line 10, ../sass/components/views/_view-commerce-user-orders.scss */
+.view-commerce-user-orders .view-content table thead tr th {
+  background: white;
+  padding: 20px;
+}
+/* line 18, ../sass/components/views/_view-commerce-user-orders.scss */
+.view-commerce-user-orders .view-content table tbody tr {
+  background: none;
+}
+/* line 22, ../sass/components/views/_view-commerce-user-orders.scss */
+.view-commerce-user-orders .view-content table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 27, ../sass/components/views/_view-commerce-user-orders.scss */
+.view-commerce-user-orders .view-content table tbody tr td {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all .2s;
+}
+/* line 33, ../sass/components/views/_view-commerce-user-orders.scss */
+.view-commerce-user-orders .view-content table tbody tr td .file a {
+  font-family: "Allert", sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+/* line 38, ../sass/components/views/_view-commerce-user-orders.scss */
+.view-commerce-user-orders .view-content table tbody tr td .file a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/components/views/_view-individual-sponsor.scss */
+.view-individual-sponsor {
+  padding: 0 10px;
+}
+/* line 4, ../sass/components/views/_view-individual-sponsor.scss */
+.view-individual-sponsor .view-content {
+  text-align: center;
+}
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 4, ../sass/components/views/_view-individual-sponsor.scss */
+  .view-individual-sponsor .view-content {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .view-individual-sponsor .view-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 5, ../sass/abstractions/_grid-items.scss */
+  .view-individual-sponsor .view-content > * {
+    float: left;
+    width: 48%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+  }
+  /* line 12, ../sass/abstractions/_grid-items.scss */
+  .view-individual-sponsor .view-content > *:first-child {
+    margin-left: 0;
+  }
+  /* line 16, ../sass/abstractions/_grid-items.scss */
+  .view-individual-sponsor .view-content > *:nth-child(2n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+@media (min-width: 768px) {
+  /* line 4, ../sass/components/views/_view-individual-sponsor.scss */
+  .view-individual-sponsor .view-content {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .view-individual-sponsor .view-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 5, ../sass/abstractions/_grid-items.scss */
+  .view-individual-sponsor .view-content > * {
+    float: left;
+    width: 22%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+  }
+  /* line 12, ../sass/abstractions/_grid-items.scss */
+  .view-individual-sponsor .view-content > *:first-child {
+    margin-left: 0;
+  }
+  /* line 16, ../sass/abstractions/_grid-items.scss */
+  .view-individual-sponsor .view-content > *:nth-child(4n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+/* line 15, ../sass/components/views/_view-individual-sponsor.scss */
+.view-individual-sponsor .view-content img {
+  box-sizing: border-box;
+  border: 5px solid #901235;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 2, ../sass/components/views/_view-news-home.scss */
+  .view-news-home .view-content {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .view-news-home .view-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 5, ../sass/abstractions/_grid-items.scss */
+  .view-news-home .view-content > * {
+    float: left;
+    width: 49%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  /* line 12, ../sass/abstractions/_grid-items.scss */
+  .view-news-home .view-content > *:first-child {
+    margin-left: 0;
+  }
+  /* line 16, ../sass/abstractions/_grid-items.scss */
+  .view-news-home .view-content > *:nth-child(2n+1) {
+    margin-left: 0;
+    clear: left;
+  }
 }
 
 /* line 2, ../sass/content-types/_node--event--full.scss */

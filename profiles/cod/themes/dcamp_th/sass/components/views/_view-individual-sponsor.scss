@@ -1,0 +1,22 @@
+.view-individual-sponsor {
+  padding: 0 10px;
+
+  .view-content {
+    text-align: center;
+
+    @include breakpoint(0 $tab) {
+      @include grid-items(2, 4%, 4%);
+    }
+
+    @include breakpoint($tab) {
+      @include grid-items(4, 4%, 4%);
+    }
+
+    img {
+      box-sizing: border-box;
+      border: 5px solid #901235;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+}

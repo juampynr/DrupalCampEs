@@ -71,14 +71,14 @@ function aed_bofs_views_default_views() {
   $handler->display->display_options['sorts']['field_fecha_value']['table'] = 'field_data_field_fecha';
   $handler->display->display_options['sorts']['field_fecha_value']['field'] = 'field_fecha_value';
   $handler->display->display_options['sorts']['field_fecha_value']['expose']['label'] = 'Fecha (field_fecha)';
-  /* Criterios de filtrado: Contenido: Publicado */
+  /* Criterio de filtrado: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterios de filtrado: Contenido: Fecha (field_fecha) */
+  /* Criterio de filtrado: Contenido: Fecha (field_fecha) */
   $handler->display->display_options['filters']['field_fecha_value']['id'] = 'field_fecha_value';
   $handler->display->display_options['filters']['field_fecha_value']['table'] = 'field_data_field_fecha';
   $handler->display->display_options['filters']['field_fecha_value']['field'] = 'field_fecha_value';
@@ -98,7 +98,7 @@ function aed_bofs_views_default_views() {
     6 => 0,
   );
   $handler->display->display_options['filters']['field_fecha_value']['form_type'] = 'date_popup';
-  /* Criterios de filtrado: Contenido: Tipo */
+  /* Criterio de filtrado: Contenido: Tipo */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';

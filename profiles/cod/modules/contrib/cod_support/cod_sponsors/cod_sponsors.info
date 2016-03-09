@@ -7,6 +7,7 @@ project = cod_sponsors
 dependencies[] = cod_base
 dependencies[] = cod_events
 dependencies[] = cod_session
+dependencies[] = cod_sponsors
 dependencies[] = ctools
 dependencies[] = entityreference
 dependencies[] = features

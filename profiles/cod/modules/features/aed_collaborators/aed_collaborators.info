@@ -5,6 +5,7 @@ dependencies[] = cod_events
 dependencies[] = commerce_coupon
 dependencies[] = commerce_features
 dependencies[] = link
+dependencies[] = node
 dependencies[] = text
 dependencies[] = views
 features[ctools][] = strongarm:strongarm:1

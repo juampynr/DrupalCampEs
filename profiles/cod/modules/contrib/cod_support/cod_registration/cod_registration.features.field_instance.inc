@@ -21,7 +21,7 @@ function cod_registration_field_default_field_instances() {
         'module' => 'ticket',
         'settings' => array(
           'show_unavailable' => 0,
-          'submit_text' => 'Register',
+          'submit_text' => 'Next',
         ),
         'type' => 'ticket_type',
         'weight' => 9,

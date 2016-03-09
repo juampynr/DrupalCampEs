@@ -63,14 +63,14 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['sorts']['nid']['id'] = 'nid';
   $handler->display->display_options['sorts']['nid']['table'] = 'node';
   $handler->display->display_options['sorts']['nid']['field'] = 'nid';
-  /* Criterios de filtrado: Contenido: Publicado */
+  /* Criterio de filtrado: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterios de filtrado: Contenido: Tipo */
+  /* Criterio de filtrado: Contenido: Tipo */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -211,7 +211,7 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'Still not have Gold Sponsors. <a href="/drupalcamp-spain-2016/sponsors/sponsorships">You can be the first!!</a>';
+  $handler->display->display_options['empty']['area']['content'] = 'Aún no tenemos Patrocinadores Oro.<br /><a href="/drupalcamp-spain-2016/sponsors/patrocinios">¡¡Tu puedes ser el primero!!</a>';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Campo: Contenido: Título */
@@ -261,21 +261,21 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['arguments']['field_sponsor_sponsorship_level_tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Criterios de filtrado: Contenido: Publicado */
+  /* Criterio de filtrado: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterios de filtrado: Contenido: Tipo */
+  /* Criterio de filtrado: Contenido: Tipo */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'sponsor' => 'sponsor',
   );
-  /* Criterios de filtrado: Contenido: Tiene un término de taxonomía */
+  /* Criterio de filtrado: Contenido: Tiene un término de taxonomía */
   $handler->display->display_options['filters']['tid']['id'] = 'tid';
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
@@ -315,7 +315,7 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['empty'] = FALSE;
-  /* No results behavior: Global: Text area */
+  /* Comportamiento si no hay resultados: Global: Área de texto */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
@@ -323,7 +323,7 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['empty']['area']['content'] = 'Aún no tenemos Patrocinadores Plata. <a href="/drupalcamp-spain-2015/sponsors/patrocinios">¡¡Tu puedes ser el primero!!</a>';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
+  /* Campo: Contenido: Título */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -369,21 +369,21 @@ function aedcamp_sponsors_views_default_views() {
   $handler->display->display_options['arguments']['field_sponsor_sponsorship_level_tid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Criterios de filtrado: Contenido: Publicado */
+  /* Criterio de filtrado: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterios de filtrado: Contenido: Tipo */
+  /* Criterio de filtrado: Contenido: Tipo */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'sponsor' => 'sponsor',
   );
-  /* Criterios de filtrado: Contenido: Tiene un término de taxonomía */
+  /* Criterio de filtrado: Contenido: Tiene un término de taxonomía */
   $handler->display->display_options['filters']['tid']['id'] = 'tid';
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
@@ -422,7 +422,7 @@ function aedcamp_sponsors_views_default_views() {
     t('Todo(s)'),
     t('Block Sponsors Gold'),
     t('Patrocinadores Oro'),
-    t('Still not have Gold Sponsors. <a href="/drupalcamp-spain-2016/sponsors/sponsorships">You can be the first!!</a>'),
+    t('Aún no tenemos Patrocinadores Oro.<br /><a href="/drupalcamp-spain-2016/sponsors/patrocinios">¡¡Tu puedes ser el primero!!</a>'),
     t('Tiene un término de taxonomía'),
     t('Patrocinadores Gold'),
     t('Block Sponsors Silver'),

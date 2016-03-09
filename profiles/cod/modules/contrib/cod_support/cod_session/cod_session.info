@@ -7,6 +7,7 @@ project = cod_session
 dependencies[] = auto_nodetitle
 dependencies[] = cod_base
 dependencies[] = cod_events
+dependencies[] = cod_session
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_popup

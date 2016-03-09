@@ -84,20 +84,20 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['sorts']['field_profile_first_value']['id'] = 'field_profile_first_value';
   $handler->display->display_options['sorts']['field_profile_first_value']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['sorts']['field_profile_first_value']['field'] = 'field_profile_first_value';
-  /* Criterios de filtrado: Usuario: Activo */
+  /* Criterio de filtrado: Usuario: Aprobado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterios de filtrado: Ticket registration: State */
+  /* Criterio de filtrado: Ticket registration: State */
   $handler->display->display_options['filters']['state']['id'] = 'state';
   $handler->display->display_options['filters']['state']['table'] = 'ticket_registration';
   $handler->display->display_options['filters']['state']['field'] = 'state';
   $handler->display->display_options['filters']['state']['relationship'] = 'ticket_registration';
   $handler->display->display_options['filters']['state']['value'] = 'completed';
-  /* Criterios de filtrado: Usuario: ID del usuario */
+  /* Criterio de filtrado: Usuario: ID del usuario */
   $handler->display->display_options['filters']['uid_raw']['id'] = 'uid_raw';
   $handler->display->display_options['filters']['uid_raw']['table'] = 'users';
   $handler->display->display_options['filters']['uid_raw']['field'] = 'uid_raw';
@@ -272,18 +272,18 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['fields']['field_company']['settings'] = array(
     'trim_length' => '600',
   );
-  /* Criterio de ordenación: Contenido: Fecha del envío */
+  /* Criterio de ordenación: Contenido: Fecha de publicación */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
-  /* Criterios de filtrado: Contenido: Publicado */
+  /* Criterio de filtrado: Contenido: Publicado */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterios de filtrado: Contenido: Tipo */
+  /* Criterio de filtrado: Contenido: Tipo */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';

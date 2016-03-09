@@ -37,7 +37,7 @@ function aed_bofs_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Campo: Contenido: Título */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -46,7 +46,7 @@ function aed_bofs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Campo: Contenido: Fecha */
+  /* Field: Content: Fecha */
   $handler->display->display_options['fields']['field_fecha']['id'] = 'field_fecha';
   $handler->display->display_options['fields']['field_fecha']['table'] = 'field_data_field_fecha';
   $handler->display->display_options['fields']['field_fecha']['field'] = 'field_fecha';
@@ -60,25 +60,25 @@ function aed_bofs_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Campo: Contenido: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Criterio de ordenación: Contenido: Fecha (field_fecha) */
+  /* Sort criterion: Content: Fecha (field_fecha) */
   $handler->display->display_options['sorts']['field_fecha_value']['id'] = 'field_fecha_value';
   $handler->display->display_options['sorts']['field_fecha_value']['table'] = 'field_data_field_fecha';
   $handler->display->display_options['sorts']['field_fecha_value']['field'] = 'field_fecha_value';
   $handler->display->display_options['sorts']['field_fecha_value']['expose']['label'] = 'Fecha (field_fecha)';
-  /* Criterio de filtrado: Contenido: Publicado */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Criterio de filtrado: Contenido: Fecha (field_fecha) */
+  /* Filter criterion: Content: Fecha (field_fecha) */
   $handler->display->display_options['filters']['field_fecha_value']['id'] = 'field_fecha_value';
   $handler->display->display_options['filters']['field_fecha_value']['table'] = 'field_data_field_fecha';
   $handler->display->display_options['filters']['field_fecha_value']['field'] = 'field_fecha_value';
@@ -98,7 +98,7 @@ function aed_bofs_views_default_views() {
     6 => 0,
   );
   $handler->display->display_options['filters']['field_fecha_value']['form_type'] = 'date_popup';
-  /* Criterio de filtrado: Contenido: Tipo */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -120,6 +120,7 @@ function aed_bofs_views_default_views() {
     t('Desc'),
     t('Fecha (field_fecha)'),
     t('Page'),
+    t('more'),
   );
   $export['aed_bofs'] = $view;
 

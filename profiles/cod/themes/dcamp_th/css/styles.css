@@ -2520,6 +2520,68 @@ fieldset .fieldset-wrapper {
   margin-top: 20px;
 }
 
+/* line 1, ../sass/components/views/_block-views-featured-speakers-home-block.scss */
+#block-views-featured-speakers-home-block {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+/* line 6, ../sass/components/views/_block-views-featured-speakers-home-block.scss */
+#block-views-featured-speakers-home-block .block__title {
+  color: #669FD5;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 767px) {
+  /* line 6, ../sass/components/views/_block-views-featured-speakers-home-block.scss */
+  #block-views-featured-speakers-home-block .block__title {
+    font-size: 38px;
+  }
+}
+@media (min-width: 767px) {
+  /* line 18, ../sass/components/views/_block-views-featured-speakers-home-block.scss */
+  #block-views-featured-speakers-home-block ul {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  #block-views-featured-speakers-home-block ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 5, ../sass/abstractions/_grid-items.scss */
+  #block-views-featured-speakers-home-block ul > * {
+    float: left;
+    width: 18.4%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  /* line 12, ../sass/abstractions/_grid-items.scss */
+  #block-views-featured-speakers-home-block ul > *:first-child {
+    margin-left: 0;
+  }
+  /* line 16, ../sass/abstractions/_grid-items.scss */
+  #block-views-featured-speakers-home-block ul > *:nth-child(5n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+/* line 24, ../sass/components/views/_block-views-featured-speakers-home-block.scss */
+#block-views-featured-speakers-home-block ul li {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 28, ../sass/components/views/_block-views-featured-speakers-home-block.scss */
+#block-views-featured-speakers-home-block ul li .views-field-picture {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/* line 33, ../sass/components/views/_block-views-featured-speakers-home-block.scss */
+#block-views-featured-speakers-home-block ul li .views-field-name {
+  text-align: center;
+}
+
 /* line 1, ../sass/components/views/_view-aed-attendees.scss */
 .view-aed-attendees {
   width: 100%;

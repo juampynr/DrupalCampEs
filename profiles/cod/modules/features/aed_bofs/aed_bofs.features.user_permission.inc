@@ -15,6 +15,7 @@ function aed_bofs_user_default_permissions() {
     'name' => 'create bofs content',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
     ),
     'module' => 'node',
@@ -35,6 +36,7 @@ function aed_bofs_user_default_permissions() {
     'name' => 'delete own bofs content',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
     ),
     'module' => 'node',
@@ -55,6 +57,7 @@ function aed_bofs_user_default_permissions() {
     'name' => 'edit own bofs content',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
     ),
     'module' => 'node',

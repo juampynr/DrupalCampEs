@@ -91,53 +91,53 @@ function cod_paid_events_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* No results behavior: Global: Text area */
+  /* Comportamiento si no hay resultados: Global: Área de texto */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'No hay registros de entradas';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
-  /* Relationship: Ticket registration: Ticket Type */
+  /* Relación: Ticket registration: Ticket Type */
   $handler->display->display_options['relationships']['ticket_type_ttid']['id'] = 'ticket_type_ttid';
   $handler->display->display_options['relationships']['ticket_type_ttid']['table'] = 'ticket_registration';
   $handler->display->display_options['relationships']['ticket_type_ttid']['field'] = 'ticket_type_ttid';
   $handler->display->display_options['relationships']['ticket_type_ttid']['required'] = TRUE;
-  /* Relationship: Ticket registration: Attendee */
+  /* Relación: Ticket registration: Attendee */
   $handler->display->display_options['relationships']['user_uid']['id'] = 'user_uid';
   $handler->display->display_options['relationships']['user_uid']['table'] = 'ticket_registration';
   $handler->display->display_options['relationships']['user_uid']['field'] = 'user_uid';
-  /* Field: Ticket type: Host entity */
+  /* Campo: Ticket type: Entidad de host */
   $handler->display->display_options['fields']['entity']['id'] = 'entity';
   $handler->display->display_options['fields']['entity']['table'] = 'ticket_type';
   $handler->display->display_options['fields']['entity']['field'] = 'entity';
   $handler->display->display_options['fields']['entity']['relationship'] = 'ticket_type_ttid';
   $handler->display->display_options['fields']['entity']['label'] = 'Evento';
-  /* Field: Ticket type: Ticket type */
+  /* Campo: Ticket type: Ticket type */
   $handler->display->display_options['fields']['ticket_type_label']['id'] = 'ticket_type_label';
   $handler->display->display_options['fields']['ticket_type_label']['table'] = 'field_data_ticket_type_label';
   $handler->display->display_options['fields']['ticket_type_label']['field'] = 'ticket_type_label';
   $handler->display->display_options['fields']['ticket_type_label']['relationship'] = 'ticket_type_ttid';
-  /* Field: User: Name */
+  /* Campo: Usuario: Nombre */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['relationship'] = 'user_uid';
   $handler->display->display_options['fields']['name']['label'] = 'Attendee';
-  /* Field: Ticket registration: Link */
+  /* Campo: Ticket registration: Enlace */
   $handler->display->display_options['fields']['view_registration']['id'] = 'view_registration';
   $handler->display->display_options['fields']['view_registration']['table'] = 'ticket_registration';
   $handler->display->display_options['fields']['view_registration']['field'] = 'view_registration';
   $handler->display->display_options['fields']['view_registration']['label'] = 'Operaciones';
-  /* Field: Ticket registration: Edit link */
+  /* Campo: Ticket registration: Enlace de edición */
   $handler->display->display_options['fields']['edit_registration']['id'] = 'edit_registration';
   $handler->display->display_options['fields']['edit_registration']['table'] = 'ticket_registration';
   $handler->display->display_options['fields']['edit_registration']['field'] = 'edit_registration';
-  /* Field: Ticket registration: Cancel link */
+  /* Campo: Ticket registration: Enlace para cancelar */
   $handler->display->display_options['fields']['cancel_registration']['id'] = 'cancel_registration';
   $handler->display->display_options['fields']['cancel_registration']['table'] = 'ticket_registration';
   $handler->display->display_options['fields']['cancel_registration']['field'] = 'cancel_registration';
-  /* Contextual filter: Ticket registration: Order (field_ticket_order) */
+  /* Filtro contextual: Ticket registration: Order (field_ticket_order) */
   $handler->display->display_options['arguments']['field_ticket_order_target_id']['id'] = 'field_ticket_order_target_id';
   $handler->display->display_options['arguments']['field_ticket_order_target_id']['table'] = 'field_data_field_ticket_order';
   $handler->display->display_options['arguments']['field_ticket_order_target_id']['field'] = 'field_ticket_order_target_id';
@@ -195,8 +195,8 @@ function cod_paid_events_views_default_views() {
     t('Ticket type'),
     t('Attendee'),
     t('Operaciones'),
-    t('Edit link'),
-    t('Cancel link'),
+    t('Enlace de edición'),
+    t('Enlace para cancelar'),
     t('Todo(s)'),
     t('Page'),
     t('All tickets registered by a user.'),

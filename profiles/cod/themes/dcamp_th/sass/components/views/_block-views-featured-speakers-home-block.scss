@@ -1,0 +1,41 @@
+#block-views-featured-speakers-home-block {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+
+  .block__title {
+    color: #669FD5;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    @include breakpoint($tab) {
+      font-size: 38px;
+    }
+
+  }
+
+  ul {
+
+    @include breakpoint($tab) {
+      @include grid-items(5, 2%, 2%);
+    }
+
+    li {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .views-field-picture {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+
+      .views-field-name {
+        text-align: center;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,36 @@
+.view-aed-bofs {
+
+  ul {
+
+  }
+
+  li {
+    @include pie-clearfix;
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+
+    .views-field-title {
+      color: #5784AE;
+      font-size: 18px;
+      font-weight: bold;
+      float: left;
+      max-width: 70%;
+      margin-bottom: 20px;
+    }
+
+    .views-field-field-fecha {
+      float: right;
+    }
+
+    .views-field-body {
+      clear: both;
+    }
+
+  }
+
+}

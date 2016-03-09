@@ -137,7 +137,7 @@ function cod_paid_events_views_default_views() {
   $handler->display->display_options['fields']['cancel_registration']['id'] = 'cancel_registration';
   $handler->display->display_options['fields']['cancel_registration']['table'] = 'ticket_registration';
   $handler->display->display_options['fields']['cancel_registration']['field'] = 'cancel_registration';
-  /* Filtro contextual: Ticket registration: Order (field_ticket_order) */
+  /* Filtro contextual: Ticket registration: Pedido (field_ticket_order) */
   $handler->display->display_options['arguments']['field_ticket_order_target_id']['id'] = 'field_ticket_order_target_id';
   $handler->display->display_options['arguments']['field_ticket_order_target_id']['table'] = 'field_data_field_ticket_order';
   $handler->display->display_options['arguments']['field_ticket_order_target_id']['field'] = 'field_ticket_order_target_id';

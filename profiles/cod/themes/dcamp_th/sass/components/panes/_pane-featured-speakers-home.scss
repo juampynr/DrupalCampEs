@@ -1,0 +1,17 @@
+.pane-featured-speakers-home {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+
+  .pane-title {
+    color: #669FD5;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    @include breakpoint($tab) {
+      font-size: 38px;
+    }
+  }
+
+}

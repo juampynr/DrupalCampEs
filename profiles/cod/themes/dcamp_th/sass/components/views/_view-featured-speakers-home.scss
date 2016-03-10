@@ -1,31 +1,30 @@
-#view-featured-speakers-home {
+.view-featured-speakers-home {
 
-  table {
+  ul {
 
-    tr {
+    @include breakpoint($tab) {
+      @include grid-items(5, 2%, 2%);
+    }
 
-      td {
+    li {
+      text-align: center;
+      margin-bottom: 30px;
 
-        .views-field-picture {
+      .views-field-picture {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
 
-          img {
+      .views-field-name {
+        text-align: center;
 
-          }
-
-        }
-
-        .views-field-name {
-
-          a {
-
-          }
+        a {
 
         }
 
       }
 
     }
-
   }
 
 }

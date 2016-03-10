@@ -36,9 +36,14 @@
       <td>
         <div>
           <span class="room"><?php print t('Room'); ?> 4:</span>
+
+          <!-- Idioma de la sesion -->
+          <!--  Definir idioma de la charla en: espanol / english -->
+          <div class="language english"></div>
+
           <a href="http://2015.drupalcamp.es/node/85">Drupal 8 for site builders <br/></a>
 
-          <span class="speaker language espanol">Monta&#241;a Franco</span>
+          <span class="speaker">Monta&#241;a Franco</span>
 
           <!-- Agregamos iconos de categoria -->
           <div class="sesion-kind-wrapper clearfix">
@@ -235,12 +240,15 @@
       <td class="headings">9:30 <?php print t('to'); ?> 10:30</td>
 
       <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
         <!-- Titulo Sesion -->
         <a href="http://2015.drupalcamp.es/node/170">Sesión de ejemplo<br/>Numero 1</a><br/>
 
         <!-- Ponente -->
-        <!--  Definir idioma de la charla en: espanol / english -->
-        <span class="speaker language english">Cathy Theys</span>
+        <span class="speaker">Cathy Theys</span>
 
         <!-- Agregamos iconos de categoria -->
         <div class="sesion-kind-wrapper clearfix">

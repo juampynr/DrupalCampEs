@@ -98,30 +98,29 @@ section.col-sm-8 {
     padding: 40px;
 }
 
+.language {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 6px;
+}
+
+.language.english {
+    background: url('img/english-flag.png') no-repeat center;
+    background-size: 25px;
+}
+
+.language.espanol {
+    background: url('img/spanish-flag.png') no-repeat center;
+    background-size: 25px;
+}
+
 .session-table .speaker {
     font-weight: bold;
     color: #9a0000;
     margin-top: 10px;
     display: block;
-}
-
-.speaker.language:before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: bottom;
-    margin-right: 7px;
-}
-
-.speaker.language.english:before {
-    background: url('img/english-flag.png') no-repeat 0 0;
-    background-size: contain;
-}
-
-.speaker.language.espanol:before {
-    background: url('img/spanish-flag.png') no-repeat 0 0;
-    background-size: contain;
 }
 
 .session-table .beginner,
@@ -406,6 +405,17 @@ section.col-sm-8 {
 
     .sesion-kind-wrapper > div > div {
         float: left;
+    }
+
+    .language {
+        width: 25px;
+        margin-left: 7px;
+        margin-bottom: 5px;
+    }
+
+    .room {
+        display: inline-block;
+        margin-bottom: 5px;
     }
 
 }

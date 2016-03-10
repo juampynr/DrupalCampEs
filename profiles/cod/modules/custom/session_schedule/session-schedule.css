@@ -9,7 +9,43 @@ section.col-sm-8 {
 }
 
 /**************/
+.leyendas {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.category {
+
+}
+
+.label.category,
+.label.skills {
+    color: #669FD5;
+    font-size: 20px;
+    display: block;
+    padding: 10px 0 15px;
+    margin: 0;
+}
+
+.schedule {
+    /* */
+}
+
+.schedule h2 {
+    color: #669FD5;
+    font-weight: bold;
+    font-size: 38px;
+    background: white;
+    padding: 15px 20px 10px;
+}
+
 .session-table {
+    background: white;
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 50px;
@@ -30,39 +66,10 @@ section.col-sm-8 {
     padding: 20px;
     text-align: center;
     vertical-align: top;
-    border: 1px solid #0a5486;
+    border: 1px solid #901235;
     width: 18%;
     font-size: 18px;
     line-height: 22px;
-}
-
-@media (max-width: 768px) {
-    .session-table {
-        display: none;
-    }
-
-    .session-table.mobile {
-        display: table;
-    }
-
-    .session-table td {
-        text-align: left;
-        padding: 4px 10px;
-        width: 90%;
-    }
-
-    .session-table td > div {
-        margin-bottom: 5px;
-        margin-top: 5px;
-        padding: 10px;
-    }
-
-    .session-table .headings td,
-    .session-table .headings {
-        text-align: center;
-        border-bottom: 1px solid white;
-    }
-
 }
 
 .session-table tr td a {
@@ -75,7 +82,7 @@ section.col-sm-8 {
 
 .session-table .headings td,
 .session-table .headings {
-    background: #0a5486;
+    background: #901235;
     color: #ffffff;
     vertical-align: middle;
     white-space: nowrap;
@@ -84,7 +91,7 @@ section.col-sm-8 {
 }
 
 .session-table .all-tracks {
-    background: #0083DC;
+    background: #540B1F;
     color: #ffffff;
     vertical-align: middle;
     font-size: 140%;
@@ -94,23 +101,42 @@ section.col-sm-8 {
 .session-table .speaker {
     font-weight: bold;
     color: #9a0000;
-    margin-top: 6px;
+    margin-top: 10px;
     display: block;
+}
+
+.speaker.language:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 7px;
+}
+
+.speaker.language.english:before {
+    background: url('img/english-flag.png') no-repeat 0 0;
+    background-size: contain;
+}
+
+.speaker.language.espanol:before {
+    background: url('img/spanish-flag.png') no-repeat 0 0;
+    background-size: contain;
 }
 
 .session-table .beginner,
 .skills .beginner {
-    background: #B3D7E7;
+    background: #DCEDF5;
 }
 
 .session-table .medium,
 .skills .medium {
-    background: #E9E8AA;
+    background: #F9F8D5;
 }
 
 .session-table .advanced,
 .skills .advanced {
-    background: #ECB8A4;
+    background: #F9E7E0;
 }
 
 .skills > * {
@@ -124,12 +150,20 @@ section.col-sm-8 {
 }
 
 .sesion-kind {
-    background: url('img/session-labels-26x346.png') no-repeat;
+    background: url('img/session-labels-26x346.png') no-repeat 0 50%;
     display: inline-block;
     height: 26px;
-    width: 26px;
     position: relative;
     top: -4px;
+}
+
+.sesion-kind.category-sample {
+    padding-left: 33px;
+    margin-right: 25px;
+}
+
+.sesion-kind.category-icon {
+    width: 26px;
 }
 
 .sesion-kind.business {
@@ -158,6 +192,10 @@ section.col-sm-8 {
 
 .sesion-kind.training {
     background-position: 0 -160px;
+}
+
+.sesion-kind span {
+    vertical-align: sub;
 }
 
 .session-table .dificultad-wrapper {
@@ -222,17 +260,22 @@ section.col-sm-8 {
 }
 
 .sesion-kind-wrapper {
-    margin-top: 10px;
-    padding: 4px 10px 0;
+    text-align: center;
+    padding: 4px 0 0;
+    margin-top: 15px;
 }
 
 .sesion-kind-wrapper .label {
     float: left;
 }
 
-.sesion-kind-wrapper > div {
-    float: left;
-    margin-left: 6px;
+.sesion-kind-wrapper > div > div {
+    margin-right: 6px;
+    margin-bottom: 5px;
+}
+
+.sesion-kind-wrapper > div > div:last-child {
+    margin-right: 0;
 }
 
 .session-table .session,
@@ -316,4 +359,53 @@ section.col-sm-8 {
 .sprint div {
     text-transform: uppercase;
     color: white;
+}
+
+/*--- Ajustes para mobile ---*/
+@media (max-width: 768px) {
+
+    .session-table {
+        display: none;
+    }
+
+    .session-table.mobile {
+        display: table;
+    }
+
+    .session-table td {
+        text-align: left;
+        padding: 4px 0;
+        width: 90%;
+    }
+
+    .session-table td > div {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    .session-table .headings td,
+    .session-table .headings {
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+    .session-table .all-tracks {
+        padding: 25px;
+    }
+
+    .sesion-kind-wrapper {
+        text-align: left;
+    }
+
+    .sesion-kind.category-sample {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .sesion-kind-wrapper > div > div {
+        float: left;
+    }
+
 }

@@ -590,7 +590,7 @@ fieldset legend {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../lib/gems/2.1.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../lib/gems/2.1.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 .layout-container:after {
   content: " ";
   display: block;
@@ -2537,6 +2537,7 @@ fieldset .fieldset-wrapper {
   /* line 6, ../sass/components/panes/_pane-featured-speakers-home.scss */
   .pane-featured-speakers-home .pane-title {
     font-size: 38px;
+    line-height: normal;
   }
 }
 
@@ -2863,12 +2864,18 @@ fieldset .fieldset-wrapper {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 13, ../sass/components/views/_view-featured-speakers-home.scss */
+@media (min-width: 767px) {
+  /* line 9, ../sass/components/views/_view-featured-speakers-home.scss */
+  .view-featured-speakers-home ul li {
+    margin-bottom: 0;
+  }
+}
+/* line 17, ../sass/components/views/_view-featured-speakers-home.scss */
 .view-featured-speakers-home ul li .views-field-picture {
   display: inline-block;
   margin-bottom: 5px;
 }
-/* line 18, ../sass/components/views/_view-featured-speakers-home.scss */
+/* line 22, ../sass/components/views/_view-featured-speakers-home.scss */
 .view-featured-speakers-home ul li .views-field-name {
   text-align: center;
 }

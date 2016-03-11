@@ -11,6 +11,7 @@
 
     @include breakpoint($tab) {
       font-size: 38px;
+      line-height: normal;
     }
   }
 

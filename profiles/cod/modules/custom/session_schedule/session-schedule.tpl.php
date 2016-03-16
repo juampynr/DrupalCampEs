@@ -27,7 +27,6 @@
   <h2><?php print t('Saturday'); ?></h2>
 
 
-
   <table class="session-table">
     <tr class="headings">
       <td>Horario</td>
@@ -36,6 +35,7 @@
       <td><?php print t('Room'); ?> 3</td>
       <td><?php print t('Room'); ?> 4</td>
     </tr>
+
     <tr>
       <td class="headings">9:00 <?php print t('to'); ?> 9:30</td>
       <td class="all-tracks" colspan="5"><?php print t('WELCOME'); ?></td>
@@ -75,9 +75,32 @@
 
       </td>
 
-      <td class="medium">
-        <a href="http://2015.drupalcamp.es/node/144">Theming en Drupal 8:<br/>un soplo de aire fresco <br/>
-        </a><span class="speaker">Pako Garc&#237;a</span></td>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/nuestro-amigo-flexbox">Nuestro amigo Flexbox</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/pakmanlh" class="speaker">pakmanlh</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
+      </td>
+
       <td class="beginner"><a href="http://2015.drupalcamp.es/node/84">La estrategia de contenidos <br/> ha llegado para quedarse <br/>
         </a><span class="speaker">Koen Platteeuw</span></td>
       <td class="beginner"><a href="http://2015.drupalcamp.es/node/85">Drupal 8 for site builders <br/>
@@ -109,9 +132,33 @@
           </div>
         </div>
       </td>
-      <td class="medium"><a href="http://2015.drupalcamp.es/node/87">Render API en Drupal 7 &#38; 8 <br/>
-        </a><span class="speaker">Jose Luis Bellido</span>
+
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/bajarse-al-behat-haz-que-tu-aplicaci%C3%B3n-se-comporte">Bajarse al behat: haz que tu aplicación se comporte</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/rodrigoaguilera" class="speaker">rodrigoaguilera</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="medium"><a href="http://2015.drupalcamp.es/node/153">
           No esperes a Drupal 8 para <br/> ampliar tu juego de herramientas <br/>
         </a><span class="speaker">Salva Molina</span>
@@ -121,7 +168,7 @@
       </td>
     </tr>
 
-<!--    break-->
+    <!--    break-->
     <tr>
       <td class="headings">11:30 <?php print t('to'); ?> 12:00</td>
       <td class="all-tracks" colspan="5">COFFEE BREAK</td>
@@ -154,10 +201,32 @@
         </div>
       </td>
 
-      <td class="medium"><a href="http://2015.drupalcamp.es/node/72">
-          Drupal 8 Frontend for Backenders <br/>
-        </a><span class="speaker">Lauri Eskola</span>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/s%C3%A1cale-el-jugo-los-display-modes">Sácale el jugo a los display modes.</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/jlbellido" class="speaker">jlbellido</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="beginner"><a href="http://2015.drupalcamp.es/node/155">
           Encontrando mi lugar: el paso de desarrollo a direcci&#243;n de proyectos <br/>
         </a><span class="speaker">Laura Portilla &#38; Patricia Peinado</span>
@@ -195,10 +264,33 @@
         </div>
       </td>
 
-      <td class="medium"><a href="http://2015.drupalcamp.es/node/161">
-          Behat y Drupal Extension <br/>
-        </a><span class="speaker">Ricardo Sanz</span>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/%C2%A1twig-desde-0">¡TWIG desde 0!</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/miguelkode" class="speaker">miguel_kode</a>
+        <a href="http://2016.drupalcamp.es/en/users/jorgillo" class="speaker">Jorgillo</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="beginner"><a href="http://2015.drupalcamp.es/node/112">
           Peer reviews: revisando el c&#243;digo en equipo <br/>
         </a><span class="speaker">Juampy Novillo &#38; Rodrigo Aguilera</span>
@@ -209,7 +301,7 @@
       </td>
     </tr>
 
-<!--    lunch-->
+    <!--    lunch-->
     <tr>
       <td class="headings">14:00 <?php print t('to'); ?> 15:30</td>
       <td class="all-tracks" colspan="5"><?php print t('LUNCH'); ?></td>
@@ -222,10 +314,33 @@
         Coming soon
       </td>
 
-      <td class="medium"><a href="http://2015.drupalcamp.es/node/110">
-          Women in tech <br/>
-        </a><span class="speaker">Cathy Theys &#38; Monta&#241;a Franco</span>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/dockerdrupal-una-imagen-vale-m%C3%A1s-que-mil-palabras">Docker&Drupal: Una imagen vale más que mil palabras</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/codigoweb" class="speaker">codigoweb</a>
+        <a href="http://2016.drupalcamp.es/en/users/ignaciolflores" class="speaker">ignaciolflores</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="advanced"><a href="http://2015.drupalcamp.es/node/88">
           JavaScript tips &#38; tricks <br/>
         </a><span class="speaker">Marcelo Tosco</span>
@@ -263,10 +378,32 @@
         </div>
       </td>
 
-      <td class="beginner"><a href="http://2015.drupalcamp.es/node/135">
-          Tecnolog&#237;a y consciencia. Buscando la coherencia entre la persona y el profesional <br/>
-        </a><span class="speaker">Noem&#237; Rodriguez</span>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/mejorando-la-experiencia-de-los-editores-de-contenidos-con-paragraphs">Mejorando la experiencia de los editores de contenidos con Paragraphs</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/davidgil" class="speaker">david.gil</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="medium"><a href="http://2015.drupalcamp.es/node/142">
           Arquitectura de desarrollo en proyectos Drupal <br/>
         </a><span class="speaker">Ramon Vilar</span>
@@ -277,7 +414,7 @@
       </td>
     </tr>
 
-<!--    asamblea-->
+    <!--    asamblea-->
     <tr>
       <td class="headings">17:30 <?php print t('to'); ?> 19:30</td>
       <td class="all-tracks" colspan="6"><?php print t('Assembly'); ?></td>
@@ -299,13 +436,36 @@
       <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
 
       <td>
-       Coming Soon
+        Coming Soon
       </td>
 
-      <td class="medium"><a href="http://2015.drupalcamp.es/node/72">
-          Drupal 8 Frontend for Backenders <br/>
-        </a><span class="speaker">Lauri Eskola</span>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/activando-tu-amp-versi%C3%B3n-qu%C3%A9-necesitas-saber">Activando tu AMP versión. Qué necesitas saber</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/jansete" class="speaker">jansete</a>
+        <a href="http://2016.drupalcamp.es/en/users/mgzrobles" class="speaker">mgzrobles</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="beginner"><a href="http://2015.drupalcamp.es/node/155">
           Encontrando mi lugar: el paso de desarrollo a direcci&#243;n de proyectos <br/>
         </a><span class="speaker">Laura Portilla &#38; Patricia Peinado</span>
@@ -344,10 +504,33 @@
         </div>
       </td>
 
-      <td class="medium"><a href="http://2015.drupalcamp.es/node/72">
-          Drupal 8 Frontend for Backenders <br/>
-        </a><span class="speaker">Lauri Eskola</span>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/una-aplicaci%C3%B3n-real-de-drupal-8-como-servidor-restful-backoffice-para-apps">Una aplicación real de Drupal 8 como servidor RESTful / Backoffice para apps</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/ccamposfuentes" class="speaker">ccamposfuentes</a>
+        <a href="http://2016.drupalcamp.es/en/users/capynet" class="speaker">capynet</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="beginner"><a href="http://2015.drupalcamp.es/node/155">
           Encontrando mi lugar: el paso de desarrollo a direcci&#243;n de proyectos <br/>
         </a><span class="speaker">Laura Portilla &#38; Patricia Peinado</span>
@@ -358,6 +541,7 @@
       </td>
     </tr>
 
+<!--    coffe-->
     <tr>
       <td class="headings">11:30 <?php print t('to'); ?> 12:00</td>
       <td class="all-tracks" colspan="5">COFFEE BREAK</td>
@@ -390,10 +574,32 @@
         </div>
       </td>
 
-      <td class="medium"><a href="http://2015.drupalcamp.es/node/72">
-          Drupal 8 Frontend for Backenders <br/>
-        </a><span class="speaker">Lauri Eskola</span>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/varnish-para-meros-mortales">Varnish para meros mortales</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/mgzrobles" class="speaker">mgzrobles</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="beginner"><a href="http://2015.drupalcamp.es/node/155">
           Encontrando mi lugar: el paso de desarrollo a direcci&#243;n de proyectos <br/>
         </a><span class="speaker">Laura Portilla &#38; Patricia Peinado</span>
@@ -408,13 +614,35 @@
       <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
 
       <td>
-      Coming soon
+        Coming soon
       </td>
 
-      <td class="medium"><a href="http://2015.drupalcamp.es/node/72">
-          Drupal 8 Frontend for Backenders <br/>
-        </a><span class="speaker">Lauri Eskola</span>
+      <td>
+        <!-- Idioma de la sesion -->
+        <!--  Definir idioma de la charla en: espanol / english -->
+        <div class="language english"></div>
+
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/hoy-estoy-muy-ansible">Hoy estoy muy Ansible</a>
+
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/isholgueras" class="speaker">isholgueras</a>
+
+        <!-- Agregamos iconos de categoria -->
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <div class="sesion-kind category-icon devops" title="DevOps"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon business" title="Site building"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon community" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+          </div>
+        </div>
+
       </td>
+
       <td class="beginner"><a href="http://2015.drupalcamp.es/node/155">
           Encontrando mi lugar: el paso de desarrollo a direcci&#243;n de proyectos <br/>
         </a><span class="speaker">Laura Portilla &#38; Patricia Peinado</span>
@@ -425,6 +653,7 @@
       </td>
     </tr>
 
+<!--    closing session-->
     <tr>
       <td class="headings">14:00 <?php print t('to'); ?> 14:30</td>
       <td class="all-tracks" colspan="6"><?php print t('CLOSING SESSION'); ?></td>

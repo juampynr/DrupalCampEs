@@ -2657,7 +2657,15 @@ fieldset .fieldset-wrapper {
   font-size: 12px;
 }
 
-/* line 7, ../sass/components/views/_view-aed-bofs.scss */
+/* line 3, ../sass/components/views/_view-aed-bofs.scss */
+.view-aed-bofs .views-exposed-form {
+  padding-left: 20px;
+}
+/* line 6, ../sass/components/views/_view-aed-bofs.scss */
+.view-aed-bofs .views-exposed-form .views-exposed-form .views-exposed-widget {
+  padding: 0.5em 0 0 0;
+}
+/* line 16, ../sass/components/views/_view-aed-bofs.scss */
 .view-aed-bofs li {
   *zoom: 1;
   background: white;
@@ -2670,11 +2678,11 @@ fieldset .fieldset-wrapper {
   display: table;
   clear: both;
 }
-/* line 13, ../sass/components/views/_view-aed-bofs.scss */
+/* line 22, ../sass/components/views/_view-aed-bofs.scss */
 .view-aed-bofs li:last-child {
   margin-bottom: 30px;
 }
-/* line 17, ../sass/components/views/_view-aed-bofs.scss */
+/* line 26, ../sass/components/views/_view-aed-bofs.scss */
 .view-aed-bofs li .views-field-title {
   color: #5784AE;
   font-size: 18px;
@@ -2683,11 +2691,11 @@ fieldset .fieldset-wrapper {
   max-width: 70%;
   margin-bottom: 20px;
 }
-/* line 26, ../sass/components/views/_view-aed-bofs.scss */
+/* line 35, ../sass/components/views/_view-aed-bofs.scss */
 .view-aed-bofs li .views-field-field-fecha {
   float: right;
 }
-/* line 30, ../sass/components/views/_view-aed-bofs.scss */
+/* line 39, ../sass/components/views/_view-aed-bofs.scss */
 .view-aed-bofs li .views-field-body {
   clear: both;
 }

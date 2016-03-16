@@ -299,27 +299,7 @@
       <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
 
       <td>
-        <!-- Idioma de la sesion -->
-        <!--  Definir idioma de la charla en: espanol / english -->
-        <div class="language english"></div>
-
-        <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/c%C3%B3mo-sacarle-partido-tu-pagina-con-el-marketing-de-contenidos">Cómo sacarle partido a tu página con el Marketing de contenidos</a>
-
-        <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/claudia" class="speaker">Claudia</a>
-
-        <!-- Agregamos iconos de categoria -->
-        <div class="sesion-kind-wrapper clearfix">
-          <div>
-            <div class="sesion-kind category-icon devops" title="DevOps"></div>
-            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
-            <div class="sesion-kind category-icon business" title="Site building"></div>
-            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
-            <div class="sesion-kind category-icon community" title="Site building"></div>
-            <div class="sesion-kind category-icon site-build" title="Site building"></div>
-          </div>
-        </div>
+       Coming Soon
       </td>
 
       <td class="medium"><a href="http://2015.drupalcamp.es/node/72">
@@ -346,10 +326,10 @@
         <div class="language english"></div>
 
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/c%C3%B3mo-sacarle-partido-tu-pagina-con-el-marketing-de-contenidos">Cómo sacarle partido a tu página con el Marketing de contenidos</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/design-sprint-toolkit-product-innovation">Design Sprint: a toolkit for product innovation</a>
 
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/claudia" class="speaker">Claudia</a>
+        <a href="http://2016.drupalcamp.es/en/users/manu" class="speaker">manu</a>
 
         <!-- Agregamos iconos de categoria -->
         <div class="sesion-kind-wrapper clearfix">
@@ -392,10 +372,10 @@
         <div class="language english"></div>
 
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/c%C3%B3mo-sacarle-partido-tu-pagina-con-el-marketing-de-contenidos">Cómo sacarle partido a tu página con el Marketing de contenidos</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/ganar-y-entregar-grandes-proyectos-desde-la-perspectiva-de-una-peque%C3%B1a-empresa">Conseguir y entregar grandes proyectos desde la perspectiva de una pequeña empresa</a>
 
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/claudia" class="speaker">Claudia</a>
+        <a href="http://2016.drupalcamp.es/en/users/rvilar" class="speaker">rvilar</a>
 
         <!-- Agregamos iconos de categoria -->
         <div class="sesion-kind-wrapper clearfix">
@@ -428,27 +408,7 @@
       <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
 
       <td>
-        <!-- Idioma de la sesion -->
-        <!--  Definir idioma de la charla en: espanol / english -->
-        <div class="language english"></div>
-
-        <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/c%C3%B3mo-sacarle-partido-tu-pagina-con-el-marketing-de-contenidos">Cómo sacarle partido a tu página con el Marketing de contenidos</a>
-
-        <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/claudia" class="speaker">Claudia</a>
-
-        <!-- Agregamos iconos de categoria -->
-        <div class="sesion-kind-wrapper clearfix">
-          <div>
-            <div class="sesion-kind category-icon devops" title="DevOps"></div>
-            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
-            <div class="sesion-kind category-icon business" title="Site building"></div>
-            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
-            <div class="sesion-kind category-icon community" title="Site building"></div>
-            <div class="sesion-kind category-icon site-build" title="Site building"></div>
-          </div>
-        </div>
+      Coming soon
       </td>
 
       <td class="medium"><a href="http://2015.drupalcamp.es/node/72">

@@ -13,12 +13,12 @@
     <div class="label category">
       <?php print t('Category:'); ?>
     </div>
-    <div class="sesion-kind category-sample devops" title="DevOps"><span>DevOps</span></div>
-    <div class="sesion-kind category-sample front-end" title="Front-end"><span>Front-end</span></div>
-    <div class="sesion-kind category-sample business" title="Business"><span>Business</span></div>
-    <div class="sesion-kind category-sample back-end" title="Back-end"><span>Back-end</span></div>
     <div class="sesion-kind category-sample community" title="Community"><span>Community</span></div>
-    <div class="sesion-kind category-sample site-build" title="Site building"><span>Site building</span></div>
+    <div class="sesion-kind category-sample front-end" title="Front-end"><span>Front-end</span></div>
+    <div class="sesion-kind category-sample back-end" title="Back-end"><span>Back-end</span></div>
+    <div class="sesion-kind category-sample site-build" title="Site Building & Strategy"><span>Site Building & Strategy</span></div>
+    <div class="sesion-kind category-sample devops" title="DevOps"><span>DevOps</span></div>
+    <div class="sesion-kind category-sample business" title="Management, Business & Technology"><span>Management, Business & Technology</span></div>
   </div>
 
 </div>
@@ -30,10 +30,18 @@
   <table class="session-table">
     <tr class="headings">
       <td>Horario</td>
-      <td><?php print t('Room'); ?> 1</td>
-      <td><?php print t('Room'); ?> 2</td>
-      <td><?php print t('Room'); ?> 3</td>
-      <td><?php print t('Room'); ?> 4</td>
+      <td>
+        <!--        --><?php //print t('Room'); ?><!-- 1-->
+      </td>
+      <td>
+        <!--        --><?php //print t('Room'); ?><!-- 2-->
+      </td>
+      <td>
+        <!--        --><?php //print t('Room'); ?><!-- 3-->
+      </td>
+      <td>
+        <!--        --><?php //print t('Room'); ?><!-- 4-->
+      </td>
     </tr>
 
     <tr>
@@ -124,7 +132,7 @@
             <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site Building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
           </div>
         </div>
       </td>
@@ -141,7 +149,7 @@
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language english"></div>
+            <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
             <div class="sesion-kind category-icon back-end" title="Back-End"></div>
@@ -195,7 +203,7 @@
             <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site Building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
           </div>
         </div>
       </td>
@@ -235,7 +243,7 @@
             <div class="language english"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon business" title="Business"></div>
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>
@@ -255,6 +263,7 @@
 
             <!-- Agregamos iconos de categoria -->
             <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
           </div>
         </div>
       </td>
@@ -278,7 +287,7 @@
             <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
           </div>
         </div>
       </td>
@@ -420,7 +429,7 @@
             <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon business" title="Business"></div>
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>
@@ -440,7 +449,7 @@
             <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site Building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
           </div>
         </div>
 
@@ -499,10 +508,18 @@
   <table class="session-table">
     <tr class="headings">
       <td>Horario</td>
-      <td><?php print t('Room'); ?> 1</td>
-      <td><?php print t('Room'); ?> 2</td>
-      <td><?php print t('Room'); ?> 3</td>
-      <td><?php print t('Room'); ?> 4</td>
+      <td>
+        <!--        --><?php //print t('Room'); ?><!-- 1-->
+      </td>
+      <td>
+        <!--        --><?php //print t('Room'); ?><!-- 2-->
+      </td>
+      <td>
+        <!--        --><?php //print t('Room'); ?><!-- 3-->
+      </td>
+      <td>
+        <!--        --><?php //print t('Room'); ?><!-- 4-->
+      </td>
     </tr>
 
     <tr>
@@ -524,7 +541,7 @@
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language english"></div>
+            <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
             <div class="sesion-kind category-icon front-end" title="Front-End"></div>
@@ -547,7 +564,7 @@
             <div class="language english"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site Building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
           </div>
         </div>
       </td>
@@ -589,7 +606,7 @@
             <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon business" title="Business"></div>
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>
@@ -629,7 +646,7 @@
             <div class="language english"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site Building"></div>
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
           </div>
         </div>
       </td>
@@ -679,7 +696,7 @@
             <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon business" title="Business"></div>
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>

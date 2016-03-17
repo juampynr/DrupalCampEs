@@ -2853,7 +2853,7 @@ fieldset .fieldset-wrapper {
   /* line 5, ../sass/abstractions/_grid-items.scss */
   .view-featured-speakers-home ul > * {
     float: left;
-    width: 18.4%;
+    width: 23.5%;
     margin-left: 2%;
     margin-bottom: 2%;
   }
@@ -2862,7 +2862,7 @@ fieldset .fieldset-wrapper {
     margin-left: 0;
   }
   /* line 16, ../sass/abstractions/_grid-items.scss */
-  .view-featured-speakers-home ul > *:nth-child(5n+1) {
+  .view-featured-speakers-home ul > *:nth-child(4n+1) {
     margin-left: 0;
     clear: left;
   }
@@ -2987,6 +2987,27 @@ fieldset .fieldset-wrapper {
     margin-left: 0;
     clear: left;
   }
+}
+/* line 9, ../sass/components/views/_view-news-home.scss */
+.view-news-home .view-content article:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 21, ../sass/components/views/_view-news-home.scss */
+.view-news-home .view-content article .field--name-title-field {
+  z-index: 9999;
+  position: relative;
+}
+/* line 26, ../sass/components/views/_view-news-home.scss */
+.view-news-home .view-content article .content {
+  z-index: 9999;
 }
 
 /* line 2, ../sass/content-types/_node--event--full.scss */

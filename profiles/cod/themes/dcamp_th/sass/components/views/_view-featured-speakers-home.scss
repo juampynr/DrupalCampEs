@@ -3,7 +3,7 @@
   ul {
 
     @include breakpoint($tab) {
-      @include grid-items(5, 2%, 2%);
+      @include grid-items(4, 2%, 2%);
     }
 
     li {
@@ -21,11 +21,6 @@
 
       .views-field-name {
         text-align: center;
-
-        a {
-
-        }
-
       }
 
     }

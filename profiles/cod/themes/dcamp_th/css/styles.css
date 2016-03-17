@@ -2853,7 +2853,7 @@ fieldset .fieldset-wrapper {
   /* line 5, ../sass/abstractions/_grid-items.scss */
   .view-featured-speakers-home ul > * {
     float: left;
-    width: 23.5%;
+    width: 18.4%;
     margin-left: 2%;
     margin-bottom: 2%;
   }
@@ -2862,7 +2862,7 @@ fieldset .fieldset-wrapper {
     margin-left: 0;
   }
   /* line 16, ../sass/abstractions/_grid-items.scss */
-  .view-featured-speakers-home ul > *:nth-child(4n+1) {
+  .view-featured-speakers-home ul > *:nth-child(5n+1) {
     margin-left: 0;
     clear: left;
   }

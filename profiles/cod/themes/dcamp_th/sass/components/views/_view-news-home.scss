@@ -1,4 +1,7 @@
 .view-news-home {
+  position: relative;
+  z-index: 0;
+
   .view-content {
     @include breakpoint($tab) {
       @include grid-items(2, 2%, 2%);

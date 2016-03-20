@@ -92,7 +92,18 @@
 
       </td>
 
-      <td class="">Featured Speaker</td>
+      <td class="">Featured Speaker
+        <!-- Ponente -->
+        <a href="https://www.drupal.org/u/fubhy" class="speaker">fubhy</a>
+        
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language english"></div>
+          </div>
+        </div>
+      </td>
 
       <td class="advanced">
         <!-- Titulo Sesion -->
@@ -137,7 +148,7 @@
         </div>
       </td>
 
-      <td class="medium">
+      <td class="beginner">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/bajarse-al-behat-haz-que-tu-aplicaci%C3%B3n-se-comporte">Bajarse al behat: haz que tu aplicación se comporte</a>
 
@@ -172,11 +183,29 @@
             <div class="language english"></div>
 
             <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>
 
-      <td class="">Coming soon</td>
+      <td class="medium">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/rest-drupal-8">REST in Drupal 8</a>
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/dawehner" class="speaker">dawehner</a>
+
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language english"></div>
+
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+          </div>
+        </div>
+      </td>
 
     </tr>
 
@@ -248,7 +277,7 @@
         </div>
       </td>
 
-      <td class="advanced">
+      <td class="medium">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/future-rest-drupal">The future of REST in Drupal</a>
 
@@ -335,7 +364,7 @@
 
       <td class="medium">
         <!-- Titulo Sesion -->
-        <a href="#">Making your entities and fields translatable with Drupal 8</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/making-your-entities-and-fields-translatable-drupal-8">Making your entities and fields translatable with Drupal 8</a>
 
         <!-- Ponente -->
         <a href="http://2016.drupalcamp.es/en/users/penyaskito" class="speaker">penyaskito</a>
@@ -344,7 +373,7 @@
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
-            <!--            <div class="language english"></div>-->
+            <div class="language english"></div>
 
             <!-- Agregamos iconos de categoria -->
             <div class="sesion-kind category-icon back-end" title="Back-End"></div>
@@ -365,6 +394,14 @@
 
       <td class="">
         Coming soon
+        
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language espanol"></div>
+          </div>
+        </div>
       </td>
 
       <td class="beginner">
@@ -389,7 +426,18 @@
 
       </td>
 
-      <td class="">Featured Speaker</td>
+      <td class="">Featured Speaker
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/user/803" class="speaker">emma.maria</a>
+        
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language english"></div>
+          </div>
+        </div>
+      </td>
 
       <td class="medium">
         <!-- Titulo Sesion -->
@@ -526,7 +574,15 @@
       <td class="headings">9:30 <?php print t('to'); ?> 10:30</td>
 
       <td class="">
-        Coming Soon
+        Coming soon
+        
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language espanol"></div>
+          </div>
+        </div>
       </td>
 
       <td class="beginner">
@@ -626,13 +682,14 @@
             <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
             <div class="sesion-kind category-icon back-end" title="Back-End"></div>
           </div>
         </div>
 
       </td>
 
-      <td class="beginner">
+      <td class="">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/designing-success-content-first-design">Designing for Success: Content-first Design</a>
 
@@ -682,7 +739,7 @@
     <tr>
       <td class="headings">12:00 <?php print t('to'); ?> 13:00</td>
 
-      <td class="medium">
+      <td class="">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/ganar-y-entregar-grandes-proyectos-desde-la-perspectiva-de-una-peque%C3%B1a-empresa">Conseguir y entregar grandes proyectos desde la perspectiva de una pequeña empresa</a>
 
@@ -767,6 +824,14 @@
 
       <td class="">
         Coming soon
+        
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language espanol"></div>
+          </div>
+        </div>
       </td>
 
       <td class="">

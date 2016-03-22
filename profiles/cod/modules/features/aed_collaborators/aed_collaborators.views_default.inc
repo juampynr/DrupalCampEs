@@ -61,6 +61,11 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['relationships']['ticket_registration']['id'] = 'ticket_registration';
   $handler->display->display_options['relationships']['ticket_registration']['table'] = 'users';
   $handler->display->display_options['relationships']['ticket_registration']['field'] = 'ticket_registration';
+  $handler->display->display_options['relationships']['ticket_registration']['bundle_types'] = array(
+    10 => '10',
+    11 => '11',
+    13 => '13',
+  );
   /* Campo: Usuario: Imagen */
   $handler->display->display_options['fields']['picture']['id'] = 'picture';
   $handler->display->display_options['fields']['picture']['table'] = 'users';
@@ -103,6 +108,11 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['filters']['uid_raw']['field'] = 'uid_raw';
   $handler->display->display_options['filters']['uid_raw']['operator'] = '!=';
   $handler->display->display_options['filters']['uid_raw']['value']['value'] = '1';
+  /* Filter criterion: Field: Nombre (field_profile_first) */
+  $handler->display->display_options['filters']['field_profile_first_value']['id'] = 'field_profile_first_value';
+  $handler->display->display_options['filters']['field_profile_first_value']['table'] = 'field_data_field_profile_first';
+  $handler->display->display_options['filters']['field_profile_first_value']['field'] = 'field_profile_first_value';
+  $handler->display->display_options['filters']['field_profile_first_value']['operator'] = 'not empty';
 
   /* Display: Attenders */
   $handler = $view->new_display('page', 'Attenders', 'page');

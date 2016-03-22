@@ -13,6 +13,7 @@ include_once 'aed_collaborators.features.inc';
  */
 function aed_collaborators_views_query_alter(&$view, &$query) {
   if ($view->name === 'aed_attendees') {
+    // Show the user that will use the ticket, not the buyer.
     $view->query->table_queue['ticket_registration_users']['join']->field = 'user_uid';
 
     if ($view->current_display === 'bd') {

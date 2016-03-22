@@ -92,15 +92,21 @@
 
       </td>
 
-      <td class="">Featured Speaker
+      <td class="medium">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/graphql-meets-drupal">GraphQL meets Drupal</a>
         <!-- Ponente -->
-        <a href="https://www.drupal.org/u/fubhy" class="speaker">fubhy</a>
+        <a href="http://2016.drupalcamp.es/en/users/fubhy" class="speaker">fubhy</a>
         
         <div class="sesion-kind-wrapper clearfix">
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
             <div class="language english"></div>
+            
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
           </div>
         </div>
       </td>

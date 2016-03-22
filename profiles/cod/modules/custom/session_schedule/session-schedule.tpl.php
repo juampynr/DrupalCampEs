@@ -91,32 +91,32 @@
         </div>
 
       </td>
-
-      <td class="medium">
+      
+      <td class="">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/graphql-meets-drupal">GraphQL meets Drupal</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/using-scrum-agile-remote-development">Using Scrum Agile in remote development</a>
+
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/fubhy" class="speaker">fubhy</a>
-        
+        <a href="http://2016.drupalcamp.es/en/users/myram" class="speaker">myram</a>
+
         <div class="sesion-kind-wrapper clearfix">
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
             <div class="language english"></div>
-            
+
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
-            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>
 
-      <td class="advanced">
+      <td class="medium">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/migrando-datos-drupal-8">Migrating data to Drupal 8</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/rest-drupal-8">REST in Drupal 8</a>
 
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/isholgueras" class="speaker">isholgueras</a>
+        <a href="http://2016.drupalcamp.es/en/users/dawehner" class="speaker">dawehner</a>
 
         <div class="sesion-kind-wrapper clearfix">
           <div>
@@ -193,13 +193,13 @@
           </div>
         </div>
       </td>
-
+      
       <td class="medium">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/rest-drupal-8">REST in Drupal 8</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/future-rest-drupal">The future of REST in Drupal</a>
 
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/dawehner" class="speaker">dawehner</a>
+        <a href="http://2016.drupalcamp.es/en/users/e0ipso" class="speaker">e0ipso</a>
 
         <div class="sesion-kind-wrapper clearfix">
           <div>
@@ -209,9 +209,11 @@
 
             <!-- Agregamos iconos de categoria -->
             <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
           </div>
         </div>
       </td>
+
 
     </tr>
 
@@ -263,32 +265,32 @@
         </div>
 
       </td>
-
-      <td class="">
+      
+      <td class="medium">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/using-scrum-agile-remote-development">Using Scrum Agile in remote development</a>
-
+        <a href="http://2016.drupalcamp.es/en/sessions/graphql-meets-drupal">GraphQL meets Drupal</a>
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/myram" class="speaker">myram</a>
-
+        <a href="http://2016.drupalcamp.es/en/users/fubhy" class="speaker">fubhy</a>
+        
         <div class="sesion-kind-wrapper clearfix">
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
             <div class="language english"></div>
-
+            
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon back-end" title="Back-End"></div>
           </div>
         </div>
       </td>
 
-      <td class="medium">
+      <td class="advanced">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/future-rest-drupal">The future of REST in Drupal</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/migrando-datos-drupal-8">Migrating data to Drupal 8</a>
 
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/e0ipso" class="speaker">e0ipso</a>
+        <a href="http://2016.drupalcamp.es/en/users/isholgueras" class="speaker">isholgueras</a>
 
         <div class="sesion-kind-wrapper clearfix">
           <div>
@@ -298,7 +300,6 @@
 
             <!-- Agregamos iconos de categoria -->
             <div class="sesion-kind category-icon back-end" title="Back-End"></div>
-            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
           </div>
         </div>
       </td>

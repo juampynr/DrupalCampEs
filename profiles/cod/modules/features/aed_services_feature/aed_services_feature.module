@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AED Services Feature feature.
+ */
+
+include_once 'aed_services_feature.features.inc';

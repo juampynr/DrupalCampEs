@@ -1,0 +1,7 @@
+name = AED DCamp Resources
+description = Custom resources code, for the Drupal Camp web.
+package = Services (custom)
+core = 7.x
+
+dependencies[] = services
+dependencies[] = helper

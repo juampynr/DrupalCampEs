@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Code for the aedcamp_resources.module.
+ */
+
+/**
+ * Implements hook_services_resources.
+ */
+function aedcamp_resources_services_resources() {
+  $resource = array(
+
+    'sessions' => array(
+      'index' => array(
+        'help' => 'Retrieves a list of sessions',
+        'file' => array('file' => 'inc', 'module' => 'aedcamp_resources'),
+        'callback' => '_aedcamp_resources_sessions_index',
+        'access callback' => 'user_access',
+        'access arguments' => array('access content'),
+        'access arguments append' => FALSE,
+      ),
+    ),
+
+    'speakers' => array(
+      'index' => array(
+        'help' => 'Retrieves a list of speakers',
+        'file' => array('file' => 'inc', 'module' => 'aedcamp_resources'),
+        'callback' => '_aedcamp_resources_speakers_index',
+        'access callback' => 'user_access',
+        'access arguments' => array('access content'),
+        'access arguments append' => FALSE,
+      ),
+    ),
+
+  );
+
+  return $resource;
+}

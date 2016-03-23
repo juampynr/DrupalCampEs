@@ -216,7 +216,15 @@ function ticket_type_load($ttid) {
 function ticket_type_label($ticket_type, $entity_type = 'ticket_type') {
   // TODO: Not sure where this is getting called with the wrong args.
   if (!is_object($ticket_type) || get_class($ticket_type) != 'TicketTypeEntity') {
-    return;
+    if (isset($ticket_type->ttid)) {
+      $ticket_type = entity_load_single('ticket_type', $ticket_type->ttid);
+      if (!is_object($ticket_type) || get_class($ticket_type) != 'TicketTypeEntity') {
+        return;
+      }
+    }
+    else {
+      return;
+    }
   }
 
   $host = $ticket_type->host();
@@ -728,6 +736,9 @@ function ticket_registration_get_properties($entity, array $options, $name, $typ
 
     case 'author':
       return $entity->registrant();
+
+    case 'label':
+      return $entity->label();
 
   }
 }

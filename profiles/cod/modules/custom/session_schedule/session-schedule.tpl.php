@@ -433,7 +433,10 @@
 
       </td>
 
-      <td class="">Featured Speaker
+      <td class="beginner">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/get-yourself-heard-open-source">Get yourself heard in Open Source</a>
+        
         <!-- Ponente -->
         <a href="http://2016.drupalcamp.es/en/user/803" class="speaker">emma.maria</a>
         
@@ -442,6 +445,9 @@
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
             <div class="language english"></div>
+            
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon community" title="Community"></div>
           </div>
         </div>
       </td>

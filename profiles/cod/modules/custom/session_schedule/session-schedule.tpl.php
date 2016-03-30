@@ -478,7 +478,7 @@
 
       <td class="">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/talk-cheap">Talk is cheap.</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/talk-cheap">"Talk is cheap" (Hablar es fácil)</a>
 
         <!-- Ponente -->
         <a href="http://2016.drupalcamp.es/en/users/niteman" class="speaker">NITEMAN</a>
@@ -663,7 +663,7 @@
 
       <td class="">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/design-sprint-toolkit-product-innovation">Design Sprint: a toolkit for product innovation</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/design-sprint-toolkit-product-innovation">Design Sprint: una metodología para la innovación de producto</a>
 
         <!-- Ponente -->
         <a href="http://2016.drupalcamp.es/en/users/manu" class="speaker">manu</a>

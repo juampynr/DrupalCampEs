@@ -11,6 +11,7 @@
   },
   {
     "name": "Kasper Myram",
+    "username": "myram",
     "company": "X-Team",
     "twitter": "@myram",
     "image": "sites/default/files/styles/medium/public/pictures/picture-644-1456169490.png",
@@ -20,6 +21,7 @@
   },
   {
     "name": "Daniel Wehner",
+    "username": "dawehner",
     "company": "",
     "twitter": "",
     "image": "sites/default/files/styles/medium/public/pictures/picture-804-1459165182.jpg",
@@ -29,6 +31,7 @@
   },
   {
     "name": "Víctor Rodríguez Lledó",
+    "username": "vlledo",
     "company": "Delirium Coder",
     "twitter": "@vlledo",
     "image": "sites/default/files/styles/medium/public/pictures/picture-720-1456995491.png",
@@ -38,6 +41,7 @@
   },
   {
     "name": "Rodrigo Aguilera",
+    "username": "rodrigoaguilera",
     "company": "Ymbra",
     "twitter": "@Marinero",
     "image": "sites/default/files/styles/medium/public/pictures/picture-610-1455315082.jpg",
@@ -47,6 +51,7 @@
   },
   {
     "name": "Floris van Geel",
+    "username": "040lab",
     "company": "040Lab",
     "twitter": "@040lab",
     "image": "sites/default/files/styles/medium/public/pictures/picture-760-1457535735.jpg",
@@ -56,15 +61,19 @@
   },
   {
     "name": "Mateu Aguiló Bosch",
+    "username": "e0ipso",
     "company": "Lullabot",
     "twitter": "@e0ipso",
     "image": "sites/default/files/styles/medium/public/pictures/picture-584-1455007007.jpg",
     "session": [
-      "sessions/future-rest-drupal"
+      "sessions/future-rest-drupal",
+      "sessions/building-fastest-drupal-earth",
+      "sessions/unit-testing-drupal"
     ]
   },
   {
     "name": "Claudia Giommarini",
+    "username": "claudia",
     "company": "idealista",
     "twitter": "@cocinaitaliana",
     "image": "",
@@ -74,6 +83,7 @@
   },
   {
     "name": "Jose Luis Bellido Rojas",
+    "username": "jlbellido",
     "company": "Cocomore AG",
     "twitter": "",
     "image": "sites/default/files/styles/medium/public/pictures/picture-732-1457348580.jpg",
@@ -83,6 +93,7 @@
   },
   {
     "name": "Sebastian Siemssen",
+    "username": "fubhy",
     "company": "",
     "twitter": "",
     "image": "sites/default/files/styles/medium/public/pictures/picture-815-1459164752.jpg",
@@ -92,15 +103,18 @@
   },
   {
     "name": "Ignacio Sánchez Holgueras",
+    "username": "isholgueras",
     "company": "Hackity",
     "twitter": "",
     "image": "sites/default/files/styles/medium/public/pictures/picture-582-1455002254.jpg",
     "session": [
-      "sessions/migrando-datos-drupal-8"
+      "sessions/migrando-datos-drupal-8",
+      "sessions/hoy-estoy-muy-ansible"
     ]
   },
   {
     "name": "Agustin Llamas Ruiz",
+    "username": "rabbitlair",
     "company": "SwiftCircle, Desa4 Software",
     "twitter": "@rabbitlair",
     "image": "sites/default/files/styles/medium/public/pictures/picture-609-1455281480.jpg",
@@ -110,6 +124,7 @@
   },
   {
     "name": "Miguel Ángel Caro García",
+    "username": "miguelkode",
     "company": "",
     "twitter": "",
     "image": "",
@@ -119,6 +134,7 @@
   },
   {
     "name": "Jorge Díaz Amigo",
+    "username": "jorgillo",
     "company": "",
     "twitter": "",
     "image": "",
@@ -128,6 +144,7 @@
   },
   {
     "name": "Montaña Franco",
+    "username": "monfranco",
     "company": "everis",
     "twitter": "@mon__franco",
     "image": "sites/default/files/styles/medium/public/pictures/picture-603-1457098267.jpg",
@@ -137,15 +154,18 @@
   },
   {
     "name": "Christian López Espínola",
+    "username": "penyaskito",
     "company": "Lingotek",
     "twitter": "@penyaskito",
     "image": "sites/default/files/styles/medium/public/pictures/picture-593-1458659911.jpg",
     "session": [
-      "sessions/making-your-entities-and-fields-translatable-drupal-8"
+      "sessions/making-your-entities-and-fields-translatable-drupal-8",
+      "sessions/unit-testing-drupal"
     ]
   },
   {
     "name": "Javier Gómez",
+    "username": "codigoweb",
     "company": "Introbay",
     "twitter": "@fjgomez2",
     "image": "sites/default/files/styles/medium/public/pictures/picture-704-1456850117.jpg",
@@ -155,6 +175,7 @@
   },
   {
     "name": "Ignacio López Flores",
+    "username": "ignaciolflores",
     "company": "Introbay",
     "twitter": "@ignaciolflores",
     "image": "sites/default/files/styles/medium/public/pictures/picture-705-1456850051.png",
@@ -164,6 +185,7 @@
   },
   {
     "name": "Emma Karayiannis",
+    "username": "emma.maria",
     "company": "",
     "twitter": "",
     "image": "sites/default/files/styles/medium/public/pictures/picture-803-1458105955.jpg",
@@ -173,6 +195,7 @@
   },
   {
     "name": "Bart Feenstra",
+    "username": "xano",
     "company": "Druid",
     "twitter": "@BartFeenstra",
     "image": "sites/default/files/styles/medium/public/pictures/picture-752-1457413941.jpg",
@@ -182,15 +205,18 @@
   },
   {
     "name": "Pedro González Serrano",
+    "username": "NITEMAN",
     "company": "sbit.io",
     "twitter": "@NITEMAN_es",
     "image": "sites/default/files/styles/medium/public/pictures/picture-797-1457646170.jpg",
     "session": [
-      "sessions/talk-cheap"
+      "sessions/talk-cheap",
+      "sessions/building-fastest-drupal-earth"
     ]
   },
   {
     "name": "David Gil",
+    "username": "david.gil",
     "company": "Biko2",
     "twitter": "@david_gil_biko2",
     "image": "sites/default/files/styles/medium/public/pictures/picture-592-1455028145.png",
@@ -200,6 +226,7 @@
   },
   {
     "name": "Lauri Eskola",
+    "username": "lauriii",
     "company": "",
     "twitter": "@laurii1",
     "image": "",
@@ -209,6 +236,7 @@
   },
   {
     "name": "Joel Rodríguez Alemán",
+    "username": "joelrguezaleman",
     "company": "Runroom",
     "twitter": "@joelrguezaleman",
     "image": "sites/default/files/styles/medium/public/pictures/picture-641-1458247738.jpg",
@@ -218,6 +246,7 @@
   },
   {
     "name": "Juanen Bernal Carrillo",
+    "username": "jansete",
     "company": "idealista",
     "twitter": "@jansev3n",
     "image": "sites/default/files/styles/medium/public/pictures/picture-657-1456607587.jpg",
@@ -227,15 +256,18 @@
   },
   {
     "name": "Martín González Robles",
+    "username": "mgzrobles",
     "company": "idealista",
     "twitter": "@mgzrobles",
     "image": "sites/default/files/styles/medium/public/pictures/picture-581-1454962148.jpg",
     "session": [
-      "sessions/activando-tu-amp-versión-qué-necesitas-saber"
+      "sessions/activando-tu-amp-versión-qué-necesitas-saber",
+      "sessions/varnish-para-meros-mortales"
     ]
   },
   {
     "name": "Janez Urevc",
+    "username": "slashrsm",
     "company": "Examiner.com",
     "twitter": "@slashrsm",
     "image": "sites/default/files/styles/medium/public/pictures/picture-685-1456829635.jpg",
@@ -245,6 +277,7 @@
   },
   {
     "name": "Josef Dabernig",
+    "username": "dasjo",
     "company": "Amazee Labs",
     "twitter": "@dasjo",
     "image": "sites/default/files/styles/medium/public/pictures/picture-599-1455061077.jpg",
@@ -254,6 +287,7 @@
   },
   {
     "name": "manuel rodriguez",
+    "username": "manu",
     "company": "",
     "twitter": "",
     "image": "",
@@ -263,6 +297,7 @@
   },
   {
     "name": "Carlos Campos Fuentes",
+    "username": "ccamposfuentes",
     "company": "SI2 Soluciones",
     "twitter": "@ccamposf",
     "image": "sites/default/files/styles/medium/public/pictures/picture-617-1455576429.jpg",
@@ -272,6 +307,7 @@
   },
   {
     "name": "Marcelo Tosco",
+    "username": "capynet",
     "company": "Front.id",
     "twitter": "@capynet",
     "image": "sites/default/files/styles/medium/public/pictures/picture-576-1453407680.jpg",
@@ -281,6 +317,7 @@
   },
   {
     "name": "Stelios Kourakis",
+    "username": "skourak",
     "company": "pointblank.gr",
     "twitter": "",
     "image": "sites/default/files/styles/medium/public/pictures/picture-723-1457011445.jpg",
@@ -290,6 +327,7 @@
   },
   {
     "name": "Ramon Vilar",
+    "username": "rvilar",
     "company": "Ymbra",
     "twitter": "@rvilar",
     "image": "",
@@ -299,6 +337,7 @@
   },
   {
     "name": "Cristina Chumillas",
+    "username": "ckrina",
     "company": "Ymbra",
     "twitter": "@chumillas",
     "image": "sites/default/files/styles/medium/public/pictures/picture-668-1457872466.jpg",
@@ -308,6 +347,7 @@
   },
   {
     "name": "Juampy NR",
+    "username": "juampynr",
     "company": "Lullabot",
     "twitter": "@juampynr",
     "image": "sites/default/files/styles/medium/public/pictures/picture-590-1455016669.jpg",
@@ -317,6 +357,7 @@
   },
   {
     "name": "Kalin CHERNEV",
+    "username": "kalinchernev",
     "company": "",
     "twitter": "",
     "image": "",

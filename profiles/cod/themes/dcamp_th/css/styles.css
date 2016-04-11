@@ -2548,10 +2548,25 @@ fieldset .fieldset-wrapper {
 
 /* line 1, ../sass/components/views/_view-aed-attendees.scss */
 .view-aed-attendees {
+  background: white;
+  padding: 10px 10px 0;
   margin-bottom: 60px;
 }
+@media (min-width: 767px) {
+  /* line 1, ../sass/components/views/_view-aed-attendees.scss */
+  .view-aed-attendees {
+    padding: 20px 20px 0;
+  }
+}
 @media (min-width: 960px) {
-  /* line 4, ../sass/components/views/_view-aed-attendees.scss */
+  /* line 1, ../sass/components/views/_view-aed-attendees.scss */
+  .view-aed-attendees {
+    background: white;
+    padding: 25px 25px 0;
+  }
+}
+@media (min-width: 767px) {
+  /* line 15, ../sass/components/views/_view-aed-attendees.scss */
   .view-aed-attendees .view-content {
     *zoom: 1;
   }
@@ -2564,9 +2579,37 @@ fieldset .fieldset-wrapper {
   /* line 5, ../sass/abstractions/_grid-items.scss */
   .view-aed-attendees .view-content > * {
     float: left;
-    width: 21.25%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    width: 48%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+  }
+  /* line 12, ../sass/abstractions/_grid-items.scss */
+  .view-aed-attendees .view-content > *:first-child {
+    margin-left: 0;
+  }
+  /* line 16, ../sass/abstractions/_grid-items.scss */
+  .view-aed-attendees .view-content > *:nth-child(2n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+@media (min-width: 960px) {
+  /* line 15, ../sass/components/views/_view-aed-attendees.scss */
+  .view-aed-attendees .view-content {
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .view-aed-attendees .view-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 5, ../sass/abstractions/_grid-items.scss */
+  .view-aed-attendees .view-content > * {
+    float: left;
+    width: 22.75%;
+    margin-left: 3%;
+    margin-bottom: 3%;
   }
   /* line 12, ../sass/abstractions/_grid-items.scss */
   .view-aed-attendees .view-content > *:first-child {
@@ -2577,33 +2620,49 @@ fieldset .fieldset-wrapper {
     margin-left: 0;
     clear: left;
   }
+  /* line 24, ../sass/components/views/_view-aed-attendees.scss */
+  .view-aed-attendees .view-content > *:nth-child(2n+1) {
+    margin-left: 3%;
+    clear: inherit;
+  }
+  /* line 29, ../sass/components/views/_view-aed-attendees.scss */
+  .view-aed-attendees .view-content > *:nth-child(4n+1) {
+    margin-left: 0;
+    clear: left;
+  }
 }
-/* line 12, ../sass/components/views/_view-aed-attendees.scss */
+/* line 38, ../sass/components/views/_view-aed-attendees.scss */
 .view-aed-attendees .views-row {
   margin-bottom: 15px;
 }
 @media (min-width: 960px) {
-  /* line 12, ../sass/components/views/_view-aed-attendees.scss */
+  /* line 38, ../sass/components/views/_view-aed-attendees.scss */
   .view-aed-attendees .views-row {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
 }
-/* line 23, ../sass/components/views/_view-aed-attendees.scss */
+/* line 49, ../sass/components/views/_view-aed-attendees.scss */
 .view-aed-attendees table tr td {
   vertical-align: top;
 }
-/* line 29, ../sass/components/views/_view-aed-attendees.scss */
+/* line 55, ../sass/components/views/_view-aed-attendees.scss */
 .view-aed-attendees .pager {
   margin-top: 60px;
 }
 
-/* line 34, ../sass/components/views/_view-aed-attendees.scss */
+/* line 60, ../sass/components/views/_view-aed-attendees.scss */
 .user-item {
   background: #69ACE5;
   display: table;
   width: 100%;
 }
-/* line 39, ../sass/components/views/_view-aed-attendees.scss */
+@media (min-width: 960px) {
+  /* line 60, ../sass/components/views/_view-aed-attendees.scss */
+  .user-item {
+    min-height: 123px;
+  }
+}
+/* line 69, ../sass/components/views/_view-aed-attendees.scss */
 .user-item .image {
   width: 100px;
   max-width: 100px;
@@ -2612,17 +2671,17 @@ fieldset .fieldset-wrapper {
   position: relative;
 }
 @media (min-width: 960px) {
-  /* line 39, ../sass/components/views/_view-aed-attendees.scss */
+  /* line 69, ../sass/components/views/_view-aed-attendees.scss */
   .user-item .image {
-    width: auto;
+    width: 115px;
   }
 }
-/* line 52, ../sass/components/views/_view-aed-attendees.scss */
+/* line 82, ../sass/components/views/_view-aed-attendees.scss */
 .user-item .image .inner-content img {
-  width: 130px;
+  width: 100%;
   height: auto;
 }
-/* line 57, ../sass/components/views/_view-aed-attendees.scss */
+/* line 87, ../sass/components/views/_view-aed-attendees.scss */
 .user-item .image .inner-content .featured {
   width: 100%;
   background: #D60053;
@@ -2634,31 +2693,31 @@ fieldset .fieldset-wrapper {
   position: absolute;
   bottom: 0;
 }
-/* line 72, ../sass/components/views/_view-aed-attendees.scss */
+/* line 102, ../sass/components/views/_view-aed-attendees.scss */
 .user-item .content {
   display: table-cell;
   vertical-align: top;
   position: relative;
   padding: 12px 10px 27px;
 }
-/* line 78, ../sass/components/views/_view-aed-attendees.scss */
+/* line 108, ../sass/components/views/_view-aed-attendees.scss */
 .user-item .content .name {
   font-weight: bold;
   line-height: normal;
 }
-/* line 82, ../sass/components/views/_view-aed-attendees.scss */
+/* line 112, ../sass/components/views/_view-aed-attendees.scss */
 .user-item .content .name > * {
   display: inline-block;
   margin-right: 4px;
 }
-/* line 88, ../sass/components/views/_view-aed-attendees.scss */
+/* line 118, ../sass/components/views/_view-aed-attendees.scss */
 .user-item .content .organization {
   color: white;
   font-size: 12px;
   line-height: 14px;
   margin-top: 6px;
 }
-/* line 95, ../sass/components/views/_view-aed-attendees.scss */
+/* line 125, ../sass/components/views/_view-aed-attendees.scss */
 .user-item .content .nick {
   position: absolute;
   bottom: 7px;

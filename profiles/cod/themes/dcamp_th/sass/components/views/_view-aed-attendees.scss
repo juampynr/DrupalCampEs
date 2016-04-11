@@ -43,6 +43,10 @@
     vertical-align: top;
     position: relative;
 
+    @include breakpoint($desk) {
+      width: auto;
+    }
+
     .inner-content {
 
       img {

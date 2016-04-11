@@ -1,10 +1,36 @@
 .view-aed-attendees {
+  background: white;
+  padding: 10px 10px 0;
   margin-bottom: 60px;
+
+  @include breakpoint($tab) {
+    padding: 20px 20px 0;
+  }
+
+  @include breakpoint($desk) {
+    background: white;
+    padding: 25px 25px 0;
+  }
 
   .view-content {
 
+    @include breakpoint($tab) {
+      @include grid-items(2, 4%, 4%);
+    }
+
     @include breakpoint($desk) {
-      @include grid-items(4, 5%, 5%);
+      @include grid-items(4, 3%, 3%);
+
+      > *:nth-child(2n+1) {
+        margin-left: 3%;
+        clear: inherit;
+      }
+
+      > *:nth-child(4n+1) {
+        margin-left: 0;
+        clear: left;
+      }
+
     }
 
   }
@@ -13,7 +39,7 @@
     margin-bottom: 15px;
 
     @include breakpoint($desk) {
-      margin-bottom: 5%;
+      margin-bottom: 3%;
     }
 
   }
@@ -36,6 +62,10 @@
   display: table;
   width: 100%;
 
+  @include breakpoint($desk) {
+    min-height: 123px;
+  }
+
   .image {
     width: 100px;
     max-width: 100px;
@@ -44,13 +74,13 @@
     position: relative;
 
     @include breakpoint($desk) {
-      width: auto;
+      width: 115px;
     }
 
     .inner-content {
 
       img {
-        width: 130px;
+        width: 100%;
         height: auto;
       }
 

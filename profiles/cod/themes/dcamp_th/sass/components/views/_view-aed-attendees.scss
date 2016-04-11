@@ -2,7 +2,20 @@
   margin-bottom: 60px;
 
   .view-content {
-    @include grid-items(4, 5%, 5%);
+
+    @include breakpoint($desk) {
+      @include grid-items(4, 5%, 5%);
+    }
+
+  }
+
+  .views-row {
+    margin-bottom: 15px;
+
+    @include breakpoint($desk) {
+      margin-bottom: 5%;
+    }
+
   }
 
   table {
@@ -24,6 +37,7 @@
   width: 100%;
 
   .image {
+    width: 100px;
     max-width: 100px;
     display: table-cell;
     vertical-align: top;

@@ -1936,6 +1936,63 @@ fieldset .fieldset-wrapper {
   }
 }
 
+/* line 1, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+#block-views-aed-sponsors-block-2 {
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+}
+/* line 6, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+#block-views-aed-sponsors-block-2 h2 {
+  color: #669FD5;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 767px) {
+  /* line 6, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+  #block-views-aed-sponsors-block-2 h2 {
+    font-size: 38px;
+  }
+}
+/* line 20, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+#block-views-aed-sponsors-block-2 .view-content table.views-view-grid {
+  width: 100%;
+}
+/* line 23, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+#block-views-aed-sponsors-block-2 .view-content table.views-view-grid tr {
+  /**/
+}
+/* line 25, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+#block-views-aed-sponsors-block-2 .view-content table.views-view-grid tr td {
+  vertical-align: middle;
+  padding: 30px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  /* line 25, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+  #block-views-aed-sponsors-block-2 .view-content table.views-view-grid tr td {
+    vertical-align: middle;
+    padding: 0;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* line 37, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+#block-views-aed-sponsors-block-2 .view-content table.views-view-grid tr td img {
+  width: 200px;
+  height: auto;
+  display: table;
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  /* line 37, ../sass/components/blocks/_block-views-aed-sponsors-block-2.scss */
+  #block-views-aed-sponsors-block-2 .view-content table.views-view-grid tr td img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 /* line 1, ../sass/components/blocks/_block-views-aed-sponsors-block.scss */
 #block-views-aed-sponsors-block {
   margin-bottom: 30px;

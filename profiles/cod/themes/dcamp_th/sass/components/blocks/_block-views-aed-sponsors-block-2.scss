@@ -1,0 +1,54 @@
+#block-views-aed-sponsors-block-2 {
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+
+  h2 {
+    color: #669FD5;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    @include breakpoint($tab) {
+      font-size: 38px;
+    }
+
+  }
+
+  .view-content {
+
+    table.views-view-grid {
+      width: 100%;
+
+      tr {
+        /**/
+        td {
+          @include breakpoint(0 $tab) {
+            vertical-align: middle;
+            padding: 0;
+            float: left;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          vertical-align: middle;
+          padding: 30px;
+
+          img {
+            width: 200px;
+            height: auto;
+            display: table;
+            margin: 0 auto;
+
+            @include breakpoint($desk) {
+              width: 100%;
+              margin: 0;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}

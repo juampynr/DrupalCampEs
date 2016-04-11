@@ -112,6 +112,19 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['filters']['field_profile_first_value']['field'] = 'field_profile_first_value';
   $handler->display->display_options['filters']['field_profile_first_value']['operator'] = 'not empty';
   $handler->display->display_options['filters']['field_profile_first_value']['group'] = 1;
+  /* Filter criterion: Ticket registration: State */
+  $handler->display->display_options['filters']['state']['id'] = 'state';
+  $handler->display->display_options['filters']['state']['table'] = 'ticket_registration';
+  $handler->display->display_options['filters']['state']['field'] = 'state';
+  $handler->display->display_options['filters']['state']['relationship'] = 'ticket_registration';
+  $handler->display->display_options['filters']['state']['value'] = 'completed';
+  $handler->display->display_options['filters']['state']['group'] = 1;
+  /* Filter criterion: User: Roles */
+  $handler->display->display_options['filters']['rid_1']['id'] = 'rid_1';
+  $handler->display->display_options['filters']['rid_1']['table'] = 'users_roles';
+  $handler->display->display_options['filters']['rid_1']['field'] = 'rid';
+  $handler->display->display_options['filters']['rid_1']['operator'] = 'empty';
+  $handler->display->display_options['filters']['rid_1']['group'] = 2;
   /* Filter criterion: User: Roles */
   $handler->display->display_options['filters']['rid']['id'] = 'rid';
   $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
@@ -120,13 +133,6 @@ function aed_collaborators_views_default_views() {
     6 => '6',
   );
   $handler->display->display_options['filters']['rid']['group'] = 2;
-  /* Filter criterion: Ticket registration: State */
-  $handler->display->display_options['filters']['state']['id'] = 'state';
-  $handler->display->display_options['filters']['state']['table'] = 'ticket_registration';
-  $handler->display->display_options['filters']['state']['field'] = 'state';
-  $handler->display->display_options['filters']['state']['relationship'] = 'ticket_registration';
-  $handler->display->display_options['filters']['state']['value'] = 'completed';
-  $handler->display->display_options['filters']['state']['group'] = 2;
 
   /* Display: Attenders */
   $handler = $view->new_display('page', 'Attenders', 'page');

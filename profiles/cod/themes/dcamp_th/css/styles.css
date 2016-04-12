@@ -3440,10 +3440,6 @@ body.node-type-news .l-content > .l-container, body.node-type-news .l-content > 
 body.node-type-news #block-blockify-blockify-page-title {
   display: none;
 }
-/* line 16, ../sass/content-types/news/_node--news--full.scss */
-body.node-type-news .l-content > .l-container, body.node-type-news .l-content > .tabs, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content {
-  max-width: none;
-}
 /* line 23, ../sass/content-types/news/_node--news--full.scss */
 body.node-type-news .l-content > .l-container .node--news--full.no-img .heading, body.node-type-news .l-content > .tabs .node--news--full.no-img .heading {
   background: #901235;

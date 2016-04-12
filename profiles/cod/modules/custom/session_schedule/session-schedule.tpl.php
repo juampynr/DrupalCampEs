@@ -627,7 +627,7 @@
 
       <td class="beginner">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/get-yourself-heard-open-source">Get yourself heard in Open Source</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/drupal-contribution-survival-guide">Drupal Contribution Survival Guide</a>
 
         <!-- Ponente -->
         <a href="http://2016.drupalcamp.es/en/user/803" class="speaker">emma.maria</a>

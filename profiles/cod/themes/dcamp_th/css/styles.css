@@ -2484,11 +2484,10 @@ fieldset .fieldset-wrapper {
   /* line 19, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:first-child {
     float: left;
-    min-height: 703px;
     padding-bottom: 100px;
     margin-bottom: 15px;
   }
-  /* line 34, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 33, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:first-child .form-type-select {
     width: calc(100% - 40px);
     position: absolute;
@@ -2496,23 +2495,22 @@ fieldset .fieldset-wrapper {
     bottom: 0;
   }
 }
-/* line 45, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 44, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) {
   background: #222E3B;
 }
-/* line 48, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 47, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) h3, .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) p, .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) label {
   color: white;
 }
 @media (min-width: 960px) {
-  /* line 45, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 44, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) {
     float: right;
-    min-height: 703px;
     padding-bottom: 100px;
     margin-bottom: 15px;
   }
-  /* line 58, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 56, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(2) .form-type-select {
     width: calc(100% - 40px);
     position: absolute;
@@ -2521,51 +2519,51 @@ fieldset .fieldset-wrapper {
   }
 }
 @media (min-width: 960px) {
-  /* line 69, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 67, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(3) {
     float: left;
     clear: left;
   }
-  /* line 75, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 73, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(3) h3 {
     font-size: 21px;
   }
 }
 @media (min-width: 960px) {
-  /* line 83, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 81, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(4) {
     float: right;
   }
-  /* line 88, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 86, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper:nth-child(4) h3 {
     font-size: 21px;
   }
 }
-/* line 96, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 94, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper h3 {
   margin-bottom: 10px;
 }
-/* line 100, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 98, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper .content {
   margin-bottom: 15px;
 }
 @media (min-width: 960px) {
-  /* line 104, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 102, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .ticket-wrapper .form-type-select {
     margin-bottom: 20px;
   }
 }
-/* line 110, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 108, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper .form-type-select select {
   cursor: pointer;
   width: 100px;
 }
-/* line 117, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+/* line 115, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
 .ticket-field-formatter-view-form .ticket-wrapper .description {
   display: none;
 }
 @media (min-width: 960px) {
-  /* line 123, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
+  /* line 121, ../sass/components/forms/_ticket-field-formatter-view-form.scss */
   .ticket-field-formatter-view-form .form-submit {
     display: block;
     clear: both;
@@ -3860,6 +3858,10 @@ body .l-content > .l-container, body .l-content > .tabs, body.node-type-news .l-
   body .l-content > .l-container, body .l-content > .tabs, body.node-type-news .l-content > .l-container .node--news--full .heading.l-content > .inner-content {
     padding-top: 80px;
   }
+}
+/* line 13, ../sass/pages/_all.scss */
+body .node {
+  margin-bottom: 40px;
 }
 
 /* line 3, ../sass/pages/_front.scss */

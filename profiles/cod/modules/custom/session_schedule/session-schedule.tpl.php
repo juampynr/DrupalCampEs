@@ -223,16 +223,16 @@
     <tr class="headings">
       <td>Horario</td>
       <td>
-        <!--        --><?php //print t('Room'); ?><!-- 1-->
+        <?php print t('Cine 3'); ?>
       </td>
       <td>
-        <!--        --><?php //print t('Room'); ?><!-- 2-->
+        <?php print t('Gutenberg'); ?>
       </td>
       <td>
-        <!--        --><?php //print t('Room'); ?><!-- 3-->
+        <?php print t('Faraday'); ?>
       </td>
       <td>
-        <!--        --><?php //print t('Room'); ?><!-- 4-->
+        <?php print t('Einstein'); ?>
       </td>
     </tr>
 
@@ -266,24 +266,6 @@
 
       </td>
 
-      <td class="beginner">
-        <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/nuestro-amigo-flexbox">Nuestro amigo Flexbox</a>
-
-        <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/pakmanlh" class="speaker">pakmanlh</a>
-
-        <div class="sesion-kind-wrapper clearfix">
-          <div>
-            <!-- Idioma de la sesion -->
-            <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language espanol"></div>
-            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
-          </div>
-        </div>
-
-      </td>
-
       <td class="">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/using-scrum-agile-remote-development">Using Scrum Agile in remote development</a>
@@ -303,9 +285,27 @@
         </div>
       </td>
 
+      <td class="beginner">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/nuestro-amigo-flexbox">Nuestro amigo Flexbox</a>
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/pakmanlh" class="speaker">pakmanlh</a>
+
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language espanol"></div>
+            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+          </div>
+        </div>
+
+      </td>
+
       <td class="medium">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/rest-drupal-8">REST in Drupal 8</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/rest-drupal-8">REST in Drupal 8 <strong>(Auditorium)</strong></a>
 
         <!-- Ponente -->
         <a href="http://2016.drupalcamp.es/en/users/dawehner" class="speaker">dawehner</a>
@@ -326,26 +326,6 @@
 
     <tr>
       <td class="headings">10:30 <?php print t('to'); ?> 11:30</td>
-
-      <td class="beginner">
-        <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/arquitectura-de-la-informaci%C3%B3n-drupal-8">Arquitectura de la información & Drupal 8</a>
-
-        <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/vlledo" class="speaker">vlledo</a>
-
-        <div class="sesion-kind-wrapper clearfix">
-          <div>
-            <!-- Idioma de la sesion -->
-            <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language espanol"></div>
-
-            <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
-          </div>
-        </div>
-      </td>
-
       <td class="beginner">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/bajarse-al-behat-haz-que-tu-aplicaci%C3%B3n-se-comporte">Bajarse al behat: haz que tu aplicación se comporte</a>
@@ -367,21 +347,21 @@
 
       </td>
 
-      <td class="medium">
+      <td class="beginner">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/geospatial-data-3d-infrastructure-and-iot">Geospatial Data, 3d Infrastructure and IoT</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/arquitectura-de-la-informaci%C3%B3n-drupal-8">Arquitectura de la información & Drupal 8</a>
 
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/040lab" class="speaker">040lab</a>
+        <a href="http://2016.drupalcamp.es/en/users/vlledo" class="speaker">vlledo</a>
 
         <div class="sesion-kind-wrapper clearfix">
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language english"></div>
+            <div class="language espanol"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
           </div>
         </div>
       </td>
@@ -406,6 +386,24 @@
         </div>
       </td>
 
+      <td class="medium">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/geospatial-data-3d-infrastructure-and-iot">Geospatial Data, 3d Infrastructure and IoT</a>
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/040lab" class="speaker">040lab</a>
+
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language english"></div>
+
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
+          </div>
+        </div>
+      </td>
 
     </tr>
 

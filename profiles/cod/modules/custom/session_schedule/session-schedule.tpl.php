@@ -326,6 +326,7 @@
 
     <tr>
       <td class="headings">10:30 <?php print t('to'); ?> 11:30</td>
+
       <td class="beginner">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/bajarse-al-behat-haz-que-tu-aplicaci%C3%B3n-se-comporte">Bajarse al behat: haz que tu aplicación se comporte</a>
@@ -499,25 +500,6 @@
     <tr>
       <td class="headings">13:00 <?php print t('to'); ?> 14:00</td>
 
-      <td class="">
-        <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/seguridad-para-todos">Seguridad para todos</a>
-
-        <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/rabbitlair" class="speaker">rabbitlair</a>
-
-        <div class="sesion-kind-wrapper clearfix">
-          <div>
-            <!-- Idioma de la sesion -->
-            <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language espanol"></div>
-
-            <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
-          </div>
-        </div>
-      </td>
-
       <td class="beginner">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/%C2%A1twig-desde-0">¡TWIG desde 0!</a>
@@ -540,25 +522,6 @@
 
       </td>
 
-      <td class="beginner">
-        <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/how-contribute-your-daily-work">How to contribute in your day to day work</a>
-
-        <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/monfranco" class="speaker">mon_franco</a>
-
-        <div class="sesion-kind-wrapper clearfix">
-          <div>
-            <!-- Idioma de la sesion -->
-            <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language english"></div>
-
-            <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon community" title="Community"></div>
-          </div>
-        </div>
-      </td>
-
       <td class="medium">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/making-your-entities-and-fields-translatable-drupal-8">Making your entities and fields translatable with Drupal 8</a>
@@ -578,6 +541,44 @@
         </div>
       </td>
 
+      <td class="">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/seguridad-para-todos">Seguridad para todos</a>
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/rabbitlair" class="speaker">rabbitlair</a>
+
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language espanol"></div>
+
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
+          </div>
+        </div>
+      </td>
+
+      <td class="beginner">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/how-contribute-your-daily-work">How to contribute in your day to day work</a>
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/monfranco" class="speaker">mon_franco</a>
+
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language english"></div>
+
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon community" title="Community"></div>
+          </div>
+        </div>
+      </td>
+
     </tr>
 
     <!--    lunch-->
@@ -588,6 +589,25 @@
 
     <tr>
       <td class="headings">15:30 <?php print t('to'); ?> 16:30</td>
+
+      <td class="beginner">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/drupal-contribution-survival-guide">Drupal Contribution Survival Guide</a>
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/user/803" class="speaker">emma.maria</a>
+
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language english"></div>
+
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon community" title="Community"></div>
+          </div>
+        </div>
+      </td>
 
       <td class="">
         Coming soon
@@ -623,25 +643,6 @@
 
       </td>
 
-      <td class="beginner">
-        <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/drupal-contribution-survival-guide">Drupal Contribution Survival Guide</a>
-
-        <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/user/803" class="speaker">emma.maria</a>
-
-        <div class="sesion-kind-wrapper clearfix">
-          <div>
-            <!-- Idioma de la sesion -->
-            <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language english"></div>
-
-            <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon community" title="Community"></div>
-          </div>
-        </div>
-      </td>
-
       <td class="medium">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/drupal-8-plugin-system-extensibility-all">The Drupal 8 plugin system: extensibility for all</a>
@@ -664,26 +665,8 @@
     </tr>
 
     <tr>
+      /////
       <td class="headings">16:30 <?php print t('to'); ?> 17:30</td>
-
-      <td class="">
-        <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/talk-cheap">"Talk is cheap" (Hablar es fácil)</a>
-
-        <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/niteman" class="speaker">NITEMAN</a>
-
-        <div class="sesion-kind-wrapper clearfix">
-          <div>
-            <!-- Idioma de la sesion -->
-            <!--  Definir idioma de la charla en: espanol / english -->
-            <div class="language espanol"></div>
-
-            <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
-          </div>
-        </div>
-      </td>
 
       <td class="beginner">
         <!-- Titulo Sesion -->
@@ -722,6 +705,25 @@
             <!-- Agregamos iconos de categoria -->
             <div class="sesion-kind category-icon front-end" title="Front-End"></div>
             <div class="sesion-kind category-icon back-end" title="Back-End"></div>
+          </div>
+        </div>
+      </td>
+
+      <td class="">
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/talk-cheap">"Talk is cheap" (Hablar es fácil)</a>
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/niteman" class="speaker">NITEMAN</a>
+
+        <div class="sesion-kind-wrapper clearfix">
+          <div>
+            <!-- Idioma de la sesion -->
+            <!--  Definir idioma de la charla en: espanol / english -->
+            <div class="language espanol"></div>
+
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>

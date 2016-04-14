@@ -41,7 +41,7 @@
   <!---->
   <!--          <span class="speaker language espanol">Monta&#241;a Franco</span>-->
   <!---->
-  <!--          <!-- Agregamos iconos de categoria -->-->
+  <!--          <!-- Agregamos iconos de categoria -->
   <!--          <div class="sesion-kind-wrapper clearfix">-->
   <!--            <div>-->
   <!--              <div class="sesion-kind category-icon devops" title="DevOps"></div>-->
@@ -665,7 +665,7 @@
     </tr>
 
     <tr>
-      
+
       <td class="headings">16:30 <?php print t('to'); ?> 17:30</td>
 
       <td class="beginner">
@@ -1176,10 +1176,10 @@
 
       <td class="medium">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/style-guides-drupal-development-workflows">Style guides in Drupal development workflows</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/developers-overview-drupal-8s-top-contributed-modules">A developer's overview of Drupal 8's top contributed modules</a>
 
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/kalinchernev" class="speaker">kalinchernev</a>
+        <a href="http://2016.drupalcamp.es/en/users/juampynr" class="speaker">juampynr</a>
 
         <div class="sesion-kind-wrapper clearfix">
           <div>
@@ -1188,7 +1188,7 @@
             <div class="language english"></div>
 
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon front-end" title="Front-End"></div>
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
             <div class="sesion-kind category-icon back-end" title="Back-End"></div>
           </div>
         </div>

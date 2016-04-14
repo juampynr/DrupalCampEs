@@ -40,7 +40,7 @@
           print t("Featured Speaker");
         }
 
-        if (isset($u->roles[8])) {
+        if (isset($u->roles[9])) {
           print t("Sponsor");
         }
 

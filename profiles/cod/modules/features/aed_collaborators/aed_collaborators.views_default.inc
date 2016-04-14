@@ -120,6 +120,12 @@ function aed_collaborators_views_default_views() {
   $handler->display->display_options['filters']['state']['value'] = 'completed';
   $handler->display->display_options['filters']['state']['group'] = 1;
   /* Filter criterion: User: Roles */
+  $handler->display->display_options['filters']['rid_2']['id'] = 'rid_2';
+  $handler->display->display_options['filters']['rid_2']['table'] = 'users_roles';
+  $handler->display->display_options['filters']['rid_2']['field'] = 'rid';
+  $handler->display->display_options['filters']['rid_2']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['rid_2']['group'] = 2;
+  /* Filter criterion: User: Roles */
   $handler->display->display_options['filters']['rid_1']['id'] = 'rid_1';
   $handler->display->display_options['filters']['rid_1']['table'] = 'users_roles';
   $handler->display->display_options['filters']['rid_1']['field'] = 'rid';

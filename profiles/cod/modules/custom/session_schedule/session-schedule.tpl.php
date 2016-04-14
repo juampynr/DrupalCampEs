@@ -557,6 +557,7 @@
 
             <!-- Agregamos iconos de categoria -->
             <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>

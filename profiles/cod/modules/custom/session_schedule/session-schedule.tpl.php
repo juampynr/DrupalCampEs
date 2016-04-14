@@ -305,7 +305,7 @@
 
       <td class="medium">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/rest-drupal-8">REST in Drupal 8 <strong>(Auditorium)</strong></a>
+        <a href="http://2016.drupalcamp.es/en/sessions/rest-drupal-8">REST in Drupal 8 <strong>(Auditorio Balidea)</strong></a>
 
         <!-- Ponente -->
         <a href="http://2016.drupalcamp.es/en/users/dawehner" class="speaker">dawehner</a>
@@ -419,26 +419,27 @@
 
       <td class="">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/c%C3%B3mo-sacarle-partido-tu-pagina-con-el-marketing-de-contenidos">Cómo sacarle partido a tu página con el Marketing de contenidos</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/agile-management-y-la-felicidad-en-nuestro-día-día">Agile management y la felicidad en nuestro día a día</a>
 
         <!-- Ponente -->
-        <a href="http://2016.drupalcamp.es/en/users/claudia" class="speaker">Claudia</a>
+        <a href="http://2016.drupalcamp.es/en/users/lurish" class="speaker">lurish</a>
+        <a href="http://2016.drupalcamp.es/en/users/raúl-bordallo" class="speaker">Raúl Bordallo</a>
 
         <div class="sesion-kind-wrapper clearfix">
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
             <div class="language espanol"></div>
-
+            
             <!-- Agregamos iconos de categoria -->
-            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
+            <div class="sesion-kind category-icon business" title="Management, Business & Technology"></div>
           </div>
         </div>
       </td>
 
       <td class="beginner">
         <!-- Titulo Sesion -->
-        <a href="http://2016.drupalcamp.es/en/sessions/s%C3%A1cale-el-jugo-los-display-modes">Sácale el jugo a los display modes.</a>
+        <a href="http://2016.drupalcamp.es/en/sessions/s%C3%A1cale-el-jugo-los-display-modes">Sácale el jugo a los display modes</a>
 
 
         <!-- Ponente -->
@@ -608,15 +609,22 @@
           </div>
         </div>
       </td>
-
+      
       <td class="">
-        Coming soon
+        <!-- Titulo Sesion -->
+        <a href="http://2016.drupalcamp.es/en/sessions/c%C3%B3mo-sacarle-partido-tu-pagina-con-el-marketing-de-contenidos">Cómo sacarle partido a tu página con el Marketing de contenidos</a>
+
+        <!-- Ponente -->
+        <a href="http://2016.drupalcamp.es/en/users/claudia" class="speaker">Claudia</a>
 
         <div class="sesion-kind-wrapper clearfix">
           <div>
             <!-- Idioma de la sesion -->
             <!--  Definir idioma de la charla en: espanol / english -->
             <div class="language espanol"></div>
+
+            <!-- Agregamos iconos de categoria -->
+            <div class="sesion-kind category-icon site-build" title="Site Building & Strategy"></div>
           </div>
         </div>
       </td>

@@ -665,7 +665,7 @@
     </tr>
 
     <tr>
-      /////
+      
       <td class="headings">16:30 <?php print t('to'); ?> 17:30</td>
 
       <td class="beginner">

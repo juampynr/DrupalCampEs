@@ -943,7 +943,7 @@
 
       </td>
 
-      <td class="medium">
+      <td class="beginner">
         <!-- Titulo Sesion -->
         <a href="http://2016.drupalcamp.es/en/sessions/casos-de-uso-de-grandes-poyectos-drupal-en-nuestro-entorno-cercano">Casos de uso de grandes proyectos Drupal en nuestro entorno cercano</a>
 

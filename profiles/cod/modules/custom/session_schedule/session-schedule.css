@@ -15,6 +15,30 @@ section.col-sm-8 {
     margin-bottom: 30px;
 }
 
+.featured-speakers {
+    background: url('img/star-icon.png') no-repeat 0 center;
+    background-size: contain;
+    padding-left: 39px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.featured-speakers span {
+    color: #669FD5;
+    font-size: 20px;
+    padding: 10px 0 15px;
+    margin: 0;
+}
+
+.featured-speaker-icon {
+    width: 35px;
+    height: 35px;
+    background: url('img/star-icon.png') no-repeat 0 center;
+    background-size: contain;
+    margin: 0 auto !important;
+}
+
 .skills {
     margin-bottom: 20px;
 }
@@ -361,6 +385,11 @@ section.col-sm-8 {
 /*--- Ajustes para mobile ---*/
 @media (max-width: 768px) {
 
+    .featured-speaker-icon {
+        float: none;
+        margin: 0 !important;
+    }
+
     .session-table {
         display: none;
     }
@@ -412,7 +441,7 @@ section.col-sm-8 {
     }
 
     .room {
-        display: inline-block;
+        display: block;
         margin-bottom: 5px;
     }
 

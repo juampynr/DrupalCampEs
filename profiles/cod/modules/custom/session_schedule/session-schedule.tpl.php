@@ -103,7 +103,7 @@
         <div class="medium">
           <span class="room"><?php print t('Sala: Auditorio Balidea'); ?></span>
           <!-- Titulo Sesion -->
-          <a href="http://2016.drupalcamp.es/en/sessions/rest-drupal-8">REST in Drupal 8</a>
+          <a href="http://2016.drupalcamp.es/en/sessions/test-your-javascript">Test your JavaScript!</a>
 
           <!-- Ponente -->
           <a href="http://2016.drupalcamp.es/en/users/dawehner" class="speaker">dawehner</a>
